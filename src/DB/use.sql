@@ -28,3 +28,14 @@ CREATE TABLE Merchandise(
     stock int not null,
     primary key (merchandise_id)
 );
+
+-- カートテーブル作成sql
+CREATE TABLE Cart(
+    cart_id int not null AUTO_INCREMENT,
+    user_id int not null,
+    merchandise_id int not null,
+    quantity int not null,
+    primary key (cart_id),
+    foreign key (user_id) references User(user_id),
+    foreign key (merchandise_id) references Merchandise(merchandise_id)
+);
