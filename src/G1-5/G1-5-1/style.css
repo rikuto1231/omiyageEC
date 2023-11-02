@@ -1,4 +1,21 @@
+div{
+    text-align:  center;   
+}
 .kensaku{
-    width: 267px;
-height: 31px;
+    padding: 0;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+.kensakubar{
+    background: #D9D9D9;
+}
+.modoru{
+    width: 308px;
+    height: 54px;
+    border-radius:30px;
+    background-color: #0890F2;
+    border-color:#0890F2 ;
+    color: white;
+    cursor: pointer;
 }
