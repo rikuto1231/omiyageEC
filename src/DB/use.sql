@@ -17,3 +17,14 @@ CREATE TABLE User(
     primary key (user_id)
 
 );
+
+-- 商品テーブル作成sql
+CREATE TABLE Merchandise(
+    merchandise_id int not null AUTO_INCREMENT,
+    merchandise_name varchar(20) not null,
+    category varchar(20) not null,
+    brand varchar(20) not null,
+    price int not null,
+    stock int not null,
+    primary key (merchandise_id)
+);
