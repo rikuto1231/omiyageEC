@@ -17,3 +17,25 @@ CREATE TABLE User(
     primary key (user_id)
 
 );
+
+-- 商品テーブル作成sql
+CREATE TABLE Merchandise(
+    merchandise_id int not null AUTO_INCREMENT,
+    merchandise_name varchar(20) not null,
+    category varchar(20) not null,
+    brand varchar(20) not null,
+    price int not null,
+    stock int not null,
+    primary key (merchandise_id)
+);
+
+-- カートテーブル作成sql
+CREATE TABLE Cart(
+    cart_id int not null AUTO_INCREMENT,
+    user_id int not null,
+    merchandise_id int not null,
+    quantity int not null,
+    primary key (cart_id),
+    foreign key (user_id) references User(user_id),
+    foreign key (merchandise_id) references Merchandise(merchandise_id)
+);
