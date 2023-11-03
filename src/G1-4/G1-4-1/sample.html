@@ -4,50 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
+        <!-- 遷移部分がheader内の部分になるので出力をheader内で行う -->
         <img src="../imge/cart.png">
         <img src="../imge/people.jpg">
         <p>ロゴ</p>
         <h2>カテゴリ</h2>
-        <div>
-            <input type="checkbox" id="suitu" name="suitu" />
+        <div class="category">
             <label for="suitu">洋菓子・スイーツ</label>
+            <input type="checkbox" id="suitu" name="suitu" />
         </div>
-        <div>
-            <input type="checkbox" id="wagasi" name="wagasi" />
+        <div class="category">
             <label for="wagasi">和菓子</label>
+            <input type="checkbox" id="wagasi" name="wagasi" />
         </div>
-        <div>
-            <input type="checkbox" id="otumami" name="otumami" />
+        <div class="category">
             <label for="otumami">おつまみ</label>
+            <input type="checkbox" id="otumami" name="otumami" />
         </div>
 
         <h2>価格</h2>
-        <div>
-            <input type="checkbox" id="sen" name="sen" />
+        <div class="price">
             <label for="sen">～1000円</label>
+            <input type="checkbox" id="sen" name="sen" />
         </div>
-        <div>
-            <input type="checkbox" id="seniti" name="seniti" />
+        <div class="price">
             <label for="seniti">1001～2000円</label>
+            <input type="checkbox" id="seniti" name="seniti" />
         </div>
-        <div>
-            <input type="checkbox" id="senni" name="senni" />
+        <div class="price">
             <label for="senni">2001円～3000円</label>
+            <input type="checkbox" id="senni" name="senni" />
         </div>
-        <div>
-            <input type="checkbox" id="sensan" name="sensan" />
+        <div class="price">
             <label for="sensan">3001円～4000円</label>
+            <input type="checkbox" id="sensan" name="sensan" />
         </div>
-        <div>
-            <input type="checkbox" id="senyon" name="senyon" />
+        <div class="price">
             <label for="senyon">4001～5000円</label>
+            <input type="checkbox" id="senyon" name="senyon" />
         </div>
-        <div>
-            <input type="checkbox" id="gosen" name="gosen" />
+        <div class="price">
             <label for="gosen">5001～円</label>
+            <input type="checkbox" id="gosen" name="gosen" />
         </div>
     </header>
 </body>
