@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <?php require 'php/DB.php'; ?>
+    <?php require 'DB.php'; ?>
     <!-- 共通header.cssとは読み出し元が繋げる-->
 
     <!-- 現在は確認用に繋げておく -->
