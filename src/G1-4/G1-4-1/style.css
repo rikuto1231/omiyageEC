@@ -8,6 +8,7 @@ body {
 }
 
 #menu_all{
+    /* 要素指定の別方法考えとくwid,hei */
     width: 100%;
     height: 100%;
     display: flex;
