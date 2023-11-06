@@ -17,7 +17,7 @@ header {
 }
 
 .container {
-    margin-top: 5px; /* 画面上部から5px離す */
+    margin-top: 5px; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -42,7 +42,7 @@ header {
     cursor: pointer;
 }
 
-/* チェックボックスが選択された時のスタイル */
+/* チェックボックス選択時スタイル */
 .category input:checked + label, .price input:checked + label {
     font-weight: bold;
     color: #007bff;
