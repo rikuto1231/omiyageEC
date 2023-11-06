@@ -13,8 +13,8 @@
     <header id="header">
         <!-- header内の必要要素を入れる -->
         <!-- 遷移を可能にしておく -->
-        <img src="">
-        <img src="">
+        <img src="../img/people.jpg">
+        <img src="../img/cart.jpg">
 
         <p>ロゴ部分（未完成）</p>
 
