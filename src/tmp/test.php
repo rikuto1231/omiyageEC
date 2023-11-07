@@ -31,7 +31,7 @@
         <a href="task_name.html"><img id="addButton" src="img/add.png"></a>
         
     </header>
-    <script src="js/side_ber.js"></script>
+    <script src="side_ber.js"></script>
     
 </body>
 </html>
