@@ -1,0 +1,17 @@
+@charset "utf-8";
+h1{
+    width: 174px;
+    height: 65px;
+    flex-shrink: 0;
+
+}
+
+b{
+    border: 1px solid #000;
+
+    background: #46B0FC;
+}
+img{
+    width: 200px;
+    height: 185px;
+}
