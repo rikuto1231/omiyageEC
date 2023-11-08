@@ -12,19 +12,20 @@
         <div class="sidebar">
             <img id="closeButton" src="../imge/close.png">
             <!-- サイドバーの内容 -->
-            <p>test1</p>
+            <img src="../imge/user.png"width="40" height="40">
+            <p>○○○○さん</p>
             <hr>
-            <p>test1</p>
+            <p><a href="">ポイント</a></p>
             <hr>
-            <p>test1</p>
+            <p><a href="">登録情報</a></p>
             <hr>
-            <p>test1</p>
+            <p><a href="">購入履歴</a></p>
             <hr>
-            <p>test1</p>
+            <p><a href="">予約確認</a></p>
             <hr>
-            <p>test1</p>
+            <p><a href="">ログイン</a></p>
             <hr>
-            <p>test1</p>
+            <p><a href="">ログアウト</a></p>
             <hr>
         </div>
         <img id="toggleButton"src="../imge/user.png"width="40" height="40">
