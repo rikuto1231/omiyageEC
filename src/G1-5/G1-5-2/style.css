@@ -90,3 +90,18 @@ header {
     height: 40px;
     filter: invert(100%); /* 画像の白黒を反転 */
 }
+
+/* カートメッセージを左配置 */
+#cart_mess{
+    text-align: left;
+    /* 位置height追加予定 */
+}
+
+/* 画像配置を少し離して左側 */
+.img_product{
+    display: flex;
+    flex-direction: column;
+    justify-content:left;
+    align-items: center;
+    margin-left: 5px;
+}
