@@ -1,5 +1,3 @@
-
-
 header {
     position: fixed; /* Headerを固定する */
     top: 0; /* ページの上端に固定 */
@@ -10,6 +8,38 @@ header {
 }
 
 
+#search_all{
+    text-align: center;
+    width: 100%;
+}
+
+.search_box{
+    text-align: center;
+    background: #d0d0d0;
+    width: 60%;
+    height: 20px;
+    position: relative; /* 相対位置指定 */
+}
+
+.conditions_img{
+    position: absolute; /* 絶対位置指定 */
+    background-color: rgb(218, 67, 21);
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    z-index: 2;
+}
+
+#conditions{
+
+}
+
+
+#title_output{
+    text-align: center;
+    width: 100%;
+}
+
 
 .sidebar {
     width: 0; /* 初期状態では非表示 */
@@ -17,7 +47,7 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    background-color: grey;
+    background-color: rgb(188, 187, 187);
     overflow-x: hidden;
     transition: 0.3s; /* トランジション時間 */
     z-index: 9999;
@@ -25,7 +55,7 @@ header {
 
 
 .sidebar p {
-    margin-left: 10px;
+    margin-left: 10%;
 }
 
 .sidebar.open {
@@ -67,4 +97,41 @@ header {
     width: 40px;
     height: 40px;
     filter: invert(100%); /* 画像の白黒を反転 */
+}
+
+/* カートメッセージを左配置 */
+#cart_mess{
+    text-align: left;
+    margin-left: 20px;
+    /* 位置height追加予定 */
+}
+
+/* 画像配置を少し離して左側 */
+.img_product{
+    display: flex;
+    flex-direction: column;
+    justify-content:left;
+    align-items: center;
+    margin-left: 10px;
+}
+
+#product_detail{
+    background-color: #778c9c;
+    position: absolute;
+    text-align: center;
+    top: 50%; /* 画面の中央に配置 */
+    transform: translateY(-40%); /* 垂直中央揃え */
+    width: 100%;
+    height: 70%;
+}
+
+/* 続けるボタン */
+.button_next{
+    width: 75%;
+    height: 50px;
+    border-radius:30px;
+    background-color: #0890F2;
+    border-color:#0890F2 ;
+    color: white;
+    cursor: pointer;
 }
