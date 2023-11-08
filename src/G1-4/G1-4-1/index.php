@@ -5,10 +5,12 @@
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <title>Document</title>
             <link rel="stylesheet" href="style.css">
+            <!-- headerのcss読み込み -->
         </head>
         <body>
-            <!-- 遷移部分がheader内の部分になるので出力をheader内で行う -->
             <header>
+                <!-- headerのphp読み込み -->
+
                 <div id="menu_all">
                     <div class="container">
                         <h3>ロゴ・検索部分（後々php読み込みで追加）</h3>
