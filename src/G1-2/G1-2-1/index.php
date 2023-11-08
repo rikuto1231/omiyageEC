@@ -6,19 +6,22 @@
     <link rel="stylesheet" href="css/G1-2-1.css"/>
     <title>Document</title>
 </head>
-
+<body>
     
     
     <!-- <form action="G1-2-2/index.html"> -->
     <h1>ログイン</h1>
-    <p>会員の方はこちらから<br>
-        <b><button onclick="location.href='G1-2-2/index.php'">ログイン</button></p></b>
+    <a><p>会員の方はこちらから<br></a>
+    <a href="" class="btn" onclick="location.href='G1-2-2/index.php'">ログイン</a>
+
+      
     <!-- </form> -->
 
 
        <img src="image/mement.png" alt="めめんと"></img>
-    <p>初めての方はこちらから<br>
-        <button onclick="location.href='../G1-2-3/index.php'">新規会員登録</button>
+    <a><p>初めての方はこちらから<br></a>
+        
+        <a href="" class="btn2" onclick="location.href='../G1-2-3/index.php'">新規会員登録</a>
     </p>
 
 </body>
