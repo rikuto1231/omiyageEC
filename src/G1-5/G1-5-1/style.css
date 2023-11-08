@@ -39,7 +39,7 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    background-color: grey;
+    background-color: rgb(188, 187, 187);
     overflow-x: hidden;
     transition: 0.3s; /* トランジション時間 */
     z-index: 9999;
