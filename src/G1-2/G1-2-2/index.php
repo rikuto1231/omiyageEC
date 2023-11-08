@@ -11,9 +11,9 @@
         <input type="text" name="mail" placeholder="入力してください">
     </p>
     <p>パスワード
-        <input type="text" name="password" placeholder="入力してください">
+        <input type="text" name="password" placeholder="パスワードを入力">
     </p>
-    <p><input type="button" onclick="history.back()" value="ログイン"></p>
-    <p><input type="button" onclick="history.back()" value="戻る"></p>
+    <a href="" class="btn" onclick="location.href='G1-2-2/index.php'">ログイン</a>
+    <a href="" class="btn2" onclick="location.href='../G1-2-3/index.php'">戻る</a>
 </body>
 </html>
