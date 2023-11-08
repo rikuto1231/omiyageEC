@@ -1,27 +1,3 @@
-div{
-    text-align:  center;   
-}
-.kensaku{
-    border: none;
-    background: transparent;
-    cursor: pointer;
-}
-.kensakubar{
-    background: #D9D9D9;
-    width: 200px;
-    margin-left: 35px;
-    margin-top:60px;
-}
-.modoru{
-    width: 308px;
-    height: 54px;
-    border-radius:30px;
-    background-color: #0890F2;
-    border-color:#0890F2 ;
-    color: white;
-    cursor: pointer;
-}
-
 header {
     position: fixed; /* Headerを固定する */
     top: 0; /* ページの上端に固定 */
@@ -31,6 +7,38 @@ header {
     z-index: 999; /* 他の要素よりも前面に表示 */
 }
 
+
+#search_all{
+    text-align: center;
+    width: 100%;
+}
+
+.search_box{
+    text-align: center;
+    background: #d0d0d0;
+    width: 60%;
+    height: 20px;
+    position: relative; /* 相対位置指定 */
+}
+
+.conditions_img{
+    position: absolute; /* 絶対位置指定 */
+    background-color: rgb(218, 67, 21);
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    z-index: 2;
+}
+
+#conditions{
+
+}
+
+
+#title_output{
+    text-align: center;
+    width: 100%;
+}
 
 
 .sidebar {
@@ -47,7 +55,7 @@ header {
 
 
 .sidebar p {
-    margin-left: 10px;
+    margin-left: 10%;
 }
 
 .sidebar.open {
@@ -94,6 +102,7 @@ header {
 /* カートメッセージを左配置 */
 #cart_mess{
     text-align: left;
+    margin-left: 20px;
     /* 位置height追加予定 */
 }
 
@@ -103,5 +112,26 @@ header {
     flex-direction: column;
     justify-content:left;
     align-items: center;
-    margin-left: 5px;
+    margin-left: 10px;
+}
+
+#product_detail{
+    background-color: #778c9c;
+    position: absolute;
+    text-align: center;
+    top: 50%; /* 画面の中央に配置 */
+    transform: translateY(-40%); /* 垂直中央揃え */
+    width: 100%;
+    height: 70%;
+}
+
+/* 続けるボタン */
+.button_next{
+    width: 75%;
+    height: 50px;
+    border-radius:30px;
+    background-color: #0890F2;
+    border-color:#0890F2 ;
+    color: white;
+    cursor: pointer;
 }
