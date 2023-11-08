@@ -11,9 +11,9 @@
     <a href=""><img src="../imge/user.png"width="40" height="40"></a>
     <a href=""><img src="../imge/cart.jpg"width="40" height="40"></a>
     <div>
-    <input type="text" class="kensakubar" ><button class="kensaku"><img src="../imge/kensakku.png" width="20" height="20"></button>
-    <p><a href="" class="joken">絞り込み条件を開く▽</a></p>
-    <h1> ショッピングカート</h1>
+        <input type="text" class="kensakubar" ><button class="kensaku"><img src="../imge/kensakku.png" width="20" height="20"></button>
+        <p><a href="" class="joken">絞り込み条件を開く▽</a></p>
+        <h1> ショッピングカート</h1>
     </div>
     <div>
         <br>
