@@ -8,7 +8,7 @@
 </head>
 <body>
     <h1>会員ログイン</h1>
-    <p>メールアドレス<br>
+    <c><p>メールアドレス<br></c>
         <input type="text" name="mail" placeholder="入力してください">
     </p>
     <p>パスワード<br>
