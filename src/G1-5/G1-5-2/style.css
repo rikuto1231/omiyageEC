@@ -31,7 +31,6 @@ header {
 
 .conditions_img{
     position: absolute; /* 絶対位置指定 */
-    background-color: rgb(218, 67, 21);
     border: none;
     background: transparent;
     cursor: pointer;
