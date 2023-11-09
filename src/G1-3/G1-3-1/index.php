@@ -2,18 +2,16 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>マイページ画面</title>
 </head>
 <body>
-    <a href=""><img src="../imge/user.png"width="40" height="40"></a>
-
-    <header>
+<header>
         <div class="sidebar">
-            <img id="closeButton" src="../img/close.png">
+            <img id="closeButton" src="../imge/close.png">
             <!-- サイドバーの内容 -->
-            <img src="../img/user.png"width="40" height="40">
+            <img src="../imge/user.png"width="40" height="40">
             <p>○○○○さん</p>
             <hr>
             <p><a href="">ポイント</a></p>
@@ -29,8 +27,8 @@
             <p><a href="">ログアウト</a></p>
             <hr>
         </div>
-        <img id="toggleButton"src="../img/user.png"width="40" height="40">
-        <a href=""><img src="../img/cart.jpg" width="40" height="40"></a>
+        <img id="toggleButton"src="../imge/user.png"width="40" height="40">
+        <a href=""><img src="../imge/cart.jpg" width="40" height="40"></a>
     </header>
     <script src="side_ber.js"></script>
 </body>
