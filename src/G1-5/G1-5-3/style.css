@@ -12,12 +12,13 @@ div{
     margin-left: 35px;
     margin-top:60px;
 }
-.modoru{
+.kakunin{
+    margin-left: 30px;
     width: 308px;
     height: 54px;
     border-radius:30px;
-    background-color: #0890F2;
-    border-color:#0890F2 ;
+    background-color: #E75D5D;
+    border-color:#E75D5D ;
     color: white;
     cursor: pointer;
 }
