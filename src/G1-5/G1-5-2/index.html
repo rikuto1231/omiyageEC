@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -28,36 +27,42 @@
             <hr>
             <p><a href="">ログアウト</a></p>
         </div>
-        <img id="toggleButton"src="../imge/user.png"width="40" height="40">
+        <img id="toggleButton" src="../imge/user.png" width="40" height="40">
         <a href="">
             <img src="../imge/cart.jpg" width="40" height="40">
         </a>
 
         <div id="search_all">
             <input type="text" class="search_box" placeholder="検索">
-
             <button class="conditions_img">
                 <img src="../imge/kensakku.png" width="20" height="20">
             </button>
-
             <p><a href="" id="conditions">絞り込み条件を開く▽</a></p>
         </div>
 
     </header>
 
-
     <!-- 商品表示範囲 -->
     <div id="product_detail">
         <h1 id="title_output"> ショッピングカート</h1>
-
+        
         <p id="cart_mess">カートに入っているアイテム</p>
         <!-- 商品情報とコンテナの配置構築 -->
-        <img class="img_product" src="../imge/cart.jpg" width="100" height="100">
+        <div class="product">
+            <img class="img_product" src="../imge/cart.jpg" width="100" height="100">
+            <button class="button_next">ショッピングを続ける</button>
+        </div>
 
-
-        <button class="button_next">ショッピングを続ける</button>
+        <div id="num_output">
+            <h4>付与ポイント  </h4>
+            <!-- phpポイント計算部分 -->
+            <p>小計（税込）</p>
+            <hr>
+            <p>送料(税込)</p>
+            <hr>
+            <h4>合計(税込)</h4>
+        </div>
     </div>
     <script src="side_ber.js"></script>
 </body>
-
 </html>
