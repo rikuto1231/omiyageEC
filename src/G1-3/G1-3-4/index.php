@@ -33,7 +33,7 @@
     <script src="side_ber.js"></script>
 
 
-    <img src="../image/user.png">
+    <img src="../imge/user.png">
     <h1>ポイント情報</h1>
     <button type="submit">戻る</button>
 </body>
