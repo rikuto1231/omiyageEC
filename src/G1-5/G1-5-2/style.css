@@ -1,36 +1,52 @@
-div{
-    text-align:  center;   
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
 }
-.kensaku{
-    border: none;
-    background: transparent;
-    cursor: pointer;
-}
-.kensakubar{
-    background: #D9D9D9;
-    width: 200px;
-    margin-left: 35px;
-    margin-top:60px;
-}
-.modoru{
-    width: 308px;
-    height: 54px;
-    border-radius:30px;
-    background-color: #0890F2;
-    border-color:#0890F2 ;
-    color: white;
-    cursor: pointer;
-}
+
 
 header {
     position: fixed; /* Headerを固定する */
     top: 0; /* ページの上端に固定 */
     left: 0; /* ページの左端に固定 */
-    width: 100%; /* ページ幅いっぱいに広げる */
+    width: 100%; /* ページ幅広げる */
     padding: 10px; /* 上下左右の余白 */
     z-index: 999; /* 他の要素よりも前面に表示 */
 }
 
+
+#search_all{
+    text-align: center;
+    width: 100%;
+}
+
+.search_box{
+    text-align: center;
+    background: #d0d0d0;
+    width: 60%;
+    height: 20px;
+    position: relative; /* 相対位置指定 */
+}
+
+.conditions_img{
+    position: absolute; /* 絶対位置指定 */
+    background-color: rgb(218, 67, 21);
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    z-index: 2;
+}
+
+#conditions{
+
+}
+
+
+#title_output{
+    text-align: center;
+    width: 100%;
+}
 
 
 .sidebar {
@@ -47,7 +63,7 @@ header {
 
 
 .sidebar p {
-    margin-left: 10px;
+    margin-left: 10%;
 }
 
 .sidebar.open {
@@ -89,4 +105,63 @@ header {
     width: 40px;
     height: 40px;
     filter: invert(100%); /* 画像の白黒を反転 */
+}
+
+
+/* カートメッセージを左配置 */
+#cart_mess{
+    text-align: left;
+    margin-left: 20px;
+}
+
+#title_output {
+    text-align: center;
+    width: 100%;
+}
+
+#product_detail {
+    overflow-y: auto;
+    max-height: 70vh;
+    padding: 20px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 100%;
+}
+
+.product {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.img_product {
+    width: 100px;
+    height: 100px;
+    margin-left: 10px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+button.button_next {
+    width: 75%;
+    height: 50px;
+    border-radius: 30px;
+    background-color: #0890F2;
+    border-color: #0890F2;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    display: block;
+    margin: 20px auto;
+}
+
+#num_output {
+    text-align: left;
+    width: 100%;
+}
+
+#num_output p, #num_output h4 {
+    margin: 0;
 }
