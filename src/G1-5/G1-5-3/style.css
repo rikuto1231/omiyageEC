@@ -91,3 +91,13 @@ header {
     height: 40px;
     filter: invert(100%); /* 画像の白黒を反転 */
 }
+.payway{
+    margin-left: 50px;
+}
+.info{
+    background-color: rgb(220, 216, 216);
+    margin-left: 10px;
+}
+.modoru{
+    margin-left: 90px;
+}
