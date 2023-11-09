@@ -7,7 +7,7 @@
     <title>マイページ画面</title>
 </head>
 <body>
-    <a href=""><img src="../G1-3/G1-3-1/imge/user.png"width="40" height="40"></a>
+    <a href=""><img src="../imge/user.png"width="40" height="40"></a>
 
     <header>
         <div class="sidebar">
