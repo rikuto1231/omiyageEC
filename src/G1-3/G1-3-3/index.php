@@ -31,9 +31,18 @@
         <a href=""><img src="../imge/cart.jpg" width="40" height="40"></a>
     </header>
     <script src="side_ber.js"></script>
-
-    <h1>購入履歴</h1>
-
-    <button type="submit">戻る</button>
+    <div>
+        <h1> 購入履歴</h1>
+    </div>
+    <div>
+        <br>
+        <br>
+        <br>
+        <p>カートは空です</p>
+        <br>
+        <br>
+        <br>
+        <button class="modoru">戻る</button>
+    </div>
 </body>
 </html>
