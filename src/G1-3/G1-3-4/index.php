@@ -28,7 +28,6 @@
             <hr>
         </div>
         <img id="toggleButton"src="../imge/user.png"width="40" height="40">
-        <a href=""><img src="../imge/cart.jpg" width="40" height="40"></a>
     </header>
     <script src="side_ber.js"></script>
 
