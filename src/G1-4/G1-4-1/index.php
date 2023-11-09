@@ -54,7 +54,23 @@
                         <input type="checkbox" id="gosen" name="gosen" />
                         <label for="gosen">5001円～</label>
                     </div>
-                </div>
+                    <h2> 都道府県</h2>
+                    <div class="Prefecture">
+                        <input type="checkbox" id="hokkaido" name="hokkaodp" />
+                        <label for="hokkaido">北海道</label>
+                    </div>
+                    <div class="Prefecture">
+                        <input type="checkbox" id="aomori" name="aomori" />
+                        <label for="aomori">青森</label>
+                    </div>
+                    <div class="Prefecture">
+                        <input type="checkbox" id="akita" name="akita" />
+                        <label for="akita">秋田</label>
+                    <div class="Prefecture">
+                        <input type="checkbox" id="iwate" name="iwate" />
+                        <label for="iwate">岩手</label>
+                    </div>
+                    <input type ="submit"value= 検索/> 
             </header>
         </body>
         </html>
