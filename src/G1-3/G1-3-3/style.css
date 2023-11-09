@@ -1,12 +1,32 @@
-body{
-    background-color: #333;
+div{
+    text-align:  center;   
+}
+.kensaku{
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+.kensakubar{
+    background: #D9D9D9;
+    width: 200px;
+    margin-left: 35px;
+    margin-top:60px;
+}
+.modoru{
+    width: 308px;
+    height: 54px;
+    border-radius:30px;
+    background-color: #0890F2;
+    border-color:#0890F2 ;
+    color: white;
+    cursor: pointer;
 }
 
 header {
     position: fixed; /* Headerを固定する */
     top: 0; /* ページの上端に固定 */
     left: 0; /* ページの左端に固定 */
-    width: 100%; /* ページフルにだす */
+    width: 100%; /* ページ幅いっぱいに広げる */
     padding: 10px; /* 上下左右の余白 */
     z-index: 999; /* 他の要素よりも前面に表示 */
 }
@@ -19,7 +39,7 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #333;
+    background-color: rgb(188, 187, 187);
     overflow-x: hidden;
     transition: 0.3s; /* トランジション時間 */
     z-index: 9999;
@@ -28,7 +48,6 @@ header {
 
 .sidebar p {
     margin-left: 10px;
-    color: #ffffff;
 }
 
 .sidebar.open {
@@ -40,7 +59,7 @@ header {
     border-radius: 50%; /* 円形のボタン */
     width: 40px;
     height: 40px;
-    filter: invert(100%); /* 画像の白黒を反転 */
+ /* 画像の白黒を反転 */
 }
 
 #closeButton{
