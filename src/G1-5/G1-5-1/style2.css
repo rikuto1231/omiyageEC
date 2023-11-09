@@ -9,19 +9,18 @@ div{
 .kensakubar{
     background: #D9D9D9;
     width: 200px;
-    margin-left: 35px;
-    margin-top:60px;
+    margin-left: 50px;
 }
-.kakunin{
-    margin-left: 30px;
+.modoru{
     width: 308px;
     height: 54px;
     border-radius:30px;
-    background-color: #E75D5D;
-    border-color:#E75D5D ;
+    background-color: #0890F2;
+    border-color:#0890F2 ;
     color: white;
     cursor: pointer;
 }
+
 
 header {
     position: fixed; /* Headerを固定する */
@@ -40,7 +39,7 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    background-color: rgb(188, 187, 187);
+    background-color: grey;
     overflow-x: hidden;
     transition: 0.3s; /* トランジション時間 */
     z-index: 9999;
@@ -90,14 +89,4 @@ header {
     width: 40px;
     height: 40px;
     filter: invert(100%); /* 画像の白黒を反転 */
-}
-.payway{
-    margin-left: 50px;
-}
-.info{
-    background-color: rgb(220, 216, 216);
-    margin-left: 10px;
-}
-.modoru{
-    margin-left: 90px;
 }
