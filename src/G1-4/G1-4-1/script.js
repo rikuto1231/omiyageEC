@@ -18,8 +18,51 @@ new Vue({
         prefectures: [
             { id: 'hokkaido', name: '北海道' },
             { id: 'aomori', name: '青森' },
-            { id: 'akita', name: '秋田' },
-            { id: 'iwate', name: '岩手' },
+            { id: 'akita', name: '岩手' },
+            { id: 'iwate', name: '宮城' },
+            { id: 'miyagi', name: '秋田' },
+            { id: 'yamagata', name: '山形' },
+            { id: 'hukusima', name: '福島' },
+            { id: 'niigata', name: '茨城' },
+            { id: '', name: '栃木' },
+            { id: '', name: '群馬' },
+            { id: '', name: '埼玉' },
+            { id: '', name: '千葉' },
+            { id: '', name: '東京都' },
+            { id: '', name: '神奈川' },
+            { id: '', name: '新潟' },
+            { id: '', name: '富山' },
+            { id: '', name: '石川' },
+            { id: '', name: '福井' },
+            { id: '', name: '山梨' },
+            { id: '', name: '長野' },
+            { id: '', name: '岐阜' },
+            { id: '', name: '静岡' },
+            { id: '', name: '愛知' },
+            { id: '', name: '三重' },
+            { id: '', name: '滋賀' },
+            { id: '', name: '京都' },
+            { id: '', name: '大阪' },
+            { id: '', name: '兵庫' },
+            { id: '', name: '奈良' },
+            { id: '', name: '和歌山' },
+            { id: '', name: '鳥取' },
+            { id: '', name: '島根' },
+            { id: '', name: '岡山' },
+            { id: '', name: '広島' },
+            { id: '', name: '山口' },
+            { id: '', name: '徳島' },
+            { id: '', name: '香川' },
+            { id: '', name: '愛媛' },
+            { id: '', name: '高知' },
+            { id: '', name: '福岡' },
+            { id: '', name: '佐賀' },
+            { id: '', name: '長崎' },
+            { id: '', name: '熊本' },
+            { id: '', name: '大分' },
+            { id: '', name: '宮崎' },
+            { id: '', name: '鹿児島' },
+            { id: '', name: '沖縄' }
             // 他の都道府県を追加
         ],
         selectedCategories: [],
@@ -28,7 +71,8 @@ new Vue({
     },
     methods: {
         search() {
-            // 検索処理追加は未定
+            // 選択されたカテゴリ、価格、都道府県に基づいて検索処理を実行
+            // ここに検索処理を追加
         }
     }
 });

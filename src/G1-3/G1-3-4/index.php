@@ -28,13 +28,22 @@
             <hr>
         </div>
         <img id="toggleButton"src="../imge/user.png"width="40" height="40">
-        <a href=""><img src="../imge/cart.jpg" width="40" height="40"></a>
     </header>
     <script src="side_ber.js"></script>
 
-
-    <img src="../imge/user.png">
-    <h1>ポイント情報</h1>
-    <button type="submit">戻る</button>
+    <div>
+        <h1>ポイント情報</h1>
+    </div>
+    <div>
+        <br>
+        <br>
+        <p>20XX/X/X</p><p>〇〇ポイント付与</p>
+        <br>
+        <br>
+        <p>20XX/X/X</p><p>〇〇ポイント付与</p>
+        <br>
+        <br>
+        <button class="modoru">戻る</button>
+    </div>
 </body>
 </html>
