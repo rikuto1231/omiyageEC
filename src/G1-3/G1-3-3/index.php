@@ -31,7 +31,10 @@
     </header>
     <script src="side_ber.js"></script>
     <div>
-        <h1> 購入履歴</h1>
+        <br>
+        <br>
+        <p style="text-align: left">
+        <h1> 購入履歴</h1></p>
     </div>
     <div>
         <br>
