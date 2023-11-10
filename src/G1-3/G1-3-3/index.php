@@ -41,18 +41,18 @@
         <br>
         <p>〇〇〇〇〇</p>
         <p style="text-align: right">
-        数量&emsp;&emsp;</p>
+        数量&emsp;&emsp;&emsp;</p>
         <p>￥○○○</p>
         <p style="text-align: right">
-        20XX/X/X&emsp;&emsp;</p>
+        20XX/X/X&emsp;&emsp;&emsp</p>
         <br>
         <br>
         <p>〇〇〇〇〇</p>
         <p style="text-align: right">
-        数量</p>
+        数量&emsp;&emsp;&emsp;</p>
         <p>￥○○○</p>
         <p style="text-align: right">
-        20XX/X/X</p>
+        20XX/X/X&emsp;&emsp;&emsp;</p>
         <br>
         <br>
         <br>
