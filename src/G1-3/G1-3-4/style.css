@@ -90,3 +90,6 @@ header {
     height: 40px;
     filter: invert(100%); /* 画像の白黒を反転 */
 }
+div{
+    text-align:  center;   
+}
