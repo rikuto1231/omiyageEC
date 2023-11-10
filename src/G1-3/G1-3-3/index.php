@@ -34,7 +34,7 @@
         <br>
         <br>
         <h1 style="text-align: left">
-        購入履歴</h1>
+        &emsp;購入履歴</h1>
     </div>
     <div>
         <br>
