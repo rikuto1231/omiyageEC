@@ -8,11 +8,11 @@
 </head>
 <body>
     <h1>会員ログイン</h1>
-    <c><p>メールアドレス<br></c>
-        <input type="text" name="mail" placeholder="入力してください">
+    <p><m>メールアドレス</m><br>
+        <input type="text" name="mail" placeholder="入力してください" class="txt1">
     </p>
-    <p>パスワード<br>
-        <input type="text" name="password" placeholder="パスワードを入力">
+    <p><pass>パスワード</pass><br>
+        <input type="text" name="password" placeholder="パスワードを入力" class="txt2">
     </p>
     <p><a href="" class="btn" onclick="location.href='G1-2-2/index.php'">ログイン</a></p>
     <p><a href="" class="btn2" onclick="location.href='../G1-2-3/index.php'">戻る</a></p>
