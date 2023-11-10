@@ -33,8 +33,8 @@
     <div>
         <br>
         <br>
-        <p style="text-align: left">
-        <h1> 購入履歴</h1></p>
+        <h1 style="text-align: left">
+        購入履歴</h1>
     </div>
     <div>
         <br>
