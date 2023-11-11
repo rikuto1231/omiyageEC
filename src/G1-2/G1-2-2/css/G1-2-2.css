@@ -1,22 +1,5 @@
 @charset "utf-8";
-.log{
-    text-align: center;
-}
-.mail{
-    text-align:left;
-}
 
-.pass{
-    top:166px;
-    left:19px;
-}
-
-.txt1{
-    width:250px;
-}
-.txt2{
-    width:250px;
-}
 
 a.btn{
     width: 230px;
