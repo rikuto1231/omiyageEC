@@ -31,21 +31,28 @@
     </header>
     <script src="side_ber.js"></script>
     <div>
-        <h1> 購入履歴</h1>
+        <br>
+        <br>
+        <h1 style="text-align: left">
+        &emsp;購入履歴</h1>
     </div>
     <div>
         <br>
         <br>
         <p>〇〇〇〇〇</p>
-        <p>数量</p>
+        <p style="text-align: right">
+        数量&emsp;&emsp;&emsp;</p>
         <p>￥○○○</p>
-        <p>20XX/X/X</p>
+        <p style="text-align: right">
+        20XX/X/X&emsp;&emsp;&emsp;</p>
         <br>
         <br>
         <p>〇〇〇〇〇</p>
-        <p>数量</p>
+        <p style="text-align: right">
+        数量&emsp;&emsp;&emsp;</p>
         <p>￥○○○</p>
-        <p>20XX/X/X</p>
+        <p style="text-align: right">
+        20XX/X/X&emsp;&emsp;&emsp;</p>
         <br>
         <br>
         <br>

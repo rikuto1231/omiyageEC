@@ -28,6 +28,7 @@
     <p>メールアドレス</p>
 <div>
     <button class="henko">変更</button>
+    <br>
     <button class="modoru">マイページに戻る</button>
 </div>
 </body>

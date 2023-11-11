@@ -32,7 +32,10 @@
     <script src="side_ber.js"></script>
 
     <div>
-        <h1>ポイント情報</h1>
+    <br>
+    <br>
+        <h1 style="text-align: left">
+        &emsp;ポイント情報</h1>
     </div>
     <div>
         <br>
