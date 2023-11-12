@@ -1,4 +1,3 @@
-/* style.css */
 html,body {
    margin: 0;
    padding: 0;
@@ -6,14 +5,14 @@ html,body {
 }
 
 body {
-   background-color: #dd5555;
+   background-color: #dd5555; /*範囲確認用（消しても大丈夫）*/
 }
 
 .slider-container {
-   background-color: aqua;
+   background-color: aqua; /*範囲確認用(消しても大丈夫)*/
    position: relative;
    text-align: center;
-   top: 30vh; /* この部分を変更して縦方向の位置を調整 */
+   top: 30vh; /* 縦方向の位置を調整(vhだけ対応) */
 }
 
 .slider {
@@ -34,7 +33,7 @@ body {
    position: absolute;
    left: 50%;
    transform: translateX(-50%);
-   justify-content: space-between; /* ボタンを両端に配置 */
+   justify-content: space-between; /* ボタン両端に配置 */
 }
 
 .prev-button,
