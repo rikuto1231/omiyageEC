@@ -32,15 +32,18 @@
     <script src="side_ber.js"></script>
 
     <div>
-        <h1>ポイント情報</h1>
+    <br>
+    <br>
+        <h1 style="text-align: left">
+        &emsp;ポイント情報</h1>
     </div>
     <div>
         <br>
         <br>
-        <p>20XX/X/X</p><p>〇〇ポイント付与</p>
+        <p>20XX/X/X &emsp;&emsp;〇〇ポイント付与</p>
         <br>
         <br>
-        <p>20XX/X/X</p><p>〇〇ポイント付与</p>
+        <p>20XX/X/X &emsp;&emsp;〇〇ポイント付与</p>
         <br>
         <br>
         <button class="modoru">戻る</button>
