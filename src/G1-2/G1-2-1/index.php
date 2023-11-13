@@ -14,11 +14,11 @@
     <a><p>会員の方はこちらから<br></a>
     <a href="../G1-2-2/index.php" class="btn">ログイン</a>
 
-      
+
     <!-- </form> -->
 
 
-       <img src="image/mement.png" alt="めめんと"></img>
+    <img src="image/mement.png" alt="めめんと"></img>
     <a><p>初めての方はこちらから<br></a>
         
         <a href="../G1-2-3/index.php" class="btn2">新規会員登録</a>
