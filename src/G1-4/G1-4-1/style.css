@@ -19,6 +19,65 @@ header {
     height: 100vh; /* ビューポートの高さ全体*/
 }
 
+.sidebar {
+    width: 0; /* 初期状態では非表示 */
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(188, 187, 187);
+    overflow-x: hidden;
+    transition: 0.3s; /* トランジション時間 */
+    z-index: 9999;
+}
+
+
+.sidebar p {
+    margin-left: 10px;
+}
+
+.sidebar.open {
+    width: 80%; /* 展開時の幅 */
+}
+
+
+#toggleButton{
+    border-radius: 50%; /* 円形のボタン */
+    width: 40px;
+    height: 40px;
+ /* 画像の白黒を反転 */
+}
+
+#closeButton{
+    margin-top: 8px;
+    margin-left: 8px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; /* 円形のボタン */
+    filter: invert(100%); /* 画像の白黒を反転 */
+}
+
+#listButton{
+    position: absolute;
+    right: 18%;
+    margin-top: 8px;
+    margin-right: 2px;
+    width: 40px;
+    height: 40px;
+    filter: invert(100%); /* 画像の白黒を反転 */
+}
+
+#addButton{
+    position: absolute;
+    right: 5%;
+    margin-top: 8px;
+    margin-right: 8px;
+    width: 40px;
+    height: 40px;
+    filter: invert(100%); /* 画像の白黒を反転 */
+}
+
+
 #menu_all {
     width: 100%;
     display: flex;
