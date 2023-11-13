@@ -10,7 +10,7 @@
     <div id="app">
         <header>
         <?php
-            require '../../php/header.php';
+            require '../../common/php/header.php';
         ?>
 
             <div id="menu_all">
@@ -28,11 +28,16 @@
                     <label :for="priceRange.id">{{ priceRange.name }}</label>
                 </div>
 
+                <!-- 都道府県の横並び表示 -->
                 <h2>都道府県</h2>
-                <div class="Prefecture" v-for="prefecture in prefectures" :key="prefecture.id">
-                    <input type="checkbox" :id="prefecture.id" :name="prefecture.id" v-model="selectedPrefectures" :value="prefecture.id" />
-                    <label :for="prefecture.id">{{ prefecture.name }}</label>
+                <div class="prefecture-container">
+                    <div v-for="prefecture in prefectures" :key="prefecture.id" class="Prefecture">
+                        <input type="checkbox" :id="prefecture.id" :name="prefecture.id" v-model="selectedPrefectures" :value="prefecture.id" />
+                        <label :for="prefecture.id">{{ prefecture.name }}</label>
+                    </div>
                 </div>
+
+
                 
                 <button @click="search">検索</button>
             </div>

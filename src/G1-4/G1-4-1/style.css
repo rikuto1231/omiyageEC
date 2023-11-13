@@ -9,30 +9,33 @@ body {
 
 /* 上部header */
 header {
-    position: fixed; /* Headerを固定する */
-    top: 0; /* ページの上端に固定 */
-    left: 0; /* ページの左端に固定 */
-    width: 100%; /* ページ幅いっぱいに広げる */
-    padding: 10px; /* 上下左右の余白 */
-    z-index: 999; /* 他の要素よりも前面に表示 */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    z-index: 999;
+    overflow: auto; /* スクロール対応 */
+    height: 100vh; /* ビューポートの高さ全体*/
 }
 
-#menu_all{
-    /* 要素指定の別方法考えとくwid,hei */
+#menu_all {
     width: 100%;
-    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: auto; 
+    overflow: auto; 
 }
 
 .container {
-    margin-top: 5px; 
+    margin-top: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+    height: auto;
 }
 
 
@@ -72,3 +75,19 @@ img {
     height: auto;
     margin-top: 10px; /* 画面上部からの余白を追加 */
 }
+
+.prefecture-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Prefecture {
+    margin-right: 5px; /* 都道府県ごとの余白（適宜調整） */
+    margin-bottom: 10px; /* 行ごとの余白（適宜調整） */
+    margin-left: 5px;
+    flex-basis: calc(33.33% - 10px); /* 1行に3つまで表示するための幅調整 */
+}
+
+
+
+
