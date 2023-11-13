@@ -7,7 +7,8 @@
     <title>登録情報画面</title>
 </head>
 <body>
-    <h1>登録情報</h1>
+    <h1 style="text-align: center">
+        登録情報</h1>
     
     <p>お名前</p>
     
