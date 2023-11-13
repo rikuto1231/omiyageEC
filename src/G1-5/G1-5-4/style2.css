@@ -1,0 +1,30 @@
+.payway{
+    margin-left: 50px;
+}
+.info{
+    margin-left: 10px;
+}
+.modoru{
+    margin-left: 120px;
+}
+.kensaku{
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+.kensakubar{
+    background: #D9D9D9;
+    width: 200px;
+    margin-left: 35px;
+    margin-top:60px;
+}
+.kakunin{
+    margin-left: 30px;
+    width: 308px;
+    height: 54px;
+    border-radius:30px;
+    background-color: #E75D5D;
+    border-color:#E75D5D ;
+    color: white;
+    cursor: pointer;
+}
