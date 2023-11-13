@@ -29,6 +29,7 @@
 <div>
     <button class="henko">変更</button>
     <br>
+    <br>
     <button class="modoru">マイページに戻る</button>
 </div>
 </body>
