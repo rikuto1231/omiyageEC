@@ -1,5 +1,5 @@
 <!-- header.php -->
-<header>
+
     <div class="sidebar">
         <img id="closeButton" src="../imge/close.png">
         <hr>
@@ -33,4 +33,4 @@
         </button>
         <p><a href="" id="conditions">絞り込み条件を開く▽</a></p>
     </div>
-</header>
+
