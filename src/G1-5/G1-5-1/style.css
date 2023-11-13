@@ -107,6 +107,7 @@ header {
     max-height: 70vh;
     padding: 20px;
     position: absolute;
+    text-align: center;
     top: 50%;
     left: 0;
     transform: translateY(-50%);
