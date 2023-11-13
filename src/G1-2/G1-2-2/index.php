@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>会員ログイン</h1>
+    <div id="log"><h1>会員ログイン</h1></div>
     <p><div id="mail">メールアドレス</div><br>
         <input type="text" name="mail" placeholder="入力してください" class="txt1">
     </p>
