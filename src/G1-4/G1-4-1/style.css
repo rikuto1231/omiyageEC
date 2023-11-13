@@ -3,8 +3,18 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f5f5f5;
+    background-color: hsl(0, 0%, 96%);
 
+}
+
+/* 上部header */
+header {
+    position: fixed; /* Headerを固定する */
+    top: 0; /* ページの上端に固定 */
+    left: 0; /* ページの左端に固定 */
+    width: 100%; /* ページ幅いっぱいに広げる */
+    padding: 10px; /* 上下左右の余白 */
+    z-index: 999; /* 他の要素よりも前面に表示 */
 }
 
 #menu_all{

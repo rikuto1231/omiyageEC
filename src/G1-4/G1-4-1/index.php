@@ -9,9 +9,12 @@
 <body>
     <div id="app">
         <header>
+        <?php
+            require '../../php/header.php';
+        ?>
+
             <div id="menu_all">
                 <div class="container">
-                    <h3>ロゴ・検索部分（後々php読み込みで追加）</h3>
                 </div>
                 <h2>カテゴリ</h2>
                 <div class="category" v-for="category in categories" :key="category.id">

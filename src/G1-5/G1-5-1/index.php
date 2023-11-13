@@ -31,7 +31,8 @@
         <img id="toggleButton"src="../imge/user.png"width="40" height="40">
     
     </header>
-    <script src="side_ber.js"></script>
+    <!-- scriptURL変更したので問題あったら調整 -->
+    <script src="../../common/js/sidebar.js"></script>
     <div>
         <input type="text" class="kensakubar" ><button class="kensaku"><img src="../imge/kensakku.png" width="20" height="20"></button>
         <p><a href="" class="joken">絞り込み条件を開く▽</a></p>
