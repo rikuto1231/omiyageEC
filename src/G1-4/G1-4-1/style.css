@@ -17,6 +17,7 @@ header {
     z-index: 999;
     overflow: auto; /* スクロール対応 */
     height: 100vh; /* ビューポートの高さ全体*/
+    text-align: center;
 }
 
 .sidebar {
