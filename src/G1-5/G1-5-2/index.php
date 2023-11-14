@@ -47,7 +47,7 @@
             <p id="cart_mess">カートに入っているアイテム</p>
             <img class="img_product" src="../imge/cart.jpg" width="100" height="100">
             <div class="in_cart">
-            <h4>○○○○○○</h4>
+            <h4>商品名</h4>
             <select name="number">
                 <?php
                 for($i = 1; $i <= 10; $i++) {
@@ -55,7 +55,7 @@
                 }
                 ?>
             </select>
-            <h4>￥○○○○○
+            <h4>￥値段
             <button>削除</button></h4>
             </div>
             <button class="button_next">ショッピングを続ける</button>
