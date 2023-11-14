@@ -67,7 +67,7 @@
             <p>送料(税込)</p>
             <hr>
             <h4>合計(税込)</h4>
-            <button class="button_reg">ショッピングを続ける</button>
+            <button class="button_reg">ご購入手続き</button>
         </div>
     </div>
     <!-- scriptURL変更したので問題あったら調整 -->
