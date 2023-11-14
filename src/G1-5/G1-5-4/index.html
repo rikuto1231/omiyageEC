@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
     <title>ご注文内容確認</title>
 </head>
 <body>
@@ -11,7 +12,7 @@
         <div class="sidebar">
             <img id="closeButton" src="../imge/close.png">
             <!-- サイドバーの内容 -->
-            <img src="../imge/user.png"width="40" height="40">
+            <hr>
             <p>○○○○さん</p>
             <hr>
             <p><a href="">ポイント</a></p>
@@ -25,19 +26,24 @@
             <p><a href="">ログイン</a></p>
             <hr>
             <p><a href="">ログアウト</a></p>
-            <hr>
         </div>
-        <img id="toggleButton"src="../imge/user.png"width="40" height="40">
-        <a href=""><img src="../imge/cart.jpg" width="40" height="40"></a>
+        <img id="toggleButton" src="../imge/user.png" width="40" height="40">
+        <a href="">
+            <img id="cart_button" src="../imge/cart.jpg" width="40" height="40">
+        </a>
+        <div id="search_all">
+            <input type="text" class="search_box" placeholder="検索">
+            <button class="conditions_img">
+                <img src="../imge/kensakku.png" width="20" height="20">
+            </button>
+            <p><a href="" id="conditions">絞り込み条件を開く▽</a></p>
+        </div>
     </header>
-    <script src="side_ber.js"></script>
-    <div>
-        <input type="text" class="kensakubar" ><button class="kensaku"><img src="../imge/kensakku.png" width="20" height="20"></button>
-        <p><a href="" class="joken">絞り込み条件を開く▽</a></p>
     </div>
+    <div  id="product_detail">
     <h1>確認画面</h1>
     <hr>
-    <form action="">
+    <form action="../G1-5-5/index.html">
     <p>　お名前<span class="info">○○○○○○</span></p>
     <p>　郵便番号<span class="info">○○○○○○</span></p>
     <p>　都道府県<span class="info">○○○○○○</span></p>
@@ -48,7 +54,9 @@
     <hr>
     <p class="payway">○○○○</p>
     <button class="kakunin">購入</button>
-    <p class="modoru"><a href="../G1-5-2/index.html">ご購入手続きに戻る</a></p>
+    <p class="modoru"><a href="../G1-5-3/index.html">ご購入手続きに戻る</a></p>
     </form>
+</div>
+<script src="../../common/js/side_ber.js"></script>
 </body>
 </html>
