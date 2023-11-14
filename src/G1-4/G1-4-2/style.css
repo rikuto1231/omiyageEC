@@ -1,14 +1,14 @@
-
 .flexbox {
-    display: flex;
-    flex-wrap: nowrap;/*flexアイテムを折り返さない*/
-    border: 1px solid #000;
-    width: 50%;
-    text-align: center;
-  }
-  
-  .flex-item {
-    background: orange;
-    border: 1px solid #000;
-    width: 25%;
-  }
+  display: flex;
+  flex-wrap: wrap; /* flexアイテムを折り返すように変更 */
+  justify-content: space-between; /* アイテム間のスペースを均等に配置 */
+  border: 1px solid #000;
+  width: 50%;
+  text-align: center;
+  margin-bottom: 10px; /* 行ごとの余白（適宜調整） */
+}
+
+.item {
+  flex-basis: calc(33.33% - 10px); /* 1行に3つまで表示するための幅調整 */
+  margin-bottom: 10px; /* アイテムごとの余白（適宜調整） */
+}
