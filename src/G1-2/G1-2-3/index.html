@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
     <title>会員登録</title>
 </head>
 <body>
@@ -31,7 +30,7 @@
             <input type="text" id="furiganaFirstName" name="furiganaFirstName" class="form-control" required>
         </div>
 
-        <!-- 郵便番号（Ajaxで住所検索(優先じゃなくいい)) -->
+        <!-- 郵便番号（Ajaxで住所検索) -->
         <div class="form-group">
             <label for="postalCode">郵便番号:</label>
             <input type="text" id="postalCode" name="postalCode" class="form-control" required>
@@ -107,7 +106,8 @@
         </div>
 
     </form>
-
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
 
