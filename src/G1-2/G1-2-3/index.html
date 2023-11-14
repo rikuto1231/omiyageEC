@@ -33,9 +33,9 @@
         <!-- 郵便番号（Ajaxで住所検索) -->
         <div class="form-group">
             <label for="postalCode">郵便番号:</label>
-            <input type="text" id="postalCode" name="postalCode" class="form-control" required>
+            <input type="text" id="postalCode" name="postalCode" class="form-control" ref="postalCode" required>
             <!-- ここに郵便番号検索フォーム（Ajax使用）を配置 -->
-            <button type="button" onclick="searchAddress()">住所検索</button>
+            <button type="button" @click="searchAddress">住所検索</button>
         </div>
 
         <!-- 住所（都道府県） -->

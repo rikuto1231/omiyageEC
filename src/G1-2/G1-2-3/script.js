@@ -1,5 +1,5 @@
-
-const app = new Vue({
+// JavaScript (script.js)
+new Vue({
     el: '#form_all',
     data: {
         prefectures: [
@@ -10,6 +10,18 @@ const app = new Vue({
             '島根県', '岡山県', '広島県', '山口県', '徳島県', '香川県', '愛媛県', '高知県',
             '福岡県', '佐賀県', '長崎県', '熊本県', '大分県', '宮崎県', '鹿児島県', '沖縄県'
         ],
-        selectedPrefecture: '選択してください'
-    }
+        selectedPrefecture: '選択してください',
+        selectedCity: ''
+    },
+    methods: {
+        searchAddress() {
+            // 入力された郵便番号を取得
+            const postalCode = this.$refs.postalCode.value;
+
+            
+            // 以下は仮のコードです
+            // APIから取得した住所を設定
+            this.selectedCity = '取得した住所';
+        },
+    },
 });
