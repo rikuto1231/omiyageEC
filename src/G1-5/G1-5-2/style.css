@@ -136,6 +136,7 @@ header {
     margin-left: 10px;
     display: inline-block;
     vertical-align: top;
+    float: left;
 }
 
 button.button_next {
@@ -171,4 +172,9 @@ button.button_next {
     text-align: center;
     display: block;
     margin: 20px auto 0;
+}
+
+.in_cart{
+    margin-left: 30px;
+    
 }

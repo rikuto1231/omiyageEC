@@ -83,12 +83,13 @@ CREATE TABLE Reservation(
 );
 
 -- レビューテーブル作成sql
-CREATE TABLE Review(
-    user_id int not null,
-    merchandise_id int not null,
-    review_num int not null,
-    review_title varchar(20) not null,
-    review_text varchar(100) not null,
-    post date not null,
-    
+CREATE TABLE Review (
+    user_id INT NOT NULL,
+    merchandise_id INT NOT NULL,
+    review_num INT NOT NULL,
+    review_title VARCHAR(20) NOT NULL,
+    review_text VARCHAR(100) NOT NULL,
+    post DATE NOT NULL,
+        FOREIGN KEY (user_id) REFERENCES Users(user_id),
+    FOREIGN KEY (merchandise_id) REFERENCES Merchandise(merchandise_id)
 );
