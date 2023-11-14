@@ -7,14 +7,14 @@
     <title>Document</title>
 </head>
 <body>
-    <h1><div id="log">会員ログイン</div></h1>
+    <h1>会員ログイン</h1>
     <p><div id="mail">メールアドレス</div><br>
-        <input type="text" name="mail" placeholder="入力してください" class="txt1">
+        <div class="box1"><input type="text" class="m" placeholder="入力してください" ></div>
     </p>
     <p><div id="pass" >パスワード</div><br>
-       <input type="text" name="password" placeholder="パスワードを入力" class="txt2">
+        <div class="box2"><input type="text" class="p" placeholder="パスワードを入力" ></div>
     </p>
-    <p><a href="" class="btn" onclick="location.href='G1-2-2/index.php'">ログイン</a></p>
-    <p><a href="" class="btn2" onclick="location.href='../G1-2-3/index.php'">戻る</a></p>
+    <p><a href="" class="btn" onclick="location.href='G1-1/index.php'">ログイン</a></p>
+    <p><a href="" class="btn2" onclick="location.href='../G1-2-1/index.php'">戻る</a></p>
 </body>
 </html>
