@@ -1,0 +1,20 @@
+.payway{
+    margin-left: 50px;
+}
+.info{
+    background-color: rgb(220, 216, 216);
+    margin-left: 10px;
+}
+.modoru{
+    margin-left: 90px;
+}
+.kakunin{
+    margin-left: 30px;
+    width: 308px;
+    height: 54px;
+    border-radius:30px;
+    background-color: #E75D5D;
+    border-color:#E75D5D ;
+    color: white;
+    cursor: pointer;
+}

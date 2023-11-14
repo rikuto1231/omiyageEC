@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<<<<<<< HEAD
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
     <style type="text/css">
@@ -53,5 +54,22 @@
     <img src="img/prot.jpeg" alt="代替テキスト"width="24%" height="26%">
     <img src="img/triangle.png"alt="aaa"width="5%" height="10%">
     </div>
+=======
+    <title>Vue Image Slider</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="app">
+        <div class="slider-container">
+            <div class="slider" ref="slider">
+                <img v-for="(image, index) in images" :key="index" :src="image" alt="画像pathが違います" @click="navigateToProduct(index)" >
+            </div>
+            <button class="prev-button" @click="changeSlide(-1)">◄</button>
+            <button class="next-button" @click="changeSlide(1)">►</button>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script> 
+    <script src="script/script.js"></script>
+>>>>>>> e0bb6ec4f2daa1cff85d62457e5eff30e74da593
 </body>
 </html>

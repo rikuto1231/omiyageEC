@@ -1,51 +1,36 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <?php require 'DB.php'; ?>
-    <!-- 共通header.cssとは読み出し元が繋げる-->
+<!-- header.php -->
 
-    <!-- 現在は確認用に繋げておく -->
-</head>
-<body>
-    <header id="header">
-        <!-- header内の必要要素を入れる -->
-        <!-- 遷移を可能にしておく -->
-        <img src="../img/people.jpg">
-        <img src="../img/cart.jpg">
+    <div class="sidebar">
+        <img id="closeButton" src="../imge/close.png">
+        <hr>
+        <p>○○○○さん</p>
+        <hr>
+        <p><a href="">ポイント</a></p>
+        <hr>
+        <p><a href="">登録情報</a></p>
+        <hr>
+        <p><a href="">購入履歴</a></p>
+        <hr>
+        <p><a href="">予約確認</a></p>
+        <hr>
+        <p><a href="">ログイン</a></p>
+        <hr>
+        <p><a href="">ログアウト</a></p>
+    </div>
+    <img id="toggleButton" src="../img/user.png" width="40" height="40">
+    <a href="">
+        <img id="cart_button" src="../img/cart.jpg" width="40" height="40">
+    </a>
+    <form method="get" action="">
+        <p>商品検索<input type="text" name="header_search" value="">
+            <button type="submit">送信</button>
+        </p>
+    </form>
+    <div id="search_all">
+        <input type="text" class="search_box" placeholder="検索">
+        <button class="conditions_img">
+            <img src="../img/kensakku.png" width="20" height="20">
+        </button>
+        <p><a href="" id="conditions">絞り込み条件を開く▽</a></p>
+    </div>
 
-        <p>ロゴ部分（未完成）</p>
-
-
-
-        <form method="get" action="">
-            <p>商品検索<input type="text" name="header_search" value="">
-                <button type="submit">送信</button>
-            </p>
-            
-        </form>
-
-        <!-- 呼び出し元での処理に必要になるので追加と変更が必須↓ -->
-
-        <!-- $pdo = getDatabaseConnection(); 
-            $search = $_GET['search'];
-            $result = sql_search($pdo, $search);
-            
-
-            foreach ($result as $row) {
-                echo "<tr>";
-                echo "<td>" .$row['id'] . "</td>";
-                echo '<td><a href="detail.php?id='.$row['id'].'">'.$row['name'].'</a></td>';
-                echo "<td>" .$row['kubun'].  "</td>";
-                echo "<td>" .$row['price'].  "</td>";
-                echo "</tr>";
-            }
-            echo '</table>';
-        } -->
-
-
-    </header>
-</body>
-</html>
