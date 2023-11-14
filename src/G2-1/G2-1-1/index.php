@@ -10,13 +10,11 @@
         <br>
         <br>
         <p style="text-align: left">
-        &emsp;商品情報追加$emsp;▶</p>
-        <br>
+        &emsp;商品情報追加▶商品情報を追加します</p>
         <p style="text-align: left">
-        &emsp;商品情報更新$emsp;▶</p>
-        <br>
+        &emsp;商品情報更新▶商品情報を更新できます</p>
         <p style="text-align: left">
-        &emsp;商品情報削除$emsp;▶</p>
+        &emsp;商品情報削除▶商品情報を削除できます</p>
 
 </div>
 </body>
