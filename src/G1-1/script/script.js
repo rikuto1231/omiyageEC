@@ -1,5 +1,5 @@
-// script.js
-new Vue({
+// 上部分
+const app = new Vue({
     el: '#app',
     data: {
         images: ['./img/search.png', './img/cart.png', './img/prot.jpeg'],
@@ -21,3 +21,7 @@ new Vue({
         }
     }
 });
+
+// 下部分
+
+// el分け予定
