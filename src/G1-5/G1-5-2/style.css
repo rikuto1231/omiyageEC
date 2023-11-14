@@ -136,6 +136,7 @@ header {
     margin-left: 10px;
     display: inline-block;
     vertical-align: top;
+    float: left;
 }
 
 button.button_next {
