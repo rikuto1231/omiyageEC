@@ -40,8 +40,7 @@ header {
     z-index: 2;
 }
 
-#conditions {
-}
+
 
 #title_output {
     text-align: center;
@@ -164,8 +163,8 @@ button.button_next {
     width: 75%;
     height: 40px;
     border-radius: 30px;
-    background-color: #f27508;
-    border-color: #ffffff;
+    background-color: #E75D5D;
+    border-color: #E75D5D;
     color: white;
     cursor: pointer;
     text-align: center;
@@ -178,9 +177,6 @@ button.button_next {
     border-color: #E75D5D;
     cursor: pointer;
     color: white;
-    margin-left: 10px;
+    margin-left: 30px;
     width: 80px;
-}
-h5{
-    margin-top: 0px;
 }
