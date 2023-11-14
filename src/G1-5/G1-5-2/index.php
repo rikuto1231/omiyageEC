@@ -46,15 +46,17 @@
         <div class="product">
             <p id="cart_mess">カートに入っているアイテム</p>
             <img class="img_product" src="../imge/cart.jpg" width="100" height="100">
-            <span>○○○○○○</span>
-            <br>
-            <select name="number">
+            <div class="in_cart">
+            <h5>商品名</h5>
+            <h5>個数：<select name="number">
                 <?php
-                for($i = 1; $1 <= 10; $i++) {
+                for($i = 1; $i <= 10; $i++) {
                     echo '<option value="', $i, '">', $i, '</option>';
                 }
                 ?>
-                </select>
+            </select></h5>
+            <h5>￥値段<button class="delete_button">削除</button></h5>
+            </div>
             <button class="button_next">ショッピングを続ける</button>
         </div>
         <div id="num_output">
