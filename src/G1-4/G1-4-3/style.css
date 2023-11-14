@@ -1,64 +1,98 @@
 /* ページ全体に対するスタイル */
-body {
+/* body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f5f5f5;
 
-}
+} */
 
-#menu_all{
+/* #menu_all{ */
     /* 要素指定の別方法考えとくwid,hei */
-    width: 100%;
+    /* width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
+} */
 
-.container {
+/* .container {
     margin-top: 5px; 
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-}
+} */
 
 
 /* カテゴリーと価格のコンテナのスタイル */
-.category, .price {
+/* .category, .price {
     margin: 5px;
     display: flex;
     align-items: center;
-}
+} */
 
 /* チェックボックスのスタイル */
-.category input, .price input {
+/* .category input, .price input {
     margin-right: 10px;
-}
+} */
 
 /* チェックボックスのラベルのスタイル */
-.category label, .price label {
+/* .category label, .price label {
     cursor: pointer;
-}
+} */
 
 /* チェックボックス選択時スタイル */
-.category input:checked + label, .price input:checked + label {
+/* .category input:checked + label, .price input:checked + label {
     font-weight: bold;
     color: #007bff;
-}
+} */
 
 /* ページタイトルのスタイル */
-h2 {
+/* h2 {
     font-size: 1.5em;
     margin-top: 20px;
     margin-bottom: 10px;
-}
+} */
 
 /* 画像のスタイル */
-img {
+/* img {
     max-width: 100%;
     height: auto;
     margin-top: 10px; /* 画面上部からの余白を追加 */
+/* } */ 
+
+.item{
+    width: 100%;
+    text-align: center;
 }
+.point{
+    color:red;
+}
+.cartbutton{
+    width: 308px;
+    height: 54px;
+    border-radius:30px;
+    background-color: #E75D5D;
+    border-color:#E75D5D ;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+.homebutton{
+    width: 308px;
+    height: 54px;
+    border-radius:30px;
+    background-color: #0890F2;
+    border-color:#0890F2 ;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+  }
+  .button3{
+    text-align: center;
+  }
+  
