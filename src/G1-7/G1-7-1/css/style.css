@@ -1,0 +1,17 @@
+@charset "UTF-8";
+#center{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+ #imgs {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   
+}
+#revew{
+background-color: gainsboro;
+margin-left: 10%;
+margin-right: 10%;
+}
