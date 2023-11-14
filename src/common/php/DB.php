@@ -36,6 +36,7 @@ class DatabaseConnection {
 }
 
 // WebAPI用の関数
+
 function getDatabaseConnection() {
     // 環境に合わせて後々変更予定
     $host = 'mysql214.phy.lolipop.lan';
@@ -73,6 +74,7 @@ function sql_select($pdo, $sql, $mail) {
 }
 
 // 商品検索用API
+// 検索要素が増えるので処理を大幅に修正
 function sql_search($pdo, $search) {
     try {
         $searchPattern = "%" . $search . "%"; 
