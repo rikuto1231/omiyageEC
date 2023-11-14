@@ -7,15 +7,17 @@
     <title>トップ画面</title>
 </head>
 <body>
-<div>
+<div>   
+        <ul id="toolbar">
         <br>
         <br>
-        <p style="text-align: left">
-        &emsp;商品情報追加▶商品情報を追加します</p>
-        <p style="text-align: left">
-        &emsp;商品情報更新▶商品情報を更新できます</p>
-        <p style="text-align: left">
-        &emsp;商品情報削除▶商品情報を削除できます</p>
+        <li style="text-align: left">
+        <li class="em">商品情報追加▶</li>
+        <li style="text-align: left">
+        <li class="em">商品情報更新▶</li>
+        <li style="text-align: left">
+        <li class="em">商品情報削除▶</li>
+        </ul>
 
 </div>
 </body>
