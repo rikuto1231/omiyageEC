@@ -55,8 +55,8 @@
                 }
                 ?>
             </select>
-            <h4>￥○○○○○</h4>
-            <button>削除</button>
+            <h4>￥○○○○○
+            <button>削除</button></h4>
             </div>
             <button class="button_next">ショッピングを続ける</button>
         </div>
