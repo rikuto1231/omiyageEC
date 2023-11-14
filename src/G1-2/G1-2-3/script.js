@@ -1,9 +1,4 @@
 
-function searchAddress(){
-    // Ajax
-}
-
-
 const app = new Vue({
     el: '#form_all',
     data: {
