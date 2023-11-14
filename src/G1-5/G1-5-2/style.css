@@ -178,9 +178,6 @@ button.button_next {
     border-color: #E75D5D;
     cursor: pointer;
     color: white;
-    margin-left: 10px;
+    margin-left: 30px;
     width: 80px;
-}
-h5{
-    margin-top: 0px;
 }
