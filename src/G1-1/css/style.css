@@ -1,17 +1,3 @@
-<<<<<<< HEAD
-@charset "UTF-8";
-#center{
-   display: flex;
-   justify-content: center;
-   align-items: center;
- }
- #imgs {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   
-}
-=======
 html,body {
    margin: 0;
    padding: 0;
@@ -62,4 +48,3 @@ body {
    height: 30px;
    margin: 0 20px; /* 間隔を調整 */
 }
->>>>>>> e0bb6ec4f2daa1cff85d62457e5eff30e74da593

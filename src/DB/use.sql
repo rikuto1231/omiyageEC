@@ -70,3 +70,25 @@ CREATE TABLE PurchaseDet(
     foreign key (purchase_id) references Purchase(purchase_id),
     foreign key (merchandise_id) Merchandise(merchandise_id)
 );
+
+-- 予約テーブル作成sql
+CREATE TABLE Reservation(
+    reservation_id int not null AUTO_INCREMENT,
+    user_id int not null,
+    merchandise_id int not null,
+    number INT not null,
+    primary key (reservation_id),
+    foreign key (user_id) references User(user_id),
+    foreign key (merchandise_id) references Merchandise(merchandise_id)
+);
+
+-- レビューテーブル作成sql
+CREATE TABLE Review(
+    user_id int not null,
+    merchandise_id int not null,
+    review_num int not null,
+    review_title varchar(20) not null,
+    review_text varchar(100) not null,
+    post date not null,
+    
+);
