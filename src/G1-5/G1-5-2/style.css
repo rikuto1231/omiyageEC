@@ -172,3 +172,10 @@ button.button_next {
     display: block;
     margin: 20px auto 0;
 }
+.delete_button{
+    border-radius: 30px;
+    background-color:#E75D5D;
+    border-color: #E75D5D;
+    cursor: pointer;
+    color: white;
+}
