@@ -47,16 +47,15 @@
             <p id="cart_mess">カートに入っているアイテム</p>
             <img class="img_product" src="../imge/cart.jpg" width="100" height="100">
             <div class="in_cart">
-            <h4>○○○○○○</h4>
-            <select name="number">
+            <h5>商品名</h5>
+            <h5><select name="number">
                 <?php
                 for($i = 1; $i <= 10; $i++) {
                     echo '<option value="', $i, '">', $i, '</option>';
                 }
                 ?>
-            </select>
-            <h4>￥○○○○○</h4>
-            <button>削除</button>
+            </select></h5>
+            <h5>￥値段<button class="delete_button">削除</button></h5>
             </div>
             <button class="button_next">ショッピングを続ける</button>
         </div>
@@ -68,7 +67,7 @@
             <p>送料(税込)</p>
             <hr>
             <h4>合計(税込)</h4>
-            <button class="button_reg">ショッピングを続ける</button>
+            <button class="button_reg">ご購入手続き</button>
         </div>
     </div>
     <!-- scriptURL変更したので問題あったら調整 -->
