@@ -50,5 +50,6 @@
         <br>
         <button class="modoru">ショッピングを続ける</button>
     </div>
+    <script src="../../common/js/side_ber.js"></script>
 </body>
 </html>
