@@ -4,8 +4,6 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- scriptURL変更したので問題あったら調整 -->
-        <script src="../../common/js/header-move.js"></script>
     <title>カート決済</title>
 </head>
 <body>
@@ -72,6 +70,5 @@
     </div>
     <!-- scriptURL変更したので問題あったら調整 -->
     <script src="../../common/js/sidebar.js"></script>
-    
 </body>
 </html>
