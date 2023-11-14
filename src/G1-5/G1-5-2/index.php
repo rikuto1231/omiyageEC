@@ -54,7 +54,9 @@
                     echo '<option value="', $i, '">', $i, '</option>';
                 }
                 ?>
-                </select>
+            </select>
+            <span>￥○○○○○</span>
+            <button>削除</button>
             <button class="button_next">ショッピングを続ける</button>
         </div>
         <div id="num_output">
