@@ -69,6 +69,6 @@
         </div>
     </div>
     <!-- scriptURL変更したので問題あったら調整 -->
-    <script src="../../common/js/sidebar.js"></script>
+    <script src="../../common/js/side_ber.js"></script>
 </body>
 </html>
