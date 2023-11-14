@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
     <title>会員登録</title>
 </head>
 <body>
@@ -11,11 +12,12 @@
 
     <form method="post" action="登録処理を行うページのURL" id="form_all">
 
+        
         <!-- お名前 -->
         <div class="form-group">
-            <label for="lastName">姓</label> 
+            <label for="lastName">姓</label>
             <!--テキスト位置調整用にid入れてます -->
-            <label for="firstName" id="firstName_title">名</label><br>  
+            <label for="firstName" id="firstName_title">名</label><br>
 
             <input type="text" id="lastName" name="lastName" class="form-control" required>
             <input type="text" id="firstName" name="firstName" class="form-control" required>
@@ -34,14 +36,17 @@
             <label for="postalCode">郵便番号:</label>
             <input type="text" id="postalCode" name="postalCode" class="form-control" required>
             <!-- ここに郵便番号検索フォーム（Ajax使用）を配置 -->
+            <button type="button" onclick="searchAddress()">住所検索</button>
         </div>
 
-        <!-- 住所 -->
+        <!-- 住所（都道府県） -->
         <div class="form-group">
-            <label for="address">住所:</label>
-            <input type="text" id="address" name="address" class="form-control" required>
-            <!-- ここに住所の入力フォーム（都道府県や市区町村の選択肢を含む）を配置 -->
+            <label for="prefecture">都道府県:</label>
+            <select id="prefecture" name="prefecture" class="form-control" v-model="selectedPrefecture">
+                <option v-for="(prefecture, index) in prefectures" :key="index" :value="prefecture">{{ prefecture }}</option>
+            </select>
         </div>
+
 
         <!-- 住所（市区町村） -->
         <div class="form-group">
@@ -105,3 +110,5 @@
 
 </body>
 </html>
+
+
