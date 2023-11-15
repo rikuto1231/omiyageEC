@@ -8,8 +8,8 @@
 </head>
 <body>
 <div>   
-        <img src="../image/icon1.png"width="40" height="40">
         <ul id="toolbar">
+        <img src="../image/icon1.png"width="40" height="40">
         <br>
         <br>
         <li style="text-align: left">
