@@ -30,7 +30,7 @@
     </table>
     
     
-    <p><a href="" class="add" onclick="location.href='G1-1/index.php'">追加</a></p>
+   <button class="add" type="button">追加</button>
 </form>
     
 </body>
