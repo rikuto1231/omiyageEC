@@ -5,11 +5,9 @@ html,body {
 }
 
 body {
-   background-color: #dd5555; /*範囲確認用（消しても大丈夫）*/
 }
 
 .slider-container {
-   background-color: aqua; /*範囲確認用(消しても大丈夫)*/
    position: relative;
    text-align: center;
    top: 30vh; /* 縦方向の位置を調整(vhだけ対応) */
@@ -23,9 +21,10 @@ body {
 }
 
 .slider img {
-   width: 50px;
-   height: 50px;
+   width: 80px;
+   height: 80px;
    cursor: pointer;
+   margin-left: 5px;
 }
 
 .button-container {
@@ -38,13 +37,19 @@ body {
 
 .prev-button,
 .next-button {
-   font-size: 30px;
+   font-size: 40px;
    background: none;
    border: none;
    cursor: pointer;
    color: #000;
-   background-color: aquamarine;
-   width: 30px;
-   height: 30px;
+   width: 50px;
+   height: 50px;
    margin: 0 20px; /* 間隔を調整 */
+}
+
+
+.slider-container2{
+   position: relative;
+   text-align: center;
+   top: 60vh; /* 縦方向の位置を調整(vhだけ対応) */
 }
