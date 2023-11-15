@@ -14,6 +14,7 @@
     <p><div id="pass" >パスワード</div><br>
         <div class="box2"><input type="text" class="p" placeholder="パスワードを入力" ></div>
     </p>
+        <!-- 別phpの関数呼び出しで入力チェックとlocation -->
     <p><a href="" class="btn" onclick="location.href='G1-1/index.php'">ログイン</a></p>
     <p><a href="" class="btn2" onclick="location.href='../G1-2-1/index.php'">戻る</a></p>
 </body>

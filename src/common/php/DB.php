@@ -94,9 +94,6 @@ function sql_search($pdo, $search) {
 }
 
 
-
-
-//ドキュメント記述しとく
  //DB接続関数
 // $pdo = getDatabaseConnection(); 
 
