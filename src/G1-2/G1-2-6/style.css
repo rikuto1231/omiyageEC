@@ -2,24 +2,26 @@ body{
     text-align: center;
 }
 
+#title{
+    position: absolute;
+    top: 20vh;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    
+}
 
 .btn2{
-    display: block;
-    width: 60px;
-    height: 10px;
-    line-height:10px;
-	margin: auto;
-	padding: 1rem 4rem;
-	border: 2px solid #0890F2;
-	background: #0890F2;
-	color: #fff;
-	transition: 0.5s;
-    justify-content:center;
-    text-decoration: none;
-    border-radius:30px;
-	white-space :nowrap;
-    text-align: center;
     position: absolute;
-    bottom: 200px;
-    left:90px;
+    top: 80vh;
+    width: 70%;
+    height: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius:50px;
+    background-color: #0890F2;
+    border-color:#0890F2 ;
+    color: white;
+    cursor: pointer;
+    
 }
