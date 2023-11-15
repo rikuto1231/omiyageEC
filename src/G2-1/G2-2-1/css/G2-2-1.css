@@ -1,2 +1,27 @@
 @charset "utf-8";
 
+.table{
+    vertical-align:middle
+}
+
+
+button{
+    display: block;
+    width: 60px;
+    height: 10px;
+    line-height:10px;
+	margin: auto;
+	padding: 1rem 4rem;
+	border: 2px solid #D40505;
+	background: #D40505;
+	color: #fff;
+	transition: 0.5s;
+    justify-content:center;
+    text-decoration: none;
+    border-radius:30px;
+	white-space :nowrap;
+    text-align: center;
+    position: absolute;
+    bottom: 300px;
+    left:90px;
+}
