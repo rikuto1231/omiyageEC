@@ -15,11 +15,12 @@
         <p><img src="../image/icon4.png" class="icon1">商品情報削除▶</p>
     </div>
 
-        <div>商品情報を追加します<br>
-                    商品情報を更新できます<br>
-                    商品情報を削除できます</div>
 
 
+    <div class="main">
+    <p>商品情報を追加します<br>
+    商品情報を更新できます<br>
+    商品情報を削除できます</p>
 </div>
 </body>
 </html>
