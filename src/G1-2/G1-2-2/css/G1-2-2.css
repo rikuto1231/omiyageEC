@@ -16,7 +16,7 @@ input.p{
     width:250px;
 }
 
-a.btn{
+.btn{
     display: block;
     width: 60px;
     height: 10px;
@@ -37,7 +37,7 @@ a.btn{
     left:90px;
 }
 
-a.btn2{
+.btn2{
     display: block;
     width: 60px;
     height: 10px;
