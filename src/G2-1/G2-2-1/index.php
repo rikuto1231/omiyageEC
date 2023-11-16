@@ -4,11 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>商品追加</title>
-    <link rel="stylesheet" href="css/2-2-1.css"/>
+    <link rel="stylesheet" href="css/G2-2-1.css"/>
 </head>
 <body>
+<div class="ber">
+    <img src="img/kanri_icon.png" alt="">
+        <p><img src="img/kanri_icon2.png" class="icon1">商品情報追加▶</p>
+        <p><img src="img/kanri_icon3.png" class="icon1">商品情報更新</p>
+        <p><img src="img/kanri_icon4.png" class="icon1">商品情報削除</p>
+    </div>
     <p>商品追加</p>
-    <img src="img/icon1.png" alt="アイコン１"></img>
+    
+    <div class="tab">
     <table class="table" border="1" cellpadding="10"cellspacing="0">
     <form action="G2-2-1/index.php" method="post">
 
@@ -28,9 +35,11 @@
     <input type="file" name="img" >
     </td></tr>
     </table>
+</div>
     
     
-   <button class="add" type="button">追加</button>
+   
+   <a href="" class="btn">追加</a>
 </form>
     
 </body>
