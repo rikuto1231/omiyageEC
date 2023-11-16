@@ -8,7 +8,7 @@
 </head>
 <body>
 <div class="ber">
-    <img src="img/kanri_icon.png" alt="">
+    <img src="img/kanri_icon.png" alt="" width="50" height="50">
         <p><img src="img/kanri_icon2.png" class="icon1">商品情報追加▶</p>
         <p><img src="img/kanri_icon3.png" class="icon1">商品情報更新</p>
         <p><img src="img/kanri_icon4.png" class="icon1">商品情報削除</p>
@@ -16,7 +16,7 @@
     <p>商品追加</p>
     
     <div class="tab">
-    <table class="table" border="1" cellpadding="10"cellspacing="0">
+    <table class="table" border="1" cellpadding="60"cellspacing="60">
     <form action="G2-2-1/index.php" method="post">
 
     <tr><td>名称指定</td><td>
