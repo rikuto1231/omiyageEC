@@ -19,9 +19,9 @@
         <hr>
         <p><a href="">ログアウト</a></p>
         </div>
-        <img id="toggleButton" src="../img/user.png" width="40" height="40">
+        <img id="toggleButton" src="/img/user.png" width="40" height="40">
         <a href="">
-        <img id="cart_button" src="../img/cart.jpg" width="40" height="40">
+        <img id="cart_button" src="img/cart.jpg" width="40" height="40">
         </a>
         <div id="search_all">
         <input type="text" class="search_box" placeholder="検索">
