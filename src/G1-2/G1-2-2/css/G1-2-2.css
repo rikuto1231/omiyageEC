@@ -16,28 +16,14 @@ input.p{
     width:250px;
 }
 
-a.btn{
-    display: block;
-    width: 60px;
-    height: 10px;
-    line-height:10px;
-	margin: auto;
-	padding: 1rem 4rem;
-	border: 2px solid #D40505;
-	background: #D40505;
-	color: #fff;
-	transition: 0.5s;
-    justify-content:center;
-    text-decoration: none;
-    border-radius:30px;
-	white-space :nowrap;
-    text-align: center;
+.btn{
     position: absolute;
-    bottom: 300px;
-    left:90px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
 }
 
-a.btn2{
+.btn2{
     display: block;
     width: 60px;
     height: 10px;

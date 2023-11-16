@@ -8,14 +8,24 @@
 </head>
 <body>
     <h1>会員ログイン</h1>
-    <p><div id="mail">メールアドレス</div><br>
-        <div class="box1"><input type="text" class="m" placeholder="入力してください" ></div>
-    </p>
-    <p><div id="pass" >パスワード</div><br>
-        <div class="box2"><input type="text" class="p" placeholder="パスワードを入力" ></div>
-    </p>
-        <!-- 別phpの関数呼び出しで入力チェックとlocation -->
-    <p><a href="" class="btn" onclick="location.href='G1-1/index.php'">ログイン</a></p>
-    <p><a href="" class="btn2" onclick="location.href='../G1-2-1/index.php'">戻る</a></p>
+    <form method="post" action="../G1-2-3/index.php">
+
+        <p>
+            <label for="mail">メールアドレス</label><br>
+            <div class="box1">
+                <input type="text" id="mail" name="mail" class="m" placeholder="入力してください" required>
+            </div>
+        </p>
+        <p>
+            <label for="pass">パスワード</label><br>
+            <div class="box2">
+                <input type="password" id="pass" name="pass" class="p" placeholder="パスワードを入力" required>
+            </div>
+        </p>
+
+        <button type="submit" class="btn">ログイン</button>
+    </form>
+
+    <button class="btn2" onclick="location.href='../G1-2-1/index.php'">戻る</button>
 </body>
 </html>
