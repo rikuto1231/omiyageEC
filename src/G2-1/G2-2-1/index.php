@@ -16,6 +16,7 @@
     <p>商品追加</p>
     
     <div class="tab">
+        
     <table class="table" border="1" cellpadding="60"cellspacing="60">
     <form action="G2-2-1/index.php" method="post">
 
