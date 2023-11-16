@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
@@ -8,22 +8,19 @@
 </head>
 <body>
 <div>   
-        <ul id="toolbar">
-        <img src="../image/icon1.png"width="40" height="40">
-        <br>
-        <br>
-        <br>
-        <li style="text-align: left">
-        <img src="../image/icon2.png"width="40" height="40">
-        <li class="em">商品情報追加▶</li>
-        <li style="text-align: left">
-        <img src="../image/icon3.png"width="40" height="40">
-        <li class="em">商品情報更新▶</li>
-        <li style="text-align: left">
-        <img src="../image/icon4.png"width="40" height="40">
-        <li class="em">商品情報削除▶</li>
-        </ul>
+<div class="ber">
+    <img src="../image/icon1.png" alt="" width="50" height="50">
+        <p><img src="../image/icon2.png" class="icon1">商品情報追加▶</p>
+        <p><img src="../image/icon3.png" class="icon1">商品情報更新▶</p>
+        <p><img src="../image/icon4.png" class="icon1">商品情報削除▶</p>
+    </div>
 
+
+
+    <div class="main">
+    <p>商品情報を追加します<br>
+    商品情報を更新できます<br>
+    商品情報を削除できます</p>
 </div>
 </body>
 </html>
