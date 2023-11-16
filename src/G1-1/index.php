@@ -18,7 +18,6 @@
         </div>
     </div>
 
-    <!-- もうワンセット仮置き（命名変更） -->
 
     <div id="app2">
         <div class="slider-container2">
