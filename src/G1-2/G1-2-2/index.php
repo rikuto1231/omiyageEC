@@ -22,7 +22,11 @@
 
     <!-- ログインは送信タイプのボタンに変更 -->
     <p><a href="" class="btn" onclick="location.href='G1-1/index.php'">ログイン</a></p>
-    
+
+    </form>
+
     <p><a href="" class="btn2" onclick="location.href='../G1-2-1/index.php'">戻る</a></p>
+
+    
 </body>
 </html>
