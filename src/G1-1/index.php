@@ -9,7 +9,7 @@
 </head>
 <body>
     <header>
-    <?php require '../common/php/header.php'; ?>
+        <?php require '../common/php/header.php'; ?>
     </header>
 
 
