@@ -33,34 +33,42 @@
         </td></tr>
         </table>
         <button class="sarch">検索</button>
-    </div>
+        <h2>全件</h2>
     <div class="flexbox">
         <div class="item">
-            <img src="../imge/a.png" alt="代替テキスト" width="90%" height="30%">
-            <p>商品名</p>
+            <img src="../imge/a.png" alt="代替テキスト" width="70%" height="70%">
+            <p class="mei">商品名</p>
         </div>
         <div class="item">
-            <img src="../imge/a.png" alt="代替テキスト" width="90%" height="30%">
-            <p>商品名</p>
+            <img src="../imge/a.png" alt="代替テキスト"width="70%" height="70%">
+            <p class="mei">商品名</p>
         </div>
         <div class="item">
-            <img src="../imge/a.png" alt="代替テキスト" width="90%" height="30%">
-            <p>商品名</p>
+            <img src="../imge/a.png" alt="代替テキスト" width="70%" height="70%">
+            <p class="mei">商品名</p>
         </div>
         <div class="item">
-            <img src="../imge/a.png" alt="代替テキスト" width="90%" height="30%">
-            <p>商品名</p>
+            <img src="../imge/a.png" alt="代替テキスト" width="70%" height="70%">
+            <p class="mei">商品名</p>
         </div>
         <div class="item">
-            <img src="../imge/a.png" alt="代替テキスト" width="90%" height="30%">
-            <p>商品名</p>
+            <img src="../imge/a.png" alt="代替テキスト"width="70%" height="70%"">
+            <p class="mei">商品名</p>
         </div>
         <div class="item">
-            <img src="../imge/a.png" alt="代替テキスト" width="90%" height="30%">
-            <p>商品名</p>
+            <img src="../imge/a.png" alt="代替テキスト" width="70%" height="70%">
+            <p class="mei">商品名</p>
         </div>
-
+        <div class="item">
+            <img src="../imge/a.png" alt="代替テキスト" width="70%" height="70%">
+            <p class="mei">商品名</p>
+        </div>
+        <div class="item">
+            <img src="../imge/a.png" alt="代替テキスト" width="70%" height="70%">
+            <p class="mei">商品名</p>
+        </div>
     </div>
+</div>
     
 </body>
 </html>
