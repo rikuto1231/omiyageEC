@@ -57,5 +57,6 @@
     <div id="center">
     検索ホームに戻る
     </div>
+    <?php require '../php/search.php' ?>
 </body>
 </html>

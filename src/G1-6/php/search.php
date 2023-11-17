@@ -4,31 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
-    <style type="text/css">
-    input.search {
-    margin-left: auto;
-    margin-right: auto;
-    width: 8em;
-    background-image: url("../../G1-1/img/search.png");
-    background-color: gainsboro;
-    background-repeat: no-repeat;
-    background-position: 100% center;
-    padding-left: 0%;
-    height: 25px;
-    width:90%;
-    background-size: 6.5% 80%;
-    }
-    </style>
+    <link rel="stylesheet" href="../G1-6-1/css/style.css">
 </head>
 <body>
-    
-    <img src="../../G1-1/img/user.png" alt="代替テキスト"width="7%" height="14%">
-    <img src="../../G1-1/img/cart.png" alt="代替テキスト"width="7%" height="14%">
-    <br>
-    <div id="center">
-    <input type="text"class="search">
-</div>
     <br>
     〇〇県
     <br>
