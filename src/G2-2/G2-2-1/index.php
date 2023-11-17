@@ -10,12 +10,12 @@
     <div class="ber">
     <img src="img/kanri_icon.png" alt="">
     <br>
-        <p><img src="img/kanri_icon2.png" class="icon1"><span>商品情報追加</p></span>
-        <p><img src="img/kanri_icon3.png" class="icon1"><span>商品情報更新</p></span>
-        <p><img src="img/kanri_icon4.png" class="icon1"><span>商品情報削除▶</p></span>
+        <p><img src="img/kanri_icon2.png" class="icon1"><a href="" style="text-decoration:none;"  class=link>商品情報追加▶</a></p></span>
+        <p><img src="img/kanri_icon3.png" class="icon1"><a href="" style="text-decoration:none;"  class=link>商品情報更新</a></p></span>
+        <p><img src="img/kanri_icon4.png" class="icon1"><a href="" style="text-decoration:none;"  class=link>商品情報削除</a></p></span>
     </div>
     <div class="main">
-        <h2>条件指定</h2>
+        <h2>商品追加</h2>
         <table class="table" border="1" cellpadding="10"cellspacing="0">
         <form action="" method="post">
 
