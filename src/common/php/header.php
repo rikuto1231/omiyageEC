@@ -24,10 +24,12 @@
         <img id="cart_button" src="img/cart.jpg" width="40" height="40">
         </a>
         <div id="search_all">
-        <input type="text" class="search_box" placeholder="検索">
-        <button class="conditions_img">
-            <img src="img/search.png" width="20" height="20">
-        </button>
+        <form >
+            <input type="text" class="search_box" placeholder="検索">
+            <button class="conditions_img">
+                <img src="img/search.png" width="20" height="20">
+            </button>
+        </form>
         <p><a href="" id="conditions">絞り込み条件を開く▽</a></p>
         </div>';
 ?>
