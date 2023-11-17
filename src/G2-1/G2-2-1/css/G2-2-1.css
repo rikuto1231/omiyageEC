@@ -14,7 +14,11 @@
 }
 
 .top{
-    text-align: center;
+    width: 147px;
+    height: 42px;
+    top: 59px;
+    left: 493px
+
 }
 
 .btn{
