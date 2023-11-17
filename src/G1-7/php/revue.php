@@ -11,7 +11,7 @@
     <br>
     <!-- 件名表示 --></h2>
     <div id="center">
-    <div id="fonts"><!--  --><br><!-- レビュー内容表示 --></div>
+    <div id="fonts"><!-- 日付表示 --><br><!-- レビュー内容表示 --></div>
     </div>
     </div>
     

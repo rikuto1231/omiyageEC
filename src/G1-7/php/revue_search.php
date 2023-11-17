@@ -1,7 +1,7 @@
 <?php
 if(!empty($_SESSION[''])){/*接続未設定*/ 
     $total=0;
-    foreach($_SESSION['PRO'] as $id=>$PRO){
+    foreach($_SESSION[''] as $id=>$){
         echo '<tr>';
         echo '<td>',$id,'</td>';
         echo '<td><a href="det.php?id=',$id,'">',
