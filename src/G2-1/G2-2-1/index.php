@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/G2-2-1.css">
-    <title>全件・条件検索画面(削除)</title>
+    <title>商品追加画面</title>
 </head>
 <body>
     <div class="ber">
@@ -14,8 +14,9 @@
         <p><img src="img/kanri_icon3.png" class="icon1"><span>商品情報更新</p></span>
         <p><img src="img/kanri_icon4.png" class="icon1"><span>商品情報削除</p></span>
     </div>
-    <div class="tab">
-        <p>商品追加</p>
+    
+        <div class=top><p>商品追加</p></div>
+        <div class="tab">
         <table class="table" border="1" cellpadding="10"cellspacing="0">
         <form action="G2-2-1/index.php" method="post">
 
