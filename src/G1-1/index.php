@@ -4,10 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vue Image Slider</title>
+    <link rel="stylesheet" href="../common/css/header.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h2>header共通部分</h2>
+    <header>
+        <?php require '../common/php/header.php'; ?>
+    </header>
+
+
+    
     <div id="app">
         <div class="slider-container">
             <div class="slider" ref="slider">
@@ -31,6 +37,7 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script> 
+    <script src="../common/js/side_ber.js"></script>
     <script src="script/script.js"></script>
 </body>
 </html>
