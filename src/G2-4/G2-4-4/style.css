@@ -28,4 +28,19 @@
 .text_box{
     width: 750px;
 }
-
+.sarch{
+    width: 232px;
+    height: 43px;
+    flex-shrink: 0;
+    background-color: #E29B48;
+    margin-top: 15px;
+    margin-left: 1000px;
+}
+.item{
+    width: 400px;
+    height: 300px;
+    margin-left: 200px;
+}
+h2{
+    text-align: center;
+}
