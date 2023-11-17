@@ -15,26 +15,51 @@
         <p><img src="../imge/kanri_icon4.png" class="icon1"><span>商品情報削除▶</p></span>
     </div>
     <div class="main">
-        <p>商品追加</p>
+        <h2>条件指定</h2>
         <table class="table" border="1" cellpadding="10"cellspacing="0">
-        <form action="G2-2-1/index.php" method="post">
+        <form action="" method="post">
 
         <tr><td class="td1">名称指定</td><td class="td2">
-        <input type="text" size="30" class="name" >
+        <input type="text" size="30" class="text_box" >
         </td></tr>
         <tr><td class="td1">都道府県</td><td class="td2">
-        <input type="text" size="30" class="prefecture">
+        <input type="text" size="30" class="text_box">
         </td></tr>
         <tr><td class="td1">カテゴリ</td><td class="td2">
-        <input type="text" size="30" class="cate" >
+        <input type="text" size="30" class="text_box" >
         </td ></tr>
-        <tr><td class="td1">価格</td><td class="td2">
-        <input type="number" class="price" >
-        </td></tr>
-        <tr><td class="td1">画像</td><td class="td2">
-        <input type="file" name="img" >
+        <tr><td class="td1">価格帯</td><td class="td2">
+        <input type="number" class="text_box" >
         </td></tr>
         </table>
+        <button class="sarch">検索</button>
+    </div>
+    <div class="flexbox">
+        <div class="item">
+            <img src="../imge/a.png" alt="代替テキスト" width="90%" height="30%">
+            <p>商品名</p>
+        </div>
+        <div class="item">
+            <img src="../imge/a.png" alt="代替テキスト" width="90%" height="30%">
+            <p>商品名</p>
+        </div>
+        <div class="item">
+            <img src="../imge/a.png" alt="代替テキスト" width="90%" height="30%">
+            <p>商品名</p>
+        </div>
+        <div class="item">
+            <img src="../imge/a.png" alt="代替テキスト" width="90%" height="30%">
+            <p>商品名</p>
+        </div>
+        <div class="item">
+            <img src="../imge/a.png" alt="代替テキスト" width="90%" height="30%">
+            <p>商品名</p>
+        </div>
+        <div class="item">
+            <img src="../imge/a.png" alt="代替テキスト" width="90%" height="30%">
+            <p>商品名</p>
+        </div>
+
     </div>
     
 </body>
