@@ -21,9 +21,9 @@ input.p{
     left: 50%;
     transform: translateX(-50%);
     width: 60%;
-    height: 10px;
+    height: 30px;
     border: 2px solid #0890F2;
-    background: #0890F2;
+    background: #f25a08;
 	color: #fff;
     transition: 0.5s;
     border-radius:30px;
@@ -36,7 +36,7 @@ input.p{
     top:70vh;
     transform: translateX(-50%);
     width: 60%;
-    height: 10px;
+    height: 30px;
     border: 2px solid #0890F2;
     background: #0890F2;
 	color: #fff;
