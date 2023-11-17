@@ -3,40 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/G2-2-1.css">
-    <title>商品追加画面</title>
+    <link rel="stylesheet" href="../css/G2-2-1.css">
+    <title>商品追加</title>
 </head>
 <body>
     <div class="ber">
     <img src="img/kanri_icon.png" alt="">
     <br>
-        <p><img src="img/kanri_icon2.png" class="icon1"><span>商品情報追加▶</p></span>
+        <p><img src="img/kanri_icon2.png" class="icon1"><span>商品情報追加</p></span>
         <p><img src="img/kanri_icon3.png" class="icon1"><span>商品情報更新</p></span>
-        <p><img src="img/kanri_icon4.png" class="icon1"><span>商品情報削除</p></span>
+        <p><img src="img/kanri_icon4.png" class="icon1"><span>商品情報削除▶</p></span>
     </div>
-    
-        <div class=top><p>商品追加</p></div>
-        <div class="tab">
+    <div class="main">
+        <h2>条件指定</h2>
         <table class="table" border="1" cellpadding="10"cellspacing="0">
-        <form action="G2-2-1/index.php" method="post">
+        <form action="" method="post">
 
         <tr><td class="td1">名称指定</td><td class="td2">
-        <input type="text" size="30" class="name" >
+        <input type="text" size="30" class="text_box" >
         </td></tr>
         <tr><td class="td1">都道府県</td><td class="td2">
-        <input type="text" size="30" class="prefecture">
+        <input type="text" size="30" class="text_box">
         </td></tr>
         <tr><td class="td1">カテゴリ</td><td class="td2">
-        <input type="text" size="30" class="cate" >
+        <input type="text" size="30" class="text_box" >
         </td ></tr>
-        <tr><td class="td1">価格</td><td class="td2">
-        <input type="number" class="price" >
-        </td></tr>
-        <tr><td class="td1">画像</td><td class="td2">
-        <input type="file" name="img" >
+        <tr><td class="td1">価格帯</td><td class="td2">
+        <input type="number" class="text_box" >
         </td></tr>
         </table>
-    </div>
+        <button class="sarch">検索</button>
+        <h2>全件</h2>
+    
+</div>
     
 </body>
 </html>
