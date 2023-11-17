@@ -19,3 +19,27 @@ margin-right: 10%;
 #fonts{
   font-size: 120%;
   }
+  .back{
+    width: 75%;
+    height: 40px;
+    border-radius: 30px;
+    background-color: #0890F2;
+    border-color: #0890F2;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    display: block;
+    margin: 20px auto;
+  }
+  .input{
+    width: 75%;
+    height: 40px;
+    border-radius: 30px;
+    background-color: #0890F2;
+    border-color: #0890F2;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    display: block;
+    margin: 20px auto;
+  }
