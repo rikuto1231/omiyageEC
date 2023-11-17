@@ -32,8 +32,8 @@
         <input type="number" class="text_box" >
         </td></tr>
         </table>
-        <button class="sarch">検索</button>
-        <h2>全件</h2>
+        <button class="sarch">戻る</button>
+        
     
 </div>
     
