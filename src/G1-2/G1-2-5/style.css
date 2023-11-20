@@ -101,3 +101,30 @@ header {
     color: white;
     cursor: pointer;
 }
+#button_control{
+    width: 100%;
+    text-align: center;
+}
+.btn-check{
+    width: 308px;
+    height: 54px;
+    border-radius:30px;
+    background-color: #f28508;
+    border-color:#ffffff ;
+    color: white;
+    cursor: pointer;
+    margin-bottom:20px;
+    margin-top:20px;
+}
+
+.btn-back{
+    width: 308px;
+    height: 54px;
+    border-radius:30px;
+    background-color: #b1b1b1;
+    border-color:#f4f4f4 ;
+    color: white;
+    cursor: pointer;
+    margin-bottom:20px;
+    margin-top:20px;
+}
