@@ -70,9 +70,6 @@ new Vue({
         selectedPrefectures: []
     },
     methods: {
-        search() {
-            // 選択されたカテゴリ、価格、都道府県に基づいて検索処理を実行
-            // ここに検索処理を追加
-        }
+       
     }
 });
