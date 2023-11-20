@@ -43,7 +43,8 @@
             $_SESSION['password'] = $password;
             $_SESSION['confirmPassword'] = $confirmPassword;
 
-            
+            echo '<p>'.'性      '.$lastName.'</p>' ;
+
 
             
 
