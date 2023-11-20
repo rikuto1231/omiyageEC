@@ -7,7 +7,7 @@
     <title>ログイン登録確定画面</title>
 </head>
 <body>
-<form method="post" action="G1-2-6/index.php" id="form_all">
+<form method="post" action="../G1-2-6/index.php" id="form_all">
     <!-- 入力データを表示 -->
     
     <div id="container">
@@ -27,6 +27,23 @@
             $confirmEmail = $_POST['confirmEmail'];
             $password = $_POST['password'];
             $confirmPassword = $_POST['confirmPassword'];
+
+            $_SESSION['lastName'] = $lastName;
+            $_SESSION['firstName'] = $firstName;
+            $_SESSION['furiganaLastName'] = $furiganaLastName;
+            $_SESSION['furiganaFirstName'] = $furiganaFirstName;
+            $_SESSION['postalCode'] = $postalCode;
+            $_SESSION['prefecture'] = $prefecture;
+            $_SESSION['city'] = $city;
+            $_SESSION['street'] = $street;
+            $_SESSION['building'] = $building;
+            $_SESSION['phoneNumber'] = $phoneNumber;
+            $_SESSION['email'] = $email;
+            $_SESSION['confirmEmail'] = $confirmEmail;
+            $_SESSION['password'] = $password;
+            $_SESSION['confirmPassword'] = $confirmPassword;
+
+            
 
             
 
