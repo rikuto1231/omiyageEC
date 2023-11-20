@@ -50,6 +50,7 @@ function getDatabaseConnection() {
 
 
  //DB接続関数
+
 // $pdo = getDatabaseConnection(); 
 
 ?>
