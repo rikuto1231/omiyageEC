@@ -31,8 +31,11 @@
         <tr><td class="td1">価格帯</td><td class="td2">
         <input type="number" class="text_box" >
         </td></tr>
+        <tr><td class="td1">画像</td><td class="td2">
+        <input type="file" class="text_box" >
+        </td></tr>
         </table>
-        <button class="sarch">戻る</button>
+        <button class="sarch">追加</button>
         
     
 </div>
