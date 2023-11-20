@@ -18,6 +18,22 @@ try {
         )
     ");
 
+
+    // セッション情報を受け取り
+    $lastName = $_SESSION['lastName'];
+    $firstName = $_SESSION['firstName'];
+    $furiganaLastName = $_SESSION['furiganaLastName'];
+    $furiganaFirstName = $_SESSION['furiganaFirstName'];
+    $postalCode = $_SESSION['postalCode'];
+    $prefecture = $_SESSION['prefecture'];
+    $city = $_SESSION['city'];
+    $street = $_SESSION['street'];
+    $building = $_SESSION['building'];
+    $phoneNumber = $_SESSION['phoneNumber'];
+    $email = $_SESSION['email'];
+    $password = $_SESSION['password'];
+
+
     // バインドパラメータの設定
     $stmt->bindParam(':name_family', $lastName);
     $stmt->bindParam(':name_personal', $firstName);
