@@ -49,52 +49,8 @@ function getDatabaseConnection() {
 }
 
 
-//loginのAPI
-function sql_select($pdo, $sql, $mail) {
-    try {
-        $params = [':mail' => $mail]; // パラメータ
-
-        $stmt = $pdo->prepare($sql);
-
-        // パラメータをバインド
-        foreach ($params as $key => $value) {
-            $stmt->bindParam($key, $value, PDO::PARAM_STR);
-        }
-
-        $stmt->execute();
-
-        // 連想配列でSQL結果を返す
-        $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
-        return $result;
-    } catch (PDOException $e) {
-        // エラーハンドリング
-        echo "エラー: " . $e->getMessage();
-        return false;
-    }
-}
-
-// 商品検索用API
-// 検索要素が増えるので処理を大幅に修正
-function sql_search($pdo, $search) {
-    try {
-        $searchPattern = "%" . $search . "%"; 
-        $stmt = $pdo->prepare('SELECT * FROM item WHERE name LIKE :search');
-        $stmt->bindParam(':search', $searchPattern, PDO::PARAM_STR);
-
-        $stmt->execute();
-
-        $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
-        return $result;
-
-    } catch (PDOException $e) {
-        // エラーハンドリング
-        echo "エラー: " . $e->getMessage();
-        return false;
-    }
-}
-
-
  //DB接続関数
+
 // $pdo = getDatabaseConnection(); 
 
 ?>
