@@ -43,12 +43,14 @@
             $_SESSION['password'] = $password;
             $_SESSION['confirmPassword'] = $confirmPassword;
 
-            echo '<p>'.'性      '.$lastName.'</p>' ;
-            echo '<p>'.'名      '.$lastName.'</p>' ;
-            echo '<p>'.'      '.$lastName.'</p>' ;
-            echo '<p>'.'      '.$lastName.'</p>' ;
-            echo '<p>'.'      '.$lastName.'</p>' ;
-            echo '<p>'.'      '.$lastName.'</p>' ;
+            echo '<p>'.'性：      '.$lastName.'</p>' ;
+            echo '<p>'.'名：      '.$firstName.'</p>' ;
+            echo '<p>'.'フリガナ：      '.$furiganaFirstName .'  '.$furiganaLastName.'</p>' ;
+            echo '<p>'.'郵便番号：      '.$postalCode.'</p>' ;
+            echo '<p>'.'住所：      '..'</p>' ;
+            echo '<p>'.'番地：      '..'</p>' ;
+            echo '<p>'.'メールアドレス：      '..'</p>' ;
+            echo '<p>'.'パスワード：      '..'</p>' ;
 
             
 
