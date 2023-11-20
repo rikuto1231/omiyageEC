@@ -43,7 +43,7 @@
                 </div>
                 <h2>カテゴリ</h2>
                 <div class="category" v-for="category in categories" :key="category.id">
-                    <input type="checkbox" :id="category.id" :name="category.id" v-model="selectedCategories" :value="category.id" />
+                    <input type="checkbox" :id="category.id" :name="category.id" v-model="selectedCategories" :value="category.name" />
                     <label :for="category.id">{{ category.name }}</label>
                 </div>
 
@@ -61,9 +61,6 @@
                         <label :for="prefecture.id">{{ prefecture.name }}</label>
                     </div>
                 </div>
-
-
-                
                 <button @click="search">検索</button>
             </div>
         </header>
