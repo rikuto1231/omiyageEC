@@ -44,6 +44,13 @@
             $_SESSION['confirmPassword'] = $confirmPassword;
 
             echo '<p>'.'性      '.$lastName.'</p>' ;
+            echo '<p>'.'名      '.$lastName.'</p>' ;
+            echo '<p>'.'      '.$lastName.'</p>' ;
+            echo '<p>'.'      '.$lastName.'</p>' ;
+            echo '<p>'.'      '.$lastName.'</p>' ;
+            echo '<p>'.'      '.$lastName.'</p>' ;
+
+            
 
 
             
