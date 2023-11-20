@@ -11,7 +11,27 @@
     <!-- 入力データを表示 -->
     
     <div id="container">
-        
+        <?php
+
+            $lastName = $_POST['lastName'];
+            $firstName = $_POST['firstName'];
+            $furiganaLastName = $_POST['furiganaLastName'];
+            $furiganaFirstName = $_POST['furiganaFirstName'];
+            $postalCode = $_POST['postalCode'];
+            $prefecture = $_POST['prefecture'];
+            $city = $_POST['city'];
+            $street = $_POST['street'];
+            $building = $_POST['building'];
+            $phoneNumber = $_POST['phoneNumber'];
+            $email = $_POST['email'];
+            $confirmEmail = $_POST['confirmEmail'];
+            $password = $_POST['password'];
+            $confirmPassword = $_POST['confirmPassword'];
+
+            
+
+
+        ?>
     </div>
     <!-- 確認ボタン -->
     <div id="button_control">
