@@ -32,7 +32,7 @@
         <p>～～～～～</p>
         </td></tr>
         </table>
-        <button class="sarch">削除</button>
+        <button class="sarch">更新</button>
     </div>
     
 </body>
