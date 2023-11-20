@@ -41,9 +41,14 @@
     <div id="fonts">×月×日に購入<br>~~~~~~~~~~<br>~~~~~~~~~~<br>~~~~~~~~~~</div>
     </div>
     </div>
+    <?php require '../php/revue.php' ?>
     <div id="center"><!--ボタン追加-->
         <button class="input">レビュー入力</button>
     </div>
+    
+    <br>
+    <div id="center">
+    戻る
     <div id="center">
         <button class="back">もどる</button>
     </div>

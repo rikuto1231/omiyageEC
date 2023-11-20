@@ -21,7 +21,7 @@
         <table class="table" border="1" cellpadding="10"cellspacing="0">
         <form action="" method="post">
 
-        <tr><td class="td1">名称指定</td><td class="td2">
+        <tr><td class="td1">名称</td><td class="td2">
         <p>～～～～～</p>
         </td></tr>
         <tr><td class="td1">都道府県</td><td class="td2">

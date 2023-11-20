@@ -7,11 +7,11 @@
 </head>
 <body>
 <div class="ber">
-    <img src="../imge/kanri_icon.png" alt="">
+    <img src="../imge/kanri_icon.png" alt="" width="50" height="50">
     <br>
-        <p><img src="../imge/kanri_icon2.png" class="icon1"><span>商品情報追加</p></span>
-        <p><img src="../imge/kanri_icon3.png" class="icon1"><span>商品情報更新▶</p></span>
-        <p><img src="../imge/kanri_icon4.png" class="icon1"><span>商品情報削除</p></span>
+        <p><img src="../imge/kanri_icon2.png" class="icon1" width="50" height="50"><span>商品情報追加</p></span>
+        <p><img src="../imge/kanri_icon3.png" class="icon1" width="50" height="50"><span>商品情報更新▶</p></span>
+        <p><img src="../imge/kanri_icon4.png" class="icon1" width="50" height="50"><span>商品情報削除</p></span>
     </div>
     <div class="main">
         <h2>条件指定</h2>
@@ -35,35 +35,35 @@
         <h2>全件</h2>
     <div class="flexbox">
         <div class="item">
-            <img src="../imge/a.png" alt="代替テキスト" width="70%" height="70%">
+            <img src="../imge/a.png" alt="代替テキスト" width="20%" height="20%">
             <p class="mei">商品名</p>
         </div>
         <div class="item">
-            <img src="../imge/a.png" alt="代替テキスト"width="70%" height="70%">
+            <img src="../imge/a.png" alt="代替テキスト"width="20%" height="20%">
             <p class="mei">商品名</p>
         </div>
         <div class="item">
-            <img src="../imge/a.png" alt="代替テキスト" width="70%" height="70%">
+            <img src="../imge/a.png" alt="代替テキスト" width="20%" height="20%">
             <p class="mei">商品名</p>
         </div>
         <div class="item">
-            <img src="../imge/a.png" alt="代替テキスト" width="70%" height="70%">
+            <img src="../imge/a.png" alt="代替テキスト" width="20%" height="20%">
             <p class="mei">商品名</p>
         </div>
         <div class="item">
-            <img src="../imge/a.png" alt="代替テキスト"width="70%" height="70%"">
+            <img src="../imge/a.png" alt="代替テキスト"width="20%" height="20%"">
             <p class="mei">商品名</p>
         </div>
         <div class="item">
-            <img src="../imge/a.png" alt="代替テキスト" width="70%" height="70%">
+            <img src="../imge/a.png" alt="代替テキスト" width="20%" height="20%">
             <p class="mei">商品名</p>
         </div>
         <div class="item">
-            <img src="../imge/a.png" alt="代替テキスト" width="70%" height="70%">
+            <img src="../imge/a.png" alt="代替テキスト" width="20%" height="20%">
             <p class="mei">商品名</p>
         </div>
         <div class="item">
-            <img src="../imge/a.png" alt="代替テキスト" width="70%" height="70%">
+            <img src="../imge/a.png" alt="代替テキスト" width="20%" height="20%">
             <p class="mei">商品名</p>
         </div>
     </div>
