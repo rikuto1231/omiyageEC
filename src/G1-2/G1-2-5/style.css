@@ -109,7 +109,7 @@ header {
     width: 308px;
     height: 54px;
     border-radius:30px;
-    background-color: #085ef2;
+    background-color: #085ef2cb;
     border-color:#ffffff ;
     color: white;
     cursor: pointer;
@@ -121,7 +121,7 @@ header {
     width: 308px;
     height: 54px;
     border-radius:30px;
-    background-color: #26caba;
+    background-color: #26cabac5;
     border-color:#f4f4f4 ;
     color: white;
     cursor: pointer;

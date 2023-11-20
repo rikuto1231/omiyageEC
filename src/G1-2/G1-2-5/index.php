@@ -7,7 +7,7 @@
     <title>ログイン登録確定画面</title>
 </head>
 <body>
-<form method="post" action="G1-2-5/index.php" id="form_all">
+<form method="post" action="G1-2-6/index.php" id="form_all">
     <!-- 入力データを表示 -->
     
     <div id="container">
