@@ -20,20 +20,23 @@
         <form action="" method="post">
 
         <tr><td class="td1">名称指定</td><td class="td2">
-        <p>～～～～～</p>
+        <input type="text" size="30" class="text_box" >
         </td></tr>
         <tr><td class="td1">都道府県</td><td class="td2">
-        <p>～～～～～</p>
+        <input type="text" size="30" class="text_box" >
         </td></tr>
         <tr><td class="td1">カテゴリ</td><td class="td2">
-        <p>～～～～～</p>
-        </td ></tr>
+        <input type="text" size="30" class="text_box" >
+        </td></tr>
         <tr><td class="td1">価格帯</td><td class="td2">
-        <p>～～～～～</p>
+        <input type="text" size="30" class="text_box" >
         </td></tr>
         </table>
         <button class="sarch">更新</button>
     </div>
+
+
+    
     
 </body>
 </html>
