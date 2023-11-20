@@ -10,10 +10,7 @@
 <body>
     <header>
         <?php require '../common/php/header.php'; ?>
-    </header>
-
-
-    
+    </header>    
     <div id="app">
         <div class="slider-container">
             <div class="slider" ref="slider">
