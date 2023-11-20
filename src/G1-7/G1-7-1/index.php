@@ -52,5 +52,6 @@
     <div id="center">
         <button class="back">もどる</button>
     </div>
+</form>
 </body>
 </html>
