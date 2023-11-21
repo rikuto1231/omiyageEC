@@ -11,6 +11,8 @@
     <header>
         <?php require '../common/php/header.php'; ?>
     </header>
+
+
     
     <div>
     <div class="carousel">
