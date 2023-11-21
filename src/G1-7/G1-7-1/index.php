@@ -33,22 +33,25 @@
     <div id="revew">
     <h2><img src="../../G1-1/img/user.png" alt="代替テキスト"width="7%" height="14%">
     あいうえお
-    <br>
-    m/d
-    <br>
-    ★☆☆☆☆
-    <br>
-    とてもいい</h2>
+</h2>
+    <h2>m/d</h2>
+    <h2>★☆☆☆☆</h2>
+    <h2>とてもいい</h2>
     <div id="center">
     <div id="fonts">×月×日に購入<br>~~~~~~~~~~<br>~~~~~~~~~~<br>~~~~~~~~~~</div>
     </div>
     </div>
-    <div id="center">
-        <a href="../G1-6-2/index.html">レビュー入力</a>
+    <?php require '../php/revue.php' ?>
+    <div id="center"><!--ボタン追加-->
+        <button class="input">レビュー入力</button>
     </div>
+    
     <br>
     <div id="center">
-    検索ホームに戻る
+    戻る
+    <div id="center">
+        <button class="back">もどる</button>
     </div>
+</form>
 </body>
 </html>

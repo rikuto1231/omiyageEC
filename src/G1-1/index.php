@@ -12,8 +12,6 @@
         <?php require '../common/php/header.php'; ?>
     </header>
 
-    
-
 
     
     <div id="app">
