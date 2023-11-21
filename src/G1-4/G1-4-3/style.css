@@ -62,7 +62,10 @@
     height: auto;
     margin-top: 10px; /* 画面上部からの余白を追加 */
 /* } */ 
-
+.main{
+    margin-top: 150px;
+    text-align: center;
+  }
 .item{
     width: 100%;
     text-align: center;

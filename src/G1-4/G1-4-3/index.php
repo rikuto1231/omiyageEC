@@ -12,7 +12,7 @@
         <header>
             <?php require '../../common/php/header.php'; ?>
         </header>
-
+    <div classm="main">
         <div id="menu_all">
         <p>〇〇県<br>
         〇〇〇〇〇〇</p>
@@ -31,6 +31,8 @@
                 <button class="homebutton">検索ホームに戻る</button>
                 </div>
             </div>
+</div>
             <script src="../../common/js/side_ber.js"></script>
+        
 </body>
 </html>
