@@ -48,6 +48,26 @@ function getDatabaseConnection() {
     return $dbConnection->getPDO(); // 接続を返す
 }
 
+// 商品検索用API
+function sql_search($pdo, $search) {
+    try {
+        $searchPattern = "%" . $search . "%"; 
+        $stmt = $pdo->prepare('SELECT * FROM item WHERE name LIKE :search');
+        $stmt->bindParam(':search', $searchPattern, PDO::PARAM_STR);
+
+        $stmt->execute();
+
+        $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
+        return $result;
+
+    } catch (PDOException $e) {
+        // エラーハンドリング
+        echo "エラー: " . $e->getMessage();
+        return false;
+    }
+}
+
+
 
  //DB接続関数
 
