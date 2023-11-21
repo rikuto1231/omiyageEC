@@ -12,13 +12,13 @@
         <header>
             <?php require '../../common/php/header.php'; ?>
         </header>
-    <div classm="main">
+    <div class="main">
         <div id="menu_all">
         <p>〇〇県<br>
         〇〇〇〇〇〇</p>
         </div>
         <div class="item">
-            <img src="../img/aso.jpg" alt="代替テキスト" width="90%" height="30%">
+            <img src="../img/aso.jpg" alt="代替テキスト" width="300px" height="200px">
             </div>
             <div class="mozi">
         <p>価格 : 〇〇〇〇〇</p>
