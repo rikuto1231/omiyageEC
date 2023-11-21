@@ -8,7 +8,7 @@
 </head>
 <body>
     <div class="ber">
-    <img src="../imge/kanri_icon.png" alt="">
+    <img src="../imge/kanri_icon.png" alt=""  width="50" height="50">
     <br>
         <p><img src="../imge/kanri_icon2.png" class="icon1"><span>商品情報追加</p></span>
         <p><img src="../imge/kanri_icon3.png" class="icon1"><span>商品情報更新▶</p></span>
@@ -19,7 +19,7 @@
         <table class="table" border="1" cellpadding="10"cellspacing="0">
         <form action="" method="post">
 
-        <tr><td class="td1">名称指定</td><td class="td2">
+        <tr><td class="td1">名称</td><td class="td2">
         <input type="text" size="30" class="text_box" >
         </td></tr>
         <tr><td class="td1">都道府県</td><td class="td2">
