@@ -9,7 +9,7 @@
 </head>
 <body>
     <header>
-        <?php require '../common/php/header.php'; ?>
+        <?php require '../../common/php/header.php'; ?>
     </header>
     <div class="main">
     <div class="flexbox">
@@ -42,7 +42,7 @@
     <div class ="button1">
     <button class="kakunin">検索ホームに戻る</button>
     </div>
-    <script src="../common/js/side_ber.js"></script>
+    <script src="../../common/js/side_ber.js"></script>
 </body>
 
 </html>
