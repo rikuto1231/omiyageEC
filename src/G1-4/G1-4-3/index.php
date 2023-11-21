@@ -5,16 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <!-- headerのcss読み込み -->
+    <link rel="stylesheet" href="../../common/css/header.css">
 </head>
 <body>
     <header>
-        <!-- headerのphp読み込み -->
+        <header>
+            <?php require '../../common/php/header.php'; ?>
+        </header>
 
         <div id="menu_all">
-            <div class="container">
-                <h3>ロゴ・検索部分（後々php読み込みで追加）</h3>
-            </div>
         <p>〇〇県<br>
         〇〇〇〇〇〇</p>
         </div>
@@ -24,7 +23,7 @@
             <div class="mozi">
         <p>価格 : 〇〇〇〇〇</p>
             <p class="point">付与ポイント 〇〇ポイント</p>
-            <div> 数量 :<button class="prev-button" @click="changeSlide(-1)">◄</button>1<button class="next-button" @click="changeSlide(1)">►</button></div>
+            <div> 数量 :<button class="prev-button" @click="changeSlide(-1)">-</button>1<button class="next-button" @click="changeSlide(1)">+</button></div>
             <a href="">レビュー</a>
             </div>
             <div class ="button3">
@@ -32,8 +31,6 @@
                 <button class="homebutton">検索ホームに戻る</button>
                 </div>
             </div>
-
-
-    </header>
+            <script src="../../common/js/side_ber.js"></script>
 </body>
 </html>
