@@ -1,4 +1,5 @@
-div{
+body{
+    width: 100%;
     text-align:  center;   
 }
 
@@ -127,4 +128,18 @@ header {
     cursor: pointer;
     margin-bottom:20px;
     margin-top:20px;
+}
+
+/* styles.css */
+table{
+    text-align: center;
+    width: 100%;
+}
+
+.table-container {
+    width: 100%;
+}
+
+.table-cell {
+    text-align: center;
 }
