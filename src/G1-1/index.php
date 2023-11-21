@@ -11,9 +11,6 @@
     <header>
         <?php require '../common/php/header.php'; ?>
     </header>
-
-
-    
     <div>
     <div class="carousel">
   <!-- スライドのリスト -->
@@ -39,7 +36,7 @@
       </div>
       <!-- スライドの内容（ここでは画像）を記述します。 -->
       <!-- div要素に変えれば文字を加えることもできます。 -->
-      <img src="../img/a.png">
+      <img src="img/a.pmg" alt="">
     </div>
     <!-- スライド（2番目）内容は1個めと同じ -->
     <div class="slide">
@@ -78,6 +75,5 @@
 </div>
     </div>
     <script src="../common/js/side_ber.js"></script>
-    <script src="script/script.js"></script>
 </body>
 </html>
