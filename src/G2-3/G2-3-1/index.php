@@ -33,7 +33,7 @@
         </td></tr>
         </table>
         <button class="sarch">検索</button>
-        <h2>全件</h2>
+        <h2>全件表示</h2>
     <div class="flexbox">
         <div class="item">
             <img src="../imge/a.png" alt="代替テキスト" width="70%" height="70%">
