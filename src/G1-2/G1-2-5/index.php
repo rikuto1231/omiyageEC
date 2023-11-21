@@ -43,8 +43,8 @@
             $_SESSION['password'] = $password;
             $_SESSION['confirmPassword'] = $confirmPassword;
 
-            echo '<p>'.'性：   '.$lastName."       " ;
-            echo '名：   '.$firstName.'</p>' ;
+            echo '<p>'.'性： '.$lastName."　";
+            echo '名： '.$firstName.'</p>' ;
             echo '<p>'.'フリガナ：      '.$furiganaLastName .'  '.$furiganaFirstName.'</p>' ;
             echo '<p>'.'郵便番号：      '.$postalCode.'</p>' ;
             echo '<p>'.'住所：      '.$prefecture ."   ".$city."   ".$building.'</p>' ;
