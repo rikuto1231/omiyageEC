@@ -1,6 +1,5 @@
 <?php
 session_start();
-// DB.phpにリクエスト
 
 // データベースへの接続を取得
 $pdo = getDatabaseConnection();

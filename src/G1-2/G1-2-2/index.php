@@ -8,18 +8,18 @@
 </head>
 <body>
     <h1>会員ログイン</h1>
-    <form method="post" action="login-output.php">
-    
+    <form method="post" action="../G1-2-3/index.php">
+
         <p>
             <label for="mail">メールアドレス</label><br>
             <div class="box1">
-                <input type="text" id="mail_address" name="mail" class="m" placeholder="入力してください" required>
+                <input type="text" id="mail" name="mail" class="m" placeholder="入力してください" required>
             </div>
         </p>
         <p>
             <label for="pass">パスワード</label><br>
             <div class="box2">
-                <input type="password" id="password" name="pass" class="p" placeholder="パスワードを入力" required>
+                <input type="password" id="pass" name="pass" class="p" placeholder="パスワードを入力" required>
             </div>
         </p>
 
