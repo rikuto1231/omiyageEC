@@ -1,4 +1,5 @@
-div{
+body{
+    width: 100%;
     text-align:  center;   
 }
 
@@ -100,4 +101,45 @@ header {
     border-color:#0890F2 ;
     color: white;
     cursor: pointer;
+}
+#button_control{
+    width: 100%;
+    text-align: center;
+}
+.btn-check{
+    width: 308px;
+    height: 54px;
+    border-radius:30px;
+    background-color: #085ef2cb;
+    border-color:#ffffff ;
+    color: white;
+    cursor: pointer;
+    margin-bottom:20px;
+    margin-top:20px;
+}
+
+.btn-back{
+    width: 308px;
+    height: 54px;
+    border-radius:30px;
+    background-color: #7fa8dbc5;
+    border-color:#f4f4f4 ;
+    color: white;
+    cursor: pointer;
+    margin-bottom:20px;
+    margin-top:20px;
+}
+
+/* styles.css */
+table{
+    text-align: center;
+    width: 100%;
+}
+
+.table-container {
+    width: 100%;
+}
+
+.table-cell {
+    text-align: center;
 }
