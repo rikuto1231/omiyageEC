@@ -70,6 +70,5 @@ new Vue({
         selectedPrefectures: []
     },
     methods: {
-       
     }
 });
