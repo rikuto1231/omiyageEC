@@ -43,20 +43,18 @@
             $_SESSION['password'] = $password;
             $_SESSION['confirmPassword'] = $confirmPassword;
 
-            echo '<p>'.'性： '.$lastName."　";
-            echo '名： '.$firstName.'</p>' ;
-            echo '<p>'.'フリガナ：      '.$furiganaLastName .'  '.$furiganaFirstName.'</p>' ;
-            echo '<p>'.'郵便番号：      '.$postalCode.'</p>' ;
-            echo '<p>'.'住所：      '.$prefecture ."   ".$city."   ".$building.'</p>' ;
-            echo '<p>'.'番地：      '.$street.'</p>' ;
-            echo '<p>'.'メールアドレス：      '.$email.'</p>' ;
-            echo '<p>'.'パスワード：      '.$password.'</p>' ;
+        echo '<p>'.'性： '.$lastName."　　".'名： '.$firstName.'</p>' ;    
                         
+        echo '<table>';
+        echo '<tr><td align="right">フリガナ:</td><td align="center">'.$furiganaLastName.' '.$furiganaFirstName.'</td></tr>';
+        echo '<tr><td align="right">郵便番号:</td><td align="center">'.$postalCode.'</td></tr>';
+        echo '<tr><td align="right">住所:</td><td align="center">'.$prefecture.' '.$city.'</td></tr>';
+        echo '<tr><td align="right">番地:</td><td align="center">'.$street.'</td></tr>';
+        echo '<tr><td align="right">建物名:</td><td align="center">'.$building.'</td></tr>';
+        echo '</table>';
 
-
-            
-
-
+        echo '<p>'.'メールアドレス<p>'.$email.'</p>' ;
+        echo '<p>'.'パスワード<p>'.$password.'</p>' ;
         ?>
     </div>
     <!-- 確認ボタン -->
