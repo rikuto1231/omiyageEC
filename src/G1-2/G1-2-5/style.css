@@ -1,4 +1,5 @@
-div{
+body{
+    width: 100%;
     text-align:  center;   
 }
 
@@ -130,6 +131,10 @@ header {
 }
 
 /* styles.css */
+table{
+    text-align: center;
+    width: 100%;
+}
 
 .table-container {
     width: 100%;
