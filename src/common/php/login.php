@@ -23,7 +23,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $_SESSION['user_id'] = $user['user_id']; // ユーザーIDをセッションに保存
 
             // ログイン後の遷移先にリダイレクト
-            header('Location: ログイン後のページURL');
+            header('Location: https://vivian-aso2301333.webdav-lolipop.jp/github/omiyageEC/src/G1-1/index.php');
             exit();
         } else {
             // ログイン失敗時の処理
