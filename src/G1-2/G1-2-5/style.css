@@ -128,3 +128,13 @@ header {
     margin-bottom:20px;
     margin-top:20px;
 }
+
+/* styles.css */
+
+.table-container {
+    width: 100%;
+}
+
+.table-cell {
+    text-align: center;
+}

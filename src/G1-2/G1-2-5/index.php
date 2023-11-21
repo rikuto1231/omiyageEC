@@ -53,6 +53,19 @@
         echo '<tr><td align="right">建物名:</td><td align="center">'.$building.'</td></tr>';
         echo '</table>';
 
+
+
+        echo '<link rel="stylesheet" type="text/css" href="styles.css">'; // CSSファイルのリンク
+        echo '<table class="table-container">';
+        echo '<tr><td align="right">フリガナ:</td><td class="table-cell">'.$furiganaLastName.' '.$furiganaFirstName.'</td></tr>';
+        echo '<tr><td align="right">郵便番号:</td><td class="table-cell">'.$postalCode.'</td></tr>';
+        echo '<tr><td align="right">住所:</td><td class="table-cell">'.$prefecture.' '.$city.'</td></tr>';
+        echo '<tr><td align="right">番地:</td><td class="table-cell">'.$street.'</td></tr>';
+        echo '<tr><td align="right">建物名:</td><td class="table-cell">'.$building.'</td></tr>';
+        echo '</table>';
+        
+
+
         echo '<p>'.'メールアドレス<p>'.$email.'</p>' ;
         echo '<p>'.'パスワード<p>'.$password.'</p>' ;
         ?>
