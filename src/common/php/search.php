@@ -1,12 +1,5 @@
-<?php
-// パラメータから検索条件を取得
-$categories = $_GET['categories'];
-$priceRanges = $_GET['priceRanges'];
-$prefectures = $_GET['prefectures'];
+<!-- 読み込みファイル -->
+<!-- 別ファイル自己遷移方式で関数呼び出し対応 -->
+<!-- 最初は全件検索対応だけ（後で条件検索を対応させる） -->
 
-// ここで接続検索処理orDB.phpにAPIで構築
 
-// ダミーレスポンス
-$response = ['result' => 'success', 'message' => '検索成功'];
-echo json_encode($response);
-?>
