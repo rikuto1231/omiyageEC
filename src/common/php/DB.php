@@ -39,14 +39,34 @@ class DatabaseConnection {
 
 function getDatabaseConnection() {
     // 環境に合わせて後々変更予定
-    $host = 'mysql214.phy.lolipop.lan';
-    $dbname = 'LAA1517437-shop';
-    $user = 'LAA1517437';
-    $pass = 'Pass1015';
+    $host = 'mysql216.phy.lolipop.lan';
+    $dbname = 'LAA1517424-aso2201216';
+    $user = 'LAA1517424';
+    $pass = 'Pass0407';
 
     $dbConnection = new DatabaseConnection($host, $dbname, $user, $pass);
     return $dbConnection->getPDO(); // 接続を返す
 }
+
+// 商品検索用API
+function sql_search($pdo, $search) {
+    try {
+        $searchPattern = "%" . $search . "%"; 
+        $stmt = $pdo->prepare('SELECT * FROM item WHERE name LIKE :search');
+        $stmt->bindParam(':search', $searchPattern, PDO::PARAM_STR);
+
+        $stmt->execute();
+
+        $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
+        return $result;
+
+    } catch (PDOException $e) {
+        // エラーハンドリング
+        echo "エラー: " . $e->getMessage();
+        return false;
+    }
+}
+
 
 
  //DB接続関数

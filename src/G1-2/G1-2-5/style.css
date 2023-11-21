@@ -1,4 +1,5 @@
-div{
+body{
+    width: 100%;
     text-align:  center;   
 }
 
@@ -121,10 +122,24 @@ header {
     width: 308px;
     height: 54px;
     border-radius:30px;
-    background-color: #26cabac5;
+    background-color: #7fa8dbc5;
     border-color:#f4f4f4 ;
     color: white;
     cursor: pointer;
     margin-bottom:20px;
     margin-top:20px;
+}
+
+/* styles.css */
+table{
+    text-align: center;
+    width: 100%;
+}
+
+.table-container {
+    width: 100%;
+}
+
+.table-cell {
+    text-align: center;
 }

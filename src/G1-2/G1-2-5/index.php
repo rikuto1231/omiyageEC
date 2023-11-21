@@ -43,21 +43,31 @@
             $_SESSION['password'] = $password;
             $_SESSION['confirmPassword'] = $confirmPassword;
 
-            echo '<p>'.'性：      '.$lastName.'</p>' ;
-            echo '<p>'.'名：      '.$firstName.'</p>' ;
-            echo '<p>'.'フリガナ：      '.$furiganaFirstName .'  '.$furiganaLastName.'</p>' ;
-            echo '<p>'.'郵便番号：      '.$postalCode.'</p>' ;
-            echo '<p>'.'住所：      '. ."   ". .'</p>' ;
-            echo '<p>'.'番地：      '..'</p>' ;
-            echo '<p>'.'メールアドレス：      '..'</p>' ;
-            echo '<p>'.'パスワード：      '..'</p>' ;
-
-            
-
-
-            
+        echo '<p>'.'性： '.$lastName."　　".'名： '.$firstName.'</p>' ;    
+                        
+        echo '<table>';
+        echo '<tr><td align="right">フリガナ:</td><td align="center">'.$furiganaLastName.' '.$furiganaFirstName.'</td></tr>';
+        echo '<tr><td align="right">郵便番号:</td><td align="center">'.$postalCode.'</td></tr>';
+        echo '<tr><td align="right">住所:</td><td align="center">'.$prefecture.' '.$city.'</td></tr>';
+        echo '<tr><td align="right">番地:</td><td align="center">'.$street.'</td></tr>';
+        echo '<tr><td align="right">建物名:</td><td align="center">'.$building.'</td></tr>';
+        echo '</table>';
 
 
+
+        echo '<link rel="stylesheet" type="text/css" href="styles.css">'; // CSSファイルのリンク
+        echo '<table class="table-container">';
+        echo '<tr><td align="right">フリガナ:</td><td class="table-cell">'.$furiganaLastName.' '.$furiganaFirstName.'</td></tr>';
+        echo '<tr><td align="right">郵便番号:</td><td class="table-cell">'.$postalCode.'</td></tr>';
+        echo '<tr><td align="right">住所:</td><td class="table-cell">'.$prefecture.' '.$city.'</td></tr>';
+        echo '<tr><td align="right">番地:</td><td class="table-cell">'.$street.'</td></tr>';
+        echo '<tr><td align="right">建物名:</td><td class="table-cell">'.$building.'</td></tr>';
+        echo '</table>';
+        
+
+
+        echo '<p>'.'メールアドレス<p>'.$email.'</p>' ;
+        echo '<p>'.'パスワード<p>'.$password.'</p>' ;
         ?>
     </div>
     <!-- 確認ボタン -->
