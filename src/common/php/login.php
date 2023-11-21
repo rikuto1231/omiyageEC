@@ -18,6 +18,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $user = $stmt->fetch(PDO::FETCH_ASSOC);
 
         // パスワードの照合
+    
         if ($user && password_verify($pass, $user['password'])) {
             
             $_SESSION['user_id'] = $user['user_id']; // ユーザーIDをセッションに保存
