@@ -26,6 +26,7 @@ CREATE TABLE Merchandise(
     brand varchar(20) not null,
     price int not null,
     stock int not null,
+    path varchar(200) ,
     primary key (merchandise_id)
 );
 
