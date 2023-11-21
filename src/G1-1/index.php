@@ -10,10 +10,7 @@
 <body class="main">
     <header>
         <?php require '../common/php/header.php'; ?>
-    </header>
-
-
-    
+    </header>    
     <div>
     <div class="carousel">
   <!-- スライドのリスト -->
