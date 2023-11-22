@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="../../common/css/header.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>購入履歴画面</title>
+    <title>予約履歴画面</title>
 </head>
 <body>
     <header>
@@ -15,7 +15,7 @@
         <br>
         <br>
         <h1 style="text-align: left">
-        &emsp;購入履歴</h1>
+        &emsp;予約履歴</h1>
     </div>
     <div>
         <br>
@@ -37,7 +37,7 @@
         <br>
         <br>
         <button class="modoru" onclick="location.href='../G1-3-1/index.php'">戻る</button>
+        <script src="../../common/js/side_ber.js"></script>
     </div>
-    <script src="../../common/js/side_ber.js"></script>
 </body>
 </html>
