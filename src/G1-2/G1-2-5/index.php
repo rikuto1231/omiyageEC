@@ -71,6 +71,16 @@
         ?>
     </div>
     <!-- 確認ボタン -->
+    <button onclick="location_php()">登録確定する</button>
+
+    <script>
+        function location_php() {
+            window.location.href = 'URL変更';
+        }
+    </script>
+
+
+
     <div id="button_control">
         <button type="submit" class="btn-check">登録確定する</button><br>
     </div>
