@@ -14,7 +14,6 @@ header {
 }
 
 
-
 .sidebar {
     width: 0; /* 初期状態では非表示 */
     height: 100%;
@@ -138,6 +137,7 @@ table{
 
 .table-container {
     width: 100%;
+    
 }
 
 .table-cell {
