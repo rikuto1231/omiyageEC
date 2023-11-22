@@ -27,7 +27,7 @@
             <p><a href="">ログアウト</a></p>
         </div>
         <img id="toggleButton" src="../imge/user.png" width="40" height="40">
-        <a href="">
+        <a href="../../G1-5/G1-5-2/index.php">
             <img id="cart_button" src="../imge/cart.jpg" width="40" height="40">
         </a>
         <div id="search_all">
@@ -35,7 +35,7 @@
             <button class="conditions_img">
                 <img src="../imge/kensakku.png" width="20" height="20">
             </button>
-            <p><a href="" id="conditions">絞り込み条件を開く▽</a></p>
+            <p><a href="../../G1-4/G1-4-1/index.php" id="conditions">絞り込み条件を開く▽</a></p>
         </div>
     </header>
     <div id="product_detail">
@@ -55,7 +55,7 @@
             </select></h5>
             <h5>￥値段<button class="delete_button">削除</button></h5>
             </div>
-            <button class="button_next">ショッピングを続ける</button>
+            <button class="button_next" onclick="location.href='../../G1-4/G1-4-2/index.php'">ショッピングを続ける</button>
         </div>
         <div id="num_output">
             <h4>付与ポイント  </h4>

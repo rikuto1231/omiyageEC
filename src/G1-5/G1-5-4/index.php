@@ -28,7 +28,7 @@
             <p><a href="">ログアウト</a></p>
         </div>
         <img id="toggleButton" src="../imge/user.png" width="40" height="40">
-        <a href="">
+        <a href="../../G1-5/G1-5-2/index.php">
             <img id="cart_button" src="../imge/cart.jpg" width="40" height="40">
         </a>
         <div id="search_all">
@@ -36,7 +36,7 @@
             <button class="conditions_img">
                 <img src="../imge/kensakku.png" width="20" height="20">
             </button>
-            <p><a href="" id="conditions">絞り込み条件を開く▽</a></p>
+            <p><a href="../../G1-4/G1-4-1/index.php" id="conditions">絞り込み条件を開く▽</a></p>
         </div>
     </header>
     </div>
@@ -54,7 +54,7 @@
     <hr>
     <p class="payway">○○○○</p>
     <button class="kakunin">購入</button>
-    <p class="modoru"><a href="../G1-5-3/index.html">ご購入手続きに戻る</a></p>
+    <p class="modoru"><a href="../G1-5-3/index.php>ご購入手続きに戻る</a></p>
     </form>
 </div>
 <script src="../../common/js/side_ber.js"></script>

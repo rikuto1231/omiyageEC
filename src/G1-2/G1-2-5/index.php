@@ -9,10 +9,8 @@
 <body>
 <form method="post" action="../G1-2-6/index.php" id="form_all">
     <!-- 入力データを表示 -->
-    
     <div id="container">
         <?php
-
             $lastName = $_POST['lastName'];
             $firstName = $_POST['firstName'];
             $furiganaLastName = $_POST['furiganaLastName'];
@@ -43,19 +41,17 @@
             $_SESSION['password'] = $password;
             $_SESSION['confirmPassword'] = $confirmPassword;
 
-        echo '<p>'.'性： '.$lastName."　　".'名： '.$firstName.'</p>' ;    
+          
                         
-        echo '<table>';
+       /* echo '<table>';
         echo '<tr><td align="right">フリガナ:</td><td align="center">'.$furiganaLastName.' '.$furiganaFirstName.'</td></tr>';
         echo '<tr><td align="right">郵便番号:</td><td align="center">'.$postalCode.'</td></tr>';
         echo '<tr><td align="right">住所:</td><td align="center">'.$prefecture.' '.$city.'</td></tr>';
         echo '<tr><td align="right">番地:</td><td align="center">'.$street.'</td></tr>';
         echo '<tr><td align="right">建物名:</td><td align="center">'.$building.'</td></tr>';
-        echo '</table>';
-
-
-
-        echo '<link rel="stylesheet" type="text/css" href="styles.css">'; // CSSファイルのリンク
+        echo '</table>';*/
+        echo '<br><p style="margin-bottom: 0;">'.'性： '.$lastName."　　".'名： '.$firstName.'</p>' ;
+        
         echo '<table class="table-container">';
         echo '<tr><td align="right">フリガナ:</td><td class="table-cell">'.$furiganaLastName.'　'.$furiganaFirstName.'</td><td>　　　　</td></tr>';
         echo '<tr><td align="right">郵便番号:</td><td class="table-cell">'.$postalCode.'</td><td>　　　　</td></tr>';
@@ -64,7 +60,6 @@
         echo '<tr><td align="right">建物名:</td><td class="table-cell">'.$building.'</td><td></td>　　　　</tr>';
         echo '</table>';
         
-
 
         echo '<p>'.'メールアドレス<p>'.$email.'</p>' ;
         echo '<p>'.'パスワード<p>'.$password.'</p>' ;
