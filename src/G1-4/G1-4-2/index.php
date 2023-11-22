@@ -14,29 +14,8 @@
     </header>
     <div class="main">
     <div class="flexbox">
-        <div class="item">
-            <img src="../img/aso.jpg" alt="代替テキスト" width="90px" height="90px">
-            <p>商品名</p>
-        </div>
-        <div class="item">
-            <img src="../img/aso.jpg" alt="代替テキスト" width="90px" height="90px">
-            <p>商品名</p>
-        </div>
-        <div class="item">
-            <img src="../img/aso.jpg" alt="代替テキスト" width="90px" height="90px">
-            <p>商品名</p>
-        </div>
-        <div class="item">
-            <img src="../img/aso.jpg" alt="代替テキスト" width="90px" height="90px">
-            <p>商品名</p>
-        </div>
-        <div class="item">
-            <img src="../img/aso.jpg" alt="代替テキスト" width="90px" height="90px">
-            <p>商品名</p>
-        </div>
-        <div class="item">
-            <img src="../img/aso.jpg" alt="代替テキスト" width="90px" height="90px">
-            <p>商品名</p>
+        <!-- 検索情報出力php -->
+        <?php require '../../common/php/search.php'; ?>
         </div>
     </div>
     </div>
