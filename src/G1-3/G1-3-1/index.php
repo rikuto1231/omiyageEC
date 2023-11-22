@@ -8,6 +8,7 @@
 </head>
 <body>
 <header>
+<form method="post" action="../../common/php/logout.php">
         <div class="sidebar">
             <img id="closeButton" src="../imge/close.png">
             <!-- サイドバーの内容 -->
@@ -24,7 +25,7 @@
             <hr>
             <p><a href="">ログイン</a></p>
             <hr>
-            <p><a href="">ログアウト</a></p>
+            <p><a href="../../common/php/logout.php">ログアウト</a></p>
             <hr>
         </div>
         <img id="toggleButton"src="../img/user.png"width="40" height="40">
