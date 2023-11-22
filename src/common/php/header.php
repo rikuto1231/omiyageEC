@@ -13,7 +13,7 @@
         <hr>
         <p><a href="../../G1-3/G1-3-3/index.php">購入履歴</a></p>
         <hr>
-        <p><a href="">予約確認</a></p>
+        <p><a href="../../G1-3/G1-3-5/index.php">予約確認</a></p>
         <hr>
         <p><a href="">ログイン</a></p>
         <hr>
