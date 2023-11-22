@@ -58,7 +58,7 @@ try {
     session_destroy();
 
     // 登録が成功したら遷移先にリダイレクト
-    header('Location: 登録完了後のページURL');
+    header('Location: ../G1-2/G1-2-5/index.php');
 } catch (PDOException $e) {
     die("データベースエラー: " . $e->getMessage());
 }

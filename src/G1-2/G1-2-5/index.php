@@ -67,12 +67,12 @@
     </div>
     <!-- 確認ボタン -->
     <div id="button_control" class="btn-check">
-        <button onclick="location_php()">登録確定する</button>
+        <button onclick="location_php()" class="btn-check">登録確定する</button>
     </div>
 
     <script>
         function location_php() {
-            window.location.href = 'URL変更';
+            window.location.href = '../../php/registration.php';
         }
     </script>
 
