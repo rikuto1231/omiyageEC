@@ -1,18 +1,15 @@
 <?php
 
-// 読み込みファイル 
-// 別ファイル自己遷移方式で関数呼び出し対応 get形式
-// 最初は全件検索対応だけ（後で条件検索を対応させる）
-
-// 方式あってるか後で確認
+if ($_SERVER['REQUEST_METHOD'] === 'GET') {
+    // GETリクエストが送信された場合の処理
 
     // 接続
     $pdo = getDatabaseConnection(); 
 
-    $search = $_GET['search_box'];
+    // 情報がなかった時の代替え文字列
+    $search = isset($_GET['search_box']) ? $_GET['search_box'] : '';
 
     $result = sql_search($pdo, $search);
-
 
     // return情報
     foreach ($result as $row) {
@@ -22,7 +19,5 @@
         echo '<p>'.$row['merchandise_name'].'</p>';
         echo '</div>';
     }
-
-
-
+}
 ?>

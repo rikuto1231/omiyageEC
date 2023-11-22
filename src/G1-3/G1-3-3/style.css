@@ -1,5 +1,7 @@
-div{
+
+.main{
     text-align:  center;   
+    margin-top: 100px;
 }
 .kensaku{
     border: none;

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="../../common/css/header.css">
+    <?php require '../../common/php/DB.php'; ?>
     <title>検索後の商品詳細画面</title>
 </head>
 <body>
@@ -14,34 +15,15 @@
     </header>
     <div class="main">
     <div class="flexbox">
-        <div class="item">
-            <img src="../img/aso.jpg" alt="代替テキスト" width="90px" height="90px">
-            <p>商品名</p>
-        </div>
-        <div class="item">
-            <img src="../img/aso.jpg" alt="代替テキスト" width="90px" height="90px">
-            <p>商品名</p>
-        </div>
-        <div class="item">
-            <img src="../img/aso.jpg" alt="代替テキスト" width="90px" height="90px">
-            <p>商品名</p>
-        </div>
-        <div class="item">
-            <img src="../img/aso.jpg" alt="代替テキスト" width="90px" height="90px">
-            <p>商品名</p>
-        </div>
-        <div class="item">
-            <img src="../img/aso.jpg" alt="代替テキスト" width="90px" height="90px">
-            <p>商品名</p>
-        </div>
-        <div class="item">
-            <img src="../img/aso.jpg" alt="代替テキスト" width="90px" height="90px">
-            <p>商品名</p>
+        <!-- 検索情報出力php -->
+        <?php require '../../common/php/search.php'; ?>
         </div>
     </div>
     </div>
     <div class ="button1">
-    <button class="kakunin">検索ホームに戻る</button>
+    <button class="kakunin" onclick="location.href='../G1-4-1/index.php'">検索ホームに戻る</button>
+        <!-- 遷移の処理を追記して -->
+        <button class="kakunin">検索ホームに戻る</button>
     </div>
     <script src="../../common/js/side_ber.js"></script>
 </body>

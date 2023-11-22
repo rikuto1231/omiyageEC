@@ -48,13 +48,58 @@ function getDatabaseConnection() {
     return $dbConnection->getPDO(); // 接続を返す
 }
 
+
 // 商品検索用API
-function sql_search($pdo, $search) {
+function sql_search($pdo, $search, $selectedCategories, $selectedPriceRanges, $selectedPrefectures) {
     try {
         $searchPattern = "%" . $search . "%"; 
-        //テーブル名変更
-        $stmt = $pdo->prepare('SELECT * FROM item WHERE name LIKE :search');
+
+        // JSの配列がID形式にしてあるからname形式への変更が必要
+
+        // デフォルトのsql文
+        $sql = 'SELECT * FROM Merchandise WHERE merchandise_name LIKE :search';
+
+        // カテゴリが選択
+        if (!empty($selectedCategories)) {
+            $categoryConditions = array_fill(0, count($selectedCategories), 'category = ?');
+            $sql .= ' AND (' . implode(' OR ', $categoryConditions) . ')';
+        }
+
+        // 価格帯が選択
+        if (!empty($selectedPriceRanges)) {
+            $priceRangeConditions = array_fill(0, count($selectedPriceRanges), 'price = ?');
+            $sql .= ' AND (' . implode(' OR ', $priceRangeConditions) . ')';
+        }
+
+        // 都道府県が選択
+        if (!empty($selectedPrefectures)) {
+            $prefectureConditions = array_fill(0, count($selectedPrefectures), 'prefecture = ?');
+            $sql .= ' AND (' . implode(' OR ', $prefectureConditions) . ')';
+        }
+
+        $stmt = $pdo->prepare($sql);
         $stmt->bindParam(':search', $searchPattern, PDO::PARAM_STR);
+
+        // パラメータをバインド
+        $paramIndex = 1;
+
+        if (!empty($selectedCategories)) {
+            foreach ($selectedCategories as $categoryId) {
+                $stmt->bindParam($paramIndex++, $categoryId, PDO::PARAM_INT);
+            }
+        }
+
+        if (!empty($selectedPriceRanges)) {
+            foreach ($selectedPriceRanges as $priceRangeId) {
+                $stmt->bindParam($paramIndex++, $priceRangeId, PDO::PARAM_INT);
+            }
+        }
+
+        if (!empty($selectedPrefectures)) {
+            foreach ($selectedPrefectures as $prefectureId) {
+                $stmt->bindParam($paramIndex++, $prefectureId, PDO::PARAM_INT);
+            }
+        }
 
         $stmt->execute();
 
@@ -67,6 +112,8 @@ function sql_search($pdo, $search) {
         return false;
     }
 }
+
+
 
 
 
