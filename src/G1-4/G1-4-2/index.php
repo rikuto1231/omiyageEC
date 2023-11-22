@@ -20,7 +20,8 @@
     </div>
     </div>
     <div class ="button1">
-    <button class="kakunin">検索ホームに戻る</button>
+        <!-- 遷移の処理を追記して -->
+        <button class="kakunin">検索ホームに戻る</button>
     </div>
     <script src="../../common/js/side_ber.js"></script>
 </body>
