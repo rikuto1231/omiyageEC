@@ -20,7 +20,7 @@
         <p><a href="">ログアウト</a></p>
         </div>
         <img id="toggleButton" src="img/user.png" width="40" height="40">
-        <a href="">
+        <a href="../../common/php/logout.php">
         <img id="cart_button" src="img/cart.jpg" width="40" height="40">
         </a>
         <div id="search_all">
@@ -30,6 +30,6 @@
                 <img src="img/search.png" width="20" height="20">
             </button>
         </form>
-        <p><a href="" id="conditions">絞り込み条件を開く▽</a></p>
+        <p><a href="../G1-4/G1-4-1/index.php" id="conditions">絞り込み条件を開く▽</a></p>
         </div>';
 ?>
