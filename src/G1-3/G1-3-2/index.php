@@ -27,9 +27,13 @@
 
     <p>メールアドレス</p>
 <div>
+    <form action="">
     <button class="henko">変更</button>
+    </form>
     <br>
+    <form action="">
     <button class="modoru">マイページに戻る</button>
+    </form>
 </div>
 </body>
 </html>
