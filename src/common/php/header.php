@@ -17,10 +17,10 @@
         <hr>
         <p><a href="">ログイン</a></p>
         <hr>
-        <p><a href="">ログアウト</a></p>
+        <p><a href="../../common/php/logout.php">ログアウト</a></p>
         </div>
         <img id="toggleButton" src="img/user.png" width="40" height="40">
-        <a href="../../common/php/logout.php">
+        <a href="../G1-5/G1-5-1/index.php">
         <img id="cart_button" src="img/cart.jpg" width="40" height="40">
         </a>
         <div id="search_all">
