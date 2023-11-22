@@ -55,7 +55,7 @@
         <br>
         <br>
         <br>
-        <button class="modoru">戻る</button>
+        <button class="modoru" onclick="location.href='../G1-3-1/index.php'">戻る</button>
     </div>
 </body>
 </html>

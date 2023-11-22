@@ -28,7 +28,7 @@
             </div>
             <div class ="button3">
                 <button class="cartbutton">カートに入れる</button>
-                <button class="homebutton">検索ホームに戻る</button>
+                <button class="homebutton" onclick="location.href='../G1-4-1/index.php'">検索ホームに戻る</button>
                 </div>
             </div>
 </div>

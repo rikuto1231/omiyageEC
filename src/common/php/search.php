@@ -1,22 +1,23 @@
 <?php
 
-// 読み込みファイル 
-// 別ファイル自己遷移方式で関数呼び出し対応 grt形式
-// 最初は全件検索対応だけ（後で条件検索を対応させる）
-
-// search_boxがformで送られる
+if ($_SERVER['REQUEST_METHOD'] === 'GET') {
+    // GETリクエストが送信された場合の処理
 
     // 接続
     $pdo = getDatabaseConnection(); 
-    $search = $_GET['search_box'];
+
+    // 情報がなかった時の代替え文字列
+    $search = isset($_GET['search_box']) ? $_GET['search_box'] : '';
+
     $result = sql_search($pdo, $search);
 
-
-    // 出力方式
-    // foreach ($result as $row) {
-
-    // }
-
-
-
+    // return情報
+    foreach ($result as $row) {
+        echo '<div class="item">';
+        // 商品詳細用の特定ロジックを後で構築
+        echo '<img src="'.$row['path'].'" alt="代替テキスト" width="90px" height="90px"'.$row['merchandise_id'].'>'; 
+        echo '<p>'.$row['merchandise_name'].'</p>';
+        echo '</div>';
+    }
+}
 ?>

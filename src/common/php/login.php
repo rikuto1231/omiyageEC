@@ -1,14 +1,5 @@
-<?php
-session_start();
+<?php session_start();
 
-
-$host = 'mysql216.phy.lolipop.lan';
-$dbname = 'LAA1517424-aso2201216';
-$user = 'LAA1517424';
-$pass = 'Pass0407';
-
-$dbConnection = new DatabaseConnection($host, $dbname, $user, $pass);
-return $dbConnection->getPDO(); // 接続を返す
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // 入力されたメールアドレスとパスワードを取得
@@ -28,7 +19,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // パスワードの照合
         if ($user && password_verify($pass, $user['password'])) {
             
-            $_SESSION['user_id'] = $user['user_id']; // ユーザーIDをセッションに保存
+            // 他データのセッション保存も追記する
+            $_SESSION['user_id'] = $user['user_id']; 
 
             // ログイン後の遷移先にリダイレクト
             header('Location:https://vivian-aso2301333.webdav-lolipop.jp/github/omiyageEC/src/G1-1/index.php');
