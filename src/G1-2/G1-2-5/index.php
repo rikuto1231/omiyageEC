@@ -57,11 +57,11 @@
 
         echo '<link rel="stylesheet" type="text/css" href="styles.css">'; // CSSファイルのリンク
         echo '<table class="table-container">';
-        echo '<tr><td align="right">フリガナ:</td><td class="table-cell">'.$furiganaLastName.' '.$furiganaFirstName.'</td><td>　</td></tr>';
-        echo '<tr><td align="right">郵便番号:</td><td class="table-cell">'.$postalCode.'</td><td>　</td></tr>';
-        echo '<tr><td align="right">住所:</td><td class="table-cell">'.$prefecture.' '.$city.'</td>　<td></td></tr>';
-        echo '<tr><td align="right">番地:</td><td class="table-cell">'.$street.'</td><td></td>　</tr>';
-        echo '<tr><td align="right">建物名:</td><td class="table-cell">'.$building.'</td><td></td>　</tr>';
+        echo '<tr><td align="right">フリガナ:</td><td class="table-cell">'.$furiganaLastName.'　'.$furiganaFirstName.'</td><td>　　　　</td></tr>';
+        echo '<tr><td align="right">郵便番号:</td><td class="table-cell">'.$postalCode.'</td><td>　　　　</td></tr>';
+        echo '<tr><td align="right">住所:</td><td class="table-cell">'.$prefecture.' '.$city.'</td>　　　　<td></td></tr>';
+        echo '<tr><td align="right">番地:</td><td class="table-cell">'.$street.'</td><td></td>　　　　</tr>';
+        echo '<tr><td align="right">建物名:</td><td class="table-cell">'.$building.'</td><td></td>　　　　</tr>';
         echo '</table>';
         
 
