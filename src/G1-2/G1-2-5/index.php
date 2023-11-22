@@ -66,7 +66,9 @@
         ?>
     </div>
     <!-- 確認ボタン -->
-    <button onclick="location_php()">登録確定する</button>
+    <div id="button_control" class="btn-check">
+        <button onclick="location_php()">登録確定する</button>
+    </div>
 
     <script>
         function location_php() {
@@ -74,11 +76,6 @@
         }
     </script>
 
-
-
-    <div id="button_control">
-        <button type="submit" class="btn-check">登録確定する</button><br>
-    </div>
 
     <!-- 戻るボタン -->
     <div id="button_control">
