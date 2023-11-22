@@ -65,6 +65,7 @@ new Vue({
             { id: '', name: '沖縄' }
             // 他の都道府県を追加
         ],
+        // name保存形式に変更
         selectedCategories: [],
         selectedPriceRanges: [],
         selectedPrefectures: []

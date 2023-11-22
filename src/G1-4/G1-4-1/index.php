@@ -9,7 +9,7 @@
 <body>
     <div id="app">
         <header>
-        <div class="sidebar">
+            <div class="sidebar">
                 <img id="closeButton" src="../imge/close.png">
                 <!-- サイドバーの内容 -->
                 <hr>
@@ -61,7 +61,6 @@
                         <label :for="prefecture.id">{{ prefecture.name }}</label>
                     </div>
                 </div>
-                <button @click="search">検索</button>
             </div>
         </header>
         <script src="../../common/js/sidebar.js"></script>
