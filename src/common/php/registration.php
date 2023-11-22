@@ -48,13 +48,13 @@ try {
     $stmt->bindParam(':mail_address', $email);
     $stmt->bindParam(':password', password_hash($password, PASSWORD_DEFAULT)); // パスワードのハッシュ化
 
-    // クエリの実行
+
     $stmt->execute();
 
-    // データベース接続を閉じる
+    // データベース接続を閉じる（適宜修正）
     $pdo = null;
 
-    // セッションを破棄
+    // セッションを破棄。ログイン時に情報は確保
     session_destroy();
 
     // 登録が成功したら遷移先にリダイレクト
