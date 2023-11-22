@@ -53,7 +53,7 @@ function sql_search($pdo, $search) {
     try {
         $searchPattern = "%" . $search . "%"; 
         //テーブル名変更
-        $stmt = $pdo->prepare('SELECT * FROM Merchandise WHERE name LIKE :search');
+        $stmt = $pdo->prepare('SELECT * FROM Merchandise WHERE merchandise_name LIKE :search');
         $stmt->bindParam(':search', $searchPattern, PDO::PARAM_STR);
 
         $stmt->execute();
