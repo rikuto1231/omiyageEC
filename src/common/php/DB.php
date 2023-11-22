@@ -54,24 +54,26 @@ function sql_search($pdo, $search, $selectedCategories, $selectedPriceRanges, $s
     try {
         $searchPattern = "%" . $search . "%"; 
 
-        // 基本のSQLクエリ
+        // JSの配列がID形式にしてあるからname形式への変更が必要
+
+        // デフォルトのsql文
         $sql = 'SELECT * FROM Merchandise WHERE merchandise_name LIKE :search';
 
         // カテゴリが選択
         if (!empty($selectedCategories)) {
-            $categoryConditions = array_fill(0, count($selectedCategories), 'category_id = ?');
+            $categoryConditions = array_fill(0, count($selectedCategories), 'category = ?');
             $sql .= ' AND (' . implode(' OR ', $categoryConditions) . ')';
         }
 
         // 価格帯が選択
         if (!empty($selectedPriceRanges)) {
-            $priceRangeConditions = array_fill(0, count($selectedPriceRanges), 'price_range_id = ?');
+            $priceRangeConditions = array_fill(0, count($selectedPriceRanges), 'price = ?');
             $sql .= ' AND (' . implode(' OR ', $priceRangeConditions) . ')';
         }
 
         // 都道府県が選択
         if (!empty($selectedPrefectures)) {
-            $prefectureConditions = array_fill(0, count($selectedPrefectures), 'prefecture_id = ?');
+            $prefectureConditions = array_fill(0, count($selectedPrefectures), 'prefecture = ?');
             $sql .= ' AND (' . implode(' OR ', $prefectureConditions) . ')';
         }
 
