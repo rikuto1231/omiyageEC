@@ -11,13 +11,12 @@
     <header>
         <?php require '../../common/php/header.php'; ?>
     </header>
-    <div>
+    <div class="main">
         <br>
         <br>
         <h1 style="text-align: left">
         &emsp;予約履歴</h1>
-    </div>
-    <div>
+  
         <br>
         <br>
         <p>〇〇〇〇〇</p>
