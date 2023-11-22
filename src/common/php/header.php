@@ -7,11 +7,11 @@
         <hr>
         <p>○○○○さん</p>
         <hr>
-        <p><a href="">ポイント</a></p>
+        <p><a href="../../G1-3/G1-3-4/index.php">ポイント</a></p>
         <hr>
-        <p><a href="">登録情報</a></p>
+        <p><a href="../../G1-3/G1-3-2/index.php">登録情報</a></p>
         <hr>
-        <p><a href="">購入履歴</a></p>
+        <p><a href="../../G1-3/G1-3-3/index.php">購入履歴</a></p>
         <hr>
         <p><a href="">予約確認</a></p>
         <hr>
