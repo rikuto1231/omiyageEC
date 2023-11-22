@@ -48,7 +48,7 @@ try {
     $stmt->bindParam(':mail_address', $email);
     $stmt->bindParam(':password', password_hash($password, PASSWORD_DEFAULT)); // パスワードのハッシュ化
 
-    // クエリの実行
+
     $stmt->execute();
 
     // データベース接続を閉じる
