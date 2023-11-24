@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    
+<form action="../../php/login.php" method="post">
     
     <h1>ログイン</h1>
     <a><p>会員の方はこちらから<br></a>
