@@ -9,7 +9,7 @@
 <body>
     <h1>会員ログイン</h1>
     
-    <form method="post" action="../../common/php/login.php">
+    <form  action="../../common/php/login.php"  method="post">
         <p>
             <label for="mail">メールアドレス</label><br>
             <div class="box1">
