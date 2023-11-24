@@ -66,7 +66,7 @@
         ?>
     </div>
     <!-- 確認ボタン -->
-    <div id="button_control" class="btn-check">
+    <div id="button_control">
         <button onclick="location_php()" class="btn-check">登録確定する</button>
     </div>
 
