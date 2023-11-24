@@ -9,11 +9,12 @@
 <body>
 <div>   
 <div class="ber">
-    <img src="../image/icon1.png" alt="" width="50" height="50">
-        <p><img src="../image/icon2.png" class="icon1"><a href="" style="text-decoration:none;"  class=link>商品情報追加▶</a></p></span>
-        <p><img src="../image/icon3.png" class="icon1"><a href="" style="text-decoration:none;"  class=link>商品情報更新▶</a></p></span>
-        <p><img src="../image/icon4.png" class="icon1"><a href="" style="text-decoration:none;"  class=link>商品情報削除▶</a></p></span>
-    </div>
+<img src="../image/icon1.png" alt="" width="50" height="50">
+<br>
+    <p><img src="../image/icon2.png" class="icon1"><a href="" style="text-decoration:none;"  class=link>商品情報追加▶</a></p></span>
+    <p><img src="../image/icon3.png" class="icon1"><a href="" style="text-decoration:none;"  class=link>商品情報更新▶</a></p></span>
+    <p><img src="../image/icon4.png" class="icon1"><a href="" style="text-decoration:none;"  class=link>商品情報削除▶</a></p></span>
+</div>
 
 
 

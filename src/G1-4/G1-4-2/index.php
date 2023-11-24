@@ -21,6 +21,7 @@
     </div>
     </div>
     <div class ="button1">
+    <button class="kakunin" onclick="location.href='../G1-4-1/index.php'">検索ホームに戻る</button>
         <!-- 遷移の処理を追記して -->
         <button class="kakunin">検索ホームに戻る</button>
     </div>

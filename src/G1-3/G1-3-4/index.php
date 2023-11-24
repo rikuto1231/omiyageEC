@@ -46,7 +46,7 @@
         <p>20XX/X/X &emsp;&emsp;〇〇ポイント付与</p>
         <br>
         <br>
-        <button class="modoru">戻る</button>
+        <button class="modoru" onclick="location.href='../../G1-1/G1-1/index.php'">戻る</button>
     </div>
 </body>
 </html>
