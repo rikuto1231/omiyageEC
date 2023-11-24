@@ -4,6 +4,8 @@ session_start();
 // データベースへの接続を取得
 $pdo = getDatabaseConnection();
 
+var_dump($pdo);
+
 try {
     // データベースにデータを挿入
     $stmt = $pdo->prepare("
