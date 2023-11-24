@@ -57,6 +57,7 @@
             </div>
             <button class="button_next" onclick="location.href='../../G1-4/G1-4-2/index.php'">ショッピングを続ける</button>
         </div>
+        <form action="../G1-5-3/index.php">
         <div id="num_output">
             <h4>付与ポイント  </h4>
             <!-- phpポイント計算部分 -->
@@ -67,6 +68,7 @@
             <h4>合計(税込)</h4>
             <button class="button_reg">ご購入手続き</button>
         </div>
+        </form>
     </div>
     <!-- scriptURL変更したので問題あったら調整 -->
     <script src="../../common/js/side_ber.js"></script>

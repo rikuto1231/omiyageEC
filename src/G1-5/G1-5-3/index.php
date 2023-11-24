@@ -43,7 +43,7 @@
     <div id="product_detail">
     <h1>ご購入手続き</h1>
     <hr>
-    <form action="../G1-5-4/index.html">
+    <form action="../G1-5-4/index.php">
     <p>　お名前<span class="info">　　　　　　　</span></p>
     <p>　郵便番号<span class="info">　　　　　　　</span></p>
     <p>　都道府県<span class="info">　　　　　　　</span></p>
@@ -56,8 +56,8 @@
     <p class="payway"><input type="radio" name="pay" value="paypay">paypay</p>
     <p class="payway"><input type="radio" name="pay" value="convini">コンビニ決済</p>
     <button class="kakunin">ご注文内容の確認</button>
-    <p class="modoru"><a href="../G1-5-2/index.html">ショッピングカートに戻る</a></p>
     </form>
+    <p class="modoru"><a href="../G1-5-2/index.php">ショッピングカートに戻る</a></p>
     </div>
     <script src="../../common/js/side_ber.js"></script>
 </body>
