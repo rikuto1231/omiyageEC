@@ -8,8 +8,8 @@
 </head>
 <body>
     <h1>会員ログイン</h1>
+    
     <form method="post" action="../../common/php/login.php">
-
         <p>
             <label for="mail">メールアドレス</label><br>
             <div class="box1">
