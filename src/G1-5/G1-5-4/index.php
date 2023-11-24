@@ -43,7 +43,7 @@
     <div  id="product_detail">
     <h1>確認画面</h1>
     <hr>
-    <form action="../G1-5-5/index.html">
+    <form action="../G1-5-5/index.php">
     <p>　お名前<span class="info">○○○○○○</span></p>
     <p>　郵便番号<span class="info">○○○○○○</span></p>
     <p>　都道府県<span class="info">○○○○○○</span></p>
@@ -54,8 +54,9 @@
     <hr>
     <p class="payway">○○○○</p>
     <button class="kakunin">購入</button>
-    <p class="modoru"><a href="../G1-5-3/index.php>ご購入手続きに戻る</a></p>
     </form>
+    <p class="modoru"><a href="../G1-5-3/index.php">ご購入手続きに戻る</a></p>
+   
 </div>
 <script src="../../common/js/side_ber.js"></script>
 </body>
