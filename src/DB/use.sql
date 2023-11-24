@@ -69,7 +69,7 @@ CREATE TABLE PurchaseDet(
     quantity INT not null,
     primary key (details_id),
     foreign key (purchase_id) references Purchase(purchase_id),
-    foreign key (merchandise_id) Merchandise(merchandise_id)
+    foreign key (merchandise_id) references Merchandise(merchandise_id)
 );
 
 -- 予約テーブル作成sql
