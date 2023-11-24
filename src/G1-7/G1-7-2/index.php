@@ -16,6 +16,6 @@
         <p class="info2">X月X日購入<br>~~~~~~~</p>
     </div>
         <button class="input">送信</button>
-        <button class="back">もどる</button>
+        <button class="back" onclick="location.href='../G1-7/G1-7-1/index.php'">もどる</button>
 </body>
 </html>

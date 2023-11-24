@@ -43,7 +43,7 @@
     </div>
     <?php require '../php/revue.php' ?>
     <div id="center"><!--ボタン追加-->
-        <button class="input">レビュー入力</button>
+        <button class="input" onclick="location.href='../G1-7/G1-7-2/index.php'">レビュー入力</button>
     </div>
     
     <br>
