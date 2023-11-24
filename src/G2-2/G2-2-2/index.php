@@ -11,9 +11,9 @@
     <div class="ber">
     <img src="../imge/kanri_icon.png" alt="">
     <br>
-        <p><img src="../imge/kanri_icon2.png" class="icon1"><span>商品情報追加▶</p></span>
-        <p><img src="../imge/kanri_icon3.png" class="icon1"><span>商品情報更新</p></span>
-        <p><img src="../imge/kanri_icon4.png" class="icon1"><span>商品情報削除</p></span>
+        <p><img src="../imge/kanri_icon2.png" class="icon1"><a href="" style="text-decoration:none;"  class=link>商品情報追加</a></p></span>
+        <p><img src="../imge/kanri_icon3.png" class="icon1"><a href="" style="text-decoration:none;"  class=link>商品情報更新</a></p></span>
+        <p><img src="../imge/kanri_icon4.png" class="icon1"><a href="" style="text-decoration:none;"  class=link>商品情報削除▶</a></p></span>
     </div>
     <h2>追加が完了しました</h2>
     <img src="../imge/a.png" class="item">
