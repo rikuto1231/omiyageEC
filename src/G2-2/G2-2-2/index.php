@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="ber">
-    <img src="../imge/kanri_icon.png" alt="">
+    <img src="../imge/kanri_icon.png" alt="" width="50" height="50">
     <br>
         <p><img src="../imge/kanri_icon2.png" class="icon1"><a href="" style="text-decoration:none;"  class=link>商品情報追加</a></p></span>
         <p><img src="../imge/kanri_icon3.png" class="icon1"><a href="" style="text-decoration:none;"  class=link>商品情報更新</a></p></span>
