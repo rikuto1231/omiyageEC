@@ -48,8 +48,28 @@ function getDatabaseConnection() {
     return $dbConnection->getPDO(); // 接続を返す
 }
 
-
 // 商品検索用API
+function sql_search($pdo, $search) {
+    try {
+        $searchPattern = "%" . $search . "%"; 
+        //テーブル名変更
+        $stmt = $pdo->prepare('SELECT * FROM Merchandise WHERE merchandise_name LIKE :search');
+        $stmt->bindParam(':search', $searchPattern, PDO::PARAM_STR);
+
+        $stmt->execute();
+
+        $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
+        return $result;
+
+    } catch (PDOException $e) {
+        // エラーハンドリング
+        echo "エラー: " . $e->getMessage();
+        return false;
+    }
+}
+
+
+// 商品検索用API（引数複数対応にしたい）
 function sql_search($pdo, $search, $selectedCategories, $selectedPriceRanges, $selectedPrefectures) {
     try {
         $searchPattern = "%" . $search . "%"; 
@@ -80,7 +100,6 @@ function sql_search($pdo, $search, $selectedCategories, $selectedPriceRanges, $s
         $stmt = $pdo->prepare($sql);
         $stmt->bindParam(':search', $searchPattern, PDO::PARAM_STR);
 
-        // パラメータをバインド
         $paramIndex = 1;
 
         if (!empty($selectedCategories)) {
