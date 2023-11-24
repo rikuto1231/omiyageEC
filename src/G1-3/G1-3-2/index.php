@@ -31,9 +31,7 @@
     <button class="henko">変更</button>
     </form>
     <br>
-    <form action="">
-    <button class="modoru">マイページに戻る</button>
-    </form>
+    <button class="modoru" onclick="location.href='../../G1-1/G1-1index.php'">マイページに戻る</button>
 </div>
 </body>
 </html>

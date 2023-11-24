@@ -1,5 +1,14 @@
 <?php session_start();?>
 
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ログアウト</title>
+</head>
+<body>
+
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // 入力されたメールアドレスとパスワードを取得
@@ -33,4 +42,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         die("データベースエラー: " . $e->getMessage());
     }
 }
+
 ?>
+</body>
