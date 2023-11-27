@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <h3 class="title">満足度</h3>
+        <p class="info"><span style="color: yellow;">★★★</span></p>
+        <h3 class="title" >タイトル</h3>
+        <p class="info">とてもいい</p>
+        <h3 class="title">本文</h3>
+        <p class="info2">X月X日購入<br>~~~~~~~</p>
+    </div>
+        <button class="input">送信</button>
+        <button class="back">もどる</button>
+</body>
+</html>
