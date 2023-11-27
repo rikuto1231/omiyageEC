@@ -24,7 +24,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $_SESSION['user_id'] = $user['user_id']; 
 
             // ログイン後の遷移先にリダイレクト
-            header('Location:https://vivian-aso2301333.webdav-lolipop.jp/github/omiyageEC/src/G1-1/index.php');
+            header('Location:../../src/G1-1/index.php');
             exit();
         } else {
             // ログイン失敗時の処理
