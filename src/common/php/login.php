@@ -1,20 +1,5 @@
 <?php session_start();?>
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>ログイン</title>
-</head>
-<body>
-<?php
-$host = 'mysql216.phy.lolipop.lan';
-$dbname = 'LAA1517424-aso2201216';
-$user = 'LAA1517424';
-$pass = 'Pass0407';
 
-$dbConnection = new DatabaseConnection($host, $dbname, $user, $pass);
-return $dbConnection->getPDO(); // 接続を返す
-?>
 
 
 <?php
