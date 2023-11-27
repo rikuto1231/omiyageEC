@@ -26,6 +26,8 @@
             $password = $_POST['password'];
             $confirmPassword = $_POST['confirmPassword'];
 
+            
+
             $_SESSION['lastName'] = $lastName;
             $_SESSION['firstName'] = $firstName;
             $_SESSION['furiganaLastName'] = $furiganaLastName;
@@ -63,6 +65,9 @@
 
         echo '<p>'.'メールアドレス<p>'.$email.'</p>' ;
         echo '<p>'.'パスワード<p>'.$password.'</p>' ;
+
+
+
         ?>
     </div>
     <!-- 確認ボタン -->
