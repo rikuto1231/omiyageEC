@@ -1,8 +1,7 @@
-<?php session_start();?>
+<?php session_start();
 
+require '/DB.php';
 
-
-<?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // 入力されたメールアドレスとパスワードを取得
     $mail = $_POST['mail'];
@@ -37,5 +36,3 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 
 ?>
-</body>
-</html>
