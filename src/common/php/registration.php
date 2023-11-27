@@ -1,6 +1,8 @@
 <?php
 session_start();
 
+require '/DB.php';
+
 // データベースへの接続を取得
 $pdo = getDatabaseConnection();
 
