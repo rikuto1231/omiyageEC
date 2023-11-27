@@ -15,17 +15,17 @@
             <hr>
             <p>○○○○さん</p>
             <hr>
-            <p><a href="">ポイント</a></p>
+            <p><a href="../../G1-3/G1-3-4/index.php">ポイント</a></p>
             <hr>
-            <p><a href="">登録情報</a></p>
+            <p><a href="../../G1-3/G1-3-2/index.php">登録情報</a></p>
             <hr>
-            <p><a href="">購入履歴</a></p>
+            <p><a href="../../G1-3/G1-3-3/index.php">購入履歴</a></p>
             <hr>
-            <p><a href="">予約確認</a></p>
+            <p><a href="../../G1-3/G1-3-5/index.php">予約確認</a></p>
             <hr>
             <p><a href="">ログイン</a></p>
             <hr>
-            <p><a href="">ログアウト</a></p>
+            <p><a href="../../common/php/logout.php">ログアウト</a></p>
         </div>
         <img id="toggleButton" src="../imge/user.png" width="40" height="40">
         <a href="../../G1-5/G1-5-2/index.php">
@@ -43,7 +43,7 @@
     <div  id="product_detail">
     <h1>確認画面</h1>
     <hr>
-    <form action="../G1-5-5/index.html">
+    <form action="../G1-5-5/index.php">
     <p>　お名前<span class="info">○○○○○○</span></p>
     <p>　郵便番号<span class="info">○○○○○○</span></p>
     <p>　都道府県<span class="info">○○○○○○</span></p>
@@ -54,8 +54,9 @@
     <hr>
     <p class="payway">○○○○</p>
     <button class="kakunin">購入</button>
-    <p class="modoru"><a href="../G1-5-3/index.php>ご購入手続きに戻る</a></p>
     </form>
+    <p class="modoru"><a href="../G1-5-3/index.php">ご購入手続きに戻る</a></p>
+   
 </div>
 <script src="../../common/js/side_ber.js"></script>
 </body>

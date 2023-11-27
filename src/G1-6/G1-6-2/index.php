@@ -22,6 +22,7 @@
             </div>
             <div class="mozi">
         <p>価格 : 〇〇〇〇〇</p>
+        <form action="../G1-6-3/index.php">
             <p class="point">付与ポイント 〇〇ポイント</p>
             <div> 数量 :<button class="prev-button" @click="changeSlide(-1)">-</button>1<button class="next-button" @click="changeSlide(1)">+</button></div>
             <a href="">レビュー</a>
@@ -29,8 +30,9 @@
             <div class ="button3">
                 <button class="cartbutton">予約</button>
             </div>
+            </form>
             <div class="button4">
-                <button class="homebutton">検索ホームに戻る</button>
+                <button class="homebutton" onclick="location.href='../../G1-4/G1-4-1/index.php'">検索ホームに戻る</button>
                 </div>
             </div>
 </div>

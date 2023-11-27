@@ -14,17 +14,17 @@
             <hr>
             <p>○○○○さん</p>
             <hr>
-            <p><a href="">ポイント</a></p>
+            <p><a href="../../G1-3/G1-3-4/index.php">ポイント</a></p>
             <hr>
-            <p><a href="">登録情報</a></p>
+            <p><a href="../../G1-3/G1-3-2/index.php">登録情報</a></p>
             <hr>
-            <p><a href="">購入履歴</a></p>
+            <p><a href="../../G1-3/G1-3-3/index.php">購入履歴</a></p>
             <hr>
-            <p><a href="">予約確認</a></p>
+            <p><a href="../../G1-3/G1-3-5/index.php">予約確認</a></p>
             <hr>
             <p><a href="">ログイン</a></p>
             <hr>
-            <p><a href="">ログアウト</a></p>
+            <p><a href="../../common/php/logout.php">ログアウト</a></p>
         </div>
         <img id="toggleButton" src="../imge/user.png" width="40" height="40">
         <a href="../../G1-5/G1-5-2/index.php">
@@ -57,6 +57,7 @@
             </div>
             <button class="button_next" onclick="location.href='../../G1-4/G1-4-2/index.php'">ショッピングを続ける</button>
         </div>
+        <form action="../G1-5-3/index.php">
         <div id="num_output">
             <h4>付与ポイント  </h4>
             <!-- phpポイント計算部分 -->
@@ -67,6 +68,7 @@
             <h4>合計(税込)</h4>
             <button class="button_reg">ご購入手続き</button>
         </div>
+        </form>
     </div>
     <!-- scriptURL変更したので問題あったら調整 -->
     <script src="../../common/js/side_ber.js"></script>

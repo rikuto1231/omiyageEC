@@ -7,7 +7,7 @@
     <title>ログイン登録確定画面</title>
 </head>
 <body>
-<form method="post" action="../G1-2-6/index.php" id="form_all">
+<!--<form method="post" action="../G1-2-6/index.php" id="form_all">-->
     <!-- 入力データを表示 -->
     <div id="container">
         <?php
@@ -66,13 +66,13 @@
         ?>
     </div>
     <!-- 確認ボタン -->
-    <div id="button_control" class="btn-check">
+    <div id="button_control">
         <button onclick="location_php()" class="btn-check">登録確定する</button>
     </div>
 
     <script>
         function location_php() {
-            window.location.href = '../../php/registration.php';
+            window.location.href = '../../common/php/registration.php';
         }
     </script>
 
