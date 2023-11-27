@@ -51,7 +51,8 @@ try {
     $stmt->bindParam(':building', $building);
     $stmt->bindParam(':tel', $phoneNumber);
     $stmt->bindParam(':mail_address', $email);
-    $stmt->bindParam(':password', password_hash($password, PASSWORD_DEFAULT)); // パスワードのハッシュ化
+    $password = password_hash($password, PASSWORD_DEFAULT);
+    $stmt->bindParam(':password', $password); // パスワードのハッシュ化
 
 
     $stmt->execute();
@@ -63,7 +64,7 @@ try {
     session_destroy();
 
     // 登録が成功したら遷移先にリダイレクト
-//    header('Location: ../G1-2/G1-2-5/index.php');
+    header('Location: ../G1-2/G1-2-5/index.php');
 } catch (PDOException $e) {
     die("データベースエラー: " . $e->getMessage());
 }
