@@ -1,5 +1,7 @@
 <?php session_start();?>
 
+
+
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // 入力されたメールアドレスとパスワードを取得
@@ -35,3 +37,5 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 
 ?>
+</body>
+</html>
