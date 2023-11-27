@@ -1,8 +1,13 @@
 <?php
 session_start();
 
+require 'DB.php';
+
 // データベースへの接続を取得
 $pdo = getDatabaseConnection();
+
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
 
 try {
     // データベースにデータを挿入
@@ -58,7 +63,7 @@ try {
     session_destroy();
 
     // 登録が成功したら遷移先にリダイレクト
-    header('Location: ../G1-2/G1-2-5/index.php');
+//    header('Location: ../G1-2/G1-2-5/index.php');
 } catch (PDOException $e) {
     die("データベースエラー: " . $e->getMessage());
 }

@@ -1,0 +1,38 @@
+@charset "utf-8";
+
+.table{
+    vertical-align:middle;
+}
+
+
+.tab{
+    display:flex;
+    justify-content: flex-end;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn{
+    display: block;
+    background-color: #E29B48;
+    line-height:10px;
+	margin: auto;
+    border: 2px solid #111111;
+    text-align: center;
+    width:100px;
+    padding:10px;
+    text-decoration: none;
+    color:#111111;
+}
+
+.ber{
+    background-color: #D9D9D9;
+    width:200px;
+    height:750px;
+    margin: 0;
+}
+.icon1{
+    width: 40px;
+    height: 40px;
+    margin-top: 30px;
+}
