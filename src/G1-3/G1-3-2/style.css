@@ -1,6 +1,62 @@
 div{
     text-align:  center;   
 }
+
+#title_name{
+    text-align: center;
+}
+
+#form_all{
+    text-align: center;
+    
+}
+
+.form-group {
+    border: 1px solid #ddd; 
+    padding: 10px; 
+    margin-bottom: 20px; 
+}
+
+.form-control {
+    width: 100%; 
+    box-sizing: border-box; 
+    background-color: rgb(255, 195, 195);
+    height: 4vh;
+}
+
+#button_control{
+    width: 100%;
+    text-align: center;
+}
+
+#lastName{
+    width: 40%;
+}
+
+#firstName{
+    width: 40%;
+}
+
+#firstName_title{
+    margin-left: 120px;
+}
+
+#furiganaLastName{
+    width: 40%;
+}
+
+#furiganaFirstName{
+    width: 40%;
+    margin-left: 20px;
+}
+
+#furiganaLastName_title{
+    margin-left: 50px;
+}
+
+#postalCode{
+    width: 50%;
+}
 .henko{
     width: 230px;
     height: 45px;
