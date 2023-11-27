@@ -1,4 +1,11 @@
 <?php session_start();?>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ログイン</title>
+</head>
+<body>
 <?php
 $host = 'mysql216.phy.lolipop.lan';
 $dbname = 'LAA1517424-aso2201216';
@@ -9,13 +16,6 @@ $dbConnection = new DatabaseConnection($host, $dbname, $user, $pass);
 return $dbConnection->getPDO(); // 接続を返す
 ?>
 
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>ログイン</title>
-</head>
-<body>
 
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -53,3 +53,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 ?>
 </body>
+</html>
