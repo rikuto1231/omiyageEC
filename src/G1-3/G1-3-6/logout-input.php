@@ -7,6 +7,30 @@
     <title>ログアウト画面</title>
 </head>
 <body>
+
+<div class="sidebar">
+            <img id="closeButton" src="../imge/close.png">
+            <!-- サイドバーの内容 -->
+            <img src="../imge/user.png"width="40" height="40">
+            <p>○○○○さん</p>
+            <hr>
+            <p><a href="">ポイント</a></p>
+            <hr>
+            <p><a href="">登録情報</a></p>
+            <hr>
+            <p><a href="">購入履歴</a></p>
+            <hr>
+            <p><a href="">予約確認</a></p>
+            <hr>
+            <p><a href="">ログイン</a></p>
+            <hr>
+            <p><a href="">ログアウト</a></p>
+            <hr>
+        </div>
+        <img id="toggleButton"src="../imge/user.png"width="40" height="40">
+    </header>
+    <script src="side_ber.js"></script>
+
 <div class="main">
 <h1 id="title_name">ログアウト</h1>
 <p>ログアウトしますか？</p>
