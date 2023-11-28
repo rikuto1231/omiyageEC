@@ -31,6 +31,6 @@
                 <img src="img/search.png" width="20" height="20">
             </button>
         </form>
-        <p><a href="../../G1-4/G1-4-1/index.php" id="conditions">絞り込み条件を開く▽</a></p>
+        <p><a href="../../G1-5/G1-5-1/index.php" id="conditions">絞り込み条件を開く▽</a></p>
         </div>';
 ?>
