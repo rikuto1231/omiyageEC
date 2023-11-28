@@ -6,7 +6,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
 
     // 接続
     $pdo = getDatabaseConnection(); 
-    echo 'AAAAAAAA';
 
     // 情報がなかった時の代替え文字列
     $search = isset($_GET['search_box']) ? $_GET['search_box'] : '';
