@@ -11,7 +11,7 @@ CREATE TABLE User(
     street_address varchar(20) not null,
     building varchar(20) not null,
     tel int not null,
-    mail_address varchar(50) not null,
+    mail_address varchar(50) not null unique,
     password varchar(128) not null,
     point int not null,
     primary key (user_id)

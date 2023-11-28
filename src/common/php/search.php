@@ -1,15 +1,19 @@
 <?php
+    require 'DB.php';
 
 if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     // GETリクエストが送信された場合の処理
 
     // 接続
     $pdo = getDatabaseConnection(); 
+    echo 'AAAAAAAA';
 
     // 情報がなかった時の代替え文字列
     $search = isset($_GET['search_box']) ? $_GET['search_box'] : '';
 
-    $result = sql_search($pdo, $search);
+    echo $search;
+
+    $result = sql_search($pdo, $search,false,false,false);
 
     // return情報
     foreach ($result as $row) {
