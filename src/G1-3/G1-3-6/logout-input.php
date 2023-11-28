@@ -10,7 +10,10 @@
 <div class="main">
 <h1 id="title_name">ログアウト</h1>
 <p>ログアウトしますか？</p>
-<a href="logout-output.php">ログアウト</a><br>
+<br>
+<br>
+<button class="logout" onclick="location.href='logout-output.php'">ログアウト</button>
+<br>
 <br>
 <br>
 <button class="modoru" onclick="location.href='../../G1-1/G1-1/index.php'">戻る</button>

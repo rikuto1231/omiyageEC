@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,7 +7,7 @@
     <title>ログアウト画面</title>
 </head>
 <body>
-    <?php session_start(); ?>
+    
     <?php require 'header.php'; ?>
     <?php require 'menu.php'; ?>
     <?php

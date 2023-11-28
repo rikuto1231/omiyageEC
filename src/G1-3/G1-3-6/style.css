@@ -11,6 +11,16 @@ div{
     text-align: center;
 }
 
+.logout{
+    width: 191px;
+    height: 59px;
+    border-radius:50px;
+    background-color: #E75D5D;
+    border-color:#E75D5D ;
+    color: white;
+    cursor: pointer;
+}
+
 .modoru{
     width: 191px;
     height: 59px;
