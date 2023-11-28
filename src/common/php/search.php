@@ -9,7 +9,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     // 情報がなかった時の代替え文字列
     $search = isset($_GET['search_box']) ? $_GET['search_box'] : '';
 
-    $result = sql_search($pdo, $search);
+
+    $result = sql_search($pdo, $search,false,false,false);
 
     // return情報
     foreach ($result as $row) {
