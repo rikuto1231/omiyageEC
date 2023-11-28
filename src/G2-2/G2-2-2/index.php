@@ -38,31 +38,31 @@
     }else{
         echo'追加に失敗しました。';
     }
-        ?>
-        <h2>追加が完了しました</h2>
-    <img src="../imge/a.png" class="item">
-    <div class="main">
-        <table class="table" border="1" cellpadding="10"cellspacing="0">
-        <form action="" method="post">
+        echo '<h2>追加が完了しました</h2>';
+    echo '<img src="../imge/a.png" class="item">';
+    echo '<div class="main">';
+        echo '<table class="table" border="1" cellpadding="10"cellspacing="0">';
+        echo'<form action="" method="post">';
 
-        <tr><td class="td1">名称</td><td class="td2">
-        <?php echo'<p>',$_POST['merchandise_name'],'</p>';?>
-        </td></tr>
-        <tr><td class="td1">都道府県</td><td class="td2">
-        <p>～～～～～</p>
-        </td></tr>
-        <tr><td class="td1">カテゴリ</td><td class="td2">
-        <p>～～～～～</p>
-        </td ></tr>
-        <tr><td class="td1">価格帯</td><td class="td2">
-        <p>～～～～～</p>
-        </td></tr>
-        <tr><td class="td1">在庫数</td><td class="td2">
-        <p>～～～～～</p>
-        </td ></tr>
-        </table>
-        <button class="sarch">戻る</button>
-    </div>
+        echo'<tr><td class="td1">名称</td><td class="td2">';
+        echo'<p>～～～～～</p>';
+        echo'</td></tr>';
+        echo'<tr><td class="td1">都道府県</td><td class="td2">';
+        echo'<p>～～～～～</p>';
+        echo'</td></tr>';
+        echo'<tr><td class="td1">カテゴリ</td><td class="td2">';
+        echo'<p>～～～～～</p>';
+        echo'</td ></tr>';
+        echo'<tr><td class="td1">価格帯</td><td class="td2">';
+        echo'<p>～～～～～</p>';
+        echo'</td></tr>';
+        echo'<tr><td class="td1">在庫数</td><td class="td2">';
+        echo'<p>～～～～～</p>';
+        echo'</td ></tr>';
+        echo'</table>';
+        echo'<button class="sarch">戻る</button>';
+        echo'</div>';
+    ?>
     
 </body>
 </html>
