@@ -1,6 +1,5 @@
 <?php session_start(); ?>
 
-
 <?php
 require 'DB.php';
 
@@ -26,7 +25,11 @@ require 'DB.php';
              $_SESSION['user_id'] = $user['user_id']; 
 
              // ログイン後の遷移先にリダイレクト
+<<<<<<< HEAD
              header('../../G1-1/G1-1/index.php');
+=======
+             header('Location:../../G1-1/G1-1/index.php');
+>>>>>>> 3c3db239596e27d0b1f93de62797ddd72f11aab1
              exit();
          } else {
              // ログイン失敗時の処理
