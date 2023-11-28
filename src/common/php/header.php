@@ -1,6 +1,7 @@
 <!-- header.php -->
 
 <?php
+    require 'DB.php';
     echo '<div class="sidebar">
         <img id="closeButton" src="img/close.png">
 
