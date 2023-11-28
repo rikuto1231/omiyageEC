@@ -32,6 +32,9 @@
         <tr><td class="td1">価格帯</td><td class="td2">
         <input type="number" class="text_box" name="price">
         </td></tr>
+        <tr><td class="td1">在庫</td><td class="td2">
+        <input type="number" class="text_box" name="stock">
+        </td></tr>
         <tr><td class="td1">画像</td><td class="td2">
         <input type="file" class="text_box" name="path">
         </td></tr>

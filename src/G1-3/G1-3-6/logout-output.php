@@ -7,9 +7,6 @@
     <title>ログアウト画面</title>
 </head>
 <body>
-    
-    <?php require 'header.php'; ?>
-    <?php require 'menu.php'; ?>
     <?php
         if(isset($_SESSION['customer'])){
         unset($_SESSION['customer']);
@@ -18,6 +15,5 @@
         echo 'すでにログアウトしています。';
         }
     ?>
-    <?php require 'footer.php'; ?>
 </body>
 </html>
