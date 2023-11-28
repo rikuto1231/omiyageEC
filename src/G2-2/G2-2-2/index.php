@@ -46,7 +46,7 @@
         <form action="" method="post">
 
         <tr><td class="td1">名称</td><td class="td2">
-        <p>～～～～～</p>
+        <?php echo'<p>',$_POST['merchandise_name'],'</p>';?>
         </td></tr>
         <tr><td class="td1">都道府県</td><td class="td2">
         <p>～～～～～</p>
