@@ -1,0 +1,22 @@
+div{
+    text-align:  center;   
+}
+
+.main{
+    text-align:  center;   
+    margin-top: 100px;
+}
+
+#title_name{
+    text-align: center;
+}
+
+.modoru{
+    width: 191px;
+    height: 59px;
+    border-radius:50px;
+    background-color: #0890F2;
+    border-color:#0890F2 ;
+    color: white;
+    cursor: pointer;
+}
