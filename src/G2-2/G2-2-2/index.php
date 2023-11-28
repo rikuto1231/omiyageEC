@@ -18,7 +18,7 @@
     <?php
         require '../../common/php/DB.php';
         $pdo = getDatabaseConnection();
-        $sql=$pdo->prepare('insert into Shohin(merchandise_name, prefectures, category, brand, price, stock, path) values (?,?,?,?,?,?,?');
+        $sql=$pdo->prepare('insert into merchandise(merchandise_name, prefectures, category, brand, price, stock, path) values (?,?,?,?,?,?,?');
     if (empty($_POST['merchandise_name'])) {
         echo '商品名を入力してください。';
     }else if (empty($_POST['prefectures'])) {
