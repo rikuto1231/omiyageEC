@@ -22,6 +22,7 @@ CREATE TABLE User(
 CREATE TABLE Merchandise(
     merchandise_id int not null AUTO_INCREMENT,
     merchandise_name varchar(20) not null,
+    prefectures varchar(20) not null,
     category varchar(20) not null,
     brand varchar(20) not null,
     price int not null,

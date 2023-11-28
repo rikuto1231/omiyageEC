@@ -24,13 +24,19 @@
         <input type="text" size="30" class="text_box" name="merchandise_name">
         </td></tr>
         <tr><td class="td1">都道府県</td><td class="td2">
-        <input type="text" size="30" class="text_box">
+        <input type="text" size="30" class="text_box" name="prefectures">
         </td></tr>
         <tr><td class="td1">カテゴリ</td><td class="td2">
         <input type="text" size="30" class="text_box" name="category">
         </td ></tr>
+        <tr><td class="td1">ブランド</td><td class="td2">
+        <input type="text" size="30" class="text_box" name="brand">
+        </td ></tr>
         <tr><td class="td1">価格帯</td><td class="td2">
         <input type="number" class="text_box" name="price">
+        </td></tr>
+        <tr><td class="td1">在庫</td><td class="td2">
+        <input type="number" class="text_box" name="stock">
         </td></tr>
         <tr><td class="td1">画像</td><td class="td2">
         <input type="file" class="text_box" name="path">

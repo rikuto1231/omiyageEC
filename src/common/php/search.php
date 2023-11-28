@@ -1,4 +1,5 @@
 <?php
+    require 'DB.php';
 
 if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     // GETリクエストが送信された場合の処理
