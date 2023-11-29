@@ -18,7 +18,7 @@
         〇〇〇〇〇〇</p>
         </div>
         <div class="item">
-            <img src="../img/aso.jpg" alt="代替テキスト" width="300px" height="200px">
+            <img src="../../common/img/aso.jpg" alt="代替テキスト" width="300px" height="200px">
             </div>
             <div class="mozi">
         <p>価格 : 〇〇〇〇〇</p>
