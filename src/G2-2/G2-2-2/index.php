@@ -18,22 +18,10 @@
     <?php
         require '../../common/php/DB.php';
         $pdo = getDatabaseConnection();
+
         $sql=$pdo->prepare('insert into merchandise(merchandise_name, prefectures, category, brand, price, stock, path) values (?,?,?,?,?,?,?');
-    if (empty($_POST['merchandise_name'])) {
-        echo '商品名を入力してください。';
-    }else if (empty($_POST['prefectures'])) {
-        echo '都道府県を入力してください。';
-    }else if (empty($_POST['category'])) {
-        echo 'カテゴリを入力してください。';
-    }else if (empty($_POST['brand'])) {
-        echo 'ブランドを入力してください。';
-    }else if (empty($_POST['price'])) {
-        echo '価格を入力してください。';
-    }else if (empty($_POST['stock'])) {
-        echo '在庫数を入力してください。';
-     }else if (empty($_POST['path'])) {
-        echo '画像パスを入力してください。';
-    }else if($sql->execute([ $_POST['merchandise_name'],$_POST['prefectures'],$_POST['category'],$_POST['brand'],$_POST['price'],$_POST['stock'],$_POST['path']])){
+
+     if($sql->execute([$_POST['merchandise_name'],$_POST['prefectures'],$_POST['category'],$_POST['brand'],$_POST['price'],$_POST['stock'],$_POST['path']])){
         echo'追加に成功しました。';
     }else{
         echo'追加に失敗しました。';
