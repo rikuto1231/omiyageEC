@@ -15,8 +15,8 @@
     <div class="main">
         <br>
         <br>
-        <h1 style="text-align: left">
-        &emsp;購入履歴</h1>
+        <h1 style="text-align: center">
+        購入履歴</h1>
         <br>
         <br>
         <p>〇〇〇〇〇</p>

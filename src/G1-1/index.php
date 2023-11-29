@@ -29,28 +29,28 @@
         <label class="scroll_button scroll_prev" for="SlideD"></label>
         <label class="scroll_button scroll_next" for="SlideB"></label>
       </div>
-      <img src="img/1.png" class="imge">
+      <img src="../common/img/1.png" class="imge">
     </div>
     <div class="slide">
       <div class="controler_scroll">
         <label class="scroll_button scroll_prev" for="SlideA"></label>
         <label class="scroll_button scroll_next" for="SlideC"></label>
       </div>
-      <img src="img/2.png" class="imge">
+      <img src="../common/img/2.png" class="imge">
     </div>
     <div class="slide">
       <div class="controler_scroll">
         <label class="scroll_button scroll_prev" for="SlideB"></label>
         <label class="scroll_button scroll_next" for="SlideD"></label>
       </div>
-      <img src="img/3.png" class="imge">
+      <img src="../common/img/3.png" class="imge">
     </div>
     <div class="slide">
       <div class="controler_scroll">
         <label class="scroll_button scroll_prev" for="SlideC"></label>
         <label class="scroll_button scroll_next" for="SlideA"></label>
       </div>
-      <img src="img/4.png" class="imge">
+      <img src="../common/img/4.png" class="imge">
     </div>
     <div class="move_controler">
       <label class="button_move" for="SlideA"></label>
@@ -74,28 +74,28 @@
         <label class="scroll_button2 scroll_prev2" for="SlideH"></label>
         <label class="scroll_button2 scroll_next2" for="SlideF"></label>
       </div>
-      <img src="img/1.png" class="imge" alt="商品画像">
+      <img src="../common/img/1.png" class="imge" alt="商品画像">
     </div>
     <div class="slide2">
       <div class="controler_scroll2">
         <label class="scroll_button2 scroll_prev2" for="SlideE"></label>
         <label class="scroll_button2 scroll_next2" for="SlideG"></label>
       </div>
-      <img src="img/2.png" class="imge" alt="商品画像">
+      <img src="../common/img/2.png" class="imge" alt="商品画像">
     </div>
     <div class="slide2">
       <div class="controler_scroll2">
         <label class="scroll_button2 scroll_prev2" for="SlideF"></label>
         <label class="scroll_button2 scroll_next2" for="SlideH"></label>
       </div>
-      <img src="img/3.png" class="imge" alt="商品画像">
+      <img src="../common/img/3.png" class="imge" alt="商品画像">
     </div>
     <div class="slide2">
       <div class="controler_scroll2">
         <label class="scroll_button2 scroll_prev2" for="SlideG"></label>
         <label class="scroll_button2 scroll_next2" for="SlideE"></label>
       </div>
-      <img src="img/4.png" class="imge" alt="商品画像">
+      <img src="../common/img/4.png" class="imge" alt="商品画像">
     </div>
     <div class="move_controler2">
       <label class="button_move2" for="SlideE"></label>
