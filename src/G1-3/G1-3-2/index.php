@@ -7,9 +7,9 @@
     <title>登録情報画面</title>
 </head>
 <body>
-    <h1 id="title_name">会員登録</h1>
+    <h1 id="title_name">登録情報</h1>
 
-    <form method="post" action="../G1-2-5/index.php" id="form_all">
+    <form method="post" action="../G1-3-2/index.php" id="form_all">
 
         
         <!-- お名前 -->
