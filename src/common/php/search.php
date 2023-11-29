@@ -16,9 +16,21 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     foreach ($result as $row) {
         echo '<div class="item">';
         // 商品詳細用の特定ロジックを後で構築
-        echo '<img src="'.$row['path'].'" alt="代替テキスト" width="90px" height="90px"'.$row['merchandise_id'].'>'; 
-        echo '<p>'.$row['merchandise_name'].'</p>';
-        echo '</div>';
-    }
+        if ($row['path'] == null && $row['path'] == '') {
+            echo '<img src="'.'omiyageEC/src/common/img/'.'NO.jpeg'.'" alt="代替テキスト" width="90px" height="90px"'.$row['merchandise_id'].'>'; 
+            echo '<p>'.$row['merchandise_name'].'</p>';
+            echo '</div>';
+            
+        }else{
+            echo '<img src="'.'omiyageEC/src/common/img/'.$row['path'].'" alt="代替テキスト" width="90px" height="90px"'.$row['merchandise_id'].'>'; 
+            echo '<p>'.$row['merchandise_name'].'</p>';
+            echo '</div>';
+        }
+
+        }
+        
+
+
 }
+
 ?>
