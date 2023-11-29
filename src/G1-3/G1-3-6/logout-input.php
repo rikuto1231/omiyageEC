@@ -1,3 +1,6 @@
+<!-- 名前をindex.phpに変更。header接続に変更。
+sideber接続
+ -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
