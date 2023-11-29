@@ -1,3 +1,5 @@
+<!-- パス・URL固定記述式になっているので
+とりあえずそれに合わせる -->
 <!DOCTYPE html>
 <html lang="ja">
 <head>
