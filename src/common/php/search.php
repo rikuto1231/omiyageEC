@@ -23,6 +23,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
             echo '</div>';
             
         }else{
+            // 現時点だと全てBで処理されている DBデータの確認と有効パスの判断
             echo '<img src="'.'omiyageEC/src/common/img/'.$row['path'].'" alt="代替テキスト" width="90px" height="90px"'.$row['merchandise_id'].'>'; 
             echo '<p>'.$row['merchandise_name'].'</p>';
             echo 'BBB';
