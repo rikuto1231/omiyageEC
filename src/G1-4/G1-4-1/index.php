@@ -1,4 +1,5 @@
 
+<!-- 共通部分接続。<br>改行を修正。css配置にする -->
 <!DOCTYPE html>
 <html lang="ja">
 <head>
