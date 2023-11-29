@@ -19,7 +19,7 @@
         require '../../common/php/DB.php';
         $pdo = getDatabaseConnection();
 
-        $sql=$pdo->prepare('insert into merchandise(merchandise_name, prefectures, category, brand, price, stock, path) values (?,?,?,?,?,?,?)');
+        $sql=$pdo->prepare('insert into Merchandise(merchandise_name, prefectures, category, brand, price, stock, path) values (?,?,?,?,?,?,?)');
 
      if($sql->execute([$_POST['merchandise_name'],$_POST['prefectures'],$_POST['category'],$_POST['brand'],$_POST['price'],$_POST['stock'],$_POST['path']])){
         echo'追加に成功しました。';
