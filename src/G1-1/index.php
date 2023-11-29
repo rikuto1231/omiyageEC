@@ -27,7 +27,7 @@
         <label class="scroll_button scroll_prev" for="SlideD"></label>
         <label class="scroll_button scroll_next" for="SlideB"></label>
       </div>
-      <img src="img/1.png" class="imge">
+      <img src="../common/img/1.png" class="imge">
     </div>
     <div class="slide">
       <div class="controler_scroll">
