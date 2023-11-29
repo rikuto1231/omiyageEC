@@ -11,15 +11,15 @@
     <div class="ber">
     <img src="../imge/kanri_icon.png" alt="" width="50" height="50">
     <br>
-        <p><img src="../imge/kanri_icon2.png" class="icon1"><a href="" style="text-decoration:none;"  class=link>商品情報追加</a></p></span>
-        <p><img src="../imge/kanri_icon3.png" class="icon1"><a href="" style="text-decoration:none;"  class=link>商品情報更新▶</a></p></span>
+        <p><img src="../imge/kanri_icon2.png" class="icon1"><a href="" style="text-decoration:none;"  class=link>商品情報追加▶</a></p></span>
+        <p><img src="../imge/kanri_icon3.png" class="icon1"><a href="" style="text-decoration:none;"  class=link>商品情報更新</a></p></span>
         <p><img src="../imge/kanri_icon4.png" class="icon1"><a href="" style="text-decoration:none;"  class=link>商品情報削除</a></p></span>
     </div>
     <?php
         require '../../common/php/DB.php';
         $pdo = getDatabaseConnection();
 
-        $sql=$pdo->prepare('insert into merchandise(merchandise_name, prefectures, category, brand, price, stock, path) values (?,?,?,?,?,?,?');
+        $sql=$pdo->prepare('insert into merchandise(merchandise_name, prefectures, category, brand, price, stock, path) values (?,?,?,?,?,?,?)');
 
      if($sql->execute([$_POST['merchandise_name'],$_POST['prefectures'],$_POST['category'],$_POST['brand'],$_POST['price'],$_POST['stock'],$_POST['path']])){
         echo'追加に成功しました。';
