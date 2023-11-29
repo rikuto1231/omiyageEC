@@ -25,12 +25,12 @@
         <img id="cart_button" src="img/cart.jpg" width="40" height="40">
         </a>
         <div id="search_all">
-        <form method="get" action="/omiyageEC/src/common/php/search.php">
+        <form method="get" action="/omiyageEC/src/G1-5/G1-5-2/search.php">
             <input type="text" class="search_box" placeholder="検索" value="" name="search_box">
             <button class="conditions_img">
                 <img src="img/search.png" width="20" height="20">
             </button>
         </form>
-        <p><a href="../../G1-5/G1-5-1/index.php" id="conditions">絞り込み条件を開く▽</a></p>
+        <p><a href="omiyageEC/src/G1-5/G1-5-1/index.php" id="conditions">絞り込み条件を開く▽</a></p>
         </div>';
 ?>
