@@ -37,8 +37,8 @@ phpでpタグとしてDBからの情報出力-->
     <div>
     <br>
     <br>
-        <h1 style="text-align: left">
-        &emsp;ポイント情報</h1>
+        <h1 style="text-align: center">
+        ポイント情報</h1>
     </div>
     <div>
         <br>
