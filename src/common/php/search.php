@@ -1,7 +1,7 @@
 <?php
 
 if ($_SERVER['REQUEST_METHOD'] === 'GET') {
-    // GETリクエストが送信された場合の処理
+    // GETリクエストが送信された場合
 
     // 接続
     $pdo = getDatabaseConnection(); 
@@ -19,11 +19,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
         if ($row['path'] == null && $row['path'] == '') {
             echo '<img src="'.'omiyageEC/src/common/img/'.'NO.jpeg'.'" alt="代替テキスト" width="90px" height="90px"'.$row['merchandise_id'].'>'; 
             echo '<p>'.$row['merchandise_name'].'</p>';
+            echo 'AAA';
             echo '</div>';
             
         }else{
             echo '<img src="'.'omiyageEC/src/common/img/'.$row['path'].'" alt="代替テキスト" width="90px" height="90px"'.$row['merchandise_id'].'>'; 
             echo '<p>'.$row['merchandise_name'].'</p>';
+            echo 'BBB';
             echo '</div>';
         }
 
