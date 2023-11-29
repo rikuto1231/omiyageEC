@@ -1,3 +1,6 @@
+<!-- headerとsideber接続。
+cssレイアウト中央配置だけ。
+phpでpタグとしてDBからの情報出力-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
