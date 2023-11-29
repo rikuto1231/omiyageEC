@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>トップ画面</title>
-    <link rel="stylesheet" href="../../common/css/header.css">
+    <link rel="stylesheet" href="../common/css/header.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
-        <?php require '../../common/php/header.php'; ?>
+        <?php require '../common/php/header.php'; ?>
     </header>
     <div class="main">
       <br>
@@ -104,6 +104,6 @@
   </div>
 </div>
     </div>
-    <script src="../../common/js/side_ber.js"></script>
+    <script src="../common/js/side_ber.js"></script>
 </body>
 </html>
