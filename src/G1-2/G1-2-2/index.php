@@ -24,6 +24,7 @@
         </p>
 
         <button type="submit" class="btn">ログイン</button>
+        
     </form>
 
     <button class="btn2" onclick="location.href='../G1-2-1/index.php'">戻る</button>
