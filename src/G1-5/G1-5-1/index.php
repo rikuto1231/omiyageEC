@@ -9,7 +9,6 @@
 <body>
     <header>
 
-    </header>
         <div id="app">
         
             
@@ -72,6 +71,9 @@
                 </div>
             </div>
         </div>
+
+    </header>
+        
     <script src="/omiyageEC/src/common/js/side_ber.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
     <script src="script.js"></script>
