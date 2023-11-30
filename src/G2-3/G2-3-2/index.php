@@ -17,8 +17,7 @@
     <div class="main">
         <h2>条件指定</h2>
         <table class="table" border="1" cellpadding="10"cellspacing="0">
-        <form action="" method="post">
-
+<?php
         echo'<h2>条件指定</h2>';
         echo'<table class="table" border="1" cellpadding="10"cellspacing="0">';
         echo'<tr><td class="td1">名称指定</td><td class="td2">';
