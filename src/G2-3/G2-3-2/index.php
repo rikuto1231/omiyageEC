@@ -18,7 +18,6 @@
         <h2>条件指定</h2>
         <table class="table" border="1" cellpadding="10"cellspacing="0">
         <form action="" method="post">
-
         <tr><td class="td1">名称指定</td><td class="td2">
         <input type="text" size="30" class="text_box" >
         </td></tr>
@@ -32,7 +31,9 @@
         <input type="number" class="text_box" >
         </td></tr>
         </table>
-        <button class="sarch">検索</button>
+        <form action="../G2-3/G2-3-1/index.php">
+        <button class="sarch">戻る</button>
+        </form>
     <div class="flexbox">
         <div class="item">
             <img src="../imge/a.png" alt="代替テキスト" width="70%" height="70%">
