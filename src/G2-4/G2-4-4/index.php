@@ -23,7 +23,6 @@
         echo'<img src="../imge/a.png" class="item">';
         echo'<div class="main">';
         echo'<table class="table" border="1" cellpadding="10"cellspacing="0">';
-        echo'<form action="../G2-4-4/index.php" method="post">';
         echo'<tr><td class="td1">名称指定</td><td class="td2">';
         echo'<p>',$_POST['merchandise_name'],'</p>';
         echo'</td></tr>';
@@ -43,8 +42,8 @@
         echo'<p>',$_POST['stock'],'</p>';
         echo'</td></tr>';
         echo'</table>';
-        echo'<button class="sarch">戻る</button>';
         ?>
+        <button class="sarch" onclick="location.href='../G2-4-1/index.php'">戻る</button>
     </div>
     
 </body>
