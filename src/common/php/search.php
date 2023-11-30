@@ -14,20 +14,22 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
         // パスがnullまたは空白の場合
         if ($row['path'] == null || $row['path'] == '') {
             echo '<a href="/omiyageEC/src/G1-5/G1-5-3/index.php?merchandise_id=' . $row['merchandise_id'] . '">';
-            echo '<img src="' . '/omiyageEC/src/common/img/no.jpeg' . '" width="90px" height="90px" ' . $row['merchandise_id'] . '>';
+            echo '<img src="' . '/omiyageEC/src/common/img/no.jpeg' . '" alt="画像がありません" width="90px" height="90px" ' . $row['merchandise_id'] . '>';
             echo '</a>';
             echo '<p>' . $row['merchandise_name'] . '</p>';
-        } elseif (!file_exists($imagePath)) { // ファイルが存在しない場合
-            echo '<a href="/omiyageEC/src/G1-5/G1-5-3/index.php?merchandise_id=' . $row['merchandise_id'] . '">';
-            echo '<img src="' . '/omiyageEC/src/common/img/no.jpeg' . '" width="90px" height="90px" ' . $row['merchandise_id'] . '>';
-            echo '</a>';
-            echo '<p>' . $row['merchandise_name'] . '</p>';
-        } else {
+        }else {
             echo '<a href="/omiyageEC/src/G1-5/G1-5-3/index.php?merchandise_id=' . $row['merchandise_id'] . '">';
             echo '<img src="' . '/omiyageEC/src/common/img/' . $row['path'] . '" alt="代替テキスト" width="90px" height="90px" ' . $row['merchandise_id'] . '>';
             echo '</a>';
             echo '<p>' . $row['merchandise_name'] . '</p>';
         }
+
+        // elseif (!file_exists($imagePath)) { // ファイルが存在しない場合
+        //     echo '<a href="/omiyageEC/src/G1-5/G1-5-3/index.php?merchandise_id=' . $row['merchandise_id'] . '">';
+        //     echo '<img src="' . '/omiyageEC/src/common/img/no.jpeg' . '" width="90px" height="90px" ' . $row['merchandise_id'] . '>';
+        //     echo '</a>';
+        //     echo '<p>' . $row['merchandise_name'] . '</p>';
+        // } 
     
         echo '</div>';
     }
