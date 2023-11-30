@@ -18,7 +18,6 @@
         <form action="../G2-2-2/index.php" method="POST">
         <h2>商品追加</h2>
         <table class="table" border="1" cellpadding="10"cellspacing="0">
-
         <tr><td class="td1">名称指定</td><td class="td2">
         <input type="text" size="30" class="text_box" name="merchandise_name" required>
         </td></tr>
