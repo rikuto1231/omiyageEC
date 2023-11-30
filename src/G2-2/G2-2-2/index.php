@@ -48,7 +48,7 @@
         echo'<p>',$_POST['price'],'</p>';
         echo'</td></tr>';
         echo'<tr><td class="td1">在庫数</td><td class="td2">';
-        echo'<p>',$_POST['path'],'</p>';
+        echo'<p>',$_POST['stock'],'</p>';
         echo'</td ></tr>';
         echo'</table>';
         echo'<button class="sarch">戻る</button>';
