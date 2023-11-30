@@ -30,7 +30,7 @@ phpでpタグとしてDBからの情報出力-->
             <p><a href="">ログアウト</a></p>
             <hr>
         </div>
-        <img id="toggleButton"src="../imge/user.png"width="40" height="40">
+        <img id="toggleButton"src="omiyageEC/src/common/img/user.png"width="40" height="40">
     </header>
     <script src="side_ber.js"></script>
 
