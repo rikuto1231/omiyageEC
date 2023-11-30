@@ -39,11 +39,11 @@
         echo'<input type="text" size="30" class="text_box" >';
         echo'</td ></tr>';
         echo'</table>';
-        echo'<form action="../G2-3-1/index.php">';
+        echo'<form action="../G2-4-1/index.php">';
         echo'<button class="sarch">戻る</button>';
         echo'</form>';
     echo'<div class="flexbox">';
-    echo'<form method="POST" name="a_form" action="../G2-3-3/index.php">';
+    echo'<form method="POST" name="a_form" action="../G2-4-3/index.php">';
     require '../../common/php/DB.php';
         $pdo = getDatabaseConnection();
         $sql=$pdo->prepare('select * from Merchandise where merchandise_name=? or prefectures=? or category=? or brand=? or price=? or stock=?');
