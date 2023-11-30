@@ -40,20 +40,23 @@
         echo'<form action="../G2-4-1/index.php">';
         echo'<button class="sarch">戻る</button>';
         echo'</form>';
+        echo'<form method="POST" name="a_form" action="../G2-4-3/index.php">';
     echo'<div class="flexbox">';
-    echo'<form method="POST" name="a_form" action="../G2-4-3/index.php">';
     require '../../common/php/DB.php';
         $pdo = getDatabaseConnection();
         $sql=$pdo->prepare('select * from Merchandise where merchandise_name=? or prefectures=? or category=? or brand=? or price=? or stock=?');
         $sql->execute([$_POST['merchandise_name'],$_POST['prefectures'],$_POST['category'],$_POST['brand'],$_POST['price'],$_POST['stock']]);
     foreach ($sql as $row) {
         echo'<div class="item">';
+        echo '<input type="hidden" name="id" value="',$row['merchandise_id'],'">';
+        echo'<ahref="#" onclick="document.a_form.submit();">';
         echo'<img src="../imge/a.png" alt="代替テキスト" width="70%" height="70%">';
         echo'<p class="mei">',$row['merchandise_name'],'</p>';
+        echo'</a>';
         echo'</div>';
     }
-    echo'</form>';
     echo'</div>';
+    echo'</form>';
     ?>
 </div>
     
