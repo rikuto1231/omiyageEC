@@ -43,14 +43,19 @@
         <?php
         require '../../common/php/DB.php';
         $pdo = getDatabaseConnection();
+        echo'<form method="POST" name="a_form" action="../G2-4-3/index.php">';
         echo'<div class="flexbox">';
     foreach($pdo->query('select * from Merchandise') as $row){
         echo'<div class="item">';
-            echo'<img src="/omiyageEC/src/common/img/'.$row['path'].'" alt="代替テキスト" width="70%" height="70%">';
-            echo'<p class="mei">',$row['merchandise_name'],'</p>';
-            echo'</div>';
+        echo '<input type="hidden" name="id" value="',$row['merchandise_id'],'">';
+        echo'<a href="#" onclick="document.a_form.submit();">';
+        echo'<img src="/omiyageEC/src/common/img/'.$row['path'].'" alt="代替テキスト" width="70%" height="70%">';
+        echo'<p class="mei">',$row['merchandise_name'],'</p>';
+        echo'</a>';
+        echo'</div>';
         }
     echo'</div>';
+    echo'</form>';
     ?>
 </div>
     
