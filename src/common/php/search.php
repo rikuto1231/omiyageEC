@@ -9,9 +9,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     // return情報
     foreach ($result as $row) {
         echo '<div class="item">';
-        // 商品詳細用の特定ロジックを後で構築
         // || !file_exists('/omiyageEC/src/common/img/'.$row['path'])
-        if ($row['path'] == null || $row['path'] == '' || !file_exists($row['path'])) { //パスがnullの時と空白の時と有効じゃないとき
+        if ($row['path'] == null || $row['path'] == '' || !file_exists("omiyageEC/src/common/img/".$row['path'])) { //パスがnullの時と空白の時と有効じゃないとき
             echo '<a href="/omiyageEC/src/G1-5/G1-5-3/index.php?merchandise_id=' . $row['merchandise_id'] . '">';
             echo '<img src="'.'/omiyageEC/src/common/img/no.jpeg'.'" width="90px" height="90px"'.$row['merchandise_id'].'>'; 
             echo '</a>';
