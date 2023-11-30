@@ -44,7 +44,7 @@
         echo'<button class="sarch">戻る</button>';
         echo'</form>';
     echo'<div class="flexbox">';
-    $sql=$pdo->prepare('select * from Merchandise where category=?');
+    $sql=$pdo->prepare('select * from Merchandise where merchandise_name=? or prefectures=? or category=? or brand=? or price=? or stock=? or path=?');
         echo'<div class="item">';
         echo'<img src="../imge/a.png" alt="代替テキスト" width="70%" height="70%">';
             echo'<p class="mei">商品名</p>';
