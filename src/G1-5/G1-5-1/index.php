@@ -70,7 +70,7 @@
                 </div>
             </div>
         </header>
-        <script src="/omiyageEC/sec/common/js/sidebar.js"></script>
+        <script src="/omiyageEC/src/common/js/sidebar.js"></script>
     </div>
     
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
