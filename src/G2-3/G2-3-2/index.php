@@ -45,10 +45,13 @@
         echo'</form>';
     echo'<div class="flexbox">';
     $sql=$pdo->prepare('select * from Merchandise where merchandise_name=? or prefectures=? or category=? or brand=? or price=? or stock=? or path=?');
+    $sql->execute([$_POST['merchandise_name'],$_POST['prefectures'],$_POST['category'],$_POST['brand'],$_POST['price'],$_POST['stock'],$_POST['path']]);
+    foreach ($sql as $row) {
         echo'<div class="item">';
         echo'<img src="../imge/a.png" alt="代替テキスト" width="70%" height="70%">';
-            echo'<p class="mei">商品名</p>';
+            echo'<p class="mei">',$row['merchandise_name'],'</p>';
         echo'</div>';
+    }
     echo'</div>';
     ?>
 </div>
