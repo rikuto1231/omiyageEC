@@ -2,7 +2,7 @@
 
 <?php
     echo '<div class="sidebar">
-        <img id="closeButton" src="../common/img/close.png">
+        <img id="closeButton" src="/omiyageEC/src/common/img/close.png">
 
         <hr>
         <p>○○○○さん</p>
