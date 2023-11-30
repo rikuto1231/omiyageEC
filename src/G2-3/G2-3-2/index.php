@@ -39,7 +39,7 @@
         echo'<input type="text" size="30" class="text_box" >';
         echo'</td ></tr>';
         echo'</table>';
-        echo'<form action="../G2-3/G2-3-1/index.php">';
+        echo'<form action="../G2-3-1/index.php">';
         echo'<button class="sarch">戻る</button>';
         echo'</form>';
     echo'<div class="flexbox">';
