@@ -24,6 +24,7 @@
         foreach($sql as $row){
         echo'<table class="table" border="1" cellpadding="10"cellspacing="0">';
         echo'<form action="../G2-4-4/index.php" method="post">';
+        echo '<input type="hidden" name="id" value="',$row['merchandise_id'],'">';
         echo'<tr><td class="td1">名称指定</td><td class="td2">';
         echo'<p>',$row['merchandise_name'],'</p>';
         echo'</td></tr>';
