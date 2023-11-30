@@ -49,7 +49,7 @@
     foreach ($sql as $row) {
         echo'<div class="item">';
         echo '<input type="hidden" name="id" value="',$row['merchandise_id'],'">';
-        echo'<ahref="#" onclick="document.a_form.submit();">';
+        echo'<a href="#" onclick="document.a_form.submit();">';
         echo'<img src="../imge/a.png" alt="代替テキスト" width="70%" height="70%">';
         echo'<p class="mei">',$row['merchandise_name'],'</p>';
         echo'</a>';

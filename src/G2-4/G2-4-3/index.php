@@ -44,7 +44,7 @@
         echo'</td></tr>';
         echo'</table>';
         }
-        echo'<button class="sarch">削除</button>';
+        echo'<button type="submit" class="sarch">削除</button>';
         echo'</form>';
         ?>
     </div>
