@@ -10,10 +10,10 @@
 <div>   
 <div class="ber">
 <br>
-<img src="../image/icon1.png" alt="" width="50" height="50">
-    <p><img src="../image/icon2.png" class="icon1"><a href="" style="text-decoration:none;"  class=link>商品情報追加▶</a></p></span>
-    <p><img src="../image/icon3.png" class="icon1"><a href="" style="text-decoration:none;"  class=link>商品情報更新▶</a></p></span>
-    <p><img src="../image/icon4.png" class="icon1"><a href="" style="text-decoration:none;"  class=link>商品情報削除▶</a></p></span>
+<img src="omiyageEC/src/common/img/icon1.png" alt="" width="50" height="50">
+    <p><img src="omiyageEC/src/common/img/icon2.png" class="icon1"><a href="" style="text-decoration:none;"  class=link>商品情報追加▶</a></p></span>
+    <p><img src="omiyageEC/src/common/img/icon3.png" class="icon1"><a href="" style="text-decoration:none;"  class=link>商品情報更新▶</a></p></span>
+    <p><img src="omiyageEC/src/common/img/icon4.png" class="icon1"><a href="" style="text-decoration:none;"  class=link>商品情報削除▶</a></p></span>
 </div>
 
 
