@@ -20,7 +20,7 @@
         require '../../common/php/DB.php';
         $pdo = getDatabaseConnection();
         $sql=$pdo->prepare('select * from Merchandise where merchandise_id=?');
-        $sql->execute([$_POST['id']]);
+        $sql->execute([$_GET['id']]);
         foreach($sql as $row){
         echo'<table class="table" border="1" cellpadding="10"cellspacing="0">';
         echo'<form action="../G2-4-4/index.php" method="post">';

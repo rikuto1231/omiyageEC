@@ -40,23 +40,23 @@
         <button class="sarch" type="submit">検索</button>
         </from>
         <h2>全件表示</h2>
-        <?php
-        require '../../common/php/DB.php';
-        $pdo = getDatabaseConnection();
-        echo'<form method="POST" name="a_form" action="../G2-4-3/index.php">';
-        echo'<div class="flexbox">';
-    foreach($pdo->query('select * from Merchandise') as $row){
+        <form action="../G2-4-3/index.php" method="post" name="form1">
+    <?php
+    echo '<div class="flexbox">';
+    require '../../common/php/DB.php';
+    $pdo = getDatabaseConnection();
+    foreach ($pdo->query('select * from Merchandise') as $row) {
         echo'<div class="item">';
-        echo '<input type="hidden" name="id" value="',$row['merchandise_id'],'">';
-        echo'<a href="#" onclick="document.a_form.submit();">';
-        echo'<img src="/omiyageEC/src/common/img/'.$row['path'].'" alt="代替テキスト" width="70%" height="70%">';
+        echo'<a href="../G2-4-3/index.php?id=',$row['merchandise_id'],'">';
+        echo'<img src="../imge/a.png" alt="代替テキスト" width="70%" height="70%">';
         echo'<p class="mei">',$row['merchandise_name'],'</p>';
         echo'</a>';
+        echo'</form>';
         echo'</div>';
-        }
-    echo'</div>';
-    echo'</form>';
+    }
+    echo '</div>';
     ?>
+</form>
 </div>
     
 </body>
