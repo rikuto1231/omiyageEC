@@ -19,7 +19,7 @@
         $sql=$pdo->prepare('delete from Merchandise where merchandise_id=?');
         $sql->execute([$_POST['id']]);
         echo'<h2>削除が完了しました</h2>';
-        echo'<img src="../imge/a.png" class="item">';
+        echo'<img src="../../common/img/'.$_POST['path'].'" class="item">';
         echo'<div class="main">';
         echo'<table class="table" border="1" cellpadding="10"cellspacing="0">';
         echo'<tr><td class="td1">名称指定</td><td class="td2">';

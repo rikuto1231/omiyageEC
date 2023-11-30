@@ -13,14 +13,14 @@
     <p><img src="../../common/img/icon3.png" class="icon1"><a href="../../G2-3/G2-3-1/index.php" style="text-decoration:none;"  class=link>商品情報更新▶</a></p>
     <p><img src="../../common/img/icon4.png" class="icon1"><a href="../../G2-4/G2-4-1/index.php" style="text-decoration:none;"  class=link>商品情報削除</a></p>    
     </div>
-    <img src="/omiyageEC/src/common/img/a.png" class="item">
-    <div class="main">
     <?php
-        require '../../common/php/DB.php';
-        $pdo = getDatabaseConnection();
-        $sql=$pdo->prepare('select * from Merchandise where merchandise_id=?');
-        $sql->execute([$_GET['id']]);
-        foreach($sql as $row){
+    require '../../common/php/DB.php';
+    $pdo = getDatabaseConnection();
+    $sql=$pdo->prepare('select * from Merchandise where merchandise_id=?');
+    $sql->execute([$_GET['id']]);
+    foreach($sql as $row){
+    echo'<img src="../../common/img/'.$row['path'].'" class="item">';
+    echo'<div class="main">';
         echo'<table class="table" border="1" cellpadding="10"cellspacing="0">';
         echo'<form action="../G2-3-4/index.php" method="post">';
         echo '<input type="hidden" name="id" value="',$row['merchandise_id'],'">';

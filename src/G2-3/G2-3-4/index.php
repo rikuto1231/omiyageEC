@@ -18,12 +18,12 @@
    $pdo = getDatabaseConnection();
    $sql=$pdo->prepare('update Merchandise set merchandise_name=?, prefectures=?, category=?, brand=?, price=?, stock=? where merchandise_id=?');
    $sql->execute([$_POST['merchandise_name'],$_POST['prefectures'],$_POST['category'],$_POST['brand'],$_POST['price'],$_POST['stock'],$_POST['id']]);
-   echo'<h2>更新が完了しました</h2>';
-   echo'<img src="../imge/a.png" class="item">';
-   echo'<div class="main">';
    $sql=$pdo->prepare('select * from Merchandise where merchandise_id=?');
    $sql->execute([$_POST['id']]);
    foreach($sql as $row){
+   echo'<h2>更新が完了しました</h2>';
+   echo'<img src="../../common/img/'.$row['path'].'" class="item">';
+   echo'<div class="main">';
    echo'<table class="table" border="1" cellpadding="10"cellspacing="0">';
    echo'<tr><td class="td1">名称指定</td><td class="td2">';
    echo'<p>',$row['merchandise_name'],'</p>';

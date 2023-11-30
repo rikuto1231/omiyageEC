@@ -20,7 +20,7 @@
         $sql=$pdo->prepare('insert into Merchandise(merchandise_name, prefectures, category, brand, price, stock, path) values (?,?,?,?,?,?,?)');
         $sql->execute([$_POST['merchandise_name'],$_POST['prefectures'],$_POST['category'],$_POST['brand'],$_POST['price'],$_POST['stock'],$_POST['path']]);
         echo '<h2>追加が完了しました</h2>';
-        echo '<img src="../imge/a.png" class="item">';
+        echo '<img src="../../common/img/'.$_POST['path'].'" class="item">';
         echo '<div class="main">';
         echo '<table class="table" border="1" cellpadding="10"cellspacing="0">';
         echo'<form action="" method="post">';

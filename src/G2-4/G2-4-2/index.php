@@ -47,7 +47,7 @@
     foreach ($sql as $row) {
         echo'<div class="item">';
         echo'<a href="../G2-4-3/index.php?id=',$row['merchandise_id'],'">';
-        echo'<img src="../imge/a.png" alt="代替テキスト" width="70%" height="70%">';
+        echo'<img src="../../common/img/'.$row['path'].'" alt="代替テキスト" width="70%" height="70%">';
         echo'<p class="mei">',$row['merchandise_name'],'</p>';
         echo'</a>';
         echo'</form>';
