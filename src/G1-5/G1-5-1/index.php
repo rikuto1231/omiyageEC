@@ -12,7 +12,7 @@
         <header>
             
         <div class="sidebar">
-            <img id="closeButton" src="omiyageEC/src/common/img/close.png">
+            <img id="closeButton" src="/omiyageEC/src/common/img/close.png">
 
             <hr>
             <p>○○○○さん</p>
@@ -33,14 +33,14 @@
 
         <img id="toggleButton" src="/omiyageEC/src/common/img/user.png" width="40" height="40">
         <a href="../../G1-5/G1-5-2/index.php">
-            <img id="cart_button" src="./omiyageEC/src/common/img/cart.jpg" width="40" height="40">
+            <img id="cart_button" src="/omiyageEC/src/common/img/cart.jpg" width="40" height="40">
         </a>
 
         <div id="search_all">
             <form method="get" action="/omiyageEC/src/G1-5/G1-5-2/index.php">
                 <input type="text" class="search_box" placeholder="検索" value="" name="search_box">
                 <button class="conditions_img">
-                    <img src="omiyageEC/src/common/img/search.png" width="20" height="20">
+                    <img src="/omiyageEC/src/common/img/search.png" width="20" height="20">
                 </button>
             </form>
         </div>
@@ -70,7 +70,7 @@
                 </div>
             </div>
         </header>
-        <script src="../../common/js/sidebar.js"></script>
+        <script src="/omiyageEC/sec/common/js/sidebar.js"></script>
     </div>
     
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
