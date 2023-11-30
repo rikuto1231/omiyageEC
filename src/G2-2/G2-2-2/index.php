@@ -33,19 +33,22 @@
         echo'<form action="" method="post">';
 
         echo'<tr><td class="td1">名称</td><td class="td2">';
-        echo'<p>～～～～～</p>';
+        echo'<p>',$_POST['merchandise_name'],'</p>';
         echo'</td></tr>';
         echo'<tr><td class="td1">都道府県</td><td class="td2">';
-        echo'<p>～～～～～</p>';
+        echo'<p>',$_POST['prefectures'],'</p>';
         echo'</td></tr>';
         echo'<tr><td class="td1">カテゴリ</td><td class="td2">';
-        echo'<p>～～～～～</p>';
+        echo'<p>',$_POST['category'],'</p>';
+        echo'</td ></tr>';
+        echo'<tr><td class="td1">ブランド</td><td class="td2">';
+        echo'<p>',$_POST['brand'],'</p>';
         echo'</td ></tr>';
         echo'<tr><td class="td1">価格帯</td><td class="td2">';
-        echo'<p>～～～～～</p>';
+        echo'<p>',$_POST['price'],'</p>';
         echo'</td></tr>';
         echo'<tr><td class="td1">在庫数</td><td class="td2">';
-        echo'<p>～～～～～</p>';
+        echo'<p>',$_POST['path'],'</p>';
         echo'</td ></tr>';
         echo'</table>';
         echo'<button class="sarch">戻る</button>';
