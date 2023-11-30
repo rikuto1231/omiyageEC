@@ -50,7 +50,6 @@
         $sql->execute([$_POST['merchandise_name'],$_POST['prefectures'],$_POST['category'],$_POST['brand'],$_POST['price'],$_POST['stock']]);
     foreach ($sql as $row) {
         echo'<div class="item">';
-        echo '<input type="hidden" name="id" value="',$row['merchandise_id'],'">';
         echo'<a onclick="document.a_form.submit();">';
         echo'<img src="../imge/a.png" alt="代替テキスト" width="70%" height="70%">';
         echo'<p class="mei">',$row['merchandise_name'],'</p>';
