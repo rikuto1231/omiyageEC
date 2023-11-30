@@ -1,4 +1,6 @@
 <!-- ユーザデータ表示とupdate処理追加する11/23 -->
+<!-- セッション -->
+<session_start();>
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -19,22 +21,22 @@
             <!--テキスト位置調整用にid入れてます -->
             <label for="firstName" id="firstName_title">名</label><br>
 
-            <input type="text" id="lastName" name="lastName" class="form-control" required>
-            <input type="text" id="firstName" name="firstName" class="form-control" required>
+            <input type="text" id="lastName" name="lastName" class="form-control" value=$_SESSION[lastName] required>
+            <input type="text" id="firstName" name="firstName" class="form-control" value=$_SESSION[firstName] required>
         </div>
 
         <!-- フリガナ -->
         <div class="form-group">
             <label for="furiganaLastName">姓（フリガナ）</label>
             <label for="furiganaLastName" id="furiganaLastName_title">名（フリガナ）</label><br>
-            <input type="text" id="furiganaLastName" name="furiganaLastName" class="form-control" required>
-            <input type="text" id="furiganaFirstName" name="furiganaFirstName" class="form-control" required>
+            <input type="text" id="furiganaLastName" name="furiganaLastName" class="form-control" value=$_SESSION[furiganaLastName] required>
+            <input type="text" id="furiganaFirstName" name="furiganaFirstName" class="form-control" value=$_SESSION[furiganaFirstName] required>
         </div>
 
         <!-- 郵便番号（Ajaxで住所検索) -->
         <div class="form-group">
             <label for="postalCode">郵便番号:</label>
-            <input type="text" id="postalCode" name="postalCode" class="form-control" ref="postalCode" required>
+            <input type="text" id="postalCode" name="postalCode" class="form-control" value=$_SESSION[postalCode] ref="postalCode" required>
             <!-- ここに郵便番号検索フォーム（Ajax使用）を配置 -->
             <button type="button" @click="searchAddress">住所検索</button>
         </div>
@@ -42,7 +44,7 @@
         <!-- 住所（都道府県） -->
         <div class="form-group">
             <label for="prefecture">都道府県:</label>
-            <select id="prefecture" name="prefecture" class="form-control" v-model="selectedPrefecture">
+            <select id="prefecture" name="prefecture" class="form-control" value=$_SESSION[prefecture] v-model="selectedPrefecture">
                 <option v-for="(prefecture, index) in prefectures" :key="index" :value="prefecture">{{ prefecture }}</option>
             </select>
         </div>
@@ -51,49 +53,31 @@
         <!-- 住所（市区町村） -->
         <div class="form-group">
             <label for="city">住所（市区町村）:</label>
-            <input type="text" id="city" name="city" class="form-control" required>
+            <input type="text" id="city" name="city" class="form-control" value=$_SESSION[city] required>
         </div>
 
         <!-- 住所（番地） -->
         <div class="form-group">
             <label for="street">住所（番地）:</label>
-            <input type="text" id="street" name="street" class="form-control" required>
+            <input type="text" id="street" name="street" class="form-control" value=$_SESSION[street] required>
         </div>
 
         <!-- 住所（建物名・部屋番号） -->
         <div class="form-group">
             <label for="building">住所（建物名・部屋番号）:</label>
-            <input type="text" id="building" name="building" class="form-control">
+            <input type="text" id="building" name="building" class="form-control" value=$_SESSION[building]>
         </div>
 
         <!-- 電話番号 -->
         <div class="form-group">
             <label for="phoneNumber">電話番号:</label>
-            <input type="text" id="phoneNumber" name="phoneNumber" class="form-control" required>
+            <input type="text" id="phoneNumber" name="phoneNumber" class="form-control" value=$_SESSION[phoneNumber] required>
         </div>
 
         <!-- メールアドレス -->
         <div class="form-group">
             <label for="email">メールアドレス:</label>
-            <input type="text" id="email" name="email" class="form-control" required>
-        </div>
-
-        <!-- メールアドレス確認用 -->
-        <div class="form-group">
-            <label for="confirmEmail">メールアドレス確認:</label>
-            <input type="text" id="confirmEmail" name="confirmEmail" class="form-control" required>
-        </div>
-
-        <!-- パスワード -->
-        <div class="form-group">
-            <label for="password">パスワード:</label>
-            <input type="password" id="password" name="password" class="form-control" required>
-        </div>
-
-        <!-- パスワード確認用 -->
-        <div class="form-group">
-            <label for="confirmPassword">パスワード確認:</label>
-            <input type="password" id="confirmPassword" name="confirmPassword" class="form-control" required>
+            <input type="text" id="email" name="email" class="form-control" value=$_SESSION[email] required>
         </div>
     </form>
     <p id="output"></p>
