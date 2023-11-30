@@ -43,6 +43,8 @@
         echo'<button class="sarch">戻る</button>';
         echo'</form>';
     echo'<div class="flexbox">';
+    require '../../common/php/DB.php';
+        $pdo = getDatabaseConnection();
     $sql=$pdo->prepare('select * from Merchandise where merchandise_name=? or prefectures=? or category=? or brand=? or price=? or stock=? or path=?');
     $sql->execute([$_POST['merchandise_name'],$_POST['prefectures'],$_POST['category'],$_POST['brand'],$_POST['price'],$_POST['stock'],$_POST['path']]);
     foreach ($sql as $row) {
