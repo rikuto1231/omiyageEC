@@ -16,29 +16,35 @@
     </div>
     <img src="../imge/a.png" class="item">
     <div class="main">
-        <table class="table" border="1" cellpadding="10"cellspacing="0">
-        <form action="" method="post">
-
-        <tr><td class="td1">名称指定</td><td class="td2">
-        <p>～～～～～</p>
-        </td></tr>
-        <tr><td class="td1">都道府県</td><td class="td2">
-        <p>～～～～～</p>
-        </td></tr>
-        <tr><td class="td1">カテゴリ</td><td class="td2">
-        <p>～～～～～</p>
-        </td ></tr>
-        <tr><td class="td1">ブランド</td><td class="td2">
-        <p>～～～～～</p>
-        </td></tr>
-        <tr><td class="td1">価格帯</td><td class="td2">
-        <p>～～～～～</p>
-        </td></tr>
-        <tr><td class="td1">在庫数</td><td class="td2">
-        <p>～～～～～</p>
-        </td></tr>
-        </table>
-        <button class="sarch">削除</button>
+        <?php
+        require '../../common/php/DB.php';
+        $pdo = getDatabaseConnection();
+        $sql=$pdo->prepare('select * from Merchandise where merchandise_id=?');
+        $sql->execute([$_POST['id']]);
+        
+        echo'<table class="table" border="1" cellpadding="10"cellspacing="0">';
+        echo'<form action="../G2-4-4/index.php" method="post">';
+        echo'<tr><td class="td1">名称指定</td><td class="td2">';
+        echo'<p>～～～～～</p>';
+        echo'</td></tr>';
+        echo'<tr><td class="td1">都道府県</td><td class="td2">';
+        echo'<p>～～～～～</p>';
+        echo'</td></tr>';
+        echo'<tr><td class="td1">カテゴリ</td><td class="td2">';
+        echo'<p>～～～～～</p>';
+        echo'</td ></tr>';
+        echo'<tr><td class="td1">ブランド</td><td class="td2">';
+        echo'<p>～～～～～</p>';
+        echo'</td></tr>';
+        echo'<tr><td class="td1">価格帯</td><td class="td2">';
+        echo'<p>～～～～～</p>';
+        echo'</td></tr>';
+        echo'<tr><td class="td1">在庫数</td><td class="td2">';
+        echo'<p>～～～～～</p>';
+        echo'</td></tr>';
+        echo'</table>';
+        echo'<button class="sarch">削除</button>';
+        ?>
     </div>
     
 </body>
