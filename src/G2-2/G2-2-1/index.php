@@ -8,11 +8,10 @@
 </head>
 <body>
     <div class="ber">
-    <a href="../../G2-1/G2-1-1/index.php"><img src="/omiyageEC/src/common/img/kanri_icon.png" alt="" width="50" height="50"></a>
-    <br>
-        <p><img src="/omiyageEC/src/common/img/kanri_icon2.png" class="icon1"><a href="" style="text-decoration:none;"  class=link>商品情報追加▶</a></p></span>
-        <p><img src="/omiyageEC/src/common/img/kanri_icon3.png" class="icon1"><a href="" style="text-decoration:none;"  class=link>商品情報更新</a></p></span>
-        <p><img src="/omiyageEC/src/common/img/kanri_icon4.png" class="icon1"><a href="" style="text-decoration:none;"  class=link>商品情報削除</a></p></span>
+    <a href="../../G2-1/G2-1-1/index.php"><img src="../../common/img/icon1.png" alt="" width="50" height="50"></a>
+    <p><img src="../../common/img/icon2.png" class="icon1"><a href="../../G2-2/G2-2-1/index.php" style="text-decoration:none;"  class=link>商品情報追加▶</a></p>
+    <p><img src="../../common/img/icon3.png" class="icon1"><a href="../../G2-3/G2-3-1/index.php" style="text-decoration:none;"  class=link>商品情報更新</a></p>
+    <p><img src="../../common/img/icon4.png" class="icon1"><a href="../../G2-4/G2-4-1/index.php" style="text-decoration:none;"  class=link>商品情報削除</a></p>
     </div>
     <div class="main">
         <form action="../G2-2-2/index.php" method="POST">

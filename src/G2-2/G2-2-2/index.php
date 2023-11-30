@@ -9,26 +9,19 @@
 </head>
 <body>
     <div class="ber">
-    <a href="../../G2-1/G2-1-1/index.php"><img src="../imge/kanri_icon.png" alt="" width="50" height="50"></a>
-    <br>
-        <p><img src="../imge/kanri_icon2.png" class="icon1"><a href="" style="text-decoration:none;"  class=link>商品情報追加▶</a></p></span>
-        <p><img src="../imge/kanri_icon3.png" class="icon1"><a href="" style="text-decoration:none;"  class=link>商品情報更新</a></p></span>
-        <p><img src="../imge/kanri_icon4.png" class="icon1"><a href="" style="text-decoration:none;"  class=link>商品情報削除</a></p></span>
-    </div>
+    <a href="../../G2-1/G2-1-1/index.php"><img src="../../common/img/icon1.png" alt="" width="50" height="50"></a>
+    <p><img src="../../common/img/icon2.png" class="icon1"><a href="../../G2-2/G2-2-1/index.php" style="text-decoration:none;"  class=link>商品情報追加▶</a></p></span>
+    <p><img src="../../common/img/icon3.png" class="icon1"><a href="../../G2-3/G2-3-1/index.php" style="text-decoration:none;"  class=link>商品情報更新</a></p></span>
+    <p><img src="../../common/img/icon4.png" class="icon1"><a href="../../G2-4/G2-4-1/index.php" style="text-decoration:none;"  class=link>商品情報削除</a></p></span>    </div>
     <?php
         require '../../common/php/DB.php';
         $pdo = getDatabaseConnection();
 
         $sql=$pdo->prepare('insert into Merchandise(merchandise_name, prefectures, category, brand, price, stock, path) values (?,?,?,?,?,?,?)');
-
-     if($sql->execute([$_POST['merchandise_name'],$_POST['prefectures'],$_POST['category'],$_POST['brand'],$_POST['price'],$_POST['stock'],$_POST['path']])){
-        echo'追加に成功しました。';
-    }else{
-        echo'追加に失敗しました。';
-    }
+        $sql->execute([$_POST['merchandise_name'],$_POST['prefectures'],$_POST['category'],$_POST['brand'],$_POST['price'],$_POST['stock'],$_POST['path']]);
         echo '<h2>追加が完了しました</h2>';
-    echo '<img src="../imge/a.png" class="item">';
-    echo '<div class="main">';
+        echo '<img src="../imge/a.png" class="item">';
+        echo '<div class="main">';
         echo '<table class="table" border="1" cellpadding="10"cellspacing="0">';
         echo'<form action="" method="post">';
         echo'<tr><td class="td1">名称</td><td class="td2">';

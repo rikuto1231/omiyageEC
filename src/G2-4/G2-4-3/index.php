@@ -8,11 +8,10 @@
 </head>
 <body>
     <div class="ber">
-    <a href="../../G2-1/G2-1-1/index.php"><img src="../imge/kanri_icon.png" alt=""></a>
-    <br>
-        <p><img src="../imge/kanri_icon2.png" class="icon1"><span>商品情報追加</p></span>
-        <p><img src="../imge/kanri_icon3.png" class="icon1"><span>商品情報更新</p></span>
-        <p><img src="../imge/kanri_icon4.png" class="icon1"><span>商品情報削除▶</p></span>
+    <a href="../../G2-1/G2-1-1/index.php"><img src="../../common/img/icon1.png" alt="" width="50" height="50"></a>
+    <p><img src="../../common/img/icon2.png" class="icon1"><a href="../../G2-2/G2-2-1/index.php" style="text-decoration:none;"  class=link>商品情報追加</a></p>
+    <p><img src="../../common/img/icon3.png" class="icon1"><a href="../../G2-3/G2-3-1/index.php" style="text-decoration:none;"  class=link>商品情報更新</a></p>
+    <p><img src="../../common/img/icon4.png" class="icon1"><a href="../../G2-4/G2-4-1/index.php" style="text-decoration:none;"  class=link>商品情報削除▶</a></p>
     </div>
     <img src="../imge/a.png" class="item">
     <div class="main">
