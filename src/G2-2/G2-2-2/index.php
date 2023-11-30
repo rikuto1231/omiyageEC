@@ -51,7 +51,9 @@
         echo'<p>',$_POST['stock'],'</p>';
         echo'</td ></tr>';
         echo'</table>';
+        echo'<form action="../G2-1/G2-1-1/index.php">';
         echo'<button class="sarch">戻る</button>';
+        echo'</form>';
         echo'</div>';
     ?>
     
