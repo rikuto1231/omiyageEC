@@ -17,7 +17,7 @@
     </div>
     <div class="main">
         <h2>条件指定</h2>
-        <form action="../G2-3/G2-3-2/index.php"></form>
+        <form action="../G2-3/G2-3-2/index.php" method="POST">
         <table class="table" border="1" cellpadding="10"cellspacing="0">
         <form action="" method="post">
         <tr><td class="td1">名称指定</td><td class="td2">
@@ -39,7 +39,8 @@
         <input type="text" size="30" class="text_box">
         </td></tr>
         </table>
-        <button class="sarch">検索</button>
+        <button class="sarch" type="submit">検索</button>
+        </from>
         <h2>全件表示</h2>
         <?php
         require '../../common/php/DB.php';
