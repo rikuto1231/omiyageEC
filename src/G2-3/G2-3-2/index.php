@@ -15,33 +15,31 @@
         <p><img src="../imge/kanri_icon4.png" class="icon1"><a href="" style="text-decoration:none;"  class=link>商品情報削除</a></p></span>
     </div>
     <div class="main">
-        <h2>条件指定</h2>
-        <table class="table" border="1" cellpadding="10"cellspacing="0">
 <?php
-        echo'<h2>条件指定</h2>';
-        echo'<table class="table" border="1" cellpadding="10"cellspacing="0">';
-        echo'<tr><td class="td1">名称指定</td><td class="td2">';
-        echo'<input type="text" size="30" class="text_box" >';
-        echo'</td></tr>';
-        echo'<tr><td class="td1">都道府県</td><td class="td2">';
-        echo'<input type="text" size="30" class="text_box">';
-        echo'</td></tr>';
-        echo'<tr><td class="td1">カテゴリ</td><td class="td2">';
-        echo'<input type="text" size="30" class="text_box" >';
-        echo'</td ></tr>';
-        echo'<tr><td class="td1">ブランド</td><td class="td2">';
-        echo'<input type="text" size="30" class="text_box" >';
-        echo'</td ></tr>';
-        echo'<tr><td class="td1">価格帯</td><td class="td2">';
-        echo'<input type="number" class="text_box" >';
-        echo'</td></tr>';
-        echo'<tr><td class="td1">在庫数</td><td class="td2">';
-        echo'<input type="text" size="30" class="text_box" >';
-        echo'</td ></tr>';
-        echo'</table>';
-        echo'<form action="../G2-3-1/index.php">';
-        echo'<button class="sarch">戻る</button>';
-        echo'</form>';
+       echo'<h2>条件指定</h2>';
+       echo'<table class="table" border="1" cellpadding="10"cellspacing="0">';
+       echo'<tr><td class="td1">名称指定</td><td class="td2">';
+       echo'<p>',$_POST['merchandise_name'],'</p>';
+       echo'</td></tr>';
+       echo'<tr><td class="td1">都道府県</td><td class="td2">';
+       echo'<p>',$_POST['prefectures'],'</p>';
+       echo'</td></tr>';
+       echo'<tr><td class="td1">カテゴリ</td><td class="td2">';
+       echo'<p>',$_POST['category'],'</p>';
+       echo'</td ></tr>';
+       echo'<tr><td class="td1">ブランド</td><td class="td2">';
+       echo'<p>',$_POST['brand'],'</p>';
+       echo'</td ></tr>';
+       echo'<tr><td class="td1">価格帯</td><td class="td2">';
+       echo'<p>',$_POST['price'],'</p>';
+       echo'</td></tr>';
+       echo'<tr><td class="td1">在庫数</td><td class="td2">';
+       echo'<p>',$_POST['stock'],'</p>';
+       echo'</td ></tr>';
+       echo'</table>';
+       echo'<form action="../G2-3-1/index.php">';
+       echo'<button class="sarch">戻る</button>';
+       echo'</form>';
     echo'<div class="flexbox">';
     require '../../common/php/DB.php';
         $pdo = getDatabaseConnection();
@@ -49,13 +47,11 @@
         $sql->execute([$_POST['merchandise_name'],$_POST['prefectures'],$_POST['category'],$_POST['brand'],$_POST['price'],$_POST['stock']]);
     foreach ($sql as $row) {
         echo'<div class="item">';
-        echo'<form method="POST" name="form" action="../G2-4-3/index.php">';
-        echo '<input type="hidden" name="id" value="',$row['merchandise_id'],'">';
-        echo'</form>';
-        echo'<a href="../G2-4-3/index.php" onclick="document.form.submit();return false;">';
+        echo'<a href="../G2-3-3/index.php?id=',$row['merchandise_id'],'">';
         echo'<img src="../imge/a.png" alt="代替テキスト" width="70%" height="70%">';
-        echo'<p class="mei">',$row['merchandise_name'],'</p></a>';
-
+        echo'<p class="mei">',$row['merchandise_name'],'</p>';
+        echo'</a>';
+        echo'</form>';
         echo'</div>';
     }
     echo'</div>';

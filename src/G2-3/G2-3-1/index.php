@@ -47,9 +47,12 @@
         echo'<div class="flexbox">';
     foreach($pdo->query('select * from Merchandise') as $row){
         echo'<div class="item">';
-            echo'<img src="/omiyageEC/src/common/img/'.$row['path'].'" alt="代替テキスト" width="70%" height="70%">';
-            echo'<p class="mei">',$row['merchandise_name'],'</p>';
-            echo'</div>';
+        echo'<a href="../G2-3-3/index.php?id=',$row['merchandise_id'],'">';
+        echo'<img src="../imge/a.png" alt="代替テキスト" width="70%" height="70%">';
+        echo'<p class="mei">',$row['merchandise_name'],'</p>';
+        echo'</a>';
+        echo'</form>';
+        echo'</div>';
         }
     echo'</div>';
     ?>
