@@ -8,6 +8,7 @@ new Vue({
         ],
 
         priceRanges: [
+            // BETWWENいけるようにデータの調整
             { id: 1, name: '～1000円' },
             { id: 2, name: '1001円～2000円' },
             { id: 3, name: '2001円～3000円' },

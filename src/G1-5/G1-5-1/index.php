@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="omiyageEC/src/common/css/header.css">
+    <link rel="stylesheet" href="/omiyageEC/src/common/css/header.css">
 </head>
 <body>
     <div id="app">
@@ -31,13 +31,13 @@
             <p><a href="../../common/php/logout.php">ログアウト</a></p>
         </div>
 
-        <img id="toggleButton" src="omiyageEC/src/common/img/user.png" width="40" height="40">
+        <img id="toggleButton" src="/omiyageEC/src/common/img/user.png" width="40" height="40">
         <a href="../../G1-5/G1-5-2/index.php">
-            <img id="cart_button" src=".omiyageEC/src/common/img/cart.jpg" width="40" height="40">
+            <img id="cart_button" src="./omiyageEC/src/common/img/cart.jpg" width="40" height="40">
         </a>
 
         <div id="search_all">
-            <form method="get" action="omiyageEC/src/G1-5/G1-5-2/index.php">
+            <form method="get" action="/omiyageEC/src/G1-5/G1-5-2/index.php">
                 <input type="text" class="search_box" placeholder="検索" value="" name="search_box">
                 <button class="conditions_img">
                     <img src="omiyageEC/src/common/img/search.png" width="20" height="20">
