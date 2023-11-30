@@ -15,9 +15,12 @@
         <p><img src="../imge/kanri_icon4.png" class="icon1"><a href="" style="text-decoration:none;"  class=link>商品情報削除</a></p></span>
     </div>
     <div class="main">
+        <?php
+        require '../../common/php/DB.php';
+        $pdo = getDatabaseConnection();
+
         <h2>条件指定</h2>
         <table class="table" border="1" cellpadding="10"cellspacing="0">
-        <form action="" method="post">
         <tr><td class="td1">名称指定</td><td class="td2">
         <input type="text" size="30" class="text_box" >
         </td></tr>
@@ -52,7 +55,7 @@
             <p class="mei">商品名</p>
         </div>
         <div class="item">
-            <img src="../imge/a.png" alt="代替テキスト"width="70%" height="70%"">
+            <img src="../imge/a.png" alt="代替テキスト"width="70%" height="70%">
             <p class="mei">商品名</p>
         </div>
         <div class="item">
@@ -68,6 +71,7 @@
             <p class="mei">商品名</p>
         </div>
     </div>
+    ?>
 </div>
     
 </body>
