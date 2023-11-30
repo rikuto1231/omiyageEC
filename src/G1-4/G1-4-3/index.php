@@ -13,7 +13,7 @@
 
         </header>
             <div class="sidebar">
-                <img id="closeButton" src="omiyageEC/src/common/img/close.png">
+                <img id="closeButton" src="/omiyageEC/src/common/img/close.png">
                 <!-- サイドバーの内容 -->
                 <hr>
                 <p>○○○○さん</p>
