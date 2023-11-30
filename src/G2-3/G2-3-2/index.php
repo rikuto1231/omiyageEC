@@ -19,58 +19,37 @@
         require '../../common/php/DB.php';
         $pdo = getDatabaseConnection();
 
-        <h2>条件指定</h2>
-        <table class="table" border="1" cellpadding="10"cellspacing="0">
-        <tr><td class="td1">名称指定</td><td class="td2">
-        <input type="text" size="30" class="text_box" >
-        </td></tr>
-        <tr><td class="td1">都道府県</td><td class="td2">
-        <input type="text" size="30" class="text_box">
-        </td></tr>
-        <tr><td class="td1">カテゴリ</td><td class="td2">
-        <input type="text" size="30" class="text_box" >
-        </td ></tr>
-        <tr><td class="td1">価格帯</td><td class="td2">
-        <input type="number" class="text_box" >
-        </td></tr>
-        </table>
-        <form action="../G2-3/G2-3-1/index.php">
-        <button class="sarch">戻る</button>
-        </form>
-    <div class="flexbox">
-        <div class="item">
-            <img src="../imge/a.png" alt="代替テキスト" width="70%" height="70%">
-            <p class="mei">商品名</p>
-        </div>
-        <div class="item">
-            <img src="../imge/a.png" alt="代替テキスト"width="70%" height="70%">
-            <p class="mei">商品名</p>
-        </div>
-        <div class="item">
-            <img src="../imge/a.png" alt="代替テキスト" width="70%" height="70%">
-            <p class="mei">商品名</p>
-        </div>
-        <div class="item">
-            <img src="../imge/a.png" alt="代替テキスト" width="70%" height="70%">
-            <p class="mei">商品名</p>
-        </div>
-        <div class="item">
-            <img src="../imge/a.png" alt="代替テキスト"width="70%" height="70%">
-            <p class="mei">商品名</p>
-        </div>
-        <div class="item">
-            <img src="../imge/a.png" alt="代替テキスト" width="70%" height="70%">
-            <p class="mei">商品名</p>
-        </div>
-        <div class="item">
-            <img src="../imge/a.png" alt="代替テキスト" width="70%" height="70%">
-            <p class="mei">商品名</p>
-        </div>
-        <div class="item">
-            <img src="../imge/a.png" alt="代替テキスト" width="70%" height="70%">
-            <p class="mei">商品名</p>
-        </div>
-    </div>
+        echo'<h2>条件指定</h2>';
+        echo'<table class="table" border="1" cellpadding="10"cellspacing="0">';
+        echo'<tr><td class="td1">名称指定</td><td class="td2">';
+        echo'<input type="text" size="30" class="text_box" >';
+        echo'</td></tr>';
+        echo'<tr><td class="td1">都道府県</td><td class="td2">';
+        echo'<input type="text" size="30" class="text_box">';
+        echo'</td></tr>';
+        echo'<tr><td class="td1">カテゴリ</td><td class="td2">';
+        echo'<input type="text" size="30" class="text_box" >';
+        echo'</td ></tr>';
+        echo'<tr><td class="td1">ブランド</td><td class="td2">';
+        echo'<input type="text" size="30" class="text_box" >';
+        echo'</td ></tr>';
+        echo'<tr><td class="td1">価格帯</td><td class="td2">';
+        echo'<input type="number" class="text_box" >';
+        echo'</td></tr>';
+        echo'<tr><td class="td1">在庫数</td><td class="td2">';
+        echo'<input type="text" size="30" class="text_box" >';
+        echo'</td ></tr>';
+        echo'</table>';
+        echo'<form action="../G2-3/G2-3-1/index.php">';
+        echo'<button class="sarch">戻る</button>';
+        echo'</form>';
+    echo'<div class="flexbox">';
+    $sql=$pdo->prepare('select * from Merchandise where category=?');
+        echo'<div class="item">';
+        echo'<img src="../imge/a.png" alt="代替テキスト" width="70%" height="70%">';
+            echo'<p class="mei">商品名</p>';
+        echo'</div>';
+    echo'</div>';
     ?>
 </div>
     
