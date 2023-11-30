@@ -96,6 +96,7 @@
             <input type="password" id="confirmPassword" name="confirmPassword" class="form-control" required>
         </div>
     </form>
+    <p id="output"></p>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
     <script src="script.js"></script>
 
