@@ -8,7 +8,7 @@
 </head>
 <body>
     <div class="ber">
-    <img src="/omiyageEC/src/common/img/kanri_icon.png" alt="" width="50" height="50">
+    <a href="../../G2-1/G2-1-1/index.php"><img src="/omiyageEC/src/common/img/kanri_icon.png" alt="" width="50" height="50"></a>
     <br>
         <p><img src="/omiyageEC/src/common/img/kanri_icon2.png" class="icon1"><a href="" style="text-decoration:none;"  class=link>商品情報追加▶</a></p></span>
         <p><img src="/omiyageEC/src/common/img/kanri_icon3.png" class="icon1"><a href="" style="text-decoration:none;"  class=link>商品情報更新</a></p></span>
