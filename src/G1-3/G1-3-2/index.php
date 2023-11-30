@@ -1,6 +1,6 @@
 <!-- ユーザデータ表示とupdate処理追加する11/23 -->
 <!-- セッション -->
-<?php session_start(); ?>
+<session_start();>
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -29,7 +29,7 @@
         <div class="form-group">
             <label for="furiganaLastName">姓（フリガナ）</label>
             <label for="furiganaLastName" id="furiganaLastName_title">名（フリガナ）</label><br>
-            <input type="text" id="furiganaLastName" name="furiganaLastName" class="form-control"value=$_SESSION[furiganaLastName] required>
+            <input type="text" id="furiganaLastName" name="furiganaLastName" class="form-control" value=$_SESSION[furiganaLastName] required>
             <input type="text" id="furiganaFirstName" name="furiganaFirstName" class="form-control" value=$_SESSION[furiganaFirstName] required>
         </div>
 
