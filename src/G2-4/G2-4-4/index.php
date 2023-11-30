@@ -29,7 +29,13 @@
         <tr><td class="td1">カテゴリ</td><td class="td2">
         <p>～～～～～</p>
         </td ></tr>
+        <tr><td class="td1">ブランド</td><td class="td2">
+        <p>～～～～～</p>
+        </td></tr>
         <tr><td class="td1">価格帯</td><td class="td2">
+        <p>～～～～～</p>
+        </td></tr>
+        <tr><td class="td1">在庫数</td><td class="td2">
         <p>～～～～～</p>
         </td></tr>
         </table>
