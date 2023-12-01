@@ -113,6 +113,21 @@ function sql_search($pdo, $search, $selectedCategories, $selectedPriceRanges, $s
     }
 }
 
+// 商品検索用API（ID指定）
+function sql_search_id($pdo, $id) {
+    try {
+        $sql = 'SELECT * FROM Merchandise WHERE merchandise_id = :id';
+        $stmt = $pdo->prepare($sql);
+        $stmt->bindParam(':id', $id, PDO::PARAM_INT);
+        $stmt->execute();
+        $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
+        return $result;
+    } catch (PDOException $e) {
+        // エラーハンドリング
+        echo "エラー: " . $e->getMessage();
+        return false;
+    }
+}
 
 
 
