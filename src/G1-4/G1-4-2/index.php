@@ -16,7 +16,7 @@
 
         <div class="product">
             <p id="cart_mess">カートに入っているアイテム</p>
-            <img class="img_product" src="../../common/img/cart.jpg" width="100" height="100">
+            <img class="img_product" src="/omiyageEC/src/common/img/cart.jpg" width="100" height="100">
             <div class="in_cart">
             <h5>商品名</h5>
             <h5><select name="number">

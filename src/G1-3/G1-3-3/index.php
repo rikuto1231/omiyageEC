@@ -1,6 +1,6 @@
 <!-- PHPに出力に変更。複数データ対応cssに変更。DB処理追加 -->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
@@ -12,6 +12,7 @@
     <header>
         <?php require '../../common/php/header.php'; ?>
     </header>
+    <form action="history.php" method="get">
     <div class="main">
         <br>
         <br>
@@ -19,19 +20,19 @@
         購入履歴</h1>
         <br>
         <br>
-        <p>〇〇〇〇〇</p>
+        <p></p>
+        <p style="text-align: right">
+        数量&emsp;&emsp;&emsp;</p>
+        <p>$_GET[]</p>
+        <p style="text-align: right">
+        $_GET[purchase_date]&emsp;&emsp;&emsp;</p>
+        <br>$_GET[]
+        <p></p>
         <p style="text-align: right">
         数量&emsp;&emsp;&emsp;</p>
         <p>￥○○○</p>
         <p style="text-align: right">
-        20XX/X/X&emsp;&emsp;&emsp;</p>
-        <br>
-        <p>〇〇〇〇〇</p>
-        <p style="text-align: right">
-        数量&emsp;&emsp;&emsp;</p>
-        <p>￥○○○</p>
-        <p style="text-align: right">
-        20XX/X/X&emsp;&emsp;&emsp;</p>
+        $_GET[purchase_date]&emsp;&emsp;&emsp;</p>
         <br>
         <br>
         <br>

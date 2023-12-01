@@ -23,15 +23,15 @@
 </head>
 <body>
     
-    <img src="omiyageEC/src/common/img/user.png" alt="代替テキスト"width="7%" height="14%">
-    <img src="omiyageEC/src/common/img/cart.png" alt="代替テキスト"width="7%" height="14%">
+    <img src="/omiyageEC/src/common/img/user.png" alt="代替テキスト"width="7%" height="14%">
+    <img src="/omiyageEC/src/common/img/cart.png" alt="代替テキスト"width="7%" height="14%">
     <br>
     <div id="center">
     <input type="text"class="search">
     </div>
     <br>
     <div id="revew">
-    <h2><img src="omiyageEC/src/common/img/user.png" alt="代替テキスト"width="7%" height="14%">
+    <h2><img src="/omiyageEC/src/common/img/user.png" alt="代替テキスト"width="7%" height="14%">
     あいうえお
 </h2>
     <h2>m/d</h2>
