@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="../../common/css/header.css">
 </head>
 <body>
-    <header>
         <header>
             <?php require '../../common/php/header.php'; ?>
         </header>
@@ -18,7 +17,7 @@
         〇〇〇〇〇〇</p>
         </div>
         <div class="item">
-            <img src="img/sample.jpg" alt="代替テキスト" width="300px" height="200px">
+            <img src="/omiyageEC/src/common/img/sample.jpg" alt="代替テキスト" width="300px" height="200px">
             </div>
             <div class="mozi">
         <p>価格 : 〇〇〇〇〇</p>

@@ -16,7 +16,7 @@
 
 
 
-    <img src="../../common/img/mement.png" alt="めめんと"></img>
+    <img src="/omiyageEC/src/common/img/mement.png" alt="めめんと"></img>
     <a><p>初めての方はこちらから<br></a>
         
         <a href="../G1-2-3/index.php" class="btn2">新規会員登録</a>
