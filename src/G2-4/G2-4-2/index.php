@@ -25,6 +25,7 @@
         echo'</td></tr>';
         echo'<tr><td class="td1">カテゴリ</td><td class="td2">';
         echo'<p>',$_POST['category'],'</p>';
+        
         echo'</td ></tr>';
         echo'<tr><td class="td1">ブランド</td><td class="td2">';
         echo'<p>',$_POST['brand'],'</p>';
