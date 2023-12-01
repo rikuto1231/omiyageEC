@@ -40,6 +40,7 @@ phpでpタグとしてDBからの情報出力-->
         <h1 style="text-align: center">
         ポイント情報</h1>
     </div>
+    <?php
     <div>
         <br>
         <br>
@@ -51,5 +52,6 @@ phpでpタグとしてDBからの情報出力-->
         <br>
         <button class="modoru" onclick="location.href='../../G1-1/G1-1/index.php'">戻る</button>
     </div>
+    ?>
 </body>
 </html>
