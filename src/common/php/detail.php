@@ -1,5 +1,7 @@
 <?php
+echo '繋がってる';
 if ($_SERVER['REQUEST_METHOD'] === 'GET') {
+    echo "GET認識";
     // GETリクエストが送信された場合
     // 接続
     $pdo = getDatabaseConnection(); 
@@ -8,6 +10,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     $id = isset($_GET['id']) ? $_GET['id'] : null;
 
     if ($id !== null) {
+        echo "商品がある";
         // IDが指定されている場合、商品情報を取得
         $result = sql_search_id($pdo, $id);
 
