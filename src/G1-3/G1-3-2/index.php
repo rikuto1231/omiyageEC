@@ -1,7 +1,7 @@
 <!-- ユーザデータ表示とupdate処理追加する11/23 -->
 <!-- セッション -->
 <session_start();>
-    
+
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -12,7 +12,6 @@
 </head>
 <body>
 
-    <?php
         echo  '<h1 id="title_name">登録情報</h1>
 
             <form method="post" action="../G1-3-2/index.php" id="form_all">
@@ -94,6 +93,5 @@
             <br>
             <button class="modoru" onclick="location.href="/omiyageEC/src/G1-1/G1-1/index.php"">マイページに戻る</button>
         </div>';
-    ?>
 </body>
 </html>
