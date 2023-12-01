@@ -12,8 +12,9 @@
     <header>
         <?php require '../../common/php/header.php'; ?>
     </header>
-    <form action="history.php" method="get">
+    
     <div class="main">
+    <form action="history.php" method="get">
         <br>
         <br>
         <h1 style="text-align: center">
