@@ -2,7 +2,7 @@
 <script src="../../common/js/side_ber.js"></script>
 
 <?php
-$id = isset($_GET['merchandise_id']) ? $_GET['merchandise_id'] : null;
+$id = isset($_GET['purchase_id']) ? $_GET['purchase_id'] : null;
 
     if ($id !== null) {
         echo "商品がある";
@@ -40,7 +40,7 @@ $id = isset($_GET['merchandise_id']) ? $_GET['merchandise_id'] : null;
         }
     } else {
         // IDが指定されてない
-        echo '<p>購入履歴がありません。</p>';
+        echo '<p>IDが指定されていません。</p>';
     }
 
 ?>
