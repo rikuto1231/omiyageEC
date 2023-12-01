@@ -7,7 +7,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     $pdo = getDatabaseConnection(); 
 
     // idを受け取る
-    $id = isset($_GET['id']) ? $_GET['id'] : null;
+    $id = isset($_GET['merchandise_id']) ? $_GET['merchandise_id'] : null;
 
     if ($id !== null) {
         echo "商品がある";

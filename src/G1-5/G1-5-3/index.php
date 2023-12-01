@@ -15,6 +15,7 @@
         </header>
 
 
+        <p>A</p>
         <!-- 詳細表示PHP -->
         <?php require '/omiyageEC/src/common/php/detail.php'; ?>
 
