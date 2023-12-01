@@ -12,28 +12,28 @@
     <header>
         <?php require '../../common/php/header.php'; ?>
     </header>
-    
-    <div class="main">
-    <form action="history.php" method="get">
-        <br>
-        <br>
-        <h1 style="text-align: center">
-        購入履歴</h1>
-        <br>
-        <br>
-        <p></p>
-        <p style="text-align: right">
-        数量&emsp;&emsp;&emsp;</p>
-        <p>$_GET[]</p>
-        <p style="text-align: right">
-        $_GET[purchase_date]&emsp;&emsp;&emsp;</p>
-        <br>$_GET[]
-        <p></p>
-        <p style="text-align: right">
-        数量&emsp;&emsp;&emsp;</p>
-        <p>￥○○○</p>
-        <p style="text-align: right">
-        $_GET[purchase_date]&emsp;&emsp;&emsp;</p>
+    <?php
+    echo '<div class="main">';
+    echo '<form action="history.php" method="get">';
+    echo '<br>';
+    echo '<br>' ; 
+    echo '<h1 style="text-align: center">'  ;
+    echo '購入履歴</h1>'   ;
+    echo '<br>';  
+    echo '<br>' ;
+    echo '<p></p>'; 
+    echo '<p style="text-align: right">';   
+    echo '数量&emsp;&emsp;&emsp;</p>';    
+    echo '<p>',$_GET[''],'</p>' ; 
+    echo ' <p style="text-align: right">' ; 
+    echo '$_GET[purchase_date]&emsp;&emsp;&emsp;</p>';
+    echo '<br>',$_GET[''] ;
+    echo '<p></p>';
+    echo '<p style="text-align: right">';   
+    echo '数量&emsp;&emsp;&emsp;</p>';
+    echo '<p>￥○○○</p>';   
+    echo '<p style="text-align: right">';  
+    echo $_GET['purchase_date'],'&emsp;&emsp;&emsp;</p>'    
         <br>
         <br>
         <br>
