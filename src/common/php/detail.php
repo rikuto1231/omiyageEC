@@ -23,6 +23,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
             echo '<p>' . $row['prefectures'] . '<br>' . $row['merchandise_name'] . '</p>';
             echo '</div>';
 
+            echo '<form action="/omiyageEC/src/common/php/cart_check.php" method="get">'; 
+
             echo '<div class="item">
                     <img src="/omiyageEC/src/common/img/'.$row['path'].'" alt="代替テキスト" width="300px" height="200px">
                 </div>';
@@ -35,10 +37,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
                 </div>';
 
             echo '<div class="button3">
-                    <button class="cartbutton">カートに入れる</button>
+                    <button type="submit" class="cartbutton" name="add_to_cart">カートに入れる</button>
+                    <input type="hidden" name="merchandise_id" value="' . $id . '">
                     <button class="homebutton" onclick="location.href=\'../G1-4-1/index.php\'">検索ホームに戻る</button>
-                </div>
-            </div>';
+                </div>';
+
+            echo '</form>';
+            echo '</div>';
         } else {
             // 商品情報が見つからない
             echo '<p>指定された商品は見つかりません。</p>';
