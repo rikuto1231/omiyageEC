@@ -6,8 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="../../common/css/header.css">
-    <!-- DB -->
-    <!-- detail.php -->
+    <?php require '/omiyageEC/src/common/php/DB.php'; ?>
 </head>
 <body>
     <header>
