@@ -17,7 +17,8 @@
 
 
         <!-- 詳細表示PHP -->
-        <?php require '/omiyageEC/src/common/php/detail.php' ?>
+        <?php require $_SERVER['DOCUMENT_ROOT'] . '/omiyageEC/src/common/php/detail.php'; ?>
+
 
             <script src="../../common/js/side_ber.js"></script>
         
