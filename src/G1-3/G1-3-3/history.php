@@ -24,8 +24,8 @@ $id = isset($_GET['purchase_id']) ? $_GET['purchase_id'] : null;
 
             echo '<div class="mozi">
                     <p>
-                    <p>' $row['price'] '</p>
-                    <div> 数量 :'$row['']'
+                    <p>', $row['price'], '</p>
+                    <div> 数量 :',$row[''],'
         
                 </div>';
 
