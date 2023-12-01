@@ -24,7 +24,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
             echo '</div>';
 
             echo '<div class="item">
-                    <img src="/omiyageEC/src/common/img/aso.jpg" alt="代替テキスト" width="300px" height="200px">
+                    <img src="/omiyageEC/src/common/img/'.$row['path'].'" alt="代替テキスト" width="300px" height="200px">
                 </div>';
 
             echo '<div class="mozi">
