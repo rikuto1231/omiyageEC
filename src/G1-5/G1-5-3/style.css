@@ -1,5 +1,8 @@
 .main {
   margin-top: 50px;
+  overflow-y: auto; /* 縦方向にスクロール可能にする */
+  height: 100vh; /* 画面の高さいっぱいに表示 */
+  z-index: 1; /* 他の要素より手前に表示 */
 }
 
 .item {
