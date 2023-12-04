@@ -1,7 +1,8 @@
+<?php session_start();
+?>
 <!-- ユーザデータ表示とupdate処理追加する11/23 -->
 <!-- セッションでの上書き処理も追加する12/04 -->
-<?php session_start(); 
-?>
+
 <!DOCTYPE html>
 <html lang="ja">
 <head>
