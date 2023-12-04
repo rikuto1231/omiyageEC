@@ -50,8 +50,10 @@ $pdo = getDatabaseConnection();
             // 商品情報が見つからない
             echo '<p>購入履歴がありません。</p>';*/
         // }
-    
-    foreach($pdo->query('select * from Purchase' as $row)){
+    $sql=$pdo->prepare('select * from Purchase where user_id=?');
+    $sql->execute([$id]);
+
+    foreach($sql  as $row){
         echo $row['purchase_id'];
         echo $row['purchase_date'];
     }

@@ -1,16 +1,7 @@
 <!-- ユーザデータ表示とupdate処理追加する11/23 -->
 <!-- セッションでの上書き処理も追加する12/04 -->
-<?php session_start(); ?>
-<?php
-// $lastname=$firstname=$login=$password='';
-// if(isset($_SESSION[''])){
-//     $name=$_SESSION[''][''];
-//     $address=$_SESSION[''][''];
-//     $login=$_SESSION[''][''];
-//     $password=$_SESSION[''][''];
-// }
+<?php session_start(); 
 ?>
-
 <!DOCTYPE html>
 <html lang="ja">
 <head>
