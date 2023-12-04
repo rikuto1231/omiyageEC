@@ -48,7 +48,7 @@ $id = isset($_GET['user_id']) ? $_GET['user_id'] : null;
     
         } else {
             // 商品情報が見つからない
-            echo '購入履歴がありません。</p>';
+            echo '<p>購入履歴がありません。</p>';
         }
     } 
 
