@@ -10,12 +10,14 @@
 </head>
 <body>
     <header>
-    <form action="history.php" method="get">;
+
         <?php require '../../common/php/header.php'; ?>
+        
     </header>
+
+    <?php require '../../common/php/history.php'; ?>
     
     
-    <?php require 'history.php'; ?>
     
 </body>
 </html>
