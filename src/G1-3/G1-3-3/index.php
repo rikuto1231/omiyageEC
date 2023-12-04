@@ -13,7 +13,7 @@
         <?php require '../../common/php/header.php'; ?>
     </header>
     <?php
-     
+    // $pdo = getDatabaseConnection(); 
     echo '<div class="main">';
     echo '<form action="history.php" method="get">';
     echo '<br>';
