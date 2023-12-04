@@ -33,13 +33,13 @@
     echo '数量&emsp;&emsp;&emsp;</p>';
     echo '<p>￥○○○</p>';   
     echo '<p style="text-align: right">';  
-    echo $_GET['purchase_date'],'&emsp;&emsp;&emsp;</p>';
-    echo   '<br>';
-    echo    '<br>';
-    echo   '<br>';
-    echo '<button class="modoru" onclick="location.href='../../G1-1/G1-1/index.php'">戻る</button>';
-    echo '</div>';
-    echo '<script src="../../common/js/side_ber.js"></script>';
+    echo  $_GET['purchase_date'],'&emsp;&emsp;&emsp;</p>';
+    echo  '<br>';
+    echo  '<br>';
+    echo  '<br>';
+    echo  '<button class="modoru" onclick="location.href=\'../../G1-1/G1-1/index.php'">戻る</button>';
+    echo  '</div>';
+    echo  '<script src="../../common/js/side_ber.js"></script>';
     ?>
 </body>
 </html>
