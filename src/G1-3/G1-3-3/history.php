@@ -51,5 +51,9 @@ $id = isset($_GET['user_id']) ? $_GET['user_id'] : null;
             echo '<p>購入履歴がありません。</p>';
         }
     } 
+    foreach($pdo->query('select * from Purchase' as $row)){
+        echo $row['purchase_id'];
+        echo $row['purchase_date'];
+    }
 
 ?>
