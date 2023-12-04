@@ -22,7 +22,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
             header("Location: /omiyageEC/src/G1-6/G1-6-1.php?merchandise_id=" . $merchandise_id);
             exit();
         } else {
-            header("Location: /omiyageEC/src/G1-6/G1-6-2.php?merchandise_id=" . $merchandise_id);
+            header("Location: /omiyageEC/src/G1-5/G1-5-3.php?merchandise_id=" . $merchandise_id);
             exit();
         }
     } else {

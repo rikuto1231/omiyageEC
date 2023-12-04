@@ -5,15 +5,26 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     $pdo = getDatabaseConnection(); 
 
     // idを受け取る
-    $id = isset($_GET['merchandise_id']) ? $_GET['merchandise_id'] : null;
+    $merchandise_id = isset($_GET['merchandise_id']) ? $_GET['merchandise_id'] : null;
 
-    if ($id !== null) {
+    if ($merchandise_id !== null) {
         // IDが指定されている場合、商品情報を取得
-        $result = sql_search_id($pdo, $id);
+        $result = sql_search_id($pdo, $merchandise_id);
 
         // 商品情報が存在チェック
-        if ($result && count($result) > 0) {
+        if ($result && count($result) > 0  ) {
             $row = $result[0]; // 最初の行を取得
+
+
+
+        // 在庫数が0の場合に予約含み詳細ページに遷移
+        if ($product && $product['stock'] === 0) {
+            
+        } else {
+            header("Location: /omiyageEC/src/G1-5/G1-5-3.php?merchandise_id=" . $merchandise_id);
+            exit();
+        }
+            
 
             echo '<div class="main">
                 <div id="menu_all">';
@@ -35,7 +46,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
 
             echo '<div class="button3">
                     <button type="submit" class="cartbutton" name="add_to_cart">カートに入れる</button>
-                    <input type="hidden" name="merchandise_id" value="' . $id . '">
+                    <input type="hidden" name="merchandise_id" value="' . $merchandise_id . '">
                     <button class="homebutton" onclick="location.href=\'../G1-4-1/index.php\'">検索ホームに戻る</button>
                 </div>';
 
@@ -50,4 +61,24 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
         echo '<p>IDが指定されていません。</p>';
     }
 }
+?>
+
+<?php
+
+
+        // DBから商品IDで検索して在庫数を取得
+        $stmt = $pdo->prepare("SELECT * FROM Merchandise WHERE merchandise_id = :merchandise_id");
+        $stmt->bindParam(':merchandise_id', $merchandise_id);
+        $stmt->execute();
+        $product = $stmt->fetch(PDO::FETCH_ASSOC);
+
+        // 在庫数が0の場合に予約含み詳細ページに遷移
+        if ($product && $product['stock'] === 0) {
+            header("Location: /omiyageEC/src/G1-6/G1-6-1.php?merchandise_id=" . $merchandise_id);
+            exit();
+        } else {
+            header("Location: /omiyageEC/src/G1-5/G1-5-3.php?merchandise_id=" . $merchandise_id);
+            exit();
+        }
+
 ?>
