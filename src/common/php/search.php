@@ -24,11 +24,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
             echo '<p>' . $row['merchandise_name'] . '</p>';
         }
 
-        // elseif (!file_exists($imagePath)) { // ファイルが存在しない場合
-        //     echo '<a href="/omiyageEC/src/G1-5/G1-5-3/index.php?merchandise_id=' . $row['merchandise_id'] . '">';
-        //     echo '<img src="' . '/omiyageEC/src/common/img/no.jpeg' . '" width="90px" height="90px" ' . $row['merchandise_id'] . '>';
-        //     echo '</a>';
-        //     echo '<p>' . $row['merchandise_name'] . '</p>';
         // } 
     
         echo '</div>';

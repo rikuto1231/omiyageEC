@@ -1,22 +1,22 @@
-<?php require '../../common/php/DB.php'; ?>
-<script src="../../common/js/side_ber.js"></script>
+
 
 <?php
+require '../../common/php/DB.php'; 
 $pdo = getDatabaseConnection();
-$id = isset($_GET['user_id']) ? $_GET['user_id'] : null;
+// $id = isset($_GET['user_id']) ? $_GET['user_id'] : null;
 
-    if ($id !== null) {
-        echo "商品がある";
+    // if ($id !== null) {
+        // echo "商品がある";
         // IDが指定されている場合、商品情報を取得
-        $result = sql_search_id($pdo, $id);
+        // $result = sql_search_id($pdo, $id);
 
         // 商品情報が存在チェック
-        if ($result && count($result) > 0) {
-            $row = $result[0]; // 最初の行を取得
+        // if ($result && count($result) > 0) {
+            // $row = $result[0]; // 最初の行を取得
 
             
     
-    echo '<div class="main">';
+    /*  echo '<div class="main">';
     echo '<form action="history.php" method="get">';
     echo '<br>';
     echo '<br>' ; 
@@ -48,12 +48,15 @@ $id = isset($_GET['user_id']) ? $_GET['user_id'] : null;
     
         } else {
             // 商品情報が見つからない
-            echo '<p>購入履歴がありません。</p>';
-        }
-    } 
-    foreach($pdo->query('select * from Purchase' as $row)){
+            echo '<p>購入履歴がありません。</p>';*/
+        // }
+    $sql=$pdo->prepare('select * from Purchase where user_id=?');
+    $sql->execute([$id]);
+
+    foreach($sql  as $row){
         echo $row['purchase_id'];
         echo $row['purchase_date'];
     }
+    echo'ddddds';
 
 ?>
