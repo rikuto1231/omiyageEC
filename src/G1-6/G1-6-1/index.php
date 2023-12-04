@@ -1,3 +1,5 @@
+<?php session_start();
+?>
 <!-- 在庫がない時の予約遷移可能な画面 -->
 <!DOCTYPE html>
 <html lang="ja">

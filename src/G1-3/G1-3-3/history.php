@@ -1,4 +1,5 @@
-
+<?php session_start();
+?>
 
 <?php
 require '../../common/php/DB.php'; 

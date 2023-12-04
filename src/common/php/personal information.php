@@ -23,6 +23,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $personal_street=$result['street_address'];//番地
     $personal_buliding=$result['building'];//建物名・部屋番号
     
+
+    echo '<table class="table-container">';
+        echo '<tr><td align="right">お名前</td><td class="table-cell">'.$personal_family.'　'.$personal_personal.'</td><td>　　　　</td></tr>';
+        echo '<tr><td align="right">郵便番号</td><td class="table-cell">'.$personal_post.'</td><td>　　　　</td></tr>';
+        echo '<tr><td align="right">都道府県名</td><td class="table-cell">'.$personal_prefectures.'</td><td>　　　　</td></tr>';
+        echo '<tr><td align="right">市区町村</td><td class="table-cell">'.$personal_city.'</td>　　　　<td></td></tr>';
+        echo '<tr><td align="right">番地</td><td class="table-cell">'.$personal_street.'</td><td></td>　　　　</tr>';
+        echo '<tr><td align="right">建物名:</td><td class="table-cell">'.$personal_buliding.'</td><td></td>　　　　</tr>';
+        echo '</table>';
     } else {
     // ユーザーが見つからなかった場合の処理
     echo '情報が見つかりませんでした';

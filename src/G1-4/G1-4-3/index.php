@@ -1,3 +1,5 @@
+<?php session_start();
+?>
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -45,7 +47,9 @@
     <h1>ご購入手続き</h1>
     <hr>
     <form action="../G1-4-4/index.php">
+    <div id="container">
     <?php require '../../common/php/personal information.php' ?>
+    </div>
     <p>　お名前<span class="info">　　　　　　　</span></p>
     <p>　郵便番号<span class="info">　　　　　　　</span></p>
     <p>　都道府県<span class="info">　　　　　　　</span></p>

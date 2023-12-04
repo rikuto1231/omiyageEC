@@ -1,3 +1,5 @@
+<?php session_start();
+?>
 <!-- 共通部分接続。 -->
 <!DOCTYPE html>
 <html lang="ja">
