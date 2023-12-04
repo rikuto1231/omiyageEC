@@ -110,3 +110,16 @@ header {
     transform: translateY(-50%);
     width: 100%;
 }
+table{
+    text-align: center;
+    width: 100%;
+}
+
+.table-container {
+    width: 100%;
+    
+}
+
+.table-cell {
+    text-align: center;
+}
