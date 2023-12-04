@@ -11,8 +11,10 @@
 <body>
     <header>
 
-        <?php require '../../common/php/header.php'; ?>
-        
+        <?php 
+        $id= $_GET['id'];
+        require '../../common/php/header.php'; ?>
+
     </header>
 
     <?php require '../../common/php/history.php'; ?>
