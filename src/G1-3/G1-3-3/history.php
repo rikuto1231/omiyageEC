@@ -29,11 +29,11 @@ $id = isset($_GET['purchase_id']) ? $_GET['purchase_id'] : null;
         
                 </div>';
 
-            echo '<div class="button3">
-                    <button class="cartbutton">戻る</button>
-                    <button class="homebutton" onclick="location.href=\'../G1-4-1/index.php\'">検索ホームに戻る</button>
-                </div>
-            </div>';
+            echo '<div class="button3">';
+            echo '<button class="cartbutton">戻る</button>';
+            echo '<button class="homebutton" onclick="location.href=\'../G1-4-1/index.php\'">検索ホームに戻る</button>';
+            echo '</div>';
+            echo '</div>';
         } else {
             // 商品情報が見つからない
             echo '購入履歴がありません。</p>';
