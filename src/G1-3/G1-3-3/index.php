@@ -25,7 +25,7 @@
     <h1 style="text-align: center">
     購入履歴</h1>
     <br> 
-    <br>
+
     <?php
     $id = $_GET['id'];
     require '../../common/php/history.php'; ?>
