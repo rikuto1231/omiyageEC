@@ -14,30 +14,41 @@ $id = isset($_GET['user_id']) ? $_GET['user_id'] : null;
         if ($result && count($result) > 0) {
             $row = $result[0]; // 最初の行を取得
 
-            echo '<div class="main">
-                <div id="menu_all">';
-           
-            echo '</div>';
-
-            echo '<div class="item">
-                    <img src="/omiyageEC/src/common/img/'.$row['path'].'" alt="代替テキスト" width="300px" height="200px">
-                </div>';
-
-            echo '<div class="mozi">
-                    <p>
-                    <p>', $row['price'], '</p>
-                    <div> 数量 :',$row[''],'
-        
-                </div>';
-
-            echo '<div class="button3">';
-            echo '<button class="cartbutton">戻る</button>';
-            echo '<button class="homebutton" onclick="location.href=\'../G1-4-1/index.php\'">検索ホームに戻る</button>';
-            echo '</div>';
-            echo '</div>';
+            
+    
+    echo '<div class="main">';
+    echo '<form action="history.php" method="get">';
+    echo '<br>';
+    echo '<br>' ; 
+    echo '<h1 style="text-align: center">'  ;
+    echo '購入履歴</h1>'   ;
+    echo '<br>';  
+    echo '<br>' ;
+    echo '<p></p>'; 
+    echo '<p style="text-align: right">';   
+    echo '数量&emsp;&emsp;&emsp;</p>';  
+    echo '<p>￥',$_GET['price'],'</p>';    
+    echo '<p>',$_GET['quantity'],'</p>' ; 
+    echo ' <p style="text-align: right">' ; 
+    echo $_GET['purchase_date'],'&emsp;&emsp;&emsp;</p>';
+    echo '<br>',$_GET['quantity'] ;
+    echo '<p></p>';
+    echo '<p style="text-align: right">';   
+    echo '数量&emsp;&emsp;&emsp;</p>';
+    echo '<p>￥',$_GET['price'],'</p>';   
+    echo '<p style="text-align: right">';  
+    echo  $_GET['purchase_date'],'&emsp;&emsp;&emsp;</p>';
+    echo  '<br>';
+    echo  '<br>';
+    echo  '<br>';
+    echo  '<button class="modoru" onclick="location.href=\'../../G1-1/G1-1/index.php\'">戻る</button>';
+    echo  '</div>';
+    echo  '<script src="../../common/js/side_ber.js"></script>';
+    
+    
         } else {
             // 商品情報が見つからない
-            echo '購入履歴がありません。</p>';
+            echo '<p>購入履歴がありません。</p>';
         }
     } 
 
