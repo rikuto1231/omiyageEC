@@ -12,9 +12,9 @@ phpでpタグとしてDBからの情報出力-->
 </head>
 <body>
 <header>
-        <?php require '../common/php/header.php'; ?>
+        <?php require '../../common/php/header.php'; ?>
 </header>
-    <script src="side_ber.js"></script>
+
     <div>
     <br>
     <br>
@@ -23,17 +23,18 @@ phpでpタグとしてDBからの情報出力-->
     </div>
     <div>
         <br>
-        <br>
+        <!-- <br>
         <p>20XX/X/X &emsp;&emsp;〇〇ポイント付与</p>
         <br>
         <br>
         <p>20XX/X/X &emsp;&emsp;〇〇ポイント付与</p>
-        <br>
-    <?php require '../commom/php/point.php'?>
+        <br> -->
+    <?php require '../../commom/php/point.php'?>
 
         <br>
         <button class="modoru" onclick="location.href='../../G1-1/index.php'">戻る</button>
     </div>
     <script src="../common/js/side_ber.js"></script>
+    
 </body>
 </html>
