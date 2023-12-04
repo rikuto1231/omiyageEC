@@ -55,7 +55,8 @@ $pdo = getDatabaseConnection();
 
     foreach($sql  as $row){
         echo $row['purchase_id'];
-        echo $row['purchase_date'];
+        echo $row['cart_id'];
+        echo $row['purpose_date'];
     }
     echo'ddddds';
 

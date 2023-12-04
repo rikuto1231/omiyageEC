@@ -17,7 +17,7 @@
         echo 'すでにログアウトしています。';
     }
     ?>
-    <button class="btn2" onclick="location.href='../G1-2-1/index.php'">戻る</button>
+    <button class="btn2" onclick="location.href='/omiyageEC/src/G1-2/G1-2-1/index.php'">戻る</button>
 
 </body>
 </html>
