@@ -17,7 +17,7 @@ $id = isset($_GET['user_id']) ? $_GET['user_id'] : null;
             
     
     echo '<div class="main">';
-    echo '<form action="history.php" method="get">';
+    // echo '<form action="history.php" method="get">';
     echo '<br>';
     echo '<br>' ; 
     echo '<h1 style="text-align: center">'  ;
