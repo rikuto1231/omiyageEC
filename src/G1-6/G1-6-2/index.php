@@ -1,3 +1,4 @@
+<!-- 在庫があるときの予約なし画面 -->
 <!DOCTYPE html>
 <html lang="ja">
 <head>
