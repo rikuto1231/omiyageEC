@@ -1,3 +1,5 @@
+<?php session_start();
+?>
 <!-- 取り消しボタン追加。画像追加。
 出力をPHP方式に変更。 -->
 <!DOCTYPE html>

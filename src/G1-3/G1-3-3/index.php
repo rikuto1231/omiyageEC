@@ -1,3 +1,5 @@
+<?php session_start();
+?>
 <!-- PHPに出力に変更。複数データ対応cssに変更。DB処理追加 -->
 <!DOCTYPE html>
 <html lang="ja">
