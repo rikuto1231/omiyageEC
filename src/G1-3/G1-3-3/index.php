@@ -13,7 +13,7 @@
         <?php require '../../common/php/header.php'; ?>
     </header>
     <?php
-    $pdo = getDatabaseConnection(); 
+    // $pdo = getDatabaseConnection(); 
     echo '<div class="main">';
     echo '<form action="history.php" method="get">';
     echo '<br>';
@@ -24,15 +24,16 @@
     echo '<br>' ;
     echo '<p></p>'; 
     echo '<p style="text-align: right">';   
-    echo '数量&emsp;&emsp;&emsp;</p>';    
-    echo '<p>',$_GET[''],'</p>' ; 
+    echo '数量&emsp;&emsp;&emsp;</p>';  
+    echo '<p>￥',$_GET['price'],'</p>';    
+    echo '<p>',$_GET['quantity'],'</p>' ; 
     echo ' <p style="text-align: right">' ; 
     echo $_GET['purchase_date'],'&emsp;&emsp;&emsp;</p>';
-    echo '<br>',$_GET[''] ;
+    echo '<br>',$_GET['quantity'] ;
     echo '<p></p>';
     echo '<p style="text-align: right">';   
     echo '数量&emsp;&emsp;&emsp;</p>';
-    echo '<p>￥○○○</p>';   
+    echo '<p>￥',$_GET['price'],'</p>';   
     echo '<p style="text-align: right">';  
     echo  $_GET['purchase_date'],'&emsp;&emsp;&emsp;</p>';
     echo  '<br>';
