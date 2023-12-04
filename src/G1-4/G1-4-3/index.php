@@ -44,7 +44,7 @@
     <div id="product_detail">
     <h1>ご購入手続き</h1>
     <hr>
-    <form action="../G1-5-4/index.php">
+    <form action="../G1-4-4/index.php">
     <p>　お名前<span class="info">　　　　　　　</span></p>
     <p>　郵便番号<span class="info">　　　　　　　</span></p>
     <p>　都道府県<span class="info">　　　　　　　</span></p>
