@@ -13,8 +13,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
 
         // 商品情報が存在チェック
         if ($result && count($result) > 0  ) {
-            $row = $result[0]; // 最初の行を取得
-
+            $row = $result[0]; // 最初の行
 
 
         // 在庫数が0の場合に予約含み詳細ページに遷移
