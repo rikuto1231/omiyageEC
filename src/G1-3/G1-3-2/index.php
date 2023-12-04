@@ -1,7 +1,15 @@
 <!-- ユーザデータ表示とupdate処理追加する11/23 -->
 <!-- セッションでの上書き処理も追加する12/04 -->
 <?php session_start(); ?>
-
+<?php
+// $lastname=$firstname=$login=$password='';
+// if(isset($_SESSION[''])){
+//     $name=$_SESSION[''][''];
+//     $address=$_SESSION[''][''];
+//     $login=$_SESSION[''][''];
+//     $password=$_SESSION[''][''];
+// }
+?>
 
 <!DOCTYPE html>
 <html lang="ja">
@@ -46,6 +54,7 @@
                 </div>
 
                 <!-- 住所（都道府県） -->
+                <!-- 修正 -->
                 <div class="form-group">
                     <label for="prefecture">都道府県:</label>
                     <select id="prefecture" name="prefecture" class="form-control" value="<?php echo isset($_SESSION['prefecture']) ? htmlspecialchars($_SESSION['prefecture']) : ''; ?>"required v-model="selectedPrefecture">
