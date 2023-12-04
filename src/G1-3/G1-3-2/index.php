@@ -2,6 +2,7 @@
 <!-- セッションでの上書き処理も追加する12/04 -->
 <?php session_start(); ?>
 
+
 <!DOCTYPE html>
 <html lang="ja">
 <head>
