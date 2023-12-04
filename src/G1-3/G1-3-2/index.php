@@ -20,12 +20,13 @@
                 <!-- お名前 -->
                 <div class="form-group">
                     <label for="lastName">姓</label>
-                    <!--テキスト位置調整用にid入れてます -->
+                    <!-- テキスト位置調整用にid入れてます -->
                     <label for="firstName" id="firstName_title">名</label><br>
 
-                    <input type="text" id="lastName" name="lastName" class="form-control" value=$_SESSION[lastName] required>
-                    <input type="text" id="firstName" name="firstName" class="form-control" value=$_SESSION[firstName] required>
+                    <input type="text" id="lastName" name="lastName" class="form-control" value="<?php echo isset($_SESSION['lastName']) ? htmlspecialchars($_SESSION['lastName']) : ''; ?>" required>
+                    <input type="text" id="firstName" name="firstName" class="form-control" value="<?php echo isset($_SESSION['firstName']) ? htmlspecialchars($_SESSION['firstName']) : ''; ?>" required>
                 </div>
+
 
                 <!-- フリガナ -->
                 <div class="form-group">
