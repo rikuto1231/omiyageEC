@@ -46,6 +46,7 @@
                 </div>
 
                 <!-- 住所（都道府県） -->
+                <!-- 修正 -->
                 <div class="form-group">
                     <label for="prefecture">都道府県:</label>
                     <select id="prefecture" name="prefecture" class="form-control" value="<?php echo isset($_SESSION['prefecture']) ? htmlspecialchars($_SESSION['prefecture']) : ''; ?>"required v-model="selectedPrefecture">
