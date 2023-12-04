@@ -1,3 +1,5 @@
+<?php session_start();
+?>
 <!-- 在庫があるときの予約なし画面 -->
 <!DOCTYPE html>
 <html lang="ja">
