@@ -1,5 +1,7 @@
 <!-- パス・URL固定記述式になっているので
 とりあえずそれに合わせる -->
+<?php session_start();
+?>
 <!DOCTYPE html>
 <html lang="ja">
 <head>
