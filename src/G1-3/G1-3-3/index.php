@@ -10,6 +10,7 @@
 </head>
 <body>
     <header>
+    <form action="history.php" method="get">;
         <?php require '../../common/php/header.php'; ?>
     </header>
     
