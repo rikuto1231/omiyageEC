@@ -29,6 +29,8 @@ phpでpタグとしてDBからの情報出力-->
         <br>
         <p>20XX/X/X &emsp;&emsp;〇〇ポイント付与</p>
         <br>
+    <?php require '../commom/php/point.php'?>
+
         <br>
         <button class="modoru" onclick="location.href='../../G1-1/index.php'">戻る</button>
     </div>
