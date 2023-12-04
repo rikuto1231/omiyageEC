@@ -2,7 +2,8 @@
 <script src="../../common/js/side_ber.js"></script>
 
 <?php
-$id = isset($_GET['purchase_id']) ? $_GET['purchase_id'] : null;
+$pdo = getDatabaseConnection();
+$id = isset($_GET['user_id']) ? $_GET['user_id'] : null;
 
     if ($id !== null) {
         echo "商品がある";

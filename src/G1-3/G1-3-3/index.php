@@ -13,16 +13,7 @@
         <?php require '../../common/php/header.php'; ?>
     </header>
     <?php
-    $pdo = getDatabaseConnection();
-    $id = isset($_GET['user_id']) ? $_GET['user_id'] : null;
-
-    if ($id !== null) {
-        // IDが指定されている場合、商品情報を取得
-        $result = sql_search_id($pdo, $id);
-
-        // 商品情報が存在チェック
-        if ($result && count($result) > 0) {
-            $row = $result[0]; // 最初の行を取得
+    
     echo '<div class="main">';
     echo '<form action="history.php" method="get">';
     echo '<br>';
@@ -51,8 +42,7 @@
     echo  '<button class="modoru" onclick="location.href=\'../../G1-1/G1-1/index.php\'">戻る</button>';
     echo  '</div>';
     echo  '<script src="../../common/js/side_ber.js"></script>';
-        }
-    }
+    
     ?>
 </body>
 </html>
