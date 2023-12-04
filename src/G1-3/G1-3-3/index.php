@@ -14,12 +14,30 @@
     <header>
 
         <?php 
-        $id= $_GET['id'];
+        
         require '../../common/php/header.php'; ?>
 
     </header>
-
-    <?php require '../../common/php/history.php'; ?>
+     <div class="main">
+   <form action="history.php" method="get">
+    <br>
+    <br>
+    <h1 style="text-align: center">
+    購入履歴</h1>
+    <br> 
+    <br>
+    <?php
+    $id = $_GET['id'];
+    require '../../common/php/history.php'; ?>
+   
+    <br>
+    <br>
+    <br>
+    <button class="modoru" onclick="location.href=\'../../G1-1/G1-1/index.php\'">戻る</button>
+    </div>
+    <script src="../../common/js/side_ber.js"></script>
+    
+   
     
     
     
