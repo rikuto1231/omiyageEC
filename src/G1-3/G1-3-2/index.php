@@ -1,10 +1,9 @@
 <?php session_start();
-?>
-<?php
 require '../../common/php/DB.php'; 
 $pdo = getDatabaseConnection();
 $sql=$pdo->prepare('select * from User where user_id=?');
-    $sql->execute([$id]);?>
+    $sql->execute([$id]);
+    ?>
 <!-- ユーザデータ表示とupdate処理追加する11/23 -->
 <!-- セッションでの上書き処理も追加する12/04 -->
 
@@ -35,7 +34,7 @@ $sql=$pdo->prepare('select * from User where user_id=?');
 
 
                 // <!-- フリガナ -->
-        echo '<div class="form-group">'
+        echo '<div class="form-group">';
         echo '<label for="furiganaLastName">姓（フリガナ）</label>';          
         echo '<label for="furiganaLastName" id="furiganaLastName_title">名（フリガナ）</label><br>';            
         echo '<input type="text" id="furiganaLastName" name="furiganaLastName" class="form-control" value=',$row['name_family_kana'],'>';          
