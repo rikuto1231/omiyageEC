@@ -39,7 +39,6 @@
         require '../../common/php/reservation.php';?>
         <br>
         <br>
-        <br>
         <button class="modoru" onclick="location.href='../../G1-1/index.php'">戻る</button>
         <script src="../../common/js/side_ber.js"></script>
     </div>
