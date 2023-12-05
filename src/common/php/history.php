@@ -58,7 +58,7 @@ $pdo = getDatabaseConnection();
     $sql->execute([$id]);
 
     foreach($sql  as $row){
-        echo '<p>',$row['purchase_id'],'</p>';
+        
         echo '<p>￥',$row['price'],'</p>';
         echo '<p>',$row['cart_id'],'</p>';
         echo '<p>',$row['purpose_date'],'</p>';
