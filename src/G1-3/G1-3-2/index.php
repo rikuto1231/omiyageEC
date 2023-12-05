@@ -17,7 +17,18 @@
 
             <form method="post" action="../G1-3-2/index.php" id="form_all">
 
-                
+            <!--セッションの変数名を以下に変更する必要があります。
+            $_SESSION['personal_family']　姓
+            $_SESSION['personal_personal']　名
+            $_SESSION['personal_post']　郵便番号
+            $_SESSION['personal_prefectures']　都道府県
+            $_SESSION['personal_city']　市区町村
+            $_SESSION['personal_street']　番地
+            $_SESSION['personal_buliding']　建物名・部屋番号
+            フリガナ・電話番号・メールアドレスはセッションに入れてないので
+            login.phpに記述する必要があります。
+            -->
+            
                 <!-- お名前 -->
                 <div class="form-group">
                     <label for="lastName">姓</label>
