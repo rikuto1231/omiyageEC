@@ -2,7 +2,7 @@
     require 'DB.php';
     $pdo = getDatabaseConnection(); 
     // ポイント検索のsqlとphp処理
-    $sql=$pdo->prepare('select * from Point where user_id=?');
+    $sql=$pdo->prepare('select * from  where user_id=?');
     $sql->execute([$id]);
 
     foreach ($sql as $row) {
