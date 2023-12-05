@@ -1,4 +1,5 @@
 <?php
+// まだ未完成です
 if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     // GETリクエストが送信された場合
     // 接続
