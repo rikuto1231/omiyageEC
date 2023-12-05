@@ -15,7 +15,6 @@ CREATE TABLE User(
     password varchar(128) not null,
     point int not null,
     primary key (user_id)
-
 );
 
 -- 商品テーブル作成sql
