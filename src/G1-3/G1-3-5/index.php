@@ -20,10 +20,9 @@
         <br>
         <h1 style="text-align: left">
         &emsp;予約履歴</h1>
-  
         <br>
         <br>
-        <p>〇〇〇〇〇</p>
+        <!-- <p>〇〇〇〇〇</p>
         <p style="text-align: right">
         数量&emsp;&emsp;&emsp;</p>
         <p>￥○○○</p>
@@ -35,7 +34,10 @@
         数量&emsp;&emsp;&emsp;</p>
         <p>￥○○○</p>
         <p style="text-align: right">
-        20XX/X/X&emsp;&emsp;&emsp;</p>
+        20XX/X/X&emsp;&emsp;&emsp;</p> -->
+        <?php 
+        $id = $_GET['id'];
+        require '../../common/php/reservation.php';?>
         <br>
         <br>
         <br>
