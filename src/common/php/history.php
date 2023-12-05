@@ -63,6 +63,7 @@ $pdo = getDatabaseConnection();
         echo '<p>￥',$row['price'],'</p>';
         echo '<p>',$row['purpose_date'],'</p>';
         echo '<p>数量：',$row['quantity'],'</p>';
+        echo "<br><br>";
     }
     
 

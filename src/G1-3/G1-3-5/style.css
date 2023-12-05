@@ -93,9 +93,12 @@ header {
     filter: invert(100%); /* 画像の白黒を反転 */
 }
 .img_product {
-    width: 110px;
-    height: 110px;
+    width: 120px;
+    height: 120px;
     margin-left: 25px;
     vertical-align: top;
     float: left;
+}
+.a{
+    text-align: left;
 }
