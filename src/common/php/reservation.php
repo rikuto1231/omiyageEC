@@ -13,7 +13,7 @@
         echo'<img src="../../common/img/'.$row['path'].'" class="img_product">';
         echo'<h4 class="a">',$row['merchandise_name'],'</h4>';
         echo'<p class="a">￥',$row['price'],'　　　　数量：',$row['number'],'</p>';
-        echo'<p>',$row['date'],'</p>';
+        echo'<p><button type="submit">取り消し</button>',$row['date'],'</p>';
         echo'<br>';
         echo'<br>';
     }
