@@ -2,34 +2,24 @@
     require 'DB.php';
     $pdo = getDatabaseConnection(); 
     // 予約検索のsqlとphp処理
-    $sql=$pdo->prepare('select * from Reservation where user_id=?');
-    $sql->execute([$id]);
-    foreach ($sql as $row) {
-        $number = $row['number'];
-        $date = $row['date'];
-        $sql=$pdo->prepare('select * from Merchandise where Merchandise_id=?');
-        $sql->execute([$row['merchandise_id']]);
-        foreach ($sql as $row) {
-            echo'<img src="../../common/img/'.$row['path'].'" width="90px" height="90px" class="img_product">';
-            echo'<p>',$row['merchandise_name'],'</p>';
-            echo'<p>￥',$row['price'],'</p>';
-            echo'<p>数量：',$number,'</p>';
-            echo'<p>',$date,'</p>';
-        }
-        echo'<br>';
-        echo'<br>';
-    }
+
     $sql=$pdo->prepare('select*
-    from reservation,Merchandise
-    where  reservation.Merchandise_id=Merchandise.Merchandise_id
+    from Reservation,Merchandise
+    where  Reservation.Merchandise_id=Merchandise.Merchandise_id
     and user_id=?');
     $sql->execute([$id]);
-
+    echo'<form action="reservation_delete.php" method="POST">';
+    echo '<input type="hidden" name="id" value="',$id,'">';
     foreach($sql  as $row){
-        echo'<img src="../../common/img/'.$row['path'].'" width="90px" height="90px" class="img_product">';
-        echo'<p>',$row['merchandise_name'],'</p>';
-        echo'<p>￥',$row['price'],'</p>';
+        echo'<img src="../../common/img/'.$row['path'].'" class="img_product">';
+        echo'<h4 class="a">',$row['merchandise_name'],'</h4>';
+        echo'<p class="a">￥',$row['price'],'　　　　数量：',$row['number'],'</p>';
+        echo '<input type="hidden" name="m_id" value="',$row['Merchandise_id'],'">';
+        echo'<p><button type="submit" class="delete">取消</button>','　　　　',$row['date'],'</p>';
+        echo'<br>';
+        echo'<br>';
     }
+    echo'</form>';
         
 
 ?>
