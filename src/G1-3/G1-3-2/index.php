@@ -44,13 +44,13 @@
                     <!-- ここに郵便番号検索フォーム（Ajax使用）を配置 -->
                     <button type="button" @click="searchAddress">住所検索</button>
                 </div>
-
+        
                 <!-- 住所（都道府県） -->
                 <!-- 修正 -->
                 <div class="form-group">
                     <label for="prefecture">都道府県:</label>
-                    <select id="prefecture" name="prefecture" class="form-control" value="<?php echo isset($_SESSION['prefecture']) ? htmlspecialchars($_SESSION['prefecture']) : ''; ?>"required v-model="selectedPrefecture">
-                        <option v-for="(prefecture, index) in prefectures" :key="index" :value="prefecture">{{ prefecture }}</option>
+                    <input type="text" id="postalCode" name="postalCode" class="form-control" value="<?php echo isset($_SESSION['prefectures']) ? htmlspecialchars($_SESSION['prefectures']) : ''; ?>"required>
+                        
                     </select>
                 </div>
 
