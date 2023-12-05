@@ -19,7 +19,19 @@
         echo'<br>';
         echo'<br>';
     }
-    
+    $sql=$pdo->prepare('select*
+    from reservation,Merchandise
+    where  reservation.Merchandise_id=Merchandise.Merchandise_id
+    and user_id=?');
+    $sql->execute([$id]);
+
+    foreach($sql  as $row){
+        
+        echo '<p>￥',$row['price'],'</p>';
+        echo '<p>',$row['cart_id'],'</p>';
+        echo '<p>',$row['purpose_date'],'</p>';
+        echo '<p>数量：',$row['quantity'],'</p>';
+    }
         
 
 ?>
