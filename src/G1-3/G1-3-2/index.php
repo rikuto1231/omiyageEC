@@ -66,41 +66,41 @@ $sql=$pdo->prepare('select * from User where user_id=?');
         echo '<input type="text" id="city" name="city" class="form-control" value=',$row['city_addres'],'>';
         echo '</div>';
 
-                <!-- 住所（番地） -->
-                <div class="form-group">
-                    <label for="street">住所（番地）:</label>
-                    <input type="text" id="street" name="street" class="form-control" value="<?php echo isset($_SESSION['street']) ? htmlspecialchars($_SESSION['street']) : ''; ?>" required>
-                </div>
+                // <!-- 住所（番地） -->
+        echo '<div class="form-group">';
+        echo '<label for="street">住所（番地）:</label>';
+        echo '<input type="text" id="street" name="street" class="form-control" value=',$row['street_address'],'>';
+        echo '</div>';
 
-                <!-- 住所（建物名・部屋番号） -->
-                <div class="form-group">
-                    <label for="building">住所（建物名・部屋番号）:</label>
-                    <input type="text" id="building" name="building" class="form-control" value="<?php echo isset($_SESSION['building']) ? htmlspecialchars($_SESSION['building']) : ''; ?>">
-                </div>
+                // <!-- 住所（建物名・部屋番号） -->
+        echo '<div class="form-group">';
+        echo '<label for="building">住所（建物名・部屋番号）:</label>';
+        echo '<input type="text" id="building" name="building" class="form-control" value=',$row['building'],'>';
+        echo '</div>';
 
-                <!-- 電話番号 -->
-                <div class="form-group">
-                    <label for="phoneNumber">電話番号:</label>
-                    <input type="text" id="phoneNumber" name="phoneNumber" class="form-control" value="<?php echo isset($_SESSION['phoneNumber']) ? htmlspecialchars($_SESSION['phoneNumber']) : ''; ?>" required>
-                </div>
+                // <!-- 電話番号 -->
+        echo '<div class="form-group">';
+        echo '<label for="phoneNumber">電話番号:</label>';
+        echo '<input type="text" id="phoneNumber" name="phoneNumber" class="form-control" value=',$row['tel'],'>';
+        echo '</div>';
 
-                <!-- メールアドレス -->
-                <div class="form-group">
-                    <label for="email">メールアドレス:</label>
-                    <input type="text" id="email" name="email" class="form-control" value="<?php echo isset($_SESSION['email']) ? htmlspecialchars($_SESSION['email']) : ''; ?>" required>
-                </div>
-            </form>
-            <p id="output"></p>
-            <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
-            <script src="script.js"></script>
+                // <!-- メールアドレス -->
+        echo '<div class="form-group">';
+        echo '<label for="email">メールアドレス:</label>';
+        echo '<input type="text" id="email" name="email" class="form-control" value=',$row['mail_address'],'>';
+        echo '</div>';
+        echo '</form>';
+        echo '<p id="output"></p>';
+        echo '<script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>';
+        echo '<script src="script.js"></script>';
 
-        <div>
-            <form action="">
-            <button class="henko">変更</button>
-            </form>
-            <br>
-            <button class="modoru" onclick="location.href="/omiyageEC/src/G1-1/G1-1/index.php"">マイページに戻る</button>
-        </div>
+        echo '<div>';
+        echo '<form action="">';
+        echo '<button class="henko">変更</button>';
+        echo '</form>';
+        echo '<br>';
+        echo '<button class="modoru" onclick="location.href="/omiyageEC/src/G1-1/G1-1/index.php"">マイページに戻る</button>';
+        echo '</div>';
         ?>
 </body>
 </html>
