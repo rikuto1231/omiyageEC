@@ -26,7 +26,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $_SESSION['personal_family'] = $user['name_family'];//姓
             $_SESSION['personal_personal']=$user['name_personal'];//名
             $_SESSION['personal_post']=$user['post_code'];//郵便番号
-            $_SESSION['personal_prefectures']=$user['prefectures'];//都道府県
+            $_SESSION['personal_prefectures']=$user['prefecture'];//都道府県
             $_SESSION['personal_city']=$user['city_address'];//市区町村
             $_SESSION['personal_street']=$user['street_address'];//番地
             $_SESSION['personal_buliding']=$user['building'];//建物名・部屋番号
