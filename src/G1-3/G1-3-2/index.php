@@ -38,33 +38,33 @@ $sql=$pdo->prepare('select * from User where user_id=?');
         echo '<div class="form-group">'
         echo '<label for="furiganaLastName">姓（フリガナ）</label>';          
         echo '<label for="furiganaLastName" id="furiganaLastName_title">名（フリガナ）</label><br>';            
-        echo '<input type="text" id="furiganaLastName" name="furiganaLastName" class="form-control" value="<?php echo isset($_SESSION['furiganaLastName']) ? htmlspecialchars($_SESSION['furiganaLastName']) : ''; ?>" required>'           
-                    <input type="text" id="furiganaFirstName" name="furiganaFirstName" class="form-control" value="<?php echo isset($_SESSION['furiganaFirstName']) ? htmlspecialchars($_SESSION['furiganaFirstName']) : ''; ?>" required>;
-                </div>
+        echo '<input type="text" id="furiganaLastName" name="furiganaLastName" class="form-control" value=',$row['name_family_kana'],'>';          
+        echo '<input type="text" id="furiganaFirstName" name="furiganaFirstName" class="form-control" value=',$row['name_personal_kana'],'>';
+        echo '</div>';
 
-                <!-- 郵便番号（Ajaxで住所検索) -->
-                <div class="form-group">
-                    <label for="postalCode">郵便番号:</label>
-                    <input type="text" id="postalCode" name="postalCode" class="form-control" value="<?php echo isset($_SESSION['postalCode']) ? htmlspecialchars($_SESSION['postalCode']) : ''; ?>"required>
-                    <!-- ここに郵便番号検索フォーム（Ajax使用）を配置 -->
+                // <!-- 郵便番号（Ajaxで住所検索) -->
+        echo '<div class="form-group">';      
+        echo '<label for="postalCode">郵便番号:</label>';            
+        echo '<input type="text" id="postalCode" name="postalCode" class="form-control" value=',$row['post_code'],'>';        
+                    // <!-- ここに郵便番号検索フォーム（Ajax使用）を配置 -->
                     
-                </div>
+        echo '</div>';
         
-                <!-- 住所（都道府県） -->
-                <!-- 修正 -->
-                <div class="form-group">
-                    <label for="prefecture">都道府県:</label>
-                    <input type="text" id="postalCode" name="postalCode" class="form-control" value="<?php echo isset($_SESSION['prefectures']) ? htmlspecialchars($_SESSION['prefectures']) : ''; ?>"required>
+                // <!-- 住所（都道府県） -->
+                // <!-- 修正 -->
+        echo '<div class="form-group">';
+        echo '<label for="prefecture">都道府県:</label>';
+        echo '<input type="text" id="postalCode" name="postalCode" class="form-control" value=',$row['prefecture'],'>';
                         
-                    </select>
-                </div>
+        echo '</select>';
+        echo '</div>';
 
 
-                <!-- 住所（市区町村） -->
-                <div class="form-group">
-                    <label for="city">住所（市区町村）:</label>
-                    <input type="text" id="city" name="city" class="form-control" value="<?php echo isset($_SESSION['city']) ? htmlspecialchars($_SESSION['city']) : ''; ?>" required>
-                </div>
+                // <!-- 住所（市区町村） -->
+        echo '<div class="form-group">';
+        echo '<label for="city">住所（市区町村）:</label>';
+        echo '<input type="text" id="city" name="city" class="form-control" value=',$row['city_addres'],'>';
+        echo '</div>';
 
                 <!-- 住所（番地） -->
                 <div class="form-group">
