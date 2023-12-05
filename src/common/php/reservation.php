@@ -8,7 +8,13 @@
     foreach ($sql as $row) {
         echo'<br>';
         echo'<br>';
-        echo'<p>',$row['merchandise_id'],'</p>';
+        $sql=$pdo->prepare('select * from Merchandise where Merchandise_id=?');
+        $sql->execute([$row['merchandise_id']]);
+        foreach ($sql as $row) {
+            echo'<img src="../../common/img/'.$row['path'].'">';
+            echo'<p>',$row['merchandise_name'],'</p>';
+            echo'<p>￥',$row['price'],'</p>';
+        }
         echo'<br>';
         echo'<br>';
     }
