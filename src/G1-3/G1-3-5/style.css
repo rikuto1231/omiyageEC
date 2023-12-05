@@ -102,3 +102,10 @@ header {
 .a{
     text-align: left;
 }
+.delete{
+    border-radius:50px;
+    background-color:#E75D5D;
+    border-color:#E75D5D ;
+    color: white;
+    cursor: pointer;
+}
