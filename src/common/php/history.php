@@ -54,10 +54,10 @@ $pdo = getDatabaseConnection();
     $sql->execute([$id]);
 
     foreach($sql  as $row){
-        echo $row['purchase_id'];
-        echo $row['cart_id'];
-        echo $row['purpose_date'];
+        echo '<p>',$row['purchase_id'],'</p>';
+        echo '<p>',$row['cart_id'],'</p>';
+        echo '<p>',$row['purpose_date'],</p>;
     }
-    echo'ddddds';
+    
 
 ?>
