@@ -16,7 +16,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     clearCart($_SESSION['user_id']);
 
     // 購入完了ページへリダイレクト
-    header("Location: /omiyageEC/src/purchase_complete.php");
+    header("Location: 適切なURL入れる");
     exit();
 }
 
