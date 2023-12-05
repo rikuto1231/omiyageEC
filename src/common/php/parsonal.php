@@ -8,6 +8,7 @@ $sql=$pdo->prepare('select * from User where user_id=?');
 
 <?php
         // <!-- お名前 -->
+        foreach($sql  as $row){
         echo '<div class="form-group">';
         echo '<label for="lastName">姓</label>';
                 //    <!-- テキスト位置調整用にid入れてます -->
@@ -47,7 +48,7 @@ $sql=$pdo->prepare('select * from User where user_id=?');
                 // <!-- 住所（市区町村） -->
         echo '<div class="form-group">';
         echo '<label for="city">住所（市区町村）:</label>';
-        echo '<input type="text" id="city" name="city" class="form-control" value=',$row['city_addres'],'>';
+        echo '<input type="text" id="city" name="city" class="form-control" value=',$row['city_address'],'>';
         echo '</div>';
 
                 // <!-- 住所（番地） -->
@@ -79,5 +80,6 @@ $sql=$pdo->prepare('select * from User where user_id=?');
         echo '<script src="script.js"></script>';
 
         echo '<div>';
+        }
 
         ?>
