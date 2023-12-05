@@ -47,12 +47,7 @@
     <h1>確認画面</h1>
     <hr>
     <form action="../G1-5-5/index.php">
-    <p>　お名前<span class="info">○○○○○○</span></p>
-    <p>　郵便番号<span class="info">○○○○○○</span></p>
-    <p>　都道府県<span class="info">○○○○○○</span></p>
-    <p>　市区町村<span class="info">○○○○○○</span></p>
-    <p>それ以降の番地<span class="info">○○○○○○</span></p>
-    <p>建物名・部屋番号<span class="info">○○○○○○</span></p>
+    <?php require '../../common/php/personal information.php' ?>
     <h1>お支払方法</h1>
     <hr>
     <p class="payway">○○○○</p>
