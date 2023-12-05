@@ -58,6 +58,7 @@ $pdo = getDatabaseConnection();
         echo '<p>￥',$row['price'],'</p>';
         echo '<p>',$row['cart_id'],'</p>';
         echo '<p>',$row['purpose_date'],'</p>';
+        echo '<p>数量：',$row['quantity'],'</p>';
     }
     
 
