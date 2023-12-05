@@ -5,6 +5,5 @@ require 'DB.php';
     $pdo = getDatabaseConnection();
     $sql=$pdo->prepare('select * from Reservation where user_id=? and merchandise_id=?');
     $sql->execute([$_POST['id'],$_POST['mid']]);
-         header('Location: ../../G1-3/G1-3-5/index.php');
          ?>
         
