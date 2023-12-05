@@ -1,6 +1,18 @@
 <?php session_start(); ?>
 <!-- ユーザデータ表示とupdate処理追加する11/23 -->
 <!-- セッションでの上書き処理も追加する12/04 -->
+ <!--セッションの変数名を以下に変更する必要があります。
+            $_SESSION['personal_family']　姓
+            $_SESSION['personal_family_kana']　姓(カナ)
+            $_SESSION['personal_personal']　名
+            $_SESSION['personal_personal_kana']　名(カナ)
+            $_SESSION['personal_post']　郵便番号
+            $_SESSION['personal_prefectures']　都道府県
+            $_SESSION['personal_city']　市区町村
+            $_SESSION['personal_street']　番地
+            $_SESSION['personal_buliding']　建物名・部屋番号
+電話番号・メールアドレスはセッションに入れてないのでlogin.phpに記述する必要があります。
+            -->
 
 <!DOCTYPE html>
 <html lang="ja">
