@@ -21,9 +21,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
             return;
         }
 
-
         // 在庫数が0の場合に予約含み詳細ページに遷移
         if ($row && $row['stock'] !== 0) {
+            // formのパスは変更予定
 
             // 在庫があるとき
             echo '<div class="main">
@@ -54,7 +54,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
             echo '</div>';
 
         } else {
-
             
             // 在庫がないとき
             echo '<div class="main">
@@ -71,7 +70,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
             echo '<div class="mozi">
                     <p>価格 : ' . $row['price'] . '</p>
                     <p class="point">付与ポイント ' . $row['point'] . 'ポイント</p>
-                    <div> 数量 :<button class="prev-button" @click="changeSlide(-1)">-</button>1<button class="next-button" @click="changeSlide(1)">+</button></div>
+                    <p>在庫がないため予約が可能です</p>
+                    <div> 数量 :
+                        <button class="prev-button" @click="changeSlide(-1)">-</button>
+                            1
+                        <button class="next-button" @click="changeSlide(1)">+</button>
+                    </div>
                     <a href="">レビュー</a>
                 </div>';
 
