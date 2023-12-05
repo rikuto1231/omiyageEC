@@ -24,6 +24,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
 
         // 在庫数が0の場合に予約含み詳細ページに遷移
         if ($row && $row['stock'] !== 0) {
+            // formのパスは変更予定
 
             // 在庫があるとき
             echo '<div class="main">
