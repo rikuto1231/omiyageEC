@@ -1,47 +1,43 @@
 <?php
-
+session_start();
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    // カートから購入処理を行う
+    // カートから商品を取得
+    $cartItems = getCartItems($_SESSION['user_id']);
 
-    try {
-        // トランザクション開始
-        $pdo->beginTransaction();
+    // 購入情報をPurchaseテーブルに挿入
+    $purchaseId = insertPurchase($_SESSION['user_id']);
 
-        // カートから購入テーブルへデータ挿入
-        $user_id = $_SESSION['user_id']; // ログインユーザーID
-        $cart_id = $_SESSION['cart_id']; // カートのID
-
-        // 購入テーブルへの挿入
-        $stmt = $pdo->prepare("INSERT INTO Purchase (user_id, cart_id, purpose_date) VALUES (?, ?, NOW())");
-        $stmt->execute([$user_id, $cart_id]);
-
-        // 直前に挿入した購入のIDを取得
-        $purchase_id = $pdo->lastInsertId();
-
-        // カートの商品詳細を取得
-        $stmt = $pdo->prepare("SELECT * FROM Cart WHERE cart_id = ?");
-        $stmt->execute([$cart_id]);
-        $cart_items = $stmt->fetchAll(PDO::FETCH_ASSOC);
-
-        // 購入詳細テーブルへの挿入
-        foreach ($cart_items as $cart_item) {
-            $stmt = $pdo->prepare("INSERT INTO PurchaseDet (purchase_id, merchandise_id, quantity) VALUES (?, ?, ?)");
-            $stmt->execute([$purchase_id, $cart_item['merchandise_id'], $cart_item['quantity']);
-        }
-
-        // カート削除
-        $stmt = $pdo->prepare("DELETE FROM Cart WHERE cart_id = ?");
-        $stmt->execute([$cart_id]);
-
-        // トランザクションコミット
-        $pdo->commit();
-
-        echo "購入が完了しました。";
-
-    } catch (PDOException $e) {
-        // エラーが発生した場合はロールバック
-        $pdo->rollBack();
-        echo "購入処理中にエラーが発生しました。";
+    // 購入詳細情報をPurchaseDetテーブルに挿入
+    foreach ($cartItems as $cartItem) {
+        insertPurchaseDetail($purchaseId, $cartItem['merchandise_id'], $cartItem['quantity']);
     }
+
+    // カートから商品を削除
+    clearCart($_SESSION['user_id']);
+
+    // 購入完了ページへリダイレクト
+    header("Location: 適切なURL入れる");
+    exit();
+}
+
+// カートから商品を取得する関数
+function getCartItems($userId) {
+    // ここにカートから商品を取得するSQL
+}
+
+// Purchaseテーブルに挿入する関数
+function insertPurchase($userId) {
+    // Purchaseテーブルに挿入
+    // 挿入が成功したら、挿入したレコードのpurchase_idを返す
+}
+
+// PurchaseDetテーブルに挿入する関数
+function insertPurchaseDetail($purchaseId, $merchandiseId, $quantity) {
+    // ここにPurchaseDetテーブルに挿入
+}
+
+// カートクリア関数呼び出し
+function clearCart($userId) {
+    //カートをクリアする処理
 }
 ?>
