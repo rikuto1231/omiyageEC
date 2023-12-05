@@ -2,6 +2,7 @@
     require 'DB.php';
     $pdo = getDatabaseConnection(); 
     // 予約検索のsqlとphp処理
+
     $sql=$pdo->prepare('select*
     from Reservation,Merchandise
     where  Reservation.Merchandise_id=Merchandise.Merchandise_id
