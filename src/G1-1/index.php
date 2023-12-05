@@ -1,8 +1,6 @@
 <?php session_start();?>
 <!-- パス・URL固定記述式になっているので
 とりあえずそれに合わせる -->
-<?php session_start();
-?>
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -15,7 +13,6 @@
 <body>
     <header>
         <?php 
-        $id = $_SESSION['user_id'];
         require '../common/php/header.php'; ?>
     </header>
     <div class="main">

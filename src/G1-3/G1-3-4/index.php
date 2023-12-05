@@ -1,3 +1,4 @@
+<?php session_start();?>
 <!-- headerとsideber接続。
 cssレイアウト中央配置だけ。
 phpでpタグとしてDBからの情報出力-->
