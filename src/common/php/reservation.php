@@ -2,24 +2,21 @@
     require 'DB.php';
     $pdo = getDatabaseConnection(); 
     // 予約検索のsqlとphp処理
-    $sql=$pdo->prepare('select * from Reservation where user_id=?');
+
+    $sql=$pdo->prepare('select*
+    from Reservation,Merchandise
+    where  Reservation.Merchandise_id=Merchandise.Merchandise_id
+    and user_id=?');
     $sql->execute([$id]);
-    foreach ($sql as $row) {
-        $number = $row['number'];
-        $date = $row['date'];
-        $sql=$pdo->prepare('select * from Merchandise where Merchandise_id=?');
-        $sql->execute([$row['merchandise_id']]);
-        foreach ($sql as $row) {
-            echo'<img src="../../common/img/'.$row['path'].'" width="90px" height="90px" class="img_product">';
-            echo'<p>',$row['merchandise_name'],'</p>';
-            echo'<p>￥',$row['price'],'</p>';
-            echo'<p>数量：',$number,'</p>';
-            echo'<p>',$date,'</p>';
-        }
+
+    foreach($sql  as $row){
+        echo'<img src="../../common/img/'.$row['path'].'" class="img_product">';
+        echo'<h4 class="a">',$row['merchandise_name'],'</h4>';
+        echo'<p class="a">￥',$row['price'],'　　　　数量：',$row['number'],'</p>';
+        echo'<p><button type="submit">取り消し</button>',$row['date'],'</p>';
         echo'<br>';
         echo'<br>';
     }
-    
         
 
 ?>
