@@ -25,10 +25,12 @@
             $_SESSION['personal_city']　市区町村
             $_SESSION['personal_street']　番地
             $_SESSION['personal_buliding']　建物名・部屋番号
+
+            $_SESSION['personal_family_kana']　姓(カナ)
             フリガナ・電話番号・メールアドレスはセッションに入れてないので
             login.phpに記述する必要があります。
             -->
-            
+
                 <!-- お名前 -->
                 <div class="form-group">
                     <label for="lastName">姓</label>
