@@ -32,28 +32,27 @@
                 <hr>
                 <p><a href="../../common/php/logout.php">ログアウト</a></p>
             </div>
+
             <img id="toggleButton" src="/omiyageEC/src/common/img/user.png" width="40" height="40">
             <a href="../../G1-5/G1-5-2/index.php">
-                <img id="cart_button" src="/omiyageEC/src/common/img/cart.jpg" width="40" height="40">
+            <img id="cart_button" src="/omiyageEC/src/common/img/cart.jpg" width="40" height="40">
             </a>
             <div id="search_all">
-                <input type="text" class="search_box" placeholder="検索">
-                <button class="conditions_img">
-                    <img src="/omiyageEC/src/common/img/kensakku.png" width="20" height="20">
-                </button>
-                <p><a href="../../G1-4/G1-4-1/index.php" id="conditions">絞り込み条件を開く▽</a></p>
+            <input type="text" class="search_box" placeholder="検索">
+            <button class="conditions_img">
+            <img src="/omiyageEC/src/common/img/kensakku.png" width="20" height="20">
+            </button>
+            <p><a href="../../G1-4/G1-4-1/index.php" id="conditions">絞り込み条件を開く▽</a></p>
             </div>
+
     <div id="product_detail">
-    <h1>ご購入手続き</h1><br>
-    <h2>お届け先</h2>
-    <hr>
-    <form action="../G1-4-4/index.php">
-    <div id="container">
-    <?php require '../../common/php/personal information.php' ?>
+        <h1>ご購入手続き<br><h2>お届け先</h2></h1><hr>
+        <form action="../G1-4-4/index.php">
+        <div id="container">
+        <?php require '../../common/php/personal information.php' ?>
     </div>
     
-    <h1>お支払方法</h1>
-    <hr>
+    <h1>お支払方法</h1><hr>
     <p class="payway"><input type="radio" name="pay" value="card">クレジットカード</p>
     <p class="payway"><input type="radio" name="pay" value="paypay">paypay</p>
     <p class="payway"><input type="radio" name="pay" value="convini">コンビニ決済</p>
