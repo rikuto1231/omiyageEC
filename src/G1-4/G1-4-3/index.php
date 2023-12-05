@@ -44,18 +44,14 @@
                 <p><a href="../../G1-4/G1-4-1/index.php" id="conditions">絞り込み条件を開く▽</a></p>
             </div>
     <div id="product_detail">
-    <h1>ご購入手続き</h1>
+    <h1>ご購入手続き</h1><br>
+    <h2>お届け先</h2>
     <hr>
     <form action="../G1-4-4/index.php">
     <div id="container">
     <?php require '../../common/php/personal information.php' ?>
     </div>
-    <p>　お名前<span class="info">　　　　　　　</span></p>
-    <p>　郵便番号<span class="info">　　　　　　　</span></p>
-    <p>　都道府県<span class="info">　　　　　　　</span></p>
-    <p>　市区町村<span class="info">　　　　　　　</span></p>
-    <p>それ以降の番地<span class="info">　　　　　　　</span></p>
-    <p>建物名・部屋番号<span class="info">　　　　　　　</span></p>
+    
     <h1>お支払方法</h1>
     <hr>
     <p class="payway"><input type="radio" name="pay" value="card">クレジットカード</p>
