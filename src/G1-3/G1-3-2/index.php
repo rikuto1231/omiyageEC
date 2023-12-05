@@ -1,5 +1,10 @@
 <?php session_start();
 ?>
+<?php
+require '../../common/php/DB.php'; 
+$pdo = getDatabaseConnection();
+$sql=$pdo->prepare('select * from User where user_id=?');
+    $sql->execute([$id]);?>
 <!-- ユーザデータ表示とupdate処理追加する11/23 -->
 <!-- セッションでの上書き処理も追加する12/04 -->
 
@@ -12,29 +17,29 @@
     <title>登録情報画面</title>
 </head>
 <body>
+<?php
+        echo '<h1 id="title_name">登録情報</h1>';
 
-        <h1 id="title_name">登録情報</h1>
-
-            <form method="post" action="../G1-3-2/index.php" id="form_all">
+        echo'<form action="personal2.php" method="get">';
 
                 
-                <!-- お名前 -->
-                <div class="form-group">
-                    <label for="lastName">姓</label>
-                    <!-- テキスト位置調整用にid入れてます -->
-                    <label for="firstName" id="firstName_title">名</label><br>
+                // <!-- お名前 -->
+        echo '<div class="form-group">';
+        echo '<label for="lastName">姓</label>';
+                //    <!-- テキスト位置調整用にid入れてます -->
+        echo '<label for="firstName" id="firstName_title">名</label><br>' ;           
 
-                    <input type="text" id="lastName" name="lastName" class="form-control" value="<?php echo isset($_SESSION['lastName']) ? htmlspecialchars($_SESSION['lastName']) : ''; ?>" required>
-                    <input type="text" id="firstName" name="firstName" class="form-control" value="<?php echo isset($_SESSION['firstName']) ? htmlspecialchars($_SESSION['firstName']) : ''; ?>" required>
-                </div>
+        echo '<input type="text" id="lastName" name="lastName" class="form-control" value= ',$row['name_family'],'>';           
+        echo '<input type="text" id="firstName" name="firstName" class="form-control" value= ',$row['name_personal'],'>';
+        echo '</div>';
 
 
-                <!-- フリガナ -->
-                <div class="form-group">
-                    <label for="furiganaLastName">姓（フリガナ）</label>
-                    <label for="furiganaLastName" id="furiganaLastName_title">名（フリガナ）</label><br>
-                    <input type="text" id="furiganaLastName" name="furiganaLastName" class="form-control" value="<?php echo isset($_SESSION['furiganaLastName']) ? htmlspecialchars($_SESSION['furiganaLastName']) : ''; ?>" required>
-                    <input type="text" id="furiganaFirstName" name="furiganaFirstName" class="form-control" value="<?php echo isset($_SESSION['furiganaFirstName']) ? htmlspecialchars($_SESSION['furiganaFirstName']) : ''; ?>" required>
+                // <!-- フリガナ -->
+        echo '<div class="form-group">'
+        echo '<label for="furiganaLastName">姓（フリガナ）</label>';          
+        echo '<label for="furiganaLastName" id="furiganaLastName_title">名（フリガナ）</label><br>';            
+        echo '<input type="text" id="furiganaLastName" name="furiganaLastName" class="form-control" value="<?php echo isset($_SESSION['furiganaLastName']) ? htmlspecialchars($_SESSION['furiganaLastName']) : ''; ?>" required>'           
+                    <input type="text" id="furiganaFirstName" name="furiganaFirstName" class="form-control" value="<?php echo isset($_SESSION['furiganaFirstName']) ? htmlspecialchars($_SESSION['furiganaFirstName']) : ''; ?>" required>;
                 </div>
 
                 <!-- 郵便番号（Ajaxで住所検索) -->
@@ -42,7 +47,7 @@
                     <label for="postalCode">郵便番号:</label>
                     <input type="text" id="postalCode" name="postalCode" class="form-control" value="<?php echo isset($_SESSION['postalCode']) ? htmlspecialchars($_SESSION['postalCode']) : ''; ?>"required>
                     <!-- ここに郵便番号検索フォーム（Ajax使用）を配置 -->
-                    <button type="button" @click="searchAddress">住所検索</button>
+                    
                 </div>
         
                 <!-- 住所（都道府県） -->
@@ -96,5 +101,6 @@
             <br>
             <button class="modoru" onclick="location.href="/omiyageEC/src/G1-1/G1-1/index.php"">マイページに戻る</button>
         </div>
+        ?>
 </body>
 </html>
