@@ -1,6 +1,5 @@
 <!--個人情報検索-->
 <?php
-session_start();
 require 'DB.php';
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
