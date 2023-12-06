@@ -31,7 +31,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
             echo '<p>' . $row['prefecture'] . '<br>' . $row['merchandise_name'] . '</p>';
             echo '</div>';
 
-            echo '<form action="/omiyageEC/src/common/php/cart_check.php" method="get">'; 
+            echo '<form action="/omiyageEC/src/common/php/cart_check.php" method="post">';  // GET から POST に変更
 
             echo '<div class="item">
                     <img src="/omiyageEC/src/common/img/'.$row['path'].'" alt="代替テキスト" width="300px" height="200px">
@@ -46,8 +46,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
 
             echo '<div class="button3">
                     <button type="submit" class="cartbutton" name="add_to_cart">カートに入れる</button>
-                    <input type="hidden" name="merchandise_id" value="' . $merchandise_id . '">
-                    <button class="homebutton" onclick="location.href=\'../G1-4-1/index.php\'">検索ホームに戻る</button>
+                    <input type="hidden" name="merchandise_id" value="' . $merchandise_id . '">';
+            // 商品情報を全て隠しフィールドに追加
+            foreach ($row as $key => $value) {
+                echo '<input type="hidden" name="' . $key . '" value="' . $value . '">';
+            }
+            echo '<button class="homebutton" onclick="location.href=\'../G1-4-1/index.php\'">検索ホームに戻る</button>
                 </div>';
 
             echo '</form>';
@@ -61,7 +65,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
             echo '<p>' . $row['prefecture'] . '<br>' . $row['merchandise_name'] . '</p>';
             echo '</div>';
 
-            echo '<form action="/omiyageEC/src/common/php/cart_check.php" method="get">'; 
+            echo '<form action="/omiyageEC/src/common/php/cart_check.php" method="post">';  // GET から POST に変更
 
             echo '<div class="item">
                     <img src="/omiyageEC/src/common/img/'.$row['path'].'" alt="代替テキスト" width="300px" height="200px">
@@ -81,8 +85,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
 
             echo '<div class="button3">
                     <button type="submit" class="cartbutton" name="add_to_cart">予約</button>
-                    <input type="hidden" name="merchandise_id" value="' . $merchandise_id . '">
-                    <button class="homebutton" onclick="location.href=\'../G1-4-1/index.php\'">検索ホームに戻る</button>
+                    <input type="hidden" name="merchandise_id" value="' . $merchandise_id . '">';
+            // 商品情報を全て隠しフィールドに追加
+            foreach ($row as $key => $value) {
+                echo '<input type="hidden" name="' . $key . '" value="' . $value . '">';
+            }
+            echo '<button class="homebutton" onclick="location.href=\'../G1-4-1/index.php\'">検索ホームに戻る</button>
                 </div>';
 
             echo '</form>';
@@ -95,6 +103,4 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
         echo '<p>IDが指定されていません。</p>';
     }
 } 
-    
-
 ?>
