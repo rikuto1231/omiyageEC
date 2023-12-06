@@ -32,6 +32,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $_SESSION['personal_city']=$user['city_address'];//市区町村
             $_SESSION['personal_street']=$user['street_address'];//番地
             $_SESSION['personal_buliding']=$user['building'];//建物名・部屋番号
+            $_SESSION['personal_tel']=$user['tel'];//電話番号
+            $_SESSION['personal_mail_address']=$user['mail_address'];//メールアドレス
             //電話番号、メールアドレスもセッションに保存する修正中
 
 
