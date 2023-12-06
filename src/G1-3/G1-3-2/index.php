@@ -11,7 +11,8 @@
             $_SESSION['personal_city']　市区町村
             $_SESSION['personal_street']　番地
             $_SESSION['personal_buliding']　建物名・部屋番号
-電話番号・メールアドレスはセッションに入れてないのでlogin.phpに記述する必要があります。
+            $_SESSION['personal_tel']　電話番号
+            $_SESSION['personal_mail_address']　メールアドレス
             -->
 
 <!DOCTYPE html>
