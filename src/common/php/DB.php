@@ -129,6 +129,32 @@ function sql_search_id($pdo, $id) {
     }
 }
 
+// 商品カート追加API
+function insertCartItem($pdo, $merchandise_id) {
+    try {
+        // カートにアイテムを追加するSQL文
+        $sql = "INSERT INTO Cart (user_id, merchandise_id, quantity) VALUES (:user_id, :merchandise_id, 1)";
+
+        // 仮でユーザIDを1。実際にはログインユーザのIDを使用
+        $user_id = 1;
+
+        // プリペアドステートメントを作成
+        $stmt = $pdo->prepare($sql);
+
+        // パラメータをバインド
+        $stmt->bindParam(':user_id', $user_id, PDO::PARAM_INT);
+        $stmt->bindParam(':merchandise_id', $merchandise_id, PDO::PARAM_INT);
+
+        // クエリの実行
+        $result = $stmt->execute();
+
+        return $result;
+    } catch (PDOException $e) {
+        // エラーハンドリング
+        echo "エラー: " . $e->getMessage();
+        return false;
+    }
+}
 
 
 
