@@ -16,7 +16,7 @@ $sql=$pdo->prepare('select * from User where user_id=?');
         echo '<label for="firstName" id="firstName_title">名</label><br>' ;           
 
         echo '<input type="text" id="lastName" name="lastName" class="form-control" value= ',$_SESSION['personal_family'],'>';         
-        echo '<input type="text" id="firstName" name="firstName" class="form-control" value= ',$_SESSION['personal_family_kana'],'>';
+        echo '<input type="text" id="firstName" name="firstName" class="form-control" value= ',$_SESSION['personal_personal'],'>';
         echo '</div>';
 
 
@@ -24,7 +24,7 @@ $sql=$pdo->prepare('select * from User where user_id=?');
         echo '<div class="form-group">';
         echo '<label for="furiganaLastName">姓（フリガナ）</label>';          
         echo '<label for="furiganaLastName" id="furiganaLastName_title">名（フリガナ）</label><br>';            
-        echo '<input type="text" id="furiganaLastName" name="furiganaLastName" class="form-control" value=',$_SESSION['personal_personal'],'>';          
+        echo '<input type="text" id="furiganaLastName" name="furiganaLastName" class="form-control" value=',$_SESSION['personal_family_kana'],'>';          
         echo '<input type="text" id="furiganaFirstName" name="furiganaFirstName" class="form-control" value=',$_SESSION['personal_personal_kana'],'>';
         echo '</div>';
 
