@@ -43,7 +43,7 @@ function insertCartItem($pdo, $merchandise_id) {
         // カートにアイテムを追加するSQL文
         $sql = "INSERT INTO Cart (user_id, merchandise_id, quantity) VALUES (:user_id, :merchandise_id, 1)";
 
-        // 仮でユーザIDを1としています。実際にはログインユーザのIDを使用するなど、適切に取得してください。
+        // 仮でユーザIDを1。実際にはログインユーザのIDを使用
         $user_id = 1;
 
         // プリペアドステートメントを作成
