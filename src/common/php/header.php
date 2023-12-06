@@ -9,7 +9,7 @@
         <hr>
         <p><a href="/omiyageEC/src/G1-3/G1-3-4/index.php?id=',$_SESSION['user_id'],'">ポイント</a></p>
         <hr>
-        <p><a href="/omiyageEC/src/G1-3/G1-3-2/index.php">登録情報</a></p>
+        <p><a href="/omiyageEC/src/G1-3/G1-3-2/index.php?id=',$_SESSION['user_id'],'">登録情報</a></p>
         <hr>
         <p><a href="/omiyageEC/src/G1-3/G1-3-3/index.php?id=',$_SESSION['user_id'],'">購入履歴</a></p>
         <hr>
