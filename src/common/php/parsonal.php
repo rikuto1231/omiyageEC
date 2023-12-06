@@ -15,7 +15,8 @@ $sql=$pdo->prepare('select * from User where user_id=?');
                 //    <!-- テキスト位置調整用にid入れてます -->
         echo '<label for="firstName" id="firstName_title">名</label><br>' ;           
 
-        echo '<input type="text" id="lastName" name="lastName" class="form-control" value= ', $row['name_family'],'>';           
+        echo '<input type="text" id="lastName" name="lastName" class="form-control" value= ', $row['name_family'],'>'; 
+        $_SESSION['personal_family']=$row['name_family'];          
         echo '<input type="text" id="firstName" name="firstName" class="form-control" value= ',$row['name_personal'],'>';
         echo '</div>';
 
