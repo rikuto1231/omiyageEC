@@ -26,7 +26,7 @@
 
         <h1 id="title_name">登録情報</h1>
        <?php 
-    $id = session_id();
+    $id = $_GET['id'];
        require '../../common/php/parsonal.php';
        ?>
         
