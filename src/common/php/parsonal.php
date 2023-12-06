@@ -73,7 +73,7 @@ $sql=$pdo->prepare('select * from User where user_id=?');
                 // <!-- メールアドレス -->
         echo '<div class="form-group">';
         echo '<label for="email">メールアドレス:</label>';
-        echo '<input type="text" id="email" name="email" class="form-control" value=', $_SESSION['personal_mail_address']],'>';
+        echo '<input type="text" id="email" name="email" class="form-control" value=', $_SESSION['personal_mail_address'],'>';
         echo '</div>';
         echo '</form>';
         echo '<p id="output"></p>';
