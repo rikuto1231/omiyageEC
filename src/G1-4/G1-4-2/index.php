@@ -30,9 +30,9 @@
             </select></h5>
             <h5>￥値段<button class="delete_button">削除</button></h5>
             </div>
-            <button class="button_next" onclick="location.href='../../G1-4/G1-4-2/index.php'">ショッピングを続ける</button>
+            <button class="button_next" onclick="location.href='../../G1-5/G1-5-2/index.php'">ショッピングを続ける</button>
         </div>
-        <form action="../G1-5-3/index.php">
+        <form action="../G1-4-3/index.php">
         <div id="num_output">
             <h4>付与ポイント  </h4>
             <!-- phpポイント計算部分 -->
