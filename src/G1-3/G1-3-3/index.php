@@ -33,7 +33,7 @@
     <br>
     <br>
     <br>
-    <button class="modoru" onclick="location.href=\'../../G1-1/index.php\'">戻る</button>
+    <button class="modoru" onclick="location.href='../../G1-1/index.php'">戻る</button>
     </div>
     <script src="../../common/js/side_ber.js"></script>
     
