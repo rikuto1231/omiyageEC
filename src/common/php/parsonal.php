@@ -1,3 +1,4 @@
+
 <?php 
 require '../../common/php/DB.php'; 
 $pdo = getDatabaseConnection();

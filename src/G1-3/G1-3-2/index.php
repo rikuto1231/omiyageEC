@@ -26,9 +26,8 @@
 <body>
 
         <h1 id="title_name">登録情報</h1>
-       <?php 
-    $id = session_id();
-       require '../../common/php/parsonal.php';
+       <?php $id = session_id();?> 
+       <?php require '../../common/php/parsonal.php';
        ?>
         
        <?php         
