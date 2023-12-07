@@ -2,7 +2,7 @@
 <?php
 
 
-// GETかPOSTか選定する
+// POSTか選定する
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $pdo = getDatabaseConnection(); 
 
@@ -17,7 +17,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         // ユーザが選んだ商品数
         $quantity = $_SESSION[''];
-
 
 
         // カートにアイテムを追加(引数を対応させる)
