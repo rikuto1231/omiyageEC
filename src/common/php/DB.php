@@ -183,6 +183,29 @@ function insertReservation($pdo, $user_id, $merchandise_id, $number) {
     }
 }
 
+// カートアイテム削除API
+function deleteCartItem($pdo, $cart_id) {
+    try {
+        // カートからアイテムを削除するSQL文
+        $sql = "DELETE FROM Cart WHERE cart_id = :cart_id";
+
+        $stmt = $pdo->prepare($sql);
+
+    
+        $stmt->bindParam(':cart_id', $cart_id, PDO::PARAM_INT);
+
+        // クエリの実行
+        $result = $stmt->execute();
+
+        return $result;
+    } catch (PDOException $e) {
+        // エラーハンドリング
+        echo "エラー: " . $e->getMessage();
+        return false;
+    }
+}
+
+
 
 
 

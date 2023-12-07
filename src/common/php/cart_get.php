@@ -23,8 +23,7 @@ if (isset($_SESSION['user_id'])) {
     if ($products) {
         foreach ($products as $product) {
             echo '<div class="product">';
-            echo '<p id="cart_mess">カートに入っているアイテム</p>';
-            echo '<img class="img_product" src="/omiyageEC/src/common/img/cart.jpg" width="100" height="100">';
+            echo '<img class="img_product" src="/omiyageEC/src/common/img/' . $product['path'] . '" width="100" height="100">';
             echo '<div class="in_cart">';
             echo '<h5>商品名: ' . $product['merchandise_name'] . '</h5>';
             echo '<h5>価格: ¥' . number_format($product['price']) . '</h5>';
@@ -33,7 +32,13 @@ if (isset($_SESSION['user_id'])) {
                 echo '<option value="' . $i . '">' . $i . '</option>';
             }
             echo '</select></h5>';
-            echo '<h5>￥値段<button class="delete_button">削除</button></h5>';
+            
+            // 商品削除のフォーム
+            echo '<form method="post" action="/omiyageEC/src/common/php/deleteCartItem.php">';
+            echo '<input type="hidden" name="cart_id" value="' . $product['cart_id'] . '">';
+            echo '<button type="submit" class="delete_button">削除</button>';
+            echo '</form>';
+            
             echo '</div>';
             echo '</div>';
         }
