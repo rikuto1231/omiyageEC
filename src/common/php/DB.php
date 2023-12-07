@@ -130,11 +130,11 @@ function sql_search_id($pdo, $id) {
 }
 
 // 商品カート追加API
-function insertCartItem($pdo, $user_id, $merchandise_id) {
+function insertCartItem($pdo, $user_id, $merchandise_id,$quantity) {
     try {
         // カートにアイテムを追加するSQL文
         // 数量が固定なので後々対応が必要
-        $sql = "INSERT INTO Cart (user_id, merchandise_id, quantity) VALUES (:user_id, :merchandise_id, 1,0)";
+        $sql = "INSERT INTO Cart (user_id, merchandise_id, quantity) VALUES (:user_id, :merchandise_id, :quantity,0)";
 
         // プリペアドステートメントを作成
         $stmt = $pdo->prepare($sql);
@@ -142,6 +142,7 @@ function insertCartItem($pdo, $user_id, $merchandise_id) {
         // パラメータをバインド
         $stmt->bindParam(':user_id', $user_id, PDO::PARAM_INT);
         $stmt->bindParam(':merchandise_id', $merchandise_id, PDO::PARAM_INT);
+        $stmt->bindParam(':quantity', $quantity, PDO::PARAM_INT);
 
         // クエリの実行
         $result = $stmt->execute();
