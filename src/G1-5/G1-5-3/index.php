@@ -8,7 +8,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="../../common/css/header.css">
-    <?php require '../..//common/php/DB.php'; ?>
+    <?php require '../../common/php/DB.php'; ?>
 </head>
 <body>
     <header>
