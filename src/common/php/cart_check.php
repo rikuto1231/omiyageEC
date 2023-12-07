@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-require 'DB.php';
+require '/omiyageEC/src/common/php/DB.php';
 
 // バッファリングを開始
 ob_start();
