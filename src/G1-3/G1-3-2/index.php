@@ -2,7 +2,7 @@
 <!-- ユーザデータ表示とupdate処理追加する11/23 -->
 <!-- セッションでの上書き処理も追加する12/04 -->
  <!--セッションの変数名を以下に変更する必要があります。
-            $_SESSION['personal_family']　姓
+            $_SESSION['personal_family'] 姓
             $_SESSION['personal_family_kana']　姓(カナ)
             $_SESSION['personal_personal']　名
             $_SESSION['personal_personal_kana']　名(カナ)
@@ -27,7 +27,7 @@
 
         <h1 id="title_name">登録情報</h1>
        <?php 
-    $id = session_id();
+        $id = $_SESSION['user_id'];
        require '../../common/php/parsonal.php';
        ?>
         

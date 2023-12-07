@@ -29,7 +29,7 @@
     <p class="payway"><input type="radio" name="pay" value="コンビニ決済">コンビニ決済</p>
     <button class="kakunin">ご注文内容の確認</button>
     </form>
-    <p class="modoru"><a href="../G1-5-2/index.php">ショッピングカートに戻る</a></p>
+    <p class="modoru"><a href="../G1-4-2/index.php">ショッピングカートに戻る</a></p>
     </div>
     <script src="../../common/js/side_ber.js"></script>
 </body>
