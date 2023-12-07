@@ -106,9 +106,8 @@
 
         ?>
         <br>
-        <button class="modoru" onclick="location.href='/omiyageEC/src/G1-1/index.php'">マイページに戻る</button>
+        <button class="modoru" onclick="location.href='../../G1-1/index.php'">マイページに戻る</button>
         </div>
-        </form>
         
 </body>
 </html>

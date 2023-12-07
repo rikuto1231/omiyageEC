@@ -27,7 +27,7 @@
     <br> 
 
     <?php
-    $id = $_GET['id'];
+    $id = $_SESSION['user_id'];
     require '../../common/php/history.php'; ?>
    
     <br>
