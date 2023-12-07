@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-require 'DB.php';
+require '../../common/php/DB.php'; 
 ?>
 
 <!-- 共通部分接続。 -->
