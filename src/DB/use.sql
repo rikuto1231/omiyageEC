@@ -37,6 +37,7 @@ CREATE TABLE Cart(
     user_id int not null,
     merchandise_id int not null,
     quantity int not null,
+    purchased boolean not null DEFAULT false, -- デフォルト値をfalse
     primary key (cart_id),
     foreign key (user_id) references User(user_id),
     foreign key (merchandise_id) references Merchandise(merchandise_id)

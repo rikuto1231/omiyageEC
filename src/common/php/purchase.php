@@ -20,7 +20,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     exit();
 }
 
-// カートから商品を取得する関数
+// カートから商品を取得する関数。DBに関数分けしたい
 function getCartItems($userId) {
     // ここにカートから商品を取得するSQL
 }
