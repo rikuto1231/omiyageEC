@@ -21,6 +21,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // パスワードの照合
         if ($user && password_verify($pass, $user['password'])) {
             
+            // 他でも連携するので命名あってるのか確認
             // 他データのセッション保存も追記する
             $_SESSION['user_id'] = $user['user_id'];
             $_SESSION['personal_family'] = $user['name_family'];//姓

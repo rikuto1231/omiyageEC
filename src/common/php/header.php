@@ -7,13 +7,13 @@
         <hr>
         <p>○○○○さん</p>
         <hr>
-        <p><a href="/omiyageEC/src/G1-3/G1-3-4/index.php?id=',$_SESSION['user_id'],'">ポイント</a></p>
+        <p><a href="/omiyageEC/src/G1-3/G1-3-4/index.php">ポイント</a></p>
         <hr>
         <p><a href="/omiyageEC/src/G1-3/G1-3-2/index.php">登録情報</a></p>
         <hr>
         <p><a href="/omiyageEC/src/G1-3/G1-3-3/index.php?id=',$_SESSION['user_id'],'">購入履歴</a></p>
         <hr>
-        <p><a href="/omiyageEC/src/G1-3/G1-3-5/index.php?id=',$_SESSION['user_id'],'">予約確認</a></p>
+        <p><a href="/omiyageEC/src/G1-3/G1-3-5/index.php">予約確認</a></p>
         <hr>
         <p><a href="">ログイン</a></p>
         <hr>
