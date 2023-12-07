@@ -155,6 +155,35 @@ function insertCartItem($pdo, $user_id, $merchandise_id,$quantity) {
     }
 }
 
+// 商品予約追加API
+function insertReservation($pdo, $user_id, $merchandise_id, $number) {
+    try {
+        // 予約情報を挿入するSQL文
+        $sql = "INSERT INTO Reservation (user_id, merchandise_id, number) VALUES (:userId, :merchandiseId, :number)";
+        
+        // SQLステートメントを準備
+        $stmt = $pdo->prepare($sql);
+
+        // パラメータをバインド
+        $stmt->bindParam(':userId', $user_id, PDO::PARAM_INT);
+        $stmt->bindParam(':merchandiseId', $merchandise_id, PDO::PARAM_INT);
+        $stmt->bindParam(':number', $number, PDO::PARAM_INT);
+
+        // SQLを実行
+        $stmt->execute();
+
+        // 予約IDを取得のデフォルト関数
+        $reservationId = $pdo->lastInsertId();
+
+        return $reservationId;
+    } catch (PDOException $e) {
+        // エラー処理（適切に処理してください）
+        echo "予約情報の挿入に失敗しました：" . $e->getMessage();
+        return false;
+    }
+}
+
+
 
 
  //DB接続関数
