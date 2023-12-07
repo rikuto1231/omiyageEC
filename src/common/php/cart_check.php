@@ -28,12 +28,12 @@ if (isset($_SESSION['user_id'])) {
     if ($cartItems) {
         // バッファリングを終了し、出力をフラッシュ
         ob_end_flush();
-        header('Location: /omiyageEC/src/G1-4/G1-4-1/index.php'); // 商品表示
+        header('Location: /omiyageEC/src/G1-4/G1-4-2/index.php'); // 商品表示
         exit();
     } else {
         // バッファリングを終了し、出力をフラッシュ
         ob_end_flush();
-        header('Location: /omiyageEC/src/G1-4/G1-4-2/index.php'); // カートが空の表示
+        header('Location: /omiyageEC/src/G1-4/G1-4-1/index.php'); // カートが空の表示
         exit();
     }
 } else {
