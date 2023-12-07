@@ -13,6 +13,7 @@ new Vue({
         },
         onSubmit() {
             // フォームの送信処理を防ぐ
+            return false;
         }
     }
 });
