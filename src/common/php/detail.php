@@ -1,5 +1,6 @@
 <?php
 // まだ未完成です
+echo '<br><br><br><br><br><br><br>';
 echo $_SESSION['user_id']."AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA";
 if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     // GETリクエストが送信された場合
