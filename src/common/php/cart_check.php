@@ -25,6 +25,9 @@ if (isset($_SESSION['user_id'])) {
     $cartItems = $checkCartStmt->fetchAll(PDO::FETCH_ASSOC);
 
     // カートに商品が入っている場合
+
+    $alertScript = "<script>alert('$cartItems');</script>";
+    
     if ($cartItems) {
         header('Location: /omiyageEC/src/G1-4/G1-4-1/index.php'); //商品表示
         exit();
