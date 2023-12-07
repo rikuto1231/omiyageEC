@@ -1,10 +1,10 @@
 <?php
 session_start();
 
-
 require 'DB.php';
 
-
+// バッファリングを開始
+ob_start();
 
 // ユーザIDの確認
 if (isset($_SESSION['user_id'])) {
@@ -25,17 +25,20 @@ if (isset($_SESSION['user_id'])) {
     $cartItems = $checkCartStmt->fetchAll(PDO::FETCH_ASSOC);
 
     // カートに商品が入っている場合
-
-    $alertScript = "<script>alert('$cartItems');</script>";
-    
     if ($cartItems) {
-        header('Location: /omiyageEC/src/G1-4/G1-4-1/index.php'); //商品表示
+        // バッファリングを終了し、出力をフラッシュ
+        ob_end_flush();
+        header('Location: /omiyageEC/src/G1-4/G1-4-1/index.php'); // 商品表示
         exit();
     } else {
+        // バッファリングを終了し、出力をフラッシュ
+        ob_end_flush();
         header('Location: /omiyageEC/src/G1-4/G1-4-2/index.php'); // カートが空の表示
         exit();
     }
 } else {
+    // バッファリングを終了し、出力をフラッシュ
+    ob_end_flush();
     // ユーザIDがセッションに保存されていない場合（未ログインなど）
     header('Location: ユーザIDがセッションに保存されていない場合の遷移先'); // 遷移先のURLを指定
     exit();
