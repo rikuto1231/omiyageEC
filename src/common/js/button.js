@@ -13,7 +13,7 @@ new Vue({
     },
     methods: {
         changeQuantity(amount) {
-            // 数量が在庫数を超えないように確認
+            // 数量が在庫数を超えない処理
             if (this.quantity + amount >= 1 && this.quantity + amount <= this.maxStock) {
                 this.quantity += amount;
             }
@@ -21,7 +21,7 @@ new Vue({
     },
     computed: {
         isMaxQuantity() {
-            // +ボタンが非活性かどうかを返す
+            // 在庫超過時の+ボタンの非活性を制御
             return this.quantity >= this.maxStock;
         }
     }
