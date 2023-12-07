@@ -8,7 +8,7 @@
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="../../common/css/header.css">
-    <?php require '../..//common/php/DB.php'; ?>
+    <?php require '../../common/php/DB.php'; ?>
 </head>
 <body>
     <header>
