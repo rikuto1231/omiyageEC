@@ -1,8 +1,8 @@
-<!-- カート追加する処理, detail.php呼び出し元G1-5-3からの読み込み -->
 <?php
-
 require 'DB.php';
 
+// 出力バッファリングを有効にする
+ob_start();
 
 // POSTは受け取れている
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
@@ -19,7 +19,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         // ユーザが選んだ商品数
         $quantity = $_POST['quantity'];
-
 
         // カートにアイテムを追加(引数を対応させる)
         $cartInsertResult = insertCartItem($pdo, $user_id, $merchandise_id, $quantity);
@@ -38,6 +37,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 }
 
-
+// 出力バッファをフラッシュして終了
+ob_end_flush();
 ?>
-
