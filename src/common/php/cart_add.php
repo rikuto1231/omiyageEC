@@ -1,8 +1,13 @@
 <!-- カート追加する処理, detail.php呼び出し元G1-5-3からの読み込み -->
 <?php
+session_start();
+
+require 'DB.php';
+?>
+
+<?php 
 
 
-// POSTか選定する
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $pdo = getDatabaseConnection(); 
 
@@ -16,7 +21,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $user_id = $_SESSION['user_id'];
 
         // ユーザが選んだ商品数
-        $quantity = $_SESSION[''];
+        $quantity = $_POST[''];
 
 
         // カートにアイテムを追加(引数を対応させる)
