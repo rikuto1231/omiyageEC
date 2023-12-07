@@ -8,13 +8,13 @@ $sql=$pdo->prepare('select * from User where user_id=?');
 ?>
 
 <?php
+echo'<form action="/omiyageEC/src/common/php/personal_update.php" method="POST">';
         // <!-- お名前 -->
         foreach($sql  as $row){
         echo '<div class="form-group">';
         echo '<label for="lastName">姓</label>';
                 //    <!-- テキスト位置調整用にid入れてます -->
         echo '<label for="firstName" id="firstName_title">名</label><br>' ;           
-
         echo '<input type="text" id="lastName" name="lastName" class="form-control" value= ',$_SESSION['personal_family'],'>';         
         echo '<input type="text" id="firstName" name="firstName" class="form-control" value= ',$_SESSION['personal_personal'],'>';
         echo '</div>';
@@ -75,12 +75,13 @@ $sql=$pdo->prepare('select * from User where user_id=?');
         echo '<label for="email">メールアドレス:</label>';
         echo '<input type="text" id="email" name="email" class="form-control" value=',$_SESSION['personal_mail_address'],'>';
         echo '</div>';
-        echo '</form>';
         echo '<p id="output"></p>';
         echo '<script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>';
         echo '<script src="script.js"></script>';
 
         echo '<div>';
+        echo'<button class="henko" type="submit">変更</button>';
+        echo '</form>';
         }
 
         ?>
