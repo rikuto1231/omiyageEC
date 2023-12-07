@@ -1,5 +1,7 @@
 <?php
 session_start();
+
+require 'DB.php';
 ?>
 
 <!-- 共通部分接続。 -->
