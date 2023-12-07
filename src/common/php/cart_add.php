@@ -27,7 +27,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         if ($cartInsertResult) {
             // カートへの追加が成功した場合の処理
-            header("Location: 有効URLに変更"); // カートページにリダイレクト
+            // header("Location: 有効URLに変更"); 
             exit();
         } else {
             // カートへの追加が失敗した場合の処理
