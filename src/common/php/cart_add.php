@@ -26,7 +26,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         if ($cartInsertResult) {
             // カートへの追加が成功した場合の処理
-            // header("Location: 有効URLに変更"); 
+            header("Location: /omiyageEC/src/G1-4/G1-4-1/index.php?merchandise_id=" . $merchandise_id);
             exit();
         } else {
             // カートへの追加が失敗した場合の処理
