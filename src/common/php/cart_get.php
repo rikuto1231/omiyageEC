@@ -16,10 +16,12 @@ if (isset($_SESSION['user_id'])) {
 
     // 結果を受け取る
     $products = $checkCartStmt->fetchAll(PDO::FETCH_ASSOC);
+    echo "AAAAAAAAAAAAA";
 
     // カートに商品が入っている場合
     if ($products) {
         foreach ($products as $product) {
+            echo "BBBBBBBBBBB";
             echo '<div class="product">';
             echo '<p id="cart_mess">カートに入っているアイテム</p>';
             echo '<img class="img_product" src="/omiyageEC/src/common/img/cart.jpg" width="100" height="100">';
