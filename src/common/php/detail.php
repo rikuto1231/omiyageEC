@@ -23,7 +23,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
         }
 
         // 在庫数が0の場合に予約含み詳細ページに遷移
-        if ($row && $row['stock'] !== 0) {
+        if ($row && $row['stock'] > 0) {
             // formのパスは変更予定
 
             // 在庫があるとき
@@ -31,6 +31,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
                 <div id="menu_all">';
             echo '<p>' . $row['prefecture'] . '<br>' . $row['merchandise_name'] . '</p>';
             echo '</div>';
+
+            // 隠しフィールドに在庫数を埋め込む
+
+            echo '<input type="hidden" id="maxStock" v-model="maxStock" value="' . $row['stock'] . '">';
 
             echo '<form action="/omiyageEC/src/common/php/cart_add.php" method="post" @submit.prevent="onSubmit">';  
 
@@ -46,7 +50,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
                     <div id="app">
                         <div>数量: {{ quantity }}</div>
                         <button type="button" @click="changeQuantity(-1)" >-</button>
-                        <button type="button" @click="changeQuantity(1)" >+</button>
+                        <button type="button" @click="changeQuantity(1)" :disabled="isMaxQuantity">+</button>
                         <!-- 隠しフィールドに数量を追加 -->
                         <input type="hidden" name="quantity" v-model="quantity">
                     </div>                  
