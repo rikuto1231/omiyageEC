@@ -22,6 +22,8 @@ require '../../common/php/DB.php';
 
         <?php require '../../common/php/cart_get.php'; ?>
 
+        <button class="button_next" onclick="location.href=\'../../G1-5/G1-5-2/index.php\'">ショッピングを続ける</button>
+
         <form action="../G1-4-3/index.php">
         <div id="num_output">
             <h4>付与ポイント  </h4>

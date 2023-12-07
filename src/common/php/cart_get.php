@@ -18,12 +18,10 @@ if (isset($_SESSION['user_id'])) {
 
     // 結果を受け取る
     $products = $checkCartStmt->fetchAll(PDO::FETCH_ASSOC);
-    echo "AAAAAAAAAAAAA";
 
     // カートに商品が入っている場合
     if ($products) {
         foreach ($products as $product) {
-            echo "BBBBBBBBBBB";
             echo '<div class="product">';
             echo '<p id="cart_mess">カートに入っているアイテム</p>';
             echo '<img class="img_product" src="/omiyageEC/src/common/img/cart.jpg" width="100" height="100">';
@@ -36,7 +34,6 @@ if (isset($_SESSION['user_id'])) {
             echo '</select></h5>';
             echo '<h5>￥値段<button class="delete_button">削除</button></h5>';
             echo '</div>';
-            echo '<button class="button_next" onclick="location.href=\'../../G1-5/G1-5-2/index.php\'">ショッピングを続ける</button>';
             echo '</div>';
         }
 
