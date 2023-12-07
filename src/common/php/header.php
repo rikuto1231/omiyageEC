@@ -20,7 +20,7 @@
         <p><a href="/omiyageEC/src/common/php/logout.php">ログアウト</a></p>
         </div>
         <img id="toggleButton" src="/omiyageEC/src/common/img/user.png" width="40" height="40">
-        <a href="/omiyageEC/src/G1-4/G1-4-1/index.php">
+        <a href="/omiyageEC/src/common/php/cart_check.php">
         <img id="cart_button" src="/omiyageEC/src/common/img/cart.jpg" width="40" height="40">
         </a>
         <div id="search_all">
