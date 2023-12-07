@@ -40,14 +40,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
             echo '<div class="mozi">
                     <p>価格 : ' . $row['price'] . '</p>
 
-                    <p class="point">付与ポイント ' . $row['point'] . 'ポイント</p>
+                    <p class="point">付与ポイント ' . $row['price']/100 . 'ポイント</p>
 
 
                     <div id="app">
                         <div>数量: {{ quantity }}</div>
                         <button @click="changeQuantity(-1)">-</button>
                         <button @click="changeQuantity(1)">+</button>
-                    </div>                    
+                        <!-- 隠しフィールドに数量を追加 -->
+                        <input type="hidden" name="quantity" v-model="quantity">
+                    </div>                  
                     <a href="">レビュー</a>
                 </div>';
 
@@ -80,13 +82,17 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
 
             echo '<div class="mozi">
                     <p>価格 : ' . $row['price'] . '</p>
-                    <p class="point">付与ポイント ' . $row['point'] . 'ポイント</p>
+                    <p class="point">付与ポイント ' . $row['price']/100 . 'ポイント</p>
                     <p>在庫がないため予約が可能です</p>
+
                     <div id="app">
                         <div>数量: {{ quantity }}</div>
                         <button @click="changeQuantity(-1)">-</button>
                         <button @click="changeQuantity(1)">+</button>
+                        <!-- 隠しフィールドに数量を追加 -->
+                        <input type="hidden" name="quantity" v-model="quantity">
                     </div>
+
                     <a href="">レビュー</a>
                 </div>';
 
