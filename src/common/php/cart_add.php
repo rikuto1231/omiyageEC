@@ -19,7 +19,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $user_id = $_SESSION['user_id'];
 
         // ユーザが選んだ商品数
-        $quantity = $_POST[''];
+        $quantity = $_POST['quantity'];
 
 
         // カートにアイテムを追加(引数を対応させる)
