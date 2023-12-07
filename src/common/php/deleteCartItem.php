@@ -23,7 +23,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             
             if ($deleteCartItemStmt->execute()) {
                 // 削除が成功した場合、何らかのリダイレクトなどを行う
-                header('Location: /cart_check.php');
+                header('Location: /omiyageEC/src/common/php/cart_check.php');
                 exit();
             } else {
                 // 削除が失敗した場合のエラー処理
