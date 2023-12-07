@@ -3,9 +3,7 @@
 session_start();
 
 require 'DB.php';
-?>
 
-<?php 
 
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
