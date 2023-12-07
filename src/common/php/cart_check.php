@@ -1,6 +1,11 @@
 <?php
 session_start();
 
+
+require 'DB.php';
+
+
+
 // ユーザIDの確認
 if (isset($_SESSION['user_id'])) {
     // ユーザIDを取得
