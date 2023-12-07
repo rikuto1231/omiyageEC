@@ -35,7 +35,7 @@
         <p style="text-align: right">
         20XX/X/X&emsp;&emsp;&emsp;</p> -->
         <?php 
-        $id = $_GET['id'];
+        $id = $_SESSION['user_id'];
         require '../../common/php/reservation.php';?>
         <br>
         <br>
