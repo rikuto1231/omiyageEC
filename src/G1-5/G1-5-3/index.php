@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="../../common/css/header.css">
     <?php require '../..//common/php/DB.php'; ?>
+    <script src="../../common/js/button.js"></script>
 </head>
 <body>
     <header>
