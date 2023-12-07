@@ -30,7 +30,6 @@
         $id = $_SESSION['user_id'];
        require '../../common/php/parsonal.php';
        ?>
-        
        <?php         
                 // <!-- // お名前 -->
         // echo '<div class="form-group">';
@@ -106,13 +105,10 @@
         // echo '<div>';
 
         ?>
-
-        <form action="">
-        <button class="henko">変更</button>
-        </form>
         <br>
-        <button class="modoru" onclick="location.href="/omiyageEC/src/G1-1/G1-1/index.php"">マイページに戻る</button>
+        <button class="modoru" onclick="location.href='/omiyageEC/src/G1-1/index.php'">マイページに戻る</button>
         </div>
+        </form>
         
 </body>
 </html>
