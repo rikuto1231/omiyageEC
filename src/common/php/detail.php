@@ -31,7 +31,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
             echo '<p>' . $row['prefecture'] . '<br>' . $row['merchandise_name'] . '</p>';
             echo '</div>';
 
-            echo '<form action="/omiyageEC/src/common/php/cart_check.php" method="post">';  // GET から POST に変更
+            echo '<form action="/omiyageEC/src/common/php/cart_add.php" method="post">';  
 
             echo '<div class="item">
                     <img src="/omiyageEC/src/common/img/'.$row['path'].'" alt="代替テキスト" width="300px" height="200px">
@@ -65,7 +65,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
             echo '<p>' . $row['prefecture'] . '<br>' . $row['merchandise_name'] . '</p>';
             echo '</div>';
 
-            echo '<form action="/omiyageEC/src/common/php/cart_check.php" method="post">';  // GET から POST に変更
+            echo '<form action="/omiyageEC/src/common/php/purchase.php" method="post">';  
 
             echo '<div class="item">
                     <img src="/omiyageEC/src/common/img/'.$row['path'].'" alt="代替テキスト" width="300px" height="200px">

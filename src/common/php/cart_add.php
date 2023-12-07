@@ -21,12 +21,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
             return;
         }
 
-        // カートにアイテムを追加する
+        // カートにアイテムを追加
         $cartInsertResult = insertCartItem($pdo, $merchandise_id);
 
         if ($cartInsertResult) {
             // カートへの追加が成功した場合の処理
-            header("Location: cart.php"); // カートページにリダイレクト
+            header("Location: 有効URLに変更"); // カートページにリダイレクト
             exit();
         } else {
             // カートへの追加が失敗した場合の処理
