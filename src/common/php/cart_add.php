@@ -1,19 +1,19 @@
 <?php
 require 'DB.php';
 
-// 出力バッファリングを有効にする
+// 出力バッファリングを有効化
 ob_start();
 
-// POSTは受け取れている
+
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $pdo = getDatabaseConnection(); 
 
-    // 商品IDを受け取る
+    // 商品IDを受け取り
     $merchandise_id = isset($_POST['merchandise_id']) ? $_POST['merchandise_id'] : null;
 
     if ($merchandise_id !== null) {
 
-        // 隠しフィールドの商品情報を取得
+        // 隠しフィールドの情報を取得
         // SESSIONのuser_idが命名あってるか後で確認。SESSIONがここまで流れてない
         $user_id = $_POST['user_id'];
 
