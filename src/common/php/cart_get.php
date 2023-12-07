@@ -21,6 +21,8 @@ if (isset($_SESSION['user_id'])) {
 
     // カートに商品が入っている場合
     if ($products) {
+        $subtotal = 0; // 小計初期化
+
         foreach ($products as $product) {
             echo '<div class="product">';
             echo '<img class="img_product" src="/omiyageEC/src/common/img/' . $product['path'] . '" width="100" height="100">';
@@ -38,10 +40,33 @@ if (isset($_SESSION['user_id'])) {
             echo '<input type="hidden" name="cart_id" value="' . $product['cart_id'] . '">';
             echo '<button type="submit" class="delete_button">削除</button>';
             echo '</form>';
+
+            // 小計を更新
+            $subtotal += $product['price'] * $product['quantity'];
             
             echo '</div>';
             echo '</div>';
         }
+
+        // 付与ポイントの計算
+        $rewardPoints = floor($subtotal / 100);
+
+        // 合計金額の計算（送料を追加）
+        $totalAmount = $subtotal + 300;
+
+
+
+        echo '<form action="../G1-4-3/index.php">';
+        echo '<div id="num_output">';
+        echo '<h4>付与ポイント: ' . $rewardPoints . ' ポイント</h4>';
+        echo '<p>小計（税込）: ¥' . number_format($subtotal) . '</p>';
+        echo '<hr>';
+        echo '<p>送料(税込): ¥300</p>';
+        echo '<hr>';
+        echo '<h4>合計(税込): ¥' . number_format($totalAmount) . '</h4>';
+        echo '<button class="button_reg">ご購入手続き</button>';
+        echo '</div>';
+        echo '</form>';
     } else {
         echo "A";
     }
