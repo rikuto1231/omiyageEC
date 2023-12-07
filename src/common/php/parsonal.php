@@ -15,8 +15,8 @@ echo'<form action="/omiyageEC/src/common/php/personal_update.php" method="POST">
         echo '<label for="lastName">姓</label>';
                 //    <!-- テキスト位置調整用にid入れてます -->
         echo '<label for="firstName" id="firstName_title">名</label><br>' ;           
-        echo '<input type="text" id="lastName" name="lastName" class="form-control" value= ',$_SESSION['personal_family'],'>';         
-        echo '<input type="text" id="firstName" name="firstName" class="form-control" value= ',$_SESSION['personal_personal'],'>';
+        echo '<input type="text" id="lastName" name="lastName" class="form-control" value=',$_SESSION['personal_family'],'>';         
+        echo '<input type="text" id="firstName" name="firstName" class="form-control" value=',$_SESSION['personal_personal'],'>';
         echo '</div>';
 
 
