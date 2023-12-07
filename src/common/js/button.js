@@ -10,10 +10,6 @@ new Vue({
             if (this.quantity < 1) {
                 this.quantity = 1;
             }
-        },
-        onSubmit() {
-            // フォームの送信処理を防ぐ
-            return false;
         }
     }
 });
