@@ -15,7 +15,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if ($merchandise_id !== null) {
 
         // 隠しフィールドの商品情報を取得
-        // SESSIONのuser_idが命名あってるか後で確認
+        // SESSIONのuser_idが命名あってるか後で確認。SESSIONがここまで流れてない
         $user_id = $_SESSION['user_id'];
 
         // ユーザが選んだ商品数
