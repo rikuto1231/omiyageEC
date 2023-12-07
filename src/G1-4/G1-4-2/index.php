@@ -15,10 +15,12 @@ require 'DB.php';
 </head>
 <body>
     <header>
+        <?php require '/omiyageEC/src/common/php/DB.php'; ?>
     </header>
     <div id="product_detail">
         <h1 id="title_output"> ショッピングカート</h1>
 
+        <?php require '/omiyageEC/src/common/php/cart_get.php'; ?>
 
         <form action="../G1-4-3/index.php">
         <div id="num_output">

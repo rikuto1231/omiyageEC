@@ -1,7 +1,6 @@
 <?php
 
 
-require '/omiyageEC/src/common/php/DB.php';
 
 // ユーザIDの確認
 if (isset($_SESSION['user_id'])) {
