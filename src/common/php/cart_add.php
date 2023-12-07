@@ -1,7 +1,7 @@
 <?php
 require 'DB.php';
 
-// 出力バッファリングを有効化
+// 出力バッファリング有効化
 ob_start();
 
 
@@ -36,6 +36,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 }
 
-// 出力バッファをフラッシュして終了
+// 出力バッファをフラッシュ終了
 ob_end_flush();
 ?>
