@@ -1,6 +1,7 @@
 <!-- header.php -->
 
 <?php
+session_start();
     echo '<div class="sidebar">
         <img id="closeButton" src="/omiyageEC/src/common/img/close.png">
 
