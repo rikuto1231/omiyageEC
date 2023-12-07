@@ -134,7 +134,7 @@ function insertCartItem($pdo, $user_id, $merchandise_id,$quantity) {
     try {
         // カートにアイテムを追加するSQL文
         // 数量が固定なので後々対応が必要
-        $sql = "INSERT INTO Cart (user_id, merchandise_id, quantity) VALUES (:user_id, :merchandise_id, :quantity,0)";
+        $sql = "INSERT INTO Cart (user_id, merchandise_id, quantity,purchased) VALUES (:user_id, :merchandise_id, :quantity,0)";
 
         // プリペアドステートメントを作成
         $stmt = $pdo->prepare($sql);

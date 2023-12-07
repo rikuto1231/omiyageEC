@@ -5,7 +5,7 @@
 require 'DB.php';
 
 
-
+// POSTは受け取れている
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $pdo = getDatabaseConnection(); 
 

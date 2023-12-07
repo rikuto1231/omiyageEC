@@ -102,8 +102,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
             foreach ($row as $key => $value) {
                 echo '<input type="hidden" name="' . $key . '" value="' . $value . '">';
             }
-            echo '<button type="button" class="homebutton" onclick="location.href=\'../G1-4-1/index.php\'">検索ホームに戻る</button>
-                </div>';
+            echo '<button type="button" class="homebutton" onclick="location.href=\'/omiyageEC/src/G1-4/G1-4-1/index.php\'">検索ホームに戻る</button>';
+
+            echo '</div>';
 
             echo '</form>';
             echo '</div>';
