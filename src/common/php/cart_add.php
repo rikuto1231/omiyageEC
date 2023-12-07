@@ -22,7 +22,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 
         // カートにアイテムを追加(引数を対応させる)
-        $cartInsertResult = insertCartItem($pdo, $user_id, $merchandise_id. $quantity);
+        $cartInsertResult = insertCartItem($pdo, $user_id, $merchandise_id, $quantity);
 
         if ($cartInsertResult) {
             // カートへの追加が成功した場合の処理
