@@ -130,13 +130,11 @@ function sql_search_id($pdo, $id) {
 }
 
 // 商品カート追加API
-function insertCartItem($pdo, $merchandise_id) {
+function insertCartItem($pdo, $user_id, $merchandise_id) {
     try {
         // カートにアイテムを追加するSQL文
-        $sql = "INSERT INTO Cart (user_id, merchandise_id, quantity) VALUES (:user_id, :merchandise_id, 1)";
-
-        // 仮でユーザIDを1。実際にはログインユーザのIDを使用
-        $user_id = 1;
+        // 数量が固定なので後々対応が必要
+        $sql = "INSERT INTO Cart (user_id, merchandise_id, quantity) VALUES (:user_id, :merchandise_id, 1,0)";
 
         // プリペアドステートメントを作成
         $stmt = $pdo->prepare($sql);

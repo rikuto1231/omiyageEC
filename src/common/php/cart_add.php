@@ -3,26 +3,25 @@
 
 
 // GETかPOSTか選定する
-if ($_SERVER['REQUEST_METHOD'] === 'GET') {
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $pdo = getDatabaseConnection(); 
 
     // 商品IDを受け取る
-    $merchandise_id = isset($_GET['merchandise_id']) ? $_GET['merchandise_id'] : null;
+    $merchandise_id = isset($_POST['merchandise_id']) ? $_POST['merchandise_id'] : null;
 
     if ($merchandise_id !== null) {
-        // 商品情報を取得
-        $result = sql_search_id($pdo, $merchandise_id);
 
-        if ($result && count($result) > 0) {
-            $row = $result[0]; // 最初の行
-        } else {
-            // 商品情報が見つからない
-            echo '<p>指定された商品は見つかりません。</p>';
-            return;
-        }
+        // 隠しフィールドの商品情報を取得
+        // SESSIONのuser_idが命名あってるか後で確認
+        $user_id = $_SESSION['user_id'];
 
-        // カートにアイテムを追加
-        $cartInsertResult = insertCartItem($pdo, $merchandise_id);
+        // ユーザが選んだ商品数
+        $quantity = $_SESSION[''];
+
+
+
+        // カートにアイテムを追加(引数を対応させる)
+        $cartInsertResult = insertCartItem($pdo, $user_id, $merchandise_id. $quantity);
 
         if ($cartInsertResult) {
             // カートへの追加が成功した場合の処理
