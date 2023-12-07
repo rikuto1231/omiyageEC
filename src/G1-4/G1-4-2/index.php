@@ -15,7 +15,7 @@ require '../../common/php/DB.php';
 </head>
 <body>
     <header>
-        <?php require '/omiyageEC/src/common/php/DB.php'; ?>
+        <?php require '/omiyageEC/src/common/php/header.php'; ?>
     </header>
     <div id="product_detail">
         <h1 id="title_output"> ショッピングカート</h1>
