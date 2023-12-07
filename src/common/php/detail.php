@@ -44,8 +44,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
 
                     <div id="app">
                         <div>数量: {{ quantity }}</div>
-                        <button @click="changeQuantity(-1)" disabled>-</button>
-                        <button @click="changeQuantity(1)" disabled>+</button>
+                        <button type="button" @click="changeQuantity(-1)" >-</button>
+                        <button type="button" @click="changeQuantity(1)" >+</button>
                         <!-- 隠しフィールドに数量を追加 -->
                         <input type="hidden" name="quantity" v-model="quantity">
                     </div>                  
