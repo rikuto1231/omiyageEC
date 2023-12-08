@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-// DB
+require 'DB.php';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
@@ -21,10 +21,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 
 
-        // カートの中にユーザの商品が入っているかチェック
-        $checkCartQuery = "SELECT c.*, m.merchandise_name, m.path, m.price, m.stock FROM Cart c
-        JOIN Merchandise m ON c.merchandise_id = m.merchandise_id
-        WHERE c.user_id = :user_id AND c.purchased = 0";
+    $checkCartQuery = "SELECT c.*, m.merchandise_name, m.path, m.price, m.stock 
+    FROM Cart c
+    JOIN Merchandise m ON c.merchandise_id = m.merchandise_id
+    LEFT JOIN Purchase p ON c.cart_id = p.cart_id
+    WHERE c.user_id = :user_id AND (c.purchased = 0 OR (p.cart_id IS NOT NULL AND c.cart_id = p.cart_id))";
+
 
         $checkCartStmt = $pdo->prepare($checkCartQuery);
         $checkCartStmt->bindParam(':user_id', $user_id, PDO::PARAM_INT);
@@ -36,8 +38,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 
     // 購入詳細情報をPurchaseDetテーブルに挿入
-    foreach ($cart_ids as $cart_id) {
-        insertPurchaseDetail($pdo,$purchaseId, $products['merchandise_id'], $products['quantity']);
+    foreach ($products as $product) {
+        insertPurchaseDetail($pdo,$products['purchase_id'], $product['merchandise_id'], $product['quantity']);
     }
 
     // カートから商品を削除
