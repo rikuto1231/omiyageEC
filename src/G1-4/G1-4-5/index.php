@@ -13,7 +13,7 @@
         <br><br><br><br><br><br><br>
         <h2>購入完了しました</h2>
         <br><br><br><br><br><br><br><br>
-        <button class="kakunin" onclick="location.href='../../G1-1/G1-1/index.php'">トップページに戻る</button>
+        <button class="kakunin" onclick="location.href='../../G1-1/index.php'">トップページに戻る</button>
     </div>
 </body>
 </html>

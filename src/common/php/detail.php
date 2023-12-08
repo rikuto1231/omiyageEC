@@ -54,7 +54,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
                         <!-- 隠しフィールドに数量を追加 -->
                         <input type="hidden" name="quantity" v-model="quantity">
                     </div>                  
-                    <a href="">レビュー</a>
+                    <a href="../../G1-7/G1-7-1/index.html">レビュー</a>
                 </div>';
 
             echo '<div class="button3">
@@ -65,7 +65,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
                 echo '<input type="hidden" name="' . $key . '" value="' . $value . '">';
             }
                 echo '<input type="hidden" name="user_id" value="' . $_SESSION['user_id'] . '">';
-            echo '<button type="button" class="homebutton" onclick="location.href=\'../G1-4-1/index.php\'">検索ホームに戻る</button>
+            echo '<button type="button" class="homebutton" onclick="location.href=\'../../G1-1/index.php\'">検索ホームに戻る</button>
                 </div>';
 
             echo '</form>';
