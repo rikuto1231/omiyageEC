@@ -46,6 +46,7 @@ if (isset($_SESSION['user_id'])) {
             
             echo '</div>';
             echo '</div>';
+
         }
 
         // 付与ポイントの計算
@@ -56,7 +57,7 @@ if (isset($_SESSION['user_id'])) {
 
 
 
-        echo '<form action="../G1-4-3/index.php">';
+        echo '<form action="/omiyageEC/src/common/php/purchaseCart.php" method="post">';
         echo '<div id="num_output">';
         echo '<h4>付与ポイント: ' . $rewardPoints . ' ポイント</h4>';
         echo '<p>小計（税込）: ¥' . number_format($subtotal) . '</p>';
@@ -64,9 +65,10 @@ if (isset($_SESSION['user_id'])) {
         echo '<p>送料(税込): ¥300</p>';
         echo '<hr>';
         echo '<h4>合計(税込): ¥' . number_format($totalAmount) . '</h4>';
-        echo '<button class="button_reg">ご購入手続き</button>';
+        echo '<button type="submit" class="button_reg" name="purchase">ご購入手続き</button>';
         echo '</div>';
         echo '</form>';
+        
     } else {
         echo "A";
     }
