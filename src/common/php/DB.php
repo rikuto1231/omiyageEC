@@ -233,6 +233,57 @@ function insertPurchase($pdo, $user_id, $cart_id, $purpose_date) {
     }
 }
 
+// 購入詳細追加
+function insertPurchaseDetail($pdo, $purchaseId, $merchandiseId, $quantity) {
+    try {
+        // PurchaseDetailテーブルに挿入するSQL文
+        $sql = "INSERT INTO PurchaseDetail (purchase_id, merchandise_id, quantity) VALUES (:purchaseId, :merchandiseId, :quantity)";
+        
+        // SQLステートメントを準備
+        $stmt = $pdo->prepare($sql);
+
+        // パラメータをバインド
+        $stmt->bindParam(':purchaseId', $purchaseId, PDO::PARAM_INT);
+        $stmt->bindParam(':merchandiseId', $merchandiseId, PDO::PARAM_INT);
+        $stmt->bindParam(':quantity', $quantity, PDO::PARAM_INT);
+
+        // SQLを実行
+        $stmt->execute();
+
+        // 成功した場合はtrueを返す
+        return true;
+    } catch (PDOException $e) {
+        // エラー処理（適切に処理してください）
+        echo "購入詳細情報の挿入に失敗しました：" . $e->getMessage();
+        return false;
+    }
+}
+
+
+function markCartAsPurchased($pdo, $cartId) {
+    try {
+        // 購入済みフラグを立てるSQL文
+        $sql = "UPDATE Cart SET purchased = 1 WHERE cart_id = :cartId";
+        
+        // SQLステートメントを準備
+        $stmt = $pdo->prepare($sql);
+
+        // パラメータをバインド
+        $stmt->bindParam(':cartId', $cartId, PDO::PARAM_INT);
+
+        // SQLを実行
+        $stmt->execute();
+
+        // 成功した場合はtrueを返す
+        return true;
+    } catch (PDOException $e) {
+        // エラー処理（適切に処理してください）
+        echo "カートの更新に失敗しました：" . $e->getMessage();
+        return false;
+    }
+}
+
+
 
 
 
