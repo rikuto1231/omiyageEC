@@ -20,7 +20,7 @@ require '../../common/php/DB.php';
     <div id="product_detail">
         <h1 id="title_output"> ショッピングカート</h1>
 
-        <?php require '../../common/php/cart_get.php'; ?>
+        <?php require '../../common/php/cart_output.php'; ?>
 
         <button class="button_next" onclick="location.href=\'../../G1-5/G1-5-2/index.php\'">ショッピングを続ける</button>
 
