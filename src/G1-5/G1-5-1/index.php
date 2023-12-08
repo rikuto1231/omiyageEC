@@ -71,6 +71,7 @@
                         <label :for="prefecture.id">{{ prefecture.name }}</label><br>
                     </div>
                 </div>
+                
             </div>
         </div>
 
