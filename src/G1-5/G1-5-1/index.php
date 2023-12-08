@@ -72,6 +72,7 @@
                         <form action="">
                             <button class="kensaku">検索</button>
                         </form>
+                        <p class="tojiru"><a href="../G1-4-2/index.php">閉じる</a></p>
                     </div>
                 </div>
             </div>
