@@ -206,18 +206,18 @@ function deleteCartItem($pdo, $cart_id) {
 }
 
 // 購入テーブル追加
-function insertPurchase($pdo, $user_id, $merchandise_id, $number) {
+function insertPurchase($pdo, $user_id, $cart_id, $purpose_date) {
     try {
         // 購入情報を挿入するSQL文
-        $sql = "INSERT INTO Purchase (user_id, merchandise_id, number) VALUES (:userId, :merchandiseId, :number)";
+        $sql = "INSERT INTO Purchase (user_id, cart_id, purpose_date) VALUES (:userId, :cartId, :purposeDate)";
         
         // SQLステートメントを準備
         $stmt = $pdo->prepare($sql);
 
         // パラメータをバインド
         $stmt->bindParam(':userId', $user_id, PDO::PARAM_INT);
-        $stmt->bindParam(':merchandiseId', $merchandise_id, PDO::PARAM_INT);
-        $stmt->bindParam(':number', $number, PDO::PARAM_INT);
+        $stmt->bindParam(':cartId', $cart_id, PDO::PARAM_INT);
+        $stmt->bindParam(':purposeDate', $purpose_date, PDO::PARAM_STR);
 
         // SQLを実行
         $stmt->execute();
