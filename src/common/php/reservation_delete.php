@@ -14,5 +14,5 @@
     exit();
 
     // 出力バッファをフラッシュ終了
-ob_end_flush();
+    ob_end_flush();
 ?>
