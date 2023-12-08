@@ -92,6 +92,7 @@ echo'<form action="/omiyageEC/src/common/php/personal_update.php" method="POST">
         echo '<script src="script.js"></script>';
 
         echo '<div>';
+        echo '<input type="hidden" name="id" value="',$row['user_id'],'">';
         echo'<button class="henko" type="submit">変更</button>';
         echo '</form>';
         }
