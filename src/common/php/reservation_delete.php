@@ -8,4 +8,3 @@
     header('Location: ../../G1-3/G1-3-5/index.php');
     exit();
 ?>
-        
