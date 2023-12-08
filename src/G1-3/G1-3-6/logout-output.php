@@ -18,6 +18,8 @@
         }
         
     ?>
+    <br>
+    <button class="modoru" onclick="location.href='../../G1-2/G1-2-1/index.php'">戻る</button>
 </div>
 </body>
 </html>
