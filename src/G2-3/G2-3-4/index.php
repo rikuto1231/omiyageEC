@@ -16,7 +16,7 @@
     <?php
    require '../../common/php/DB.php';
    $pdo = getDatabaseConnection();
-   $sql=$pdo->prepare('update Merchandise set merchandise_name=?, prefectures=?, category=?, brand=?, price=?, stock=? where merchandise_id=?');
+   $sql=$pdo->prepare('update Merchandise set merchandise_name=?, prefecture=?, category=?, brand=?, price=?, stock=? where merchandise_id=?');
    $sql->execute([$_POST['merchandise_name'],$_POST['prefectures'],$_POST['category'],$_POST['brand'],$_POST['price'],$_POST['stock'],$_POST['id']]);
    $sql=$pdo->prepare('select * from Merchandise where merchandise_id=?');
    $sql->execute([$_POST['id']]);
@@ -29,7 +29,7 @@
    echo'<p>',$row['merchandise_name'],'</p>';
    echo'</td></tr>';
    echo'<tr><td class="td1">都道府県</td><td class="td2">';
-   echo'<p>',$row['prefectures'],'</p>';
+   echo'<p>',$row['prefecture'],'</p>';
    echo'</td></tr>';
    echo'<tr><td class="td1">カテゴリ</td><td class="td2">';
    echo'<p>',$row['category'],'</p>';
