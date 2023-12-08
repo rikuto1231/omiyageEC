@@ -57,7 +57,7 @@ if (isset($_SESSION['user_id'])) {
 
 
 
-        echo '<form action="/omiyageEC/src/common/php/purchaseCart.php" method="post">';
+        echo '<form action="/omiyageEC/src/common/php/purchase.php" method="post">';
         echo '<div id="num_output">';
         echo '<h4>付与ポイント: ' . $rewardPoints . ' ポイント</h4>';
         echo '<p>小計（税込）: ¥' . number_format($subtotal) . '</p>';
