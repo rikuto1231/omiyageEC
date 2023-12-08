@@ -64,7 +64,7 @@ try {
     session_destroy();
 
     // 登録が成功したら遷移先にリダイレクト
-    header('Location: ../../G1-2/G1-2-6/index.php');
+    header('Location: ../../G1-1/G1-1-6/index.php');
 } catch (PDOException $e) {
     die("データベースエラー: " . $e->getMessage());
 }

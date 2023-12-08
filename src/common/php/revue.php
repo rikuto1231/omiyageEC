@@ -1,7 +1,7 @@
 <?php require 'revue_search.php' ?>
     <br>
     <div id="revew">
-    <h2><img src="../../G1-1/img/user.png" alt="代替テキスト"width="7%" height="14%">
+    <h2><img src="../../G1-2/img/user.png" alt="代替テキスト"width="7%" height="14%">
     <!-- ユーザ名表示 -->
     <br>
     <!-- 日付表示 -->
@@ -14,4 +14,3 @@
     <div id="fonts"><!-- 日付表示 --><br><!-- レビュー内容表示 --></div>
     </div>
     </div>
-    

@@ -106,8 +106,8 @@
 
         ?>
         <br>
-        <form action="../../G1-1/index.php">
-        <button class="modoru" onclick="location.href='../../G1-1/index.php'">検索トップに戻る</button>
+        <form action="../../G1-2/index.php">
+        <button class="modoru" onclick="location.href='../../G1-2/index.php'">検索トップに戻る</button>
         </form>
         </div>
         

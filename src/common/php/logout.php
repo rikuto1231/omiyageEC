@@ -19,7 +19,7 @@
         echo 'すでにログアウトしています。';
     }
     ?>
-    <button class="btn2" onclick="location.href='../../G1-1/index.php'">戻る</button>
+    <button class="btn2" onclick="location.href='../../G1-2/index.php'">戻る</button>
 
 </body>
 </html>

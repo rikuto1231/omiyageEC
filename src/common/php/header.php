@@ -15,9 +15,7 @@
         <hr>
         <p><a href="/omiyageEC/src/G1-3/G1-3-5/index.php">予約確認</a></p>
         <hr>
-        <p><a href="">ログイン</a></p>
-        <hr>
-        <p><a href="/omiyageEC/src/common/php/logout.php">ログアウト</a></p>
+        <p><a href="/omiyageEC/src/G1-3/G1-3-6/logout-input.php">ログアウト</a></p>
         </div>
         <img id="toggleButton" src="/omiyageEC/src/common/img/user.png" width="40" height="40">
         <a href="/omiyageEC/src/common/php/cart_check.php">
