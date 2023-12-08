@@ -4,8 +4,8 @@
     echo '<div class="sidebar">
         <img id="closeButton" src="/omiyageEC/src/common/img/close.png">
 
-        <hr>
-        <p>○○○○さん</p>
+        <hr>';
+        echo'<p>',$_SESSION['personal_personal'],'さん</p>
         <hr>
         <p><a href="/omiyageEC/src/G1-3/G1-3-4/index.php">ポイント</a></p>
         <hr>
