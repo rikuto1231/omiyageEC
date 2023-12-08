@@ -69,10 +69,6 @@
                     <div v-for="prefecture in prefectures" :key="prefecture.id" class="Prefecture">
                         <input type="checkbox" :id="prefecture.id" :name="prefecture.id" v-model="selectedPrefectures" :value="prefecture.name" />
                         <label :for="prefecture.id">{{ prefecture.name }}</label><br>
-                        <form action="">
-                            <button class="kensaku">検索</button>
-                        </form>
-                        <p class="tojiru"><a href="../G1-4-2/index.php">閉じる</a></p>
                     </div>
                 </div>
             </div>
