@@ -56,8 +56,3 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 }
 
 
-// カートクリア関数呼び出し
-function clearCart($userId) {
-    //カートをクリアする処理
-}
-?>
