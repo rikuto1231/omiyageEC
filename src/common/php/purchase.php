@@ -21,7 +21,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 
 
-    $checkCartQuery = "SELECT c.*, m.merchandise_name, m.path, m.price, m.stock p.purchase_id
+    $checkCartQuery = "SELECT c.*, m.merchandise_name, m.path, m.price, m.stock, p.purchase_id
     FROM Cart c
     JOIN Merchandise m ON c.merchandise_id = m.merchandise_id
     LEFT JOIN Purchase p ON c.cart_id = p.cart_id
