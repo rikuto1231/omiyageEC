@@ -1,8 +1,6 @@
 <?php session_start();?>
 <!-- パス・URL固定記述式になっているので
 とりあえずそれに合わせる -->
-<?php session_start();
-?>
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -15,7 +13,6 @@
 <body>
     <header>
         <?php 
-        $id = $_SESSION['user_id'];
         require '../common/php/header.php'; ?>
     </header>
     <div class="main">
@@ -112,6 +109,6 @@
 </div>
     </div>
     <script src="../common/js/side_ber.js"></script>
-    <a href="../../G1-4-3/index.php">確認用</a><!--G1-4-3確認用-->
+    <a href="../G1-4/G1-4-3/index.php">G1-4-3確認用</a><!--G1-4-3確認用-->
 </body>
 </html>

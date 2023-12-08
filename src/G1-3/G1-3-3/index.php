@@ -14,12 +14,33 @@
     <header>
 
         <?php 
-        $id= $_GET['id'];
+        
         require '../../common/php/header.php'; ?>
 
     </header>
+     <div class="main">
+   <form action="history.php" method="get">
+    <br>
+    <br>
+    <h1 style="text-align: center">
+    購入履歴</h1>
+    <br> 
 
-    <?php require '../../common/php/history.php'; ?>
+    <?php
+    $id = $_SESSION['user_id'];
+    require '../../common/php/history.php'; ?>
+    </form>
+   
+    <br>
+    <br>
+    <br>
+    <form action="../../G1-1/index.php">
+    <button class="modoru" >戻る</button>
+    </form>
+    </div>
+    <script src="../../common/js/side_ber.js"></script>
+    
+   
     
     
     

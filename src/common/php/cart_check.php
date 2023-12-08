@@ -1,33 +1,46 @@
 <?php
 session_start();
-if ($_SERVER['REQUEST_METHOD'] === 'GET') {
-    // GETリクエストが送信された場合
-    // 接続
-    $pdo = getDatabaseConnection(); 
 
-    // 商品IDの取得
-    $merchandise_id = isset($_GET['merchandise_id']) ? $_GET['merchandise_id'] : null;
+require '../../common/php/DB.php'; 
 
-    // 商品IDが正確に送信されている時
-    if ($merchandise_id !== null) {
+// バッファリングを開始
+ob_start();
 
-        // DBから商品IDで検索して在庫数を取得
-        $stmt = $pdo->prepare("SELECT * FROM Merchandise WHERE merchandise_id = :merchandise_id");
-        $stmt->bindParam(':merchandise_id', $merchandise_id);
-        $stmt->execute();
-        $product = $stmt->fetch(PDO::FETCH_ASSOC);
+// ユーザIDの確認
+if (isset($_SESSION['user_id'])) {
+    // ユーザIDを取得
+    $user_id = $_SESSION['user_id'];
 
-        // 在庫数が0の場合に予約含み詳細ページに遷移
-        if ($product && $product['stock'] === 0) {
-            header("Location: /omiyageEC/src/G1-6/G1-6-1.php?merchandise_id=" . $merchandise_id);
-            exit();
-        } else {
-            header("Location: /omiyageEC/src/G1-5/G1-5-3.php?merchandise_id=" . $merchandise_id);
-            exit();
-        }
+    // カートの中に該当ユーザの商品が入っているかチェック
+    $pdo = getDatabaseConnection();  
+
+    // カートの中にユーザの商品が入っているかチェック
+    $checkCartQuery = "SELECT * FROM Cart WHERE user_id = :user_id AND purchased = 0";
+
+    $checkCartStmt = $pdo->prepare($checkCartQuery);
+    $checkCartStmt->bindParam(':user_id', $user_id, PDO::PARAM_INT);
+    $checkCartStmt->execute();
+
+    // 結果を受け取る
+    $cartItems = $checkCartStmt->fetchAll(PDO::FETCH_ASSOC);
+
+    // カートに商品が入っている場合
+    if ($cartItems) {
+        // バッファリングを終了し、出力をフラッシュ
+        ob_end_flush();
+        header('Location: /omiyageEC/src/G1-4/G1-4-2/index.php'); // 商品表示
+        exit();
     } else {
-        // ユーザーIDか商品IDが取得できない場合の処理
-        echo '商品IDが取得できません。';
+        // バッファリングを終了し、出力をフラッシュ
+        ob_end_flush();
+        header('Location: /omiyageEC/src/G1-4/G1-4-1/index.php'); // カートが空の表示
+        exit();
     }
+} else {
+    // バッファリングを終了し、出力をフラッシュ
+    ob_end_flush();
+    // ユーザIDがセッションに保存されていない場合（未ログインなど）
+    header('Location: ユーザIDがセッションに保存されていない場合の遷移先'); // 遷移先のURLを指定
+    exit();
 }
 ?>

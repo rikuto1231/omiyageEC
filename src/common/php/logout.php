@@ -1,4 +1,6 @@
-<?php session_start(); ?>
+<?php 
+// session_start();
+ ?>
 
 <!DOCTYPE html>
 <html>
@@ -16,6 +18,8 @@
     }else{
         echo 'すでにログアウトしています。';
     }
-?>
+    ?>
+    <button class="btn2" onclick="location.href='/omiyageEC/src/G1-2/G1-2-1/index.php'">戻る</button>
+
 </body>
 </html>

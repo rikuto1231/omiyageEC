@@ -129,6 +129,112 @@ function sql_search_id($pdo, $id) {
     }
 }
 
+// 商品カート追加API
+function insertCartItem($pdo, $user_id, $merchandise_id,$quantity) {
+    try {
+        // カートにアイテムを追加するSQL文
+        // 数量が固定なので後々対応が必要
+        $sql = "INSERT INTO Cart (user_id, merchandise_id, quantity,purchased) VALUES (:user_id, :merchandise_id, :quantity,0)";
+
+        // プリペアドステートメントを作成
+        $stmt = $pdo->prepare($sql);
+
+        // パラメータをバインド
+        $stmt->bindParam(':user_id', $user_id, PDO::PARAM_INT);
+        $stmt->bindParam(':merchandise_id', $merchandise_id, PDO::PARAM_INT);
+        $stmt->bindParam(':quantity', $quantity, PDO::PARAM_INT);
+
+        // クエリの実行
+        $result = $stmt->execute();
+
+        return $result;
+    } catch (PDOException $e) {
+        // エラーハンドリング
+        echo "エラー: " . $e->getMessage();
+        return false;
+    }
+}
+
+// 商品予約追加API
+function insertReservation($pdo, $user_id, $merchandise_id, $number) {
+    try {
+        // 予約情報を挿入するSQL文
+        $sql = "INSERT INTO Reservation (user_id, merchandise_id, number) VALUES (:userId, :merchandiseId, :number)";
+        
+        // SQLステートメントを準備
+        $stmt = $pdo->prepare($sql);
+
+        // パラメータをバインド
+        $stmt->bindParam(':userId', $user_id, PDO::PARAM_INT);
+        $stmt->bindParam(':merchandiseId', $merchandise_id, PDO::PARAM_INT);
+        $stmt->bindParam(':number', $number, PDO::PARAM_INT);
+
+        // SQLを実行
+        $stmt->execute();
+
+        // 予約IDを取得のデフォルト関数
+        $reservationId = $pdo->lastInsertId();
+
+        return $reservationId;
+    } catch (PDOException $e) {
+        // エラー処理（適切に処理してください）
+        echo "予約情報の挿入に失敗しました：" . $e->getMessage();
+        return false;
+    }
+}
+
+// カートアイテム削除API
+function deleteCartItem($pdo, $cart_id) {
+    try {
+        // カートからアイテムを削除するSQL文
+        $sql = "DELETE FROM Cart WHERE cart_id = :cart_id";
+
+        $stmt = $pdo->prepare($sql);
+
+    
+        $stmt->bindParam(':cart_id', $cart_id, PDO::PARAM_INT);
+
+        // クエリの実行
+        $result = $stmt->execute();
+
+        return $result;
+    } catch (PDOException $e) {
+        // エラーハンドリング
+        echo "エラー: " . $e->getMessage();
+        return false;
+    }
+}
+
+// 購入テーブル追加
+function insertPurchase($pdo, $user_id, $cart_id, $purpose_date) {
+    try {
+        // 購入情報を挿入するSQL文
+        $sql = "INSERT INTO Purchase (user_id, cart_id, purpose_date) VALUES (:userId, :cartId, :purposeDate)";
+        
+        // SQLステートメントを準備
+        $stmt = $pdo->prepare($sql);
+
+        // パラメータをバインド
+        $stmt->bindParam(':userId', $user_id, PDO::PARAM_INT);
+        $stmt->bindParam(':cartId', $cart_id, PDO::PARAM_INT);
+        $stmt->bindParam(':purposeDate', $purpose_date, PDO::PARAM_STR);
+
+        // SQLを実行
+        $stmt->execute();
+
+        // 購入IDを取得のデフォルト関数
+        $purchaseId = $pdo->lastInsertId();
+
+        return $purchaseId;
+    } catch (PDOException $e) {
+        // エラー処理（適切に処理してください）
+        echo "購入情報の挿入に失敗しました：" . $e->getMessage();
+        return false;
+    }
+}
+
+
+
 
 
 

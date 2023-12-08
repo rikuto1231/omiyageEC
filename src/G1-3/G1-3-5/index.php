@@ -20,10 +20,8 @@
         <br>
         <h1 style="text-align: left">
         &emsp;予約履歴</h1>
-  
         <br>
-        <br>
-        <p>〇〇〇〇〇</p>
+        <!-- <p>〇〇〇〇〇</p>
         <p style="text-align: right">
         数量&emsp;&emsp;&emsp;</p>
         <p>￥○○○</p>
@@ -35,11 +33,13 @@
         数量&emsp;&emsp;&emsp;</p>
         <p>￥○○○</p>
         <p style="text-align: right">
-        20XX/X/X&emsp;&emsp;&emsp;</p>
+        20XX/X/X&emsp;&emsp;&emsp;</p> -->
+        <?php 
+        $id = $_SESSION['user_id'];
+        require '../../common/php/reservation.php';?>
         <br>
         <br>
-        <br>
-        <button class="modoru" onclick="location.href='../../G1-1/G1-1/index.php'">戻る</button>
+        <button class="modoru" onclick="location.href='../../G1-1/index.php'">戻る</button>
         <script src="../../common/js/side_ber.js"></script>
     </div>
 </body>

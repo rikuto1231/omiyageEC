@@ -6,7 +6,7 @@
     // ポイント検索のsqlとphp処理
     $sql=$pdo->prepare('select * from Point where user_id=?');
     $sql->execute([$id]);
-   
+
     foreach ($sql as $row) {
         // 日付とポイント出力
         echo'<br>';

@@ -4,14 +4,14 @@
     echo '<div class="sidebar">
         <img id="closeButton" src="/omiyageEC/src/common/img/close.png">
 
+        <hr>';
+        echo'<p>',$_SESSION['personal_personal'],'さん</p>
         <hr>
-        <p>○○○○さん</p>
-        <hr>
-        <p><a href="/omiyageEC/src/G1-3/G1-3-4/index.php?id=',$id,'">ポイント</a></p>
+        <p><a href="/omiyageEC/src/G1-3/G1-3-4/index.php">ポイント</a></p>
         <hr>
         <p><a href="/omiyageEC/src/G1-3/G1-3-2/index.php">登録情報</a></p>
         <hr>
-        <p><a href="/omiyageEC/src/G1-3/G1-3-3/index.php"?id=',$id,'">購入履歴</a></p>
+        <p><a href="/omiyageEC/src/G1-3/G1-3-3/index.php">購入履歴</a></p>
         <hr>
         <p><a href="/omiyageEC/src/G1-3/G1-3-5/index.php">予約確認</a></p>
         <hr>
@@ -20,7 +20,7 @@
         <p><a href="/omiyageEC/src/common/php/logout.php">ログアウト</a></p>
         </div>
         <img id="toggleButton" src="/omiyageEC/src/common/img/user.png" width="40" height="40">
-        <a href="/omiyageEC/src/G1-5/G1-5-2/index.php">
+        <a href="/omiyageEC/src/common/php/cart_check.php">
         <img id="cart_button" src="/omiyageEC/src/common/img/cart.jpg" width="40" height="40">
         </a>
         <div id="search_all">
