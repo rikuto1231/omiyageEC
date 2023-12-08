@@ -12,6 +12,7 @@
         echo'<br>';
         echo'<br>';
         echo'<p>',$row['point_date'],'&emsp;&emsp;',$row['point_grant'],'ポイント付与</p>';
+        echo'<p>',$row['point_date'],'&emsp;&emsp;',$row['point_use'],'ポイント使用</p>';
         echo'<br>';
         echo'<br>';
     }
