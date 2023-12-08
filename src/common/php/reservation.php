@@ -14,11 +14,10 @@
         echo'<p class="a">￥',$row['price'],'　　　　数量：',$row['number'],'</p>';
         echo'<form action="../../common/php/reservation_delete.php" method="POST">';
         echo'<input type="hidden" name="mid" value="',$row['merchandise_id'],'">';
+        echo'<input type="hidden" name="id" value="',$row['user_id'],'">';
         echo'<p><button type="submit" class="delete">取消</button>','　　　　',$row['date'],'</p>';
         echo'</form>';
         echo'<br>';
         echo'<br>';
     }
-        
-
 ?>
