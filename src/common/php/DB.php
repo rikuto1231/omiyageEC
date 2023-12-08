@@ -205,6 +205,35 @@ function deleteCartItem($pdo, $cart_id) {
     }
 }
 
+// 購入テーブル追加
+function insertPurchase($pdo, $user_id, $merchandise_id, $number) {
+    try {
+        // 購入情報を挿入するSQL文
+        $sql = "INSERT INTO Purchase (user_id, merchandise_id, number) VALUES (:userId, :merchandiseId, :number)";
+        
+        // SQLステートメントを準備
+        $stmt = $pdo->prepare($sql);
+
+        // パラメータをバインド
+        $stmt->bindParam(':userId', $user_id, PDO::PARAM_INT);
+        $stmt->bindParam(':merchandiseId', $merchandise_id, PDO::PARAM_INT);
+        $stmt->bindParam(':number', $number, PDO::PARAM_INT);
+
+        // SQLを実行
+        $stmt->execute();
+
+        // 購入IDを取得のデフォルト関数
+        $purchaseId = $pdo->lastInsertId();
+
+        return $purchaseId;
+    } catch (PDOException $e) {
+        // エラー処理（適切に処理してください）
+        echo "購入情報の挿入に失敗しました：" . $e->getMessage();
+        return false;
+    }
+}
+
+
 
 
 

@@ -1,8 +1,8 @@
 <?php
 // session_start();
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    // カートから商品を取得
-    $cartItems = getCartItems($_SESSION['user_id']);
+    // カートID配列受け取り
+    $cart_ids = $_SESSION['cart_ids'];
 
     // 購入情報をPurchaseテーブルに挿入
     $purchaseId = insertPurchase($_SESSION['user_id']);
@@ -22,11 +22,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 
 
-// Purchaseテーブルに挿入する関数
-function insertPurchase($userId) {
-    // Purchaseテーブルに挿入
-    // 挿入が成功したら、挿入したレコードのpurchase_idを返す
-}
 
 // PurchaseDetテーブルに挿入する関数
 function insertPurchaseDetail($purchaseId, $merchandiseId, $quantity) {
