@@ -34,7 +34,7 @@
     <br>
     <br>
     <br>
-    <form action="../../G1-1/index.php">
+    <form action="../../G1-2/index.php">
     <button class="modoru" >戻る</button>
     </form>
     </div>

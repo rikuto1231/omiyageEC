@@ -15,7 +15,7 @@
         <hr>
         <p><a href="/omiyageEC/src/G1-3/G1-3-5/index.php">予約確認</a></p>
         <hr>
-        <p><a href="/omiyageEC/src/G1-2/G1-2-1/index.php">ログイン</a></p>
+        <p><a href="/omiyageEC/src/G1-1/G1-1-1/index.php">ログイン</a></p>
         <hr>
         <p><a href="/omiyageEC/src/common/php/logout.php">ログアウト</a></p>
         </div>

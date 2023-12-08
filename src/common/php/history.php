@@ -41,7 +41,7 @@ $pdo = getDatabaseConnection();
     echo  '<br>';
     echo  '<br>';
     echo  '<br>';
-    echo  '<button class="modoru" onclick="location.href=\'../../G1-1/G1-1/index.php\'">戻る</button>';
+    echo  '<button class="modoru" onclick="location.href=\'../../G1-2/G1-2/index.php\'">戻る</button>';
     echo  '</div>';
     echo  '<script src="../../common/js/side_ber.js"></script>';
     

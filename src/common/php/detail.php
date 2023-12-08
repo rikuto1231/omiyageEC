@@ -65,7 +65,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
                 echo '<input type="hidden" name="' . $key . '" value="' . $value . '">';
             }
                 echo '<input type="hidden" name="user_id" value="' . $_SESSION['user_id'] . '">';
-            echo '<button type="button" class="homebutton" onclick="location.href=\'../../G1-1/index.php\'">検索ホームに戻る</button>
+            echo '<button type="button" class="homebutton" onclick="location.href=\'../../G1-2/index.php\'">検索ホームに戻る</button>
                 </div>';
 
             echo '</form>';

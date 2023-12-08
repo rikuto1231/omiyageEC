@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/G1-2-2.css"/>
+    <link rel="stylesheet" href="css/G1-1-2.css"/>
     <title>会員ログイン</title>
 </head>
 <body>
@@ -29,6 +29,6 @@
         
     </form>
 
-    <button class="btn2" onclick="location.href='../G1-2-1/index.php'">戻る</button>
+    <button class="btn2" onclick="location.href='../G1-1-1/index.php'">戻る</button>
 </body>
 </html>
