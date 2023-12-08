@@ -13,7 +13,7 @@
         <br><br><br><br><br><br><br>
         <h2>予約完了しました</h2>
         <br><br><br><br><br><br><br><br>
-        <form action="/omiyageEC/src/G1-1/index.php">
+        <form action="/omiyageEC/src/G1-2/index.php">
         <button class="kakunin">トップページに戻る</button>
         </form>
     </div>
