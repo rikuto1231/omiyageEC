@@ -9,7 +9,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $pdo = getDatabaseConnection(); 
 
     // カートID配列受け取り
-    $cart_ids = $_SESSION['cart_ids'];
+    $cart_ids = $_POST['cart_ids'];
     $user_id = $_SESSION['user_id'];
 
 
@@ -21,7 +21,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 
 
-    $checkCartQuery = "SELECT c.*, m.merchandise_name, m.path, m.price, m.stock 
+    $checkCartQuery = "SELECT c.*, m.merchandise_name, m.path, m.price, m.stock p.purchase_id
     FROM Cart c
     JOIN Merchandise m ON c.merchandise_id = m.merchandise_id
     LEFT JOIN Purchase p ON c.cart_id = p.cart_id
