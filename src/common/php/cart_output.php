@@ -57,7 +57,7 @@ if (isset($_SESSION['user_id'])) {
 
 
 
-        echo '<form action="/omiyageEC/src/G1-4-3.php" method="post">';
+        echo '<form action="/omiyageEC/src/G1-4/G1-4-3.php" method="post">';
 
         foreach ($products as $product) {
             echo '<input type="hidden" name="cart_ids[]" value="' . $product['cart_id'] . '">';
