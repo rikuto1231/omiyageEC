@@ -9,7 +9,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $pdo = getDatabaseConnection(); 
 
     // カートID配列受け取り
-    $cart_ids = $_SESSION['cart_ids'];
+    $cart_ids = $_POST['cart_ids'];
     $user_id = $_SESSION['user_id'];
 
 
@@ -17,11 +17,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     $purchaseDate = date("Y-m-d");
     foreach ($cart_ids as $cart_id) {
-        $purchaseIds[] = insertPurchase($pdo, $_SESSION['user_id'], $cart_id, $purchaseDate);
+        $purchaseIds[] = insertPurchase($pdo, $user_id, $cart_id, $purchaseDate);
     }
 
 
-    $checkCartQuery = "SELECT c.*, m.merchandise_name, m.path, m.price, m.stock 
+    $checkCartQuery = "SELECT c.*, m.merchandise_name, m.path, m.price, m.stock p.purchase_id
     FROM Cart c
     JOIN Merchandise m ON c.merchandise_id = m.merchandise_id
     LEFT JOIN Purchase p ON c.cart_id = p.cart_id
@@ -35,18 +35,23 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         // 結果を受け取る
         $products = $checkCartStmt->fetchAll(PDO::FETCH_ASSOC);
 
-
+        $pdo = getDatabaseConnection(); 
 
     // 購入詳細情報をPurchaseDetテーブルに挿入
     foreach ($products as $product) {
-        insertPurchaseDetail($pdo,$products['purchase_id'], $product['merchandise_id'], $product['quantity']);
+        insertPurchaseDetail($pdo,$product['purchase_id'], $product['merchandise_id'], $product['quantity']);
     }
 
-    // カートから商品を削除
-    clearCart($_SESSION['user_id']);
+
+
+    foreach ($cart_ids as $cart_id) {
+        // カートから商品を購入済み
+        markCartAsPurchased($pdo, $cart_id);
+    }
+    
 
     // 購入完了ページへリダイレクト
-    header("Location: 適切なURL入れる");
+    header("Location: ");
     exit();
 }
 
