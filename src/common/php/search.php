@@ -5,7 +5,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     $pdo = getDatabaseConnection(); 
     // 情報がなかった時の代替え文字列
     $search = isset($_GET['search_box']) ? $_GET['search_box'] : '';
-    $result = sql_search($pdo, $search,false,false,false);
+
+    $category = isset($_GET['category']) ? $_GET['category'] : false; 
+    $priceRange = isset($_GET['priceRange']) ? $_GET['priceRange'] : false; 
+    $prefecture = isset($_GET['prefecture']) ? $_GET['prefecture'] : false; 
+
+    $result = sql_search($pdo, $search, $category, $priceRange, $prefecture);
     // return情報
     foreach ($result as $row) {
         echo '<div class="item">';

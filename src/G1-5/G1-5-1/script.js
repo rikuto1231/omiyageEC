@@ -76,5 +76,28 @@ new Vue({
         selectedPrefecture: 0  
     },
     methods: {
+        submitForm() {
+            // フォームデータを取得
+            var formData = new FormData(document.getElementById('myForm'));
+
+            // 選択された値をフォームデータに追加
+            formData.append('selectedCategory', this.selectedCategory);
+            formData.append('selectedPriceRange', this.selectedPriceRange);
+            formData.append('selectedPrefecture', this.selectedPrefecture);
+
+            // フォームをサブミット
+            fetch('/omiyageEC/src/G1-5/G1-5-2/index.php', {
+                method: 'GET',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                // サーバーからの応答を処理
+                console.log(data);
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+        }
     }
 });
