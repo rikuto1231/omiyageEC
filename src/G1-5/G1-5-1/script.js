@@ -77,19 +77,33 @@ new Vue({
     },
     methods: {
         submitForm() {
-            // 選択された値をクエリ文字列に追加
-            const queryString = `?selectedCategory=${this.selectedCategory}&selectedPriceRange=${this.selectedPriceRange}&selectedPrefecture=${this.selectedPrefecture}`;
+            // 選択された値をオブジェクトにまとめる
+            const data = {
+                search_box: this.search_box,
+                selectedCategory: this.selectedCategory,
+                selectedPriceRange: this.selectedPriceRange,
+                selectedPrefecture: this.selectedPrefecture
+            };
     
             // フォームをサブミット
-            fetch(`/omiyageEC/src/G1-5/G1-5-2/index.php${queryString}`, {
-                method: 'GET',
+            fetch('/omiyageEC/src/G1-5/G1-5-2/index.php', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(data)
             })
             .then(response => response.json())
             .then(data => {
                 // サーバーからの応答を処理
                 console.log(data);
+            })
+            .catch(error => {
+                console.error('Error:', error);
             });
         }
     }
+    
+    
     
 });
