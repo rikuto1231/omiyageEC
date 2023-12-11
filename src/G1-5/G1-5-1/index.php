@@ -35,32 +35,32 @@
             <img id="cart_button" src="/omiyageEC/src/common/img/cart.jpg" width="40" height="40">
         </a>
         <div id="search_all">
-        <form id="myForm" method="get" action="/omiyageEC/src/G1-5/G1-5-2/index.php" @submit.prevent="submitForm">
+    <form id="myForm" method="get" action="/omiyageEC/src/G1-5/G1-5-2/index.php" @submit.prevent="submitForm">
                 <input type="text" class="search_box" placeholder="検索" value="" name="search_box">
                 <button class="conditions_img">
                     <img src="/omiyageEC/src/common/img/search.png" width="20" height="20">
                 </button>
             
         </div>
-        <div id="menu_all">
-            <div class="container">
+            <div id="menu_all">
+                <div class="container">
+                </div>
+                <h2>カテゴリ</h2>
+            <select id="category" v-model="selectedCategory">
+                <option v-for="category in categories" :key="category.id" :value="category.id">{{ category.name }}</option>
+            </select>
+
+            <h2>価格</h2>
+            <select id="priceRange" v-model="selectedPriceRange">
+                <option v-for="priceRange in priceRanges" :key="priceRange.id" :value="priceRange.id">{{ priceRange.name }}</option>
+            </select>
+
+            <h2>都道府県</h2>
+            <select id="prefecture" v-model="selectedPrefecture">
+                <option v-for="prefecture in prefectures" :key="prefecture.id" :value="prefecture.id">{{ prefecture.name }}</option>
+            </select>
             </div>
-            <h2>カテゴリ</h2>
-        <select id="category" v-model="selectedCategory">
-            <option v-for="category in categories" :key="category.id" :value="category.id">{{ category.name }}</option>
-        </select>
-
-        <h2>価格</h2>
-        <select id="priceRange" v-model="selectedPriceRange">
-            <option v-for="priceRange in priceRanges" :key="priceRange.id" :value="priceRange.id">{{ priceRange.name }}</option>
-        </select>
-
-        <h2>都道府県</h2>
-        <select id="prefecture" v-model="selectedPrefecture">
-            <option v-for="prefecture in prefectures" :key="prefecture.id" :value="prefecture.id">{{ prefecture.name }}</option>
-        </select>
         </div>
-    </div>
     </form>
     </header>
 
