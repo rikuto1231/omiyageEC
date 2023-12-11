@@ -1,5 +1,3 @@
-<?php session_start();
-?>
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -10,13 +8,12 @@
 </head>
 <body>
     <header>
-
+    </header>
         <div id="app">
         
             
             <div class="sidebar">
                 <img id="closeButton" src="/omiyageEC/src/common/img/close.png">
-
                 <hr>
                 <p>○○○○さん</p>
                 <hr>
@@ -33,12 +30,10 @@
                 <hr>
                 <p><a href="../../common/php/logout.php">ログアウト</a></p>
             </div>
-
             <img id="toggleButton" src="/omiyageEC/src/common/img/user.png" width="40" height="40">
             <a href="../../G1-5/G1-5-2/index.php">
                 <img id="cart_button" src="/omiyageEC/src/common/img/cart.jpg" width="40" height="40">
             </a>
-
             <div id="search_all">
                 <form method="get" action="/omiyageEC/src/G1-5/G1-5-2/index.php">
                     <input type="text" class="search_box" placeholder="検索" value="" name="search_box">
@@ -47,7 +42,6 @@
                     </button>
                 </form>
             </div>
-
             <div id="menu_all">
                 <div class="container">
                 </div>
@@ -56,27 +50,21 @@
                     <input type="checkbox" :id="category.id" :name="category.id" v-model="selectedCategories" :value="category.name" />
                     <label :for="category.id">{{ category.name }}</label>
                 </div>
-
                 <h2>価格</h2>
                 <div class="price" v-for="priceRange in priceRanges" :key="priceRange.id">
-                    <select>
-                    <option v-for="(item,key) in priceRanges" :value="priceRange.name" />
-                   {{ item }}</option>
-                </select>  
+                    <input type="checkbox" :id="priceRange.id" :name="priceRange.id" v-model="selectedPriceRanges" :value="priceRange.name" />
+                    <label :for="priceRange.id">{{ priceRange.name }}</label>
                 </div>
-
                 <!-- 都道府県の横並び表示 -->
                 <h2>都道府県</h2>
                 <div class="prefecture-container">
                     <div v-for="prefecture in prefectures" :key="prefecture.id" class="Prefecture">
                         <input type="checkbox" :id="prefecture.id" :name="prefecture.id" v-model="selectedPrefectures" :value="prefecture.name" />
-                        <label :for="prefecture.id">{{ prefecture.name }}</label><br>
+                        <label :for="prefecture.id">{{ prefecture.name }}</label>
                     </div>
                 </div>
-                
             </div>
         </div>
-
     </header>
         
     <script src="/omiyageEC/src/common/js/side_ber.js"></script>
