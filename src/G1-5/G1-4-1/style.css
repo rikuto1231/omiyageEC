@@ -1,0 +1,153 @@
+/* ページ全体に対するスタイル */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: hsl(0, 0%, 96%);
+
+}
+
+/* 上部header */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    z-index: 999;
+    overflow: auto; /* スクロール対応 */
+    height: 100vh; /* ビューポートの高さ全体*/
+    text-align: center;
+}
+
+.sidebar {
+    width: 0; /* 初期状態では非表示 */
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(188, 187, 187);
+    overflow-x: hidden;
+    transition: 0.3s; /* トランジション時間 */
+    z-index: 9999;
+}
+
+
+.sidebar p {
+    margin-left: 10px;
+}
+
+.sidebar.open {
+    width: 80%; /* 展開時の幅 */
+}
+
+
+#toggleButton{
+    border-radius: 50%; /* 円形のボタン */
+    width: 40px;
+    height: 40px;
+ /* 画像の白黒を反転 */
+}
+
+#closeButton{
+    margin-top: 8px;
+    margin-left: 8px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; /* 円形のボタン */
+    filter: invert(100%); /* 画像の白黒を反転 */
+}
+
+#listButton{
+    position: absolute;
+    right: 18%;
+    margin-top: 8px;
+    margin-right: 2px;
+    width: 40px;
+    height: 40px;
+    filter: invert(100%); /* 画像の白黒を反転 */
+}
+
+#addButton{
+    position: absolute;
+    right: 5%;
+    margin-top: 8px;
+    margin-right: 8px;
+    width: 40px;
+    height: 40px;
+    filter: invert(100%); /* 画像の白黒を反転 */
+}
+
+
+#menu_all {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto; 
+    overflow: auto; 
+}
+
+.container {
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: auto;
+}
+
+
+/* カテゴリーと価格のコンテナのスタイル */
+.category, .price {
+    margin: 5px;
+    display: flex;
+    align-items: center;
+}
+
+/* チェックボックスのスタイル */
+.category input, .price input {
+    margin-right: 10px;
+}
+
+/* チェックボックスのラベルのスタイル */
+.category label, .price label {
+    cursor: pointer;
+}
+
+/* チェックボックス選択時スタイル */
+.category input:checked + label, .price input:checked + label {
+    font-weight: bold;
+    color: #007bff;
+}
+
+/* ページタイトルのスタイル */
+h2 {
+    font-size: 1.5em;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* 画像のスタイル */
+img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px; /* 画面上部からの余白を追加 */
+}
+
+.prefecture-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Prefecture {
+    margin-right: 5px; /* 都道府県ごとの余白（適宜調整） */
+    margin-bottom: 10px; /* 行ごとの余白（適宜調整） */
+    margin-left: 5px;
+    flex-basis: calc(33.33% - 10px); /* 1行に3つまで表示するための幅調整 */
+}
+
+
+
+
