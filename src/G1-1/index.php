@@ -109,5 +109,6 @@
 </div>
     </div>
     <script src="../common/js/side_ber.js"></script>
+    <a href="../G1-4/G1-4-3/index.php">G1-4-3確認用</a><!--G1-4-3確認用-->
 </body>
 </html>

@@ -37,7 +37,7 @@
    echo'<tr><td class="td1">ブランド</td><td class="td2">';
    echo'<p>',$row['brand'],'</p>';
    echo'</td></tr>';
-   echo'<tr><td class="td1">価格帯</td><td class="td2">';
+   echo'<tr><td class="td1">価格</td><td class="td2">';
    echo'<p>',$row['price'],'</p>';
    echo'</td></tr>';
    echo'<tr><td class="td1">在庫数</td><td class="td2">';

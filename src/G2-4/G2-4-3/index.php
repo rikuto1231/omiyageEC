@@ -41,7 +41,7 @@
         echo '<input type="hidden" name="brand" value="',$row['brand'],'">';
         echo'<p>',$row['brand'],'</p>';
         echo'</td></tr>';
-        echo'<tr><td class="td1">価格帯</td><td class="td2">';
+        echo'<tr><td class="td1">価格</td><td class="td2">';
         echo '<input type="hidden" name="price" value="',$row['price'],'">';
         echo'<p>',$row['price'],'</p>';
         echo'</td></tr>';
