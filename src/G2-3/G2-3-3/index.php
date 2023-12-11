@@ -37,7 +37,7 @@
         echo'<tr><td class="td1">ブランド</td><td class="td2">';
         echo'<input type="text" size="30" class="text_box" name="brand" value="',$row['brand'],'">';
         echo'</td ></tr>';
-        echo'<tr><td class="td1">価格帯</td><td class="td2">';
+        echo'<tr><td class="td1">価格</td><td class="td2">';
         echo'<input type="number" class="text_box" name="price" value="',$row['price'],'">';
         echo'</td></tr>';
         echo'<tr><td class="td1">在庫</td><td class="td2">';

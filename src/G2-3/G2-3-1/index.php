@@ -30,7 +30,7 @@
         <tr><td class="td1">ブランド</td><td class="td2">
         <input type="text" size="30" class="text_box" name="brand">
         </td></tr>
-        <tr><td class="td1">価格帯</td><td class="td2">
+        <tr><td class="td1">価格</td><td class="td2">
         <input type="number" class="text_box" name="price">
         </td></tr>
         <tr><td class="td1">在庫数</td><td class="td2">
