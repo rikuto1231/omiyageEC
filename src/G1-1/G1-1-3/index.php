@@ -11,7 +11,7 @@
 <body>
     <h1 id="title_name">会員登録</h1>
 
-    <form method="post" action="../G1-2-5/index.php" id="form_all">
+    <form method="post" action="../G1-1-5/index.php" id="form_all">
 
         
         <!-- お名前 -->

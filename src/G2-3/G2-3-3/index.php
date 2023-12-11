@@ -29,7 +29,7 @@
         echo'<input type="text" size="30" class="text_box" name="merchandise_name"value="',$row['merchandise_name'],'">';
         echo'</td></tr>';
         echo'<tr><td class="td1">都道府県</td><td class="td2">';
-        echo'<input type="text" size="30" class="text_box" name="prefectures" value="',$row['prefectures'],'">';
+        echo'<input type="text" size="30" class="text_box" name="prefectures" value="',$row['prefecture'],'">';
         echo'</td></tr>';
         echo'<tr><td class="td1">カテゴリ</td><td class="td2">';
         echo'<input type="text" size="30" class="text_box" name="category" value="',$row['category'],'">';

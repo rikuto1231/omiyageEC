@@ -30,8 +30,8 @@
         echo'<p>',$row['merchandise_name'],'</p>';
         echo'</td></tr>';
         echo'<tr><td class="td1">都道府県</td><td class="td2">';
-        echo '<input type="hidden" name="prefectures" value="',$row['prefectures'],'">';
-        echo'<p>',$row['prefectures'],'</p>';
+        echo '<input type="hidden" name="prefectures" value="',$row['prefecture'],'">';
+        echo'<p>',$row['prefecture'],'</p>';
         echo'</td></tr>';
         echo'<tr><td class="td1">カテゴリ</td><td class="td2">';
         echo '<input type="hidden" name="category" value="',$row['category'],'">';

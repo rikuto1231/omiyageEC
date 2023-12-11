@@ -1,3 +1,4 @@
+<?php session_start();?>
 <!-- headerとsideber接続。
 cssレイアウト中央配置だけ。
 phpでpタグとしてDBからの情報出力-->
@@ -30,11 +31,11 @@ phpでpタグとしてDBからの情報出力-->
         <p>20XX/X/X &emsp;&emsp;〇〇ポイント付与</p>
         <br> -->
     <?php 
-    $id = $_GET['id'];
+    $id = $_SESSION['user_id'];
     require '../../common/php/point.php';?>
 
         <br>
-        <button class="modoru" onclick="location.href='../../G1-1/index.php'">戻る</button>
+        <button class="modoru" onclick="location.href='../../G1-2/index.php'">戻る</button>
     </div>
 </body>
 </html>

@@ -44,7 +44,7 @@
     echo'<div class="flexbox">';
     require '../../common/php/DB.php';
         $pdo = getDatabaseConnection();
-        $sql=$pdo->prepare('select * from Merchandise where merchandise_name=? or prefectures=? or category=? or brand=? or price=? or stock=?');
+        $sql=$pdo->prepare('select * from Merchandise where merchandise_name=? or prefecture=? or category=? or brand=? or price=? or stock=?');
         $sql->execute([$_POST['merchandise_name'],$_POST['prefectures'],$_POST['category'],$_POST['brand'],$_POST['price'],$_POST['stock']]);
     foreach ($sql as $row) {
         echo'<div class="item">';

@@ -23,7 +23,7 @@
     </div>
     </div>
     <div class ="button1">
-    <button class="kakunin" onclick="location.href='/omiyageEC/src/G1-1/index.php'">検索ホームに戻る</button>
+    <button class="kakunin" onclick="location.href='/omiyageEC/src/G1-2/index.php'">検索ホームに戻る</button>
     </div>
     <script src="../../common/js/side_ber.js"></script>
 </body>

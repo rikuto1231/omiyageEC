@@ -17,7 +17,7 @@
         require '../../common/php/DB.php';
         $pdo = getDatabaseConnection();
 
-        $sql=$pdo->prepare('insert into Merchandise(merchandise_name, prefectures, category, brand, price, stock, path) values (?,?,?,?,?,?,?)');
+        $sql=$pdo->prepare('insert into Merchandise(merchandise_name, prefecture, category, brand, price, stock, path) values (?,?,?,?,?,?,?)');
         $sql->execute([$_POST['merchandise_name'],$_POST['prefectures'],$_POST['category'],$_POST['brand'],$_POST['price'],$_POST['stock'],$_POST['path']]);
         echo '<h2>追加が完了しました</h2>';
         echo '<img src="../../common/img/'.$_POST['path'].'" class="item">';

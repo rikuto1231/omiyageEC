@@ -68,9 +68,10 @@
                 <div class="prefecture-container">
                     <div v-for="prefecture in prefectures" :key="prefecture.id" class="Prefecture">
                         <input type="checkbox" :id="prefecture.id" :name="prefecture.id" v-model="selectedPrefectures" :value="prefecture.name" />
-                        <label :for="prefecture.id">{{ prefecture.name }}</label>
+                        <label :for="prefecture.id">{{ prefecture.name }}</label><br>
                     </div>
                 </div>
+                
             </div>
         </div>
 

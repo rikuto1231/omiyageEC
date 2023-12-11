@@ -27,13 +27,16 @@
     <br> 
 
     <?php
-    $id = $_GET['id'];
+    $id = $_SESSION['user_id'];
     require '../../common/php/history.php'; ?>
+    </form>
    
     <br>
     <br>
     <br>
-    <button class="modoru" onclick="location.href=\'../../G1-1/G1-1/index.php\'">戻る</button>
+    <form action="../../G1-2/index.php">
+    <button class="modoru" >戻る</button>
+    </form>
     </div>
     <script src="../../common/js/side_ber.js"></script>
     

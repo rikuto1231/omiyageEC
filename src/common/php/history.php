@@ -41,7 +41,7 @@ $pdo = getDatabaseConnection();
     echo  '<br>';
     echo  '<br>';
     echo  '<br>';
-    echo  '<button class="modoru" onclick="location.href=\'../../G1-1/G1-1/index.php\'">戻る</button>';
+    echo  '<button class="modoru" onclick="location.href=\'../../G1-2/G1-2/index.php\'">戻る</button>';
     echo  '</div>';
     echo  '<script src="../../common/js/side_ber.js"></script>';
     
@@ -50,14 +50,20 @@ $pdo = getDatabaseConnection();
             // 商品情報が見つからない
             echo '<p>購入履歴がありません。</p>';*/
         // }
-    $sql=$pdo->prepare('select * from Purchase where user_id=?');
+    $sql=$pdo->prepare('select*
+    from Purchase,PurchaseDet,Merchandise
+    where  PurchaseDet.Merchandise_id=Merchandise.Merchandise_id
+    and PurchaseDet.Purchase_id=Purchase.Purchase_id
+    and user_id=?');
     $sql->execute([$id]);
 
     foreach($sql  as $row){
-        echo '<p>',$row['purchase_id'],'</p>';
+        echo'<img src="../../common/img/'.$row['path'].'" width="90px" height="90px" class="img_product">';
+        echo '<p>',$row['merchandise_name'],'</p>';
         echo '<p>￥',$row['price'],'</p>';
-        echo '<p>',$row['cart_id'],'</p>';
         echo '<p>',$row['purpose_date'],'</p>';
+        echo '<p>数量：',$row['quantity'],'</p>';
+        echo "<br><br>";
     }
     
 

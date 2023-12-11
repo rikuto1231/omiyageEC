@@ -22,7 +22,7 @@
         <br>
         <br>
         <br>
-        <button class="modoru" onclick="location.href='../../G1-4/G1-4-2/index.php'">ショッピングを続ける</button>
+        <button class="modoru" onclick="location.href='/omiyageEC/src/G1-2/index.php'">ショッピングを続ける</button>
     </div>
     <script src="../../common/js/side_ber.js"></script>
 </body>
