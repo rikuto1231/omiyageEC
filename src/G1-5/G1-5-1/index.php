@@ -47,17 +47,19 @@
             <div class="container">
             </div>
             <h2>カテゴリ</h2>
-            <select v-model="selectedCategories" multiple>
-                <option v-for="category in categories" :key="category.id" :value="category.name">{{ category.name }}</option>
+            <select id="category" v-model="selectedCategory">
+                <option v-for="category in categories" :key="category.id" :value="category.id">{{ category.name }}</option>
             </select>
+
             <h2>価格</h2>
-            <select v-model="selectedPriceRanges" multiple>
-                <option v-for="priceRange in priceRanges" :key="priceRange.id" :value="priceRange.name">{{ priceRange.name }}</option>
+            <select id="priceRange" v-model="selectedPriceRange">
+                <option v-for="priceRange in priceRanges" :key="priceRange.id" :value="priceRange.id">{{ priceRange.name }}</option>
             </select>
+            
             <!-- 都道府県の横並び表示 -->
             <h2>都道府県</h2>
-            <select v-model="selectedPrefectures" multiple>
-                <option v-for="prefecture in prefectures" :key="prefecture.id" :value="prefecture.name">{{ prefecture.name }}</option>
+            <select id="prefecture" v-model="selectedPrefecture">
+                <option v-for="prefecture in prefectures" :key="prefecture.id" :value="prefecture.id">{{ prefecture.name }}</option>
             </select>
         </div>
     </div>
