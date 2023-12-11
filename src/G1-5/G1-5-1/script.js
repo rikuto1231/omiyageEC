@@ -2,6 +2,7 @@ new Vue({
     el: '#app',
     data: {
         categories: [
+            { id: 0, name: '選択してください' }, 
             { id: 1, name: '洋菓子・スイーツ' },
             { id: 2, name: '和菓子' },
             { id: 3, name: 'おつまみ' }
@@ -9,6 +10,7 @@ new Vue({
 
         priceRanges: [
             // BETWWENいけるようにデータの調整
+            { id: 0, name: '選択してください' }, 
             { id: 1, name: '～1000円' },
             { id: 2, name: '1001円～2000円' },
             { id: 3, name: '2001円～3000円' },
@@ -18,6 +20,7 @@ new Vue({
         ],
 
         prefectures: [
+            { id: 0, name: '選択してください' }, 
             { id: 1, name: '北海道' },
             { id: 2, name: '青森' },
             { id: 3, name: '岩手' },
