@@ -67,10 +67,10 @@ new Vue({
             { id: 47, name: '沖縄' }
         ],
 
-        // 動的に選択nameが入る
-        selectedCategories: [],
-        selectedPriceRanges: [],
-        selectedPrefectures: []
+        // 選択された値の保持
+        selectedCategory: 0,
+        selectedPriceRange: 0, 
+        selectedPrefecture: 0  
     },
     methods: {
     }
