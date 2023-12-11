@@ -31,7 +31,9 @@
         <label class="scroll_button scroll_prev" for="SlideD"></label>
         <label class="scroll_button scroll_next" for="SlideB"></label>
       </div>
+      <a href="/omiyageEC/src/G1-5/G1-5-3/index.php?merchandise_id=30">
       <img src="/omiyageEC/src/common/img/hukuotu.jpg" class="imge">
+      </a>
     </div>
     <div class="slide">
       <div class="controler_scroll">
