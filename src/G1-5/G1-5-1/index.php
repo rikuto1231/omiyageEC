@@ -10,7 +10,6 @@
 
 <body>
     <header>
-    </header>
     <div id="app">
 
         <div class="sidebar">
@@ -55,7 +54,7 @@
             <select id="priceRange" v-model="selectedPriceRange">
                 <option v-for="priceRange in priceRanges" :key="priceRange.id" :value="priceRange.id">{{ priceRange.name }}</option>
             </select>
-            
+
             <!-- 都道府県の横並び表示 -->
             <h2>都道府県</h2>
             <select id="prefecture" v-model="selectedPrefecture">
