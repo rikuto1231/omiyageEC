@@ -52,7 +52,7 @@
         <label class="scroll_button scroll_prev" for="SlideC"></label>
         <label class="scroll_button scroll_next" for="SlideA"></label>
       </div>
-      <img src="/omiyageEC/src/common/img/4.png" class="imge">
+      <img src="/omiyageEC/src/common/img/kasutera.jpeg" class="imge">
     </div>
     <div class="move_controler">
       <label class="button_move" for="SlideA"></label>
@@ -76,28 +76,28 @@
         <label class="scroll_button2 scroll_prev2" for="SlideH"></label>
         <label class="scroll_button2 scroll_next2" for="SlideF"></label>
       </div>
-      <img src="/omiyageEC/src/common/img/1.png" class="imge" alt="商品画像">
+      <img src="/omiyageEC/src/common/img/kasutera.jpeg" class="imge" alt="商品画像">
     </div>
     <div class="slide2">
       <div class="controler_scroll2">
         <label class="scroll_button2 scroll_prev2" for="SlideE"></label>
         <label class="scroll_button2 scroll_next2" for="SlideG"></label>
       </div>
-      <img src="/omiyageEC/src/common/img/2.png" class="imge" alt="商品画像">
+      <img src="/omiyageEC/src/common/img/kasutera.jpeg" class="imge" alt="商品画像">
     </div>
     <div class="slide2">
       <div class="controler_scroll2">
         <label class="scroll_button2 scroll_prev2" for="SlideF"></label>
         <label class="scroll_button2 scroll_next2" for="SlideH"></label>
       </div>
-      <img src="/omiyageEC/src/common/img/3.png" class="imge" alt="商品画像">
+      <img src="/omiyageEC/src/common/img/kasutera.jpeg" class="imge" alt="商品画像">
     </div>
     <div class="slide2">
       <div class="controler_scroll2">
         <label class="scroll_button2 scroll_prev2" for="SlideG"></label>
         <label class="scroll_button2 scroll_next2" for="SlideE"></label>
       </div>
-      <img src="/omiyageEC/src/common/img/4.png" class="imge" alt="商品画像">
+      <img src="/omiyageEC/src/common/img/kasutera.jpeg" class="imge" alt="商品画像">
     </div>
     <div class="move_controler2">
       <label class="button_move2" for="SlideE"></label>
