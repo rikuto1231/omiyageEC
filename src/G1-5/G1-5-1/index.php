@@ -59,8 +59,10 @@
 
                 <h2>価格</h2>
                 <div class="price" v-for="priceRange in priceRanges" :key="priceRange.id">
-                    <input type="checkbox" :id="priceRange.id" :name="priceRange.id" v-model="selectedPriceRanges" :value="priceRange.name" />
-                    <label :for="priceRange.id">{{ priceRange.name }}</label>
+                    <select>
+                    <option v-for="(item,key) in priceRanges" :value="priceRange.name" />
+                   {{ item }}</option>
+                </select>  
                 </div>
 
                 <!-- 都道府県の横並び表示 -->
