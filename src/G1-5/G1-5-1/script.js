@@ -87,7 +87,7 @@ new Vue({
             // フォームをサブミット
             fetch('/omiyageEC/src/G1-5/G1-5-2/index.php', {
                 method: 'POST',
-                body: formData
+                body: formData, // FormDataをbodyに追加
             })
             .then(response => response.json())
             .then(data => {
@@ -99,6 +99,7 @@ new Vue({
             });
         }
     }
+    
     
     
 });
