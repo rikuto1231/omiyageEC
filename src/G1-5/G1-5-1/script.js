@@ -77,22 +77,19 @@ new Vue({
     },
     methods: {
         submitForm() {
-            fetch('/omiyageEC/src/G1-5/G1-5-2/index.php')
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error('Network response was not ok');
-                }
-                return response.json();
+            // 選択された値をクエリ文字列に追加
+            const queryString = `?selectedCategory=${this.selectedCategory}&selectedPriceRange=${this.selectedPriceRange}&selectedPrefecture=${this.selectedPrefecture}`;
+    
+            // フォームをサブミット
+            fetch(`/omiyageEC/src/G1-5/G1-5-2/index.php${queryString}`, {
+                method: 'GET',
             })
+            .then(response => response.json())
             .then(data => {
                 // サーバーからの応答を処理
                 console.log(data);
-            })
-            .catch(error => {
-                console.error('Error:', error);
             });
         }
     }
-    
     
 });
