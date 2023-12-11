@@ -31,21 +31,21 @@
         <label class="scroll_button scroll_prev" for="SlideD"></label>
         <label class="scroll_button scroll_next" for="SlideB"></label>
       </div>
-      <img src="/omiyageEC/src/common/img/1.png" class="imge">
+      <img src="/omiyageEC/src/common/img/hukuotu.jpg" class="imge">
     </div>
     <div class="slide">
       <div class="controler_scroll">
         <label class="scroll_button scroll_prev" for="SlideA"></label>
         <label class="scroll_button scroll_next" for="SlideC"></label>
       </div>
-      <img src="/omiyageEC/src/common/img/2.png" class="imge">
+      <img src="/omiyageEC/src/common/img/kasutera.jpeg" class="imge">
     </div>
     <div class="slide">
       <div class="controler_scroll">
         <label class="scroll_button scroll_prev" for="SlideB"></label>
         <label class="scroll_button scroll_next" for="SlideD"></label>
       </div>
-      <img src="/omiyageEC/src/common/img/3.png" class="imge">
+      <img src="/omiyageEC/src/common/img/tokyojpg.jpg" class="imge">
     </div>
     <div class="slide">
       <div class="controler_scroll">
