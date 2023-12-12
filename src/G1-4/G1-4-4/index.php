@@ -18,12 +18,12 @@
     <div  id="product_detail">
     <h1>確認画面</h1>
     <hr>
-    <form action="../G1-4-5/index.php">
-    <?php require '../../common/php/personal information.php' ?>
-    <h1>お支払方法</h1>
-    <hr>
-    <?php echo "<h3>　".$_POST["pay"]."</h3>"; ?>
-    <button class="kakunin">購入</button>
+    <form action="/omiyageEC/src/common/php/purchase.php">
+        <?php require '../../common/php/personal information.php' ?>
+        <h1>お支払方法</h1>
+        <hr>
+        <?php echo "<h3>".$_POST["pay"]."</h3>"; ?>
+        <button type="submit" class="kakunin">購入</button>
     </form>
     <p class="modoru"><a href="../G1-4-3/index.php">ご購入手続きに戻る</a></p>
    
