@@ -1,7 +1,5 @@
 <?php 
  require 'DB.php';
-
-
     $pdo = getDatabaseConnection(); 
     // ポイント検索のsqlとphp処理
     $sql=$pdo->prepare('select*
@@ -11,7 +9,7 @@
     $sql->execute([$id]);
     foreach($sql  as $row){
    echo'<div id="revew">';
-   if(!is_null($row['review_num'])){
+   if(!empty($row['review_num'])){
    echo'<h2><img src="/omiyageEC/src/common/img/user.png" alt="代替テキスト"width="7%" height="14%">';
    echo$row['name_personal'];
    echo' </h2>';

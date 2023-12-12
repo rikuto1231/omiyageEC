@@ -27,7 +27,6 @@
     <br> 
 
     <?php
-    $id = $_SESSION['user_id'];
     require '../../common/php/history.php'; ?>
     </form>
    
