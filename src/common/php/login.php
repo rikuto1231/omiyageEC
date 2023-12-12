@@ -39,7 +39,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 
             // ログイン後の遷移先にリダイレクト
-            header('Location: ../../G1-1/index.php');
+            header('Location: ../../G1-2/index.php');
             exit();
         } else {
             // ログイン失敗時の処理
