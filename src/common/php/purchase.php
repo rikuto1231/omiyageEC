@@ -4,7 +4,6 @@ session_start();
 require 'DB.php';
 
 try {
-    if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     
         $pdo = getDatabaseConnection(); 
@@ -54,7 +53,7 @@ try {
         // 購入完了ページへリダイレクト
         header("Location: /omiyageEC/src/G1-4/G1-4-4/index.php");
         exit();
-    }
+
 }catch(PDOException $e){
     echo "エラー: " . $e->getMessage();
 }
