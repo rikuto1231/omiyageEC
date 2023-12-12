@@ -14,8 +14,8 @@
    echo'<h2><img src="/omiyageEC/src/common/img/user.png" alt="代替テキスト"width="7%" height="14%">';
    echo$row['name_personal'];
    echo' </h2>';
-   echo' <h2>',$row['post'],'</h2>';
-   echo' <h2><span class="star">';
+   echo' <h4>',$row['post'],'</h4>';
+   echo' <p><span class="star">';
    switch ($row['review_num']){
     case '1':
         echo'★';
@@ -33,7 +33,7 @@
         echo'★★★★★';
       break;
     }
-   echo'</span></h2>';
+   echo'</span></p>';
    echo' <h2>',$row['review_title'],'</h2>';
    echo' <div id="center">';
    echo' <div id="fonts">',$row['review_text'],'</div>';
