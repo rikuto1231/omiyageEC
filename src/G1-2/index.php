@@ -68,56 +68,60 @@
           </div>
         </div>
       </div>
-<br>
-<br>
-<h2>おすすめ商品</h2>
-<div class="carousel">
-  <div class="contains">
-    <input class="slide_select2" type="radio" id="SlideE" name="slide_check2" checked />
-    <input class="slide_select2" type="radio" id="SlideF" name="slide_check2" />
-    <input class="slide_select2" type="radio" id="SlideG" name="slide_check2" />
-    <input class="slide_select2" type="radio" id="SlideH" name="slide_check2" />
-    <div class="slide2">
-      <div class="scroll_controler2">
-        <label class="scroll_button2 scroll_prev2" for="SlideH"></label>
-        <label class="scroll_button2 scroll_next2" for="SlideF"></label>
+      <br>
+      <br>
+      <h2>おすすめ商品</h2>
+      <div class="carousel">
+        <div class="contains">
+          <input class="slide_select2" type="radio" id="SlideE" name="slide_check2" checked />
+          <input class="slide_select2" type="radio" id="SlideF" name="slide_check2" />
+          <input class="slide_select2" type="radio" id="SlideG" name="slide_check2" />
+          <input class="slide_select2" type="radio" id="SlideH" name="slide_check2" />
+          <div class="slide2">
+            <div class="scroll_controler2">
+              <label class="scroll_button2 scroll_prev2" for="SlideH"></label>
+              <label class="scroll_button2 scroll_next2" for="SlideF"></label>
+            </div>
+            <a href="/omiyageEC/src/G1-5/G1-5-3/index.php?merchandise_id=39">
+            <img src="/omiyageEC/src/common/img/hokkaido1.jpg" class="imge">
+            </a>
+          </div>
+          <div class="slide2">
+            <div class="controler_scroll2">
+              <label class="scroll_button2 scroll_prev2" for="SlideE"></label>
+              <label class="scroll_button2 scroll_next2" for="SlideG"></label>
+            </div>
+            <a href="/omiyageEC/src/G1-5/G1-5-3/index.php?merchandise_id=37">
+            <img src="/omiyageEC/src/common/img/tokyo2.png" class="imge">
+            </a>
+          </div>
+          <div class="slide2">
+            <div class="controler_scroll2">
+              <label class="scroll_button2 scroll_prev2" for="SlideF"></label>
+              <label class="scroll_button2 scroll_next2" for="SlideH"></label>
+            </div>
+            <a href="/omiyageEC/src/G1-5/G1-5-3/index.php?merchandise_id=46">
+            <img src="/omiyageEC/src/common/img/kyoto1.jpg" class="imge">
+            </a>
+          </div>
+          <div class="slide2">
+            <div class="controler_scroll2">
+              <label class="scroll_button2 scroll_prev2" for="SlideG"></label>
+              <label class="scroll_button2 scroll_next2" for="SlideE"></label>
+            </div>
+            <a href="/omiyageEC/src/G1-5/G1-5-3/index.php?merchandise_id=49">
+            <img src="/omiyageEC/src/common/img/shizuoka2.jpg" class="imge">
+            </a>
+          </div>
+          <div class="move_controler2">
+            <label class="button_move2" for="SlideE"></label>
+            <label class="button_move2" for="SlideF"></label>
+            <label class="button_move2" for="SlideG"></label>
+            <label class="button_move2" for="SlideH"></label>
+          </div>
+        </div>
       </div>
-      <a href="/omiyageEC/src/G1-5/G1-5-3/index.php?merchandise_id=39">
-        <img src="/omiyageEC/src/common/img/hokkaido1.jpg" class="imge">
-      </a>    </div>
-    <div class="slide2">
-      <div class="controler_scroll2">
-        <label class="scroll_button2 scroll_prev2" for="SlideE"></label>
-        <label class="scroll_button2 scroll_next2" for="SlideG"></label>
-      </div>
-      <a href="/omiyageEC/src/G1-5/G1-5-3/index.php?merchandise_id=37">
-        <img src="/omiyageEC/src/common/img/tokyo2.png" class="imge">
-      </a>    </div>
-    <div class="slide2">
-      <div class="controler_scroll2">
-        <label class="scroll_button2 scroll_prev2" for="SlideF"></label>
-        <label class="scroll_button2 scroll_next2" for="SlideH"></label>
-      </div>
-      <a href="/omiyageEC/src/G1-5/G1-5-3/index.php?merchandise_id=46">
-        <img src="/omiyageEC/src/common/img/kyoto1.jpg" class="imge">
-      </a>    </div>
-    <div class="slide2">
-      <div class="controler_scroll2">
-        <label class="scroll_button2 scroll_prev2" for="SlideG"></label>
-        <label class="scroll_button2 scroll_next2" for="SlideE"></label>
-      </div>
-      <a href="/omiyageEC/src/G1-5/G1-5-3/index.php?merchandise_id=49">
-        <img src="/omiyageEC/src/common/img/shizuoka2.jpg" class="imge">
-      </a>    </div>
-    <div class="move_controler2">
-      <label class="button_move2" for="SlideE"></label>
-      <label class="button_move2" for="SlideF"></label>
-      <label class="button_move2" for="SlideG"></label>
-      <label class="button_move2" for="SlideH"></label>
     </div>
-  </div>
-</div>
-    </div>
-    <script src="../common/js/side_ber.js"></script>
+  <script src="../common/js/side_ber.js"></script>
 </body>
 </html>
