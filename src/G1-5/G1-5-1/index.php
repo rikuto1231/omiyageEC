@@ -45,6 +45,7 @@
                     </button>
                 </form>
             </div>
+
             <!-- カテゴリ、価格、都道府県の選択フォーム -->
             <div id="menu_all">
                 <div class="container">
@@ -56,6 +57,11 @@
                     <?php
                     
                    require '../../common/php/category.php';
+
+                   while ($row = $sql->fetch(PDO::FETCH_ASSOC)) {
+                    $options .= "<option value='". $row['category'] ."'>". $row['category'] ."</option>";
+                }
+                 echo $options; 
                    ?>
                     
                 </select>
@@ -69,6 +75,7 @@
                     <option value="5">4001円～5000</option>
                     <option value="6">5001円～</option>
                 </select>
+                
                 <h2>都道府県</h2>
                 <select id="prefecture">
                     <option value="0">選択してください</option>
