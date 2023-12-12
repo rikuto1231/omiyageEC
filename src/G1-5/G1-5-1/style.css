@@ -148,4 +148,14 @@ img {
     flex-basis: calc(33.33% - 10px); /* 1行に3つまで表示するための幅調整 */
 }
 
-
+.modoru{
+    width: 191px;
+    height: 59px;
+    border-radius:50px;
+    background-color: #0890F2;
+    border-color:#0890F2 ;
+    color: white;
+    cursor: pointer;
+    position: relative; /* 今の位置を基準 */
+    top: 10px; /* 上から10px */
+}
