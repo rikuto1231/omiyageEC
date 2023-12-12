@@ -22,7 +22,7 @@
         <?php require '../../common/php/personal information.php' ?>
         <h1>お支払方法</h1>
         <hr>
-        <?php echo "<h3>".$_POST['pay']."</h3>"; ?>
+        <?php //echo "<h3>".$_POST['pay']."</h3>"; ?>
         <button type="submit" class="kakunin">購入</button>
     </form>
     <p class="modoru"><a href="../G1-4-3/index.php">ご購入手続きに戻る</a></p>
