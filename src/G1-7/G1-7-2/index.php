@@ -37,6 +37,11 @@
     </div>
         <button type="submit"class="input">送信</button>
         </form>
-        <button class="back" onclick="location.href='../../G1-7/G1-7-1/index.php'">もどる</button>
+        <?php
+        echo'<form action="../../G1-7/G1-7-1/index.php" method="GET">';
+        echo'<input type="hidden" name="id" value="',$mid,'">';
+        echo'<button type="submit" class="back" >もどる</button>';
+        echo'</form>';
+       ?>
 </body>
 </html>
