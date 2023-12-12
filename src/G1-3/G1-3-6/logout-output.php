@@ -10,8 +10,8 @@
 <body>
     <div class="main">
     <?php
-        if(isset($_SESSION['customer'])){
-        unset($_SESSION['customer']);
+        if(isset($_SESSION['user_id'])){
+        session_destroy();
         echo 'ログアウトしました。';
         }else{
         echo 'すでにログアウトしています。';
