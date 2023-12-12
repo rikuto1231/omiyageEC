@@ -54,7 +54,7 @@
                 <select id="category">
                     <option value="0">選択してください</option>
                     <?php
-                    $id = $row['category'];
+                    $id = $_row['category'];
                    require '../../common/php/category.php';
                    ?>
                     
