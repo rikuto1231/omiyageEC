@@ -9,7 +9,7 @@ $sql=$pdo->prepare('select DISTINCT category from Merchandise ');
     
 
     if ($sql > 0) {
-        while($sql = $result->fetch_assoc()) {
+        while($sql ) {
             echo "<option value='". $row['category'] ."'>". $row['category'] ."</option>";
         }
     }
