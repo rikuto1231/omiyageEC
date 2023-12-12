@@ -77,21 +77,20 @@ new Vue({
     },
     methods: {
         submitForm() {
-            // フォームデータを取得
+            // フォームデータ取得
             const formData = new FormData();
             formData.append('search_box', this.search_box);
             formData.append('selectedCategory', this.selectedCategory);
             formData.append('selectedPriceRange', this.selectedPriceRange);
             formData.append('selectedPrefecture', this.selectedPrefecture);
     
-            // フォームをサブミット
+            // フォームサブミット
             fetch('/omiyageEC/src/G1-5/G1-5-2/index.php', {
                 method: 'POST',
-                body: formData, // FormDataをbodyに追加
+                body: formData,
             })
             .then(response => response.json())
             .then(data => {
-                // サーバーからの応答を処理
                 console.log(data);
             })
             .catch(error => {

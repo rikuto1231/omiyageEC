@@ -260,7 +260,7 @@ function insertPurchaseDetail($pdo, $purchaseId, $merchandiseId, $quantity) {
 }
 
 
-function markCartAsPurchased($pdo, $cartId) {
+function CartAsPurchased($pdo, $cartId) {
     try {
         // 購入済みフラグを立てるSQL文
         $sql = "UPDATE Cart SET purchased = 1 WHERE cart_id = :cartId";
