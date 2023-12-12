@@ -57,6 +57,11 @@
                     <?php
                     
                    require '../../common/php/category.php';
+
+                   while ($row = $sql->fetch(PDO::FETCH_ASSOC)) {
+                    $options .= "<option value='". $row['category'] ."'>". $row['category'] ."</option>";
+                }
+                 echo $options; 
                    ?>
                     
                 </select>
