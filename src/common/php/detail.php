@@ -54,7 +54,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
                         <!-- 隠しフィールドに数量を追加 -->
                         <input type="hidden" name="quantity" v-model="quantity">
                     </div>                  
-                    <a href="../../G1-7/G1-7-1/index.php">レビュー</a>
+                    <a href="../../G1-7/G1-7-1/index.php?id=',$row['merchandise_id'],'">レビュー</a>
                 </div>';
 
             echo '<div class="button3">
@@ -79,7 +79,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
             echo '<p>' . $row['prefecture'] . '<br>' . $row['merchandise_name'] . '</p>';
             echo '</div>';
 
-            echo '<form action="/omiyageEC/src/common/php/purchase.php" method="post" @submit.prevent="onSubmit">';  
+            echo '<form action="/omiyageEC/src/common/php/reservation_in.php" method="post" @submit.prevent="onSubmit">';  
 
             echo '<div class="item">
                     <img src="/omiyageEC/src/common/img/'.$row['path'].'" alt="代替テキスト" width="300px" height="200px">
@@ -98,7 +98,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
                         <input type="hidden" name="quantity" v-model="quantity">
                     </div>
 
-                    <a href="/omiyageEC/src/G1-7/G1-7-1/index.php">レビュー</a>
+                    <a href="/omiyageEC/src/G1-7/G1-7-1/index.php?id=',$row['merchandise_id'],'">レビュー</a>
                 </div>';
 
             echo '<div class="button3">
