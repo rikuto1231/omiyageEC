@@ -37,20 +37,16 @@
     あいうえお
 </h2>
     <h2>m/d</h2>
-    <h2>★☆☆☆☆</h2>
+    <h2><span>★</span>☆☆☆☆</h2>
     <h2>とてもいい</h2>
     <div id="center">
     <div id="fonts">×月×日に購入<br>~~~~~~~~~~<br>~~~~~~~~~~<br>~~~~~~~~~~</div>
     </div>
     </div>
-    <?php require '../php/revue.php' ?>
     <div id="center"><!--ボタン追加-->
-        <button class="input" onclick="location.href='../G1-7/G1-7-2/index.php'">レビュー入力</button>
+        <button class="input" onclick="location.href='../../G1-7/G1-7-2/index.php'">レビュー入力</button>
     </div>
-    
     <br>
-    <div id="center">
-    戻る
     <div id="center">
         <button class="back">もどる</button>
     </div>
