@@ -50,11 +50,13 @@ $pdo = getDatabaseConnection();
             // 商品情報が見つからない
             echo '<p>購入履歴がありません。</p>';*/
         // }
-    $sql=$pdo->prepare('select*
-    from Purchase,PurchaseDet,Merchandise
-    where  PurchaseDet.Merchandise_id=Merchandise.Merchandise_id
-    and PurchaseDet.Purchase_id=Purchase.Purchase_id
-    and user_id=?');
+        $sql = $pdo->prepare('SELECT *
+        FROM User
+        JOIN Purchase ON User.user_id = Purchase.user_id
+        JOIN PurchaseDet ON Purchase.purchase_id = PurchaseDet.purchase_id
+        JOIN Merchandise ON PurchaseDet.merchandise_id = Merchandise.merchandise_id
+        WHERE User.user_id = :userId');
+        
     $sql->execute([$id]);
 
     foreach($sql  as $row){
