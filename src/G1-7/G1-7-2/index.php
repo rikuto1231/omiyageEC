@@ -10,6 +10,7 @@
 </head>
 <body>
     <div class="main">
+        <form action="../../G1-7/G1-7-1/index.php">
         <h3 class="title">満足度</h3>
     <div class="rate-form">
     <input id="star5" type="radio" name="rate" value="5">
@@ -28,7 +29,8 @@
         <h3 class="title">本文</h3>
         <p class="info2"><input type="text-area" class="titel_input"></p>
     </div>
-        <button class="input">送信</button>
+        <button type="submit"class="input">送信</button>
+        </form>
         <button class="back" onclick="location.href='../../G1-7/G1-7-1/index.php'">もどる</button>
 </body>
 </html>
