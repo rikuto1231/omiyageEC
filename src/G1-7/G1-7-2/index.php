@@ -9,13 +9,12 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<form action="../../common/php/revue_input.php">
+<form action="../../common/php/revue_input.php" method="POST">
 <?php 
-        $mid = $_POST['mid'];
+        $mid = $_POST['id'];
         $uid = $_SESSION['user_id'];
         echo'<input type="hidden" name="mid" value="',$mid,'">';
         echo'<input type="hidden" name="uid" value="',$uid,'">';
-       require '../../common/php/revue.php';
        ?>
     <div class="main">
         <h3 class="title">満足度</h3>
@@ -32,12 +31,17 @@
     <label for="star1">★</label>
 </div>
         <h3 class="title" >タイトル</h3>
-        <p class="info"><input type="text" name="titel"class="titel_input"></p>
+        <p class="info"><input type="text" name="title"class="titel_input"></p>
         <h3 class="title">本文</h3>
         <p class="info2"><input type="text-area" name="text" class="titel_input"></p>
     </div>
         <button type="submit"class="input">送信</button>
         </form>
-        <button class="back" onclick="location.href='../../G1-7/G1-7-1/index.php'">もどる</button>
+        <?php
+        echo'<form action="../../G1-7/G1-7-1/index.php" method="GET">';
+        echo'<input type="hidden" name="id" value="',$mid,'">';
+        echo'<button type="submit" class="back" >もどる</button>';
+        echo'</form>';
+       ?>
 </body>
 </html>
