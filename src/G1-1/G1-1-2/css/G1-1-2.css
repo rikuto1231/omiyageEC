@@ -1,12 +1,6 @@
 @charset "utf-8";
 
-h1{
-    text-align: center; 
-}
-.box1{
-    text-align: center;
-}
-.box2{
+.main{
     text-align: center;
 }
 input.m{
@@ -17,29 +11,21 @@ input.p{
 }
 
 .btn{
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+    margin-top: 30px;
     width: 60%;
     height: 30px;
-    border: 2px solid #0890F2;
+    border: 2px solid #fff;
     background: #f25a08;
 	color: #fff;
-    transition: 0.5s;
     border-radius:30px;
-    top: 40vh;
 }
 
 .btn2{
-    position: absolute;
-    left: 50%;
-    top:70vh;
-    transform: translateX(-50%);
+    margin-top: 50px;
     width: 60%;
     height: 30px;
     border: 2px solid #0890F2;
     background: #0890F2;
 	color: #fff;
-    transition: 0.5s;
     border-radius:30px;
 }
