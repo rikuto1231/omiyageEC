@@ -27,7 +27,7 @@
     <label for="star3">★</label>
     <input id="star2" type="radio" name="rate" value="2">
     <label for="star2">★</label>
-    <input id="star1" type="radio" name="rate" value="1">
+    <input id="star1" type="radio" name="rate" value="1" required>
     <label for="star1">★</label>
 </div>
         <h3 class="title" >タイトル</h3>
