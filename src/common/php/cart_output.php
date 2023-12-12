@@ -60,7 +60,7 @@ if (isset($_SESSION['user_id'])) {
         echo '<form action="/omiyageEC/src/G1-4/G1-4-3/index.php" method="post">';
 
         foreach ($products as $product) {
-            $_SESSION['cart_ids'][] = $product['cart_id'];
+            $_SESSION['cart_ids'] = $product['cart_id'];
         }
         
         echo '<div id="num_output">';
