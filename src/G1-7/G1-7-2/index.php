@@ -31,9 +31,9 @@
     <label for="star1">★</label>
 </div>
         <h3 class="title" >タイトル</h3>
-        <p class="info"><input type="text" name="title"class="titel_input"></p>
+        <p class="info"><input type="text" name="title"class="titel_input" required></p>
         <h3 class="title">本文</h3>
-        <p class="info2"><input type="text-area" name="text" class="titel_input"></p>
+        <p class="info2"><input type="text-area" name="text" class="titel_input" required></p>
     </div>
         <button type="submit"class="input">送信</button>
         </form>
