@@ -1,7 +1,5 @@
 <?php 
  require 'DB.php';
-
-
     $pdo = getDatabaseConnection(); 
     // ポイント検索のsqlとphp処理
     $sql=$pdo->prepare('select*

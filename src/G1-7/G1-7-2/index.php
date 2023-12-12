@@ -13,7 +13,7 @@
 <?php 
         $mid = $_POST['id'];
         $uid = $_SESSION['user_id'];
-        echo'<input type="hidden" name="mid" value="',$mid,'">';
+        echo'<input type="hidden" name="id" value="',$mid,'">';
         echo'<input type="hidden" name="uid" value="',$uid,'">';
        ?>
     <div class="main">
