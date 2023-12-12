@@ -43,6 +43,6 @@ margin-right: 10%;
     display: block;
     margin: 20px auto;
   }
-  span{
-    color: yellow;
+  .star{
+    color:#ffcc00;
   }

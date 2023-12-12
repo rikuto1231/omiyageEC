@@ -37,7 +37,7 @@
     あいうえお
 </h2>
     <h2>m/d</h2>
-    <h2><span>★</span>☆☆☆☆</h2>
+    <h2><span class="star">★</span>☆☆☆☆</h2>
     <h2>とてもいい</h2>
     <div id="center">
     <div id="fonts">×月×日に購入<br>~~~~~~~~~~<br>~~~~~~~~~~<br>~~~~~~~~~~</div>
