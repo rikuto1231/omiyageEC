@@ -12,9 +12,11 @@ try {
         
     
         // 購入情報をPurchaseテーブルに挿入
+
+        $cart_ids[] = $_SESSION['cart_ids'];
     
         $purchaseDate = date("Y-m-d");
-        foreach ($_SESSION['cart_ids'] as $cart_id) {
+        foreach ($cart_ids as $cart_id) {
             $purchaseIds[] = insertPurchase($pdo, $user_id, $cart_id, $purchaseDate);
         }
     
@@ -44,14 +46,14 @@ try {
     
     
     
-        foreach ($_SESSION['cart_ids'] as $cart_id) {
+        foreach ($cart_ids as $cart_id) {
             // カートから商品を購入済み
             CartAsPurchased($pdo, $cart_id);
         }
         
     
         // 購入完了ページへリダイレクト
-        header("Location: /omiyageEC/src/G1-4/G1-4-4/index.php");
+        header("Location: /omiyageEC/src/G1-4/G1-4-5/index.php");
         exit();
 
 }catch(PDOException $e){

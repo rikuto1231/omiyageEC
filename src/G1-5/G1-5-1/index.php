@@ -122,6 +122,7 @@
                 </select>
             </div>
         </div>
+        <button class="modoru" onclick="location.href='../../G1-2/index.php'">戻る</button>
     </header>
 
     <!-- サイドバーのJavaScriptファイル -->

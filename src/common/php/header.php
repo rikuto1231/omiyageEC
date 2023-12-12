@@ -7,6 +7,8 @@
         <hr>
         <p>'.$_SESSION['personal_personal'].'　さん</p>
         <hr>
+        <p><a href="/omiyageEC/src/G1-2/index.php">トップ</a></p>
+        <hr>
         <p><a href="/omiyageEC/src/G1-3/G1-3-4/index.php">ポイント</a></p>
         <hr>
         <p><a href="/omiyageEC/src/G1-3/G1-3-2/index.php">登録情報</a></p>

@@ -9,6 +9,7 @@
     <title>会員ログイン</title>
 </head>
 <body>
+    <div class="main">
     <h1>会員ログイン</h1>
     
     <form  action="../../common/php/login.php"  method="post">
@@ -24,11 +25,9 @@
                 <input type="password" id="pass" name="pass" class="p" placeholder="パスワードを入力" required>
             </div>
         </p>
-
         <button type="submit" class="btn">ログイン</button>
-        
     </form>
-
     <button class="btn2" onclick="location.href='../G1-1-1/index.php'">戻る</button>
+</div>
 </body>
 </html>
