@@ -41,9 +41,9 @@
    echo' </div>';
     }
    echo' <div id="center">';
-   echo'<form action="../../G1-7/G1-7-2/index.php" POST>';
+   echo'<form action="../../G1-7/G1-7-2/index.php" method="POST">';
    echo'<input type="hidden" name="mid" value="',$id,'">';
-   echo'<button class="submit">レビュー入力</button>';
+   echo'<button type="submit" class="input">レビュー入力</button>';
    echo' </div>';
    echo'</form>';
    echo' <br>';
