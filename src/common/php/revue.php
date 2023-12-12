@@ -39,6 +39,7 @@
    echo' <div id="fonts">',$row['review_text'],'</div>';
    echo' </div>';
    echo' </div>';
+   echo'<br>';
     }
    echo' <div id="center">';
    echo'<form action="../../G1-7/G1-7-2/index.php" method="POST">';
