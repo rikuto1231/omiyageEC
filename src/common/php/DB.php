@@ -258,7 +258,14 @@ function insertPurchaseDetail($pdo, $purchaseId, $merchandiseId, $quantity) {
         return false;
     }
 }
-
+function insertPoint($pdo) {
+    $currentDate = date("Y-m-d");
+        $stmt2 = $pdo->prepare("INSERT INTO Point (user_id,point_grant,point_date) VALUES(:id,:point,:date)");
+        $stmt2->bindParam(':id', $_SESSION['user_id']);
+        $stmt2->bindParam(':date', $currentDate);
+        $stmt2->bindParam(':point', $_SESSION['points']);
+        $stmt2->execute();
+}
 
 function CartAsPurchased($pdo, $cartId) {
     try {

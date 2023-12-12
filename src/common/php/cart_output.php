@@ -47,7 +47,7 @@ if (isset($_SESSION['user_id'])) {
 
         // 付与ポイントの計算
         $rewardPoints = floor($subtotal / 100);
-
+        $_SESSION['points']=$rewardPoints;
         // 合計金額の計算（送料を追加）
         $totalAmount = $subtotal + 300;
 
