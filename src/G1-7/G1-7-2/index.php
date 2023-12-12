@@ -11,7 +11,7 @@
 <body>
 <form action="../../common/php/revue_input.php" method="POST">
 <?php 
-        $mid = $_POST['mid'];
+        $mid = $_POST['id'];
         $uid = $_SESSION['user_id'];
         echo'<input type="hidden" name="mid" value="',$mid,'">';
         echo'<input type="hidden" name="uid" value="',$uid,'">';
