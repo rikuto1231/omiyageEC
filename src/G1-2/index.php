@@ -31,8 +31,8 @@
         <label class="scroll_button scroll_prev" for="SlideD"></label>
         <label class="scroll_button scroll_next" for="SlideB"></label>
       </div>
-      <a href="/omiyageEC/src/G1-5/G1-5-3/index.php?merchandise_id=30">
-        <img src="/omiyageEC/src/common/img/hukuotu.jpg" class="imge">
+      <a href="/omiyageEC/src/G1-5/G1-5-3/index.php?merchandise_id=29">
+        <img src="/omiyageEC/src/common/img/hukuoka.jpg" class="imge">
       </a>
     </div>
     <div class="slide">
@@ -48,16 +48,16 @@
         <label class="scroll_button scroll_prev" for="SlideB"></label>
         <label class="scroll_button scroll_next" for="SlideD"></label>
       </div>
-      <a href="/omiyageEC/src/G1-5/G1-5-3/index.php?merchandise_id=30">
-        <img src="/omiyageEC/src/common/img/hukuotu.jpg" class="imge">
+      <a href="/omiyageEC/src/G1-5/G1-5-3/index.php?merchandise_id=31">
+        <img src="/omiyageEC/src/common/img/hukuwaga.jpg" class="imge">
       </a>    </div>
     <div class="slide">
       <div class="controler_scroll">
         <label class="scroll_button scroll_prev" for="SlideC"></label>
         <label class="scroll_button scroll_next" for="SlideA"></label>
       </div>
-      <a href="/omiyageEC/src/G1-5/G1-5-3/index.php?merchandise_id=30">
-        <img src="/omiyageEC/src/common/img/hukuotu.jpg" class="imge">
+      <a href="/omiyageEC/src/G1-5/G1-5-3/index.php?merchandise_id=32">
+        <img src="/omiyageEC/src/common/img/kasutera.jpg" class="imge">
       </a>    </div>
     <div class="move_controler">
       <label class="button_move" for="SlideA"></label>
@@ -81,32 +81,32 @@
         <label class="scroll_button2 scroll_prev2" for="SlideH"></label>
         <label class="scroll_button2 scroll_next2" for="SlideF"></label>
       </div>
-      <a href="/omiyageEC/src/G1-5/G1-5-3/index.php?merchandise_id=30">
-        <img src="/omiyageEC/src/common/img/hukuotu.jpg" class="imge">
+      <a href="/omiyageEC/src/G1-5/G1-5-3/index.php?merchandise_id=39">
+        <img src="/omiyageEC/src/common/img/hokkaido1.jpg" class="imge">
       </a>    </div>
     <div class="slide2">
       <div class="controler_scroll2">
         <label class="scroll_button2 scroll_prev2" for="SlideE"></label>
         <label class="scroll_button2 scroll_next2" for="SlideG"></label>
       </div>
-      <a href="/omiyageEC/src/G1-5/G1-5-3/index.php?merchandise_id=30">
-        <img src="/omiyageEC/src/common/img/hukuotu.jpg" class="imge">
+      <a href="/omiyageEC/src/G1-5/G1-5-3/index.php?merchandise_id=37">
+        <img src="/omiyageEC/src/common/img/tokyo2.pg" class="imge">
       </a>    </div>
     <div class="slide2">
       <div class="controler_scroll2">
         <label class="scroll_button2 scroll_prev2" for="SlideF"></label>
         <label class="scroll_button2 scroll_next2" for="SlideH"></label>
       </div>
-      <a href="/omiyageEC/src/G1-5/G1-5-3/index.php?merchandise_id=30">
-        <img src="/omiyageEC/src/common/img/hukuotu.jpg" class="imge">
+      <a href="/omiyageEC/src/G1-5/G1-5-3/index.php?merchandise_id=46">
+        <img src="/omiyageEC/src/common/img/kyoto1.jpg" class="imge">
       </a>    </div>
     <div class="slide2">
       <div class="controler_scroll2">
         <label class="scroll_button2 scroll_prev2" for="SlideG"></label>
         <label class="scroll_button2 scroll_next2" for="SlideE"></label>
       </div>
-      <a href="/omiyageEC/src/G1-5/G1-5-3/index.php?merchandise_id=30">
-        <img src="/omiyageEC/src/common/img/hukuotu.jpg" class="imge">
+      <a href="/omiyageEC/src/G1-5/G1-5-3/index.php?merchandise_id=49">
+        <img src="/omiyageEC/src/common/img/shizuoka2.jpg" class="imge">
       </a>    </div>
     <div class="move_controler2">
       <label class="button_move2" for="SlideE"></label>
