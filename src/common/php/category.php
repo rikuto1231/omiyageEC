@@ -10,8 +10,8 @@ $result = $conn->query($sql);
 $conn->close();
     
 
-    if ($sql->num_rows > 0) {
-        while($row = $sql->fetch_assoc()) {
+    if ($result->num_rows > 0) {
+        while($row = $result->fetch_assoc()) {
             echo "<option value='". $row['category'] ."'>". $row['category'] ."</option>";
         }
     }
