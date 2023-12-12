@@ -14,11 +14,6 @@ $sql = $pdo->prepare('SELECT DISTINCT m.merchandise_name, m.price, m.path, pd.qu
     WHERE u.user_id = :user_id');
 
 
-
-
-
-
-
         $sql->bindParam(':user_id', $_SESSION['user_id'], PDO::PARAM_INT);
 
     
