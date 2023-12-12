@@ -1,13 +1,13 @@
 <?php
-// session_start();
+session_start();
 
 require 'DB.php';
 
 // データベースへの接続を取得
 $pdo = getDatabaseConnection();
 
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
+// error_reporting(E_ALL);
+// ini_set('display_errors', 1);
 
 try {
     // データベースにデータを挿入
