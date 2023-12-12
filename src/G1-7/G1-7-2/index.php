@@ -27,13 +27,13 @@
     <label for="star3">★</label>
     <input id="star2" type="radio" name="rate" value="2">
     <label for="star2">★</label>
-    <input id="star1" type="radio" name="rate" value="1">
+    <input id="star1" type="radio" name="rate" value="1" required>
     <label for="star1">★</label>
 </div>
         <h3 class="title" >タイトル</h3>
-        <p class="info"><input type="text" name="title"class="titel_input"></p>
+        <p class="info"><input type="text" name="title"class="titel_input" required></p>
         <h3 class="title">本文</h3>
-        <p class="info2"><input type="text-area" name="text" class="titel_input"></p>
+        <p class="info2"><input type="text-area" name="text" class="titel_input" value=""></p>
     </div>
         <button type="submit"class="input">送信</button>
         </form>
