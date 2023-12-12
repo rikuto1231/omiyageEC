@@ -41,8 +41,11 @@
    echo' </div>';
     }
    echo' <div id="center">';
-   echo'<button class="input" onclick="',"location.href='../../G1-7/G1-7-2/index.php",'">レビュー入力</button>';
+   echo'<form action="../../G1-7/G1-7-2/index.php" POST>';
+   echo'<input type="hidden" name="mid" value="',$id,'">';
+   echo'<button class="submit">レビュー入力</button>';
    echo' </div>';
+   echo'</form>';
    echo' <br>';
    echo' <div id="center">';
    echo'     <button class="back"  onclick="',"location.href='../../G1-5/G1-5-2/index.php",'">もどる</button>';
