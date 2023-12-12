@@ -53,7 +53,7 @@ try {
         
     
         // 購入完了ページへリダイレクト
-        header("Location: /omiyageEC/src/G1-4/G1-4-4/index.php");
+        header("Location: /omiyageEC/src/G1-4/G1-4-5/index.php");
         exit();
 
 }catch(PDOException $e){
