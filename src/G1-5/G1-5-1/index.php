@@ -58,6 +58,7 @@
                 </select>
             </div>
         </div>
+        <button class="modoru" onclick="location.href='../../G1-2/index.php'">戻る</button>
     </header>
 
     <script src="/omiyageEC/src/common/js/side_ber.js"></script>
