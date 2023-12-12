@@ -237,7 +237,7 @@ function insertPurchase($pdo, $user_id, $cart_id, $purpose_date) {
 function insertPurchaseDetail($pdo, $purchaseId, $merchandiseId, $quantity) {
     try {
         // PurchaseDetailテーブルに挿入するSQL文
-        $sql = "INSERT INTO PurchaseDetail (purchase_id, merchandise_id, quantity) VALUES (:purchaseId, :merchandiseId, :quantity)";
+        $sql = "INSERT INTO PurchaseDet (purchase_id, merchandise_id, quantity) VALUES (:purchaseId, :merchandiseId, :quantity)";
         
         // SQLステートメントを準備
         $stmt = $pdo->prepare($sql);
