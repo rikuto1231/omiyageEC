@@ -47,7 +47,7 @@
     }
    echo' <div id="center">';
    echo'<form action="../../G1-7/G1-7-2/index.php" method="POST">';
-   echo'<input type="hidden" name="mid" value="',$id,'">';
+   echo'<input type="hidden" name="id" value="',$id,'">';
    echo'<button type="submit" class="input">レビュー入力</button>';
    echo' </div>';
    echo'</form>';
