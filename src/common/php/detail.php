@@ -74,12 +74,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
         } else {
             
             // 在庫がないとき
+            
             echo '<div class="main">
                 <div id="menu_all">';
             echo '<p>' . $row['prefecture'] . '<br>' . $row['merchandise_name'] . '</p>';
             echo '</div>';
 
             echo '<form action="/omiyageEC/src/common/php/reservation_in.php" method="post" @submit.prevent="onSubmit">';  
+
+            echo '<input type="hidden" name="user_id" value="' . $_SESSION['user_id'] . '">';
 
             echo '<div class="item">
                     <img src="/omiyageEC/src/common/img/'.$row['path'].'" alt="代替テキスト" width="300px" height="200px">

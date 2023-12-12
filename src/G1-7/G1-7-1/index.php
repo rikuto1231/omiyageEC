@@ -13,7 +13,7 @@
     <br>
     <br>
     <?php 
-        $id = $_SESSION['user_id'];
+        $id = $_GET['id'];
        require '../../common/php/revue.php';
        ?>
     <!-- <div id="revew">
