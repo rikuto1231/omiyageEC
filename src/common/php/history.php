@@ -6,12 +6,16 @@ $pdo = getDatabaseConnection();
 
 
 
-$sql = $pdo->prepare('SELECT m.merchandise_name, m.price, m.path, pd.quantity,p.purpose_date 
+$sql = $pdo->prepare('SELECT DISTINCT m.merchandise_name, m.price, m.path, pd.quantity,p.purpose_date 
     FROM User u
     JOIN Purchase p ON u.user_id = p.user_id
     JOIN PurchaseDet pd ON p.purchase_id = pd.purchase_id
     JOIN Merchandise m ON pd.merchandise_id = m.merchandise_id
     WHERE u.user_id = :user_id');
+
+
+
+
 
 
 
