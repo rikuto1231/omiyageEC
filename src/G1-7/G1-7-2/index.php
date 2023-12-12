@@ -11,13 +11,24 @@
 <body>
     <div class="main">
         <h3 class="title">満足度</h3>
-        <p class="info"><span style="color: yellow;">★★★</span></p>
+    <div class="rate-form">
+    <input id="star5" type="radio" name="rate" value="5">
+    <label for="star5">★</label>
+    <input id="star4" type="radio" name="rate" value="4">
+    <label for="star4">★</label>
+    <input id="star3" type="radio" name="rate" value="3">
+    <label for="star3">★</label>
+    <input id="star2" type="radio" name="rate" value="2">
+    <label for="star2">★</label>
+    <input id="star1" type="radio" name="rate" value="1">
+    <label for="star1">★</label>
+</div>
         <h3 class="title" >タイトル</h3>
         <p class="info"><input type="text" class="titel_input"></p>
         <h3 class="title">本文</h3>
-        <p class="info2"><input type="text" class="titel_input"></p>
+        <p class="info2"><input type="text-area" class="titel_input"></p>
     </div>
         <button class="input">送信</button>
-        <button class="back" onclick="location.href='../G1-7/G1-7-1/index.php'">もどる</button>
+        <button class="back" onclick="location.href='../../G1-7/G1-7-1/index.php'">もどる</button>
 </body>
 </html>

@@ -10,8 +10,8 @@
 <body>
     <div class="main">
     <?php
-        if(isset($_SESSION['customer'])){
-        unset($_SESSION['customer']);
+        if(isset($_SESSION['user_id'])){
+        session_destroy();
         echo 'ログアウトしました。';
         }else{
         echo 'すでにログアウトしています。';
@@ -19,7 +19,7 @@
         
     ?>
     <br>
-    <button class="modoru" onclick="location.href='../../G1-2/G1-2-1/index.php'">戻る</button>
+    <button class="modoru" onclick="location.href='../../G1-1/G1-1-1/index.php'">戻る</button>
 </div>
 </body>
 </html>
