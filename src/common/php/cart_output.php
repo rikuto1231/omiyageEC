@@ -29,11 +29,7 @@ if (isset($_SESSION['user_id'])) {
             echo '<div class="in_cart">';
             echo '<h5>商品名: ' . $product['merchandise_name'] . '</h5>';
             echo '<h5>価格: ¥' . number_format($product['price']) . '</h5>';
-            echo '<h5><select name="number">';
-            for ($i = 1; $i <= $product['stock']; $i++) {
-                echo '<option value="' . $i . '">' . $i . '</option>';
-            }
-            echo '</select></h5>';
+            echo '<h4>'.$product['stock'].'</h4>';
             
             // 商品削除のフォーム
             echo '<form method="post" action="/omiyageEC/src/common/php/deleteCartItem.php">';
