@@ -1,4 +1,4 @@
-<?php require 'revue_search.php' ?>
+
     <br>
     <div id="revew">
     <h2><img src="../../G1-2/img/user.png" alt="代替テキスト"width="7%" height="14%">
