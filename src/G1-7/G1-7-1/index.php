@@ -48,7 +48,7 @@
     </div>
     <br>
     <div id="center">
-        <button class="back">もどる</button>
+        <button class="back"  onclick="location.href='../../G1-5/G1-5-2/index.php'">もどる</button>
     </div>
 </form>
 </body>
