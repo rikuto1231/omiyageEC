@@ -5,9 +5,9 @@ require '../../common/php/DB.php';
 $pdo = getDatabaseConnection();
 $sql=$pdo->prepare('select DISTINCT category from Merchandise ');
 
-$result = $dbConection->query($sql);
+$result = $dbConnection->query($sql);
 
-$dbConection->close();
+$dbConnection->close();
     
 
     if ($result->num_rows > 0) {
