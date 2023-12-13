@@ -51,54 +51,41 @@ function getDatabaseConnection() {
 
 
 // 商品検索用API（引数複数対応にしたい）
-function sql_search($pdo, $search, $selectedCategories, $selectedPriceRanges, $selectedPrefectures) {
+function sql_search($pdo, $search, $category, $priceRange, $prefecture) {
     try {
-        $searchPattern = "%" . $search . "%"; 
+        $searchPattern = "%" . $search . "%";
 
-        // JSの配列がID形式にしてあるからname形式への変更が必要
-
-        // デフォルトのsql文
+        // デフォルトのSQL文
         $sql = 'SELECT * FROM Merchandise WHERE merchandise_name LIKE :search';
 
         // カテゴリが選択
-        if (!empty($selectedCategories)) {
-            $categoryConditions = array_fill(0, count($selectedCategories), 'category = ?');
-            $sql .= ' AND (' . implode(' OR ', $categoryConditions) . ')';
+        if (!empty($category)) {
+            $sql .= ' AND category = :category';
         }
 
         // 価格帯が選択
-        if (!empty($selectedPriceRanges)) {
-            $priceRangeConditions = array_fill(0, count($selectedPriceRanges), 'price = ?');
-            $sql .= ' AND (' . implode(' OR ', $priceRangeConditions) . ')';
+        if (!empty($priceRange)) {
+            $sql .= ' AND price = :priceRange';
         }
 
         // 都道府県が選択
-        if (!empty($selectedPrefectures)) {
-            $prefectureConditions = array_fill(0, count($selectedPrefectures), 'prefecture = ?');
-            $sql .= ' AND (' . implode(' OR ', $prefectureConditions) . ')';
+        if (!empty($prefecture)) {
+            $sql .= ' AND prefecture = :prefecture';
         }
 
         $stmt = $pdo->prepare($sql);
         $stmt->bindParam(':search', $searchPattern, PDO::PARAM_STR);
 
-        $paramIndex = 1;
-
-        if (!empty($selectedCategories)) {
-            foreach ($selectedCategories as $categoryId) {
-                $stmt->bindParam($paramIndex++, $categoryId, PDO::PARAM_INT);
-            }
+        if (!empty($category)) {
+            $stmt->bindParam(':category', $category, PDO::PARAM_INT);
         }
 
-        if (!empty($selectedPriceRanges)) {
-            foreach ($selectedPriceRanges as $priceRangeId) {
-                $stmt->bindParam($paramIndex++, $priceRangeId, PDO::PARAM_INT);
-            }
+        if (!empty($priceRange)) {
+            $stmt->bindParam(':priceRange', $priceRange, PDO::PARAM_INT);
         }
 
-        if (!empty($selectedPrefectures)) {
-            foreach ($selectedPrefectures as $prefectureId) {
-                $stmt->bindParam($paramIndex++, $prefectureId, PDO::PARAM_INT);
-            }
+        if (!empty($prefecture)) {
+            $stmt->bindParam(':prefecture', $prefecture, PDO::PARAM_INT);
         }
 
         $stmt->execute();
@@ -112,6 +99,7 @@ function sql_search($pdo, $search, $selectedCategories, $selectedPriceRanges, $s
         return false;
     }
 }
+
 
 // 商品検索用API（ID指定）
 function sql_search_id($pdo, $id) {
@@ -258,12 +246,13 @@ function insertPurchaseDetail($pdo, $purchaseId, $merchandiseId, $quantity) {
         return false;
     }
 }
-function insertPoint($pdo) {
+
+function insertPoint($pdo,$user_id,$point) {
     $currentDate = date("Y-m-d");
         $stmt2 = $pdo->prepare("INSERT INTO Point (user_id,point_grant,point_date) VALUES(:id,:point,:date)");
-        $stmt2->bindParam(':id', $_SESSION['user_id']);
+        $stmt2->bindParam(':id', $user_id);
         $stmt2->bindParam(':date', $currentDate);
-        $stmt2->bindParam(':point', $_SESSION['points']);
+        $stmt2->bindParam(':point', $point);
         $stmt2->execute();
 }
 

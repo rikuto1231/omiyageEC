@@ -21,7 +21,7 @@ try {
         }
     
     
-        $checkCartQuery = "SELECT distinct c.merchandise_id, quantity, p.purchase_id
+        $checkCartQuery = "SELECT  c.merchandise_id, quantity,  p.purchase_id
         FROM Cart c
         JOIN Merchandise m ON c.merchandise_id = m.merchandise_id
         LEFT JOIN Purchase p ON c.cart_id = p.cart_id
@@ -43,7 +43,8 @@ try {
             insertPurchaseDetail($pdo, $product['purchase_id'], $product['merchandise_id'], $product['quantity']);
         }
         
-        insertPoint($pdo);
+        $point = $_SESSION['points'];
+        insertPoint($pdo,$user_id,$point);
     
     
         foreach ($cart_ids as $cart_id) {
