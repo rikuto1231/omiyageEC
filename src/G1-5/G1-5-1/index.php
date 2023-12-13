@@ -61,7 +61,7 @@
 
                     </select>
                     <h2>価格</h2>
-                    <select id="priceRange" name="priceRange>
+                    <select id="priceRange" name="priceRange">
                         <option value="0">選択してください</option>
                         <option value="1">～1000円</option>
                         <option value="2">1001円～2000円</option>
