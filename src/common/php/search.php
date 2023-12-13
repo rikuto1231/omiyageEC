@@ -7,9 +7,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     // 情報がなかった時の代替え文字列
     $search = isset($_GET['search_box']) ? $_GET['search_box'] : '';
 
-    $category = isset($_GET['category']) ? $_GET['category'] : false; 
-    $priceRange = isset($_GET['priceRange']) ? $_GET['priceRange'] : false; 
-    $prefecture = isset($_GET['prefecture']) ? $_GET['prefecture'] : false; 
+    $category = isset($_GET['category']) ? $_GET['category'] : false;
+    $priceRange = isset($_GET['priceRange']) ? $_GET['priceRange'] : false;
+    $prefecture = isset($_GET['prefecture']) ? $_GET['prefecture'] : false;
+    
+    // 0の場合はfalseに変更
+    $category = ($category === '0') ? false : $category;
+    $priceRange = ($priceRange === '0') ? false : $priceRange;
+    $prefecture = ($prefecture === '0') ? false : $prefecture;
+    
 
     $result = sql_search($pdo, $search, $category, $priceRange, $prefecture);
     // return情報
