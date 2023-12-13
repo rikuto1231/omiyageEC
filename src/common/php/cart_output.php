@@ -8,7 +8,7 @@ if (isset($_SESSION['user_id'])) {
     $pdo = getDatabaseConnection();  
 
     // カートの中にユーザの商品が入っているかチェック
-    $checkCartQuery = "SELECT c.*, m.merchandise_name, m.path, m.price, m.stock FROM Cart c
+    $checkCartQuery = "SELECT c.*, m.merchandise_name, m.path, m.price, c. FROM Cart c
                         JOIN Merchandise m ON c.merchandise_id = m.merchandise_id
                         WHERE c.user_id = :user_id AND c.purchased = 0";
 
@@ -29,7 +29,7 @@ if (isset($_SESSION['user_id'])) {
             echo '<div class="in_cart">';
             echo '<h5>商品名: ' . $product['merchandise_name'] . '</h5>';
             echo '<h5>価格: ¥' . number_format($product['price']) . '</h5>';
-            echo '<h4>'.$product['stock'].'</h4>';
+            echo '<h4>'.$product['quantity'].'</h4>';
             
             // 商品削除のフォーム
             echo '<form method="post" action="/omiyageEC/src/common/php/deleteCartItem.php">';
