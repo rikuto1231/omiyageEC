@@ -11,7 +11,7 @@ $sql=$pdo->prepare('select * from User where user_id=?');
 echo'<form action="/omiyageEC/src/common/php/personal_update.php" method="POST">';
         // <!-- お名前 -->
         foreach($sql  as $row){
-            $_SESSION['user_id'] = $row['user_id'];
+            //$_SESSION['user_id'] = $row['user_id'];
             $_SESSION['personal_family'] = $row['name_family'];//姓
             $_SESSION['personal_family_kana'] = $row['name_family_kana'];//姓(カナ)
             $_SESSION['personal_personal']=$row['name_personal'];//名

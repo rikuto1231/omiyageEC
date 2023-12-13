@@ -251,3 +251,7 @@
   .button_move2:nth-of-type(4) {
   opacity: 1;
 }
+.splide__slide img {
+  width: 100%;
+  height: auto;
+}
