@@ -8,7 +8,7 @@ if (isset($_SESSION['user_id'])) {
     $pdo = getDatabaseConnection();  
 
     // カートの中にユーザの商品が入っているかチェック
-    $checkCartQuery = "SELECT c.*, m.merchandise_name, m.path, m.price, c. FROM Cart c
+    $checkCartQuery = "SELECT c.*, m.merchandise_name, m.path, m.price, c.quantity FROM Cart c
                         JOIN Merchandise m ON c.merchandise_id = m.merchandise_id
                         WHERE c.user_id = :user_id AND c.purchased = 0";
 
