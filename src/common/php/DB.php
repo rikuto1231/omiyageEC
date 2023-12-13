@@ -258,6 +258,7 @@ function insertPurchaseDetail($pdo, $purchaseId, $merchandiseId, $quantity) {
         return false;
     }
 }
+
 function insertPoint($pdo) {
     $currentDate = date("Y-m-d");
         $stmt2 = $pdo->prepare("INSERT INTO Point (user_id,point_grant,point_date) VALUES(:id,:point,:date)");
