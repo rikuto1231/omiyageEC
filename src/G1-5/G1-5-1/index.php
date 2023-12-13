@@ -47,7 +47,7 @@
                     </div>
 
                     <h2>カテゴリ</h2>
-                    <select id="category">
+                    <select id="category" name="catecory">
                         <option value="0">選択してください</option>
                         <?php
 
@@ -61,7 +61,7 @@
 
                     </select>
                     <h2>価格</h2>
-                    <select id="priceRange">
+                    <select id="priceRange" name="priceRange">
                         <option value="0">選択してください</option>
                         <option value="1">～1000円</option>
                         <option value="2">1001円～2000円</option>
@@ -71,7 +71,7 @@
                         <option value="6">5001円～</option>
                     </select>
                     <h2>都道府県</h2>
-                    <select id="prefecture">
+                    <select id="prefecture" name="prefecture">
                         <option value="0">選択してください</option>
                         <option value="1">北海道</option>
                         <option value="2">青森</option>
