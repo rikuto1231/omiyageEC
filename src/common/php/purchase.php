@@ -21,7 +21,7 @@ try {
         }
     
     
-        $checkCartQuery = "SELECT  c.merchandise_id, quantity, distinct p.purchase_id
+        $checkCartQuery = "SELECT  c.merchandise_id, quantity,  p.purchase_id
         FROM Cart c
         JOIN Merchandise m ON c.merchandise_id = m.merchandise_id
         LEFT JOIN Purchase p ON c.cart_id = p.cart_id
