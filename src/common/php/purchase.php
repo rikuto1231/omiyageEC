@@ -21,11 +21,13 @@ try {
         }
     
     
-        $checkCartQuery = "SELECT  c.merchandise_id, quantity,  p.purchase_id
+        $checkCartQuery = "SELECT  p.purchase_id, c.merchandise_id, quantity
         FROM Cart c
         JOIN Merchandise m ON c.merchandise_id = m.merchandise_id
         LEFT JOIN Purchase p ON c.cart_id = p.cart_id
         WHERE c.user_id = :user_id AND (c.purchased = 0 OR (p.cart_id IS NOT NULL))";
+
+        
         
     
             $checkCartStmt = $pdo->prepare($checkCartQuery);
