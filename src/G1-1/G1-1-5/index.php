@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>ログイン登録確認画面</title>
+    <title>登録情報確認画面</title>
 </head>
 <body>
 <!--<form method="post" action="../G1-1-6/index.php" id="form_all">-->
