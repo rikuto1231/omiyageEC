@@ -43,7 +43,7 @@ try {
             insertPurchaseDetail($pdo, $product['purchase_id'], $product['merchandise_id'], $product['quantity']);
         }
         
-        i
+        
     
     
         foreach ($cart_ids as $cart_id) {
