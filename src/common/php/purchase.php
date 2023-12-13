@@ -43,7 +43,8 @@ try {
             insertPurchaseDetail($pdo, $product['purchase_id'], $product['merchandise_id'], $product['quantity']);
         }
         
-        
+        $point = $_SESSION['points'];
+        insertPoint($pdo,$user_id,$point);
     
     
         foreach ($cart_ids as $cart_id) {
