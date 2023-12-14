@@ -7,8 +7,8 @@ try {
     $pdo = getDatabaseConnection(); 
     $user_id = $_SESSION['user_id'];
 
-    // 購入情報をPurchaseテーブルに挿入
-    $cart_ids = (array)$_SESSION['cart_ids']; // キャストを追加
+    // 購入情報をPurchaseテーブルに挿入。整数型に対応
+    $cart_ids = (array)$_SESSION['cart_ids']; 
 
     if (!empty($cart_ids)) {
         $purchaseDate = date("Y-m-d");

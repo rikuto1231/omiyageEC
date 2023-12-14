@@ -26,7 +26,7 @@ if (isset($_SESSION['user_id'])) {
 
     // カートに商品が入っている場合
     if ($cartItems) {
-        // バッファリングを終了し、出力をフラッシュ
+        // バッファリングを終了し、出力フラッシュ
         ob_end_flush();
         header('Location: /omiyageEC/src/G1-4/G1-4-2/index.php'); // 商品表示
         exit();
@@ -40,7 +40,7 @@ if (isset($_SESSION['user_id'])) {
     // バッファリングを終了し、出力をフラッシュ
     ob_end_flush();
     // ユーザIDがセッションに保存されていない場合（未ログインなど）
-    header('Location: ユーザIDがセッションに保存されていない場合の遷移先'); // 遷移先のURLを指定
+    header('Location: /omiyageEC/src/G1-1/G1-1-1/index.php'); // 遷移先のURLを指定
     exit();
 }
 ?>

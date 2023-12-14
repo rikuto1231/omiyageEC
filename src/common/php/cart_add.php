@@ -31,7 +31,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             echo '商品の追加に失敗しました。';
         }
     } else {
-        // 商品IDが指定されていない
+        // 商品IDが指定されていない時
         echo '<p>商品IDが指定されていません。</p>';
     }
 }

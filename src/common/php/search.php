@@ -7,11 +7,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     // 情報がなかった時の代替え文字列
     $search = isset($_GET['search_box']) ? $_GET['search_box'] : '';
 
+    // 詳細検索ではないときの付加処理
     $category = isset($_GET['category']) ? $_GET['category'] : false;
     $priceRange = isset($_GET['priceRange']) ? $_GET['priceRange'] : false;
     $prefecture = isset($_GET['prefecture']) ? $_GET['prefecture'] : false;
     
-    // 0の場合はfalseに変更
+    // 詳細未選択の場合はfalseに変更
     $category = ($category === '0') ? false : $category;
     $priceRange = ($priceRange === '0') ? false : $priceRange;
     $prefecture = ($prefecture === '0') ? false : $prefecture;
@@ -31,7 +32,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
             echo '<p>' . $row['merchandise_name'] . '</p>';
         }else {
             echo '<a href="/omiyageEC/src/G1-5/G1-5-3/index.php?merchandise_id=' . $row['merchandise_id'] . '">';
-            echo '<img src="' . '/omiyageEC/src/common/img/' . $row['path'] . '" alt="代替テキスト" width="90px" height="90px" ' . $row['merchandise_id'] . '>';
+            echo '<img src="' . '/omiyageEC/src/common/img/' . $row['path'] . '" alt="画像がありません" width="90px" height="90px" ' . $row['merchandise_id'] . '>';
             echo '</a>';
             echo '<p>' . $row['merchandise_name'] . '</p>';
         }

@@ -16,7 +16,7 @@ if (isset($_SESSION['user_id'])) {
     $checkCartStmt->bindParam(':user_id', $user_id, PDO::PARAM_INT);
     $checkCartStmt->execute();
 
-    // 結果を受け取る
+    // 結果取得
     $products = $checkCartStmt->fetchAll(PDO::FETCH_ASSOC);
 
     // カートに商品が入っている場合
@@ -75,7 +75,7 @@ if (isset($_SESSION['user_id'])) {
     }
 } else {
     // ユーザIDがセッションに保存されていない場合（未ログインなど）
-    header('Location: ユーザIDがセッションに保存されていない場合の遷移先'); // 遷移先のURLを指定
+    header('Location: /omiyageEC/src/G1-1/G1-1-1/index.php'); // 遷移先のURLを指定
     exit();
 }
 ?>
