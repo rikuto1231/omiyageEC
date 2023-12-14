@@ -65,7 +65,26 @@ function sql_search($pdo, $search, $category, $priceRange, $prefecture) {
 
         // 価格帯が選択
         if (!empty($priceRange)) {
-            $sql .= ' AND price = :priceRange';
+            switch ($priceRange) {
+                case 1:
+                    $sql .= ' AND price BETWEEN 0 AND 1000';
+                    break;
+                case 2:
+                    $sql .= ' AND price BETWEEN 1001 AND 2000';
+                    break;
+                case 3:
+                    $sql .= ' AND price BETWEEN 2001 AND 3000';
+                    break;
+                case 4:
+                    $sql .= ' AND price BETWEEN 3001 AND 4000';
+                    break;
+                case 5:
+                    $sql .= ' AND price BETWEEN 4001 AND 5000';
+                    break;
+                case 6:
+                    $sql .= ' AND price >= 5001';
+                    break;
+            }
         }
 
         // 都道府県が選択
@@ -80,9 +99,7 @@ function sql_search($pdo, $search, $category, $priceRange, $prefecture) {
             $stmt->bindParam(':category', $category, PDO::PARAM_INT);
         }
 
-        if (!empty($priceRange)) {
-            $stmt->bindParam(':priceRange', $priceRange, PDO::PARAM_INT);
-        }
+        // 価格帯のバインドは不要
 
         if (!empty($prefecture)) {
             $stmt->bindParam(':prefecture', $prefecture, PDO::PARAM_INT);
@@ -99,7 +116,6 @@ function sql_search($pdo, $search, $category, $priceRange, $prefecture) {
         return false;
     }
 }
-
 
 // 商品検索用API（ID指定）
 function sql_search_id($pdo, $id) {
