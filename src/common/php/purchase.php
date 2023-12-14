@@ -15,31 +15,31 @@ try {
 
         // 購入がまだ行われていない場合のみ購入
         if (empty(checkExistingPurchase($pdo, $user_id, $cart_ids))) {
-            $purchase_id = insertPurchase($pdo, $user_id, $cart_ids[0], $purchaseDate);
-
             // カート内の全商品を取得
-            $checkCartQuery = "SELECT merchandise_id, quantity FROM Cart WHERE user_id = :user_id AND cart_id = :cart_id";
-            $checkCartStmt = $pdo->prepare($checkCartQuery);
-            $checkCartStmt->bindParam(':user_id', $user_id, PDO::PARAM_INT);
-
             foreach ($cart_ids as $cart_id) {
-                // カートIDごとに商品を取得して購入詳細情報を挿入
+                $checkCartQuery = "SELECT merchandise_id, quantity FROM Cart WHERE user_id = :user_id AND cart_id = :cart_id";
+                $checkCartStmt = $pdo->prepare($checkCartQuery);
+                $checkCartStmt->bindParam(':user_id', $user_id, PDO::PARAM_INT);
                 $checkCartStmt->bindParam(':cart_id', $cart_id, PDO::PARAM_INT);
                 $checkCartStmt->execute();
 
                 $products = $checkCartStmt->fetchAll(PDO::FETCH_ASSOC);
 
+                // 購入情報を挿入
+                $purchase_id = insertPurchase($pdo, $user_id, $cart_id, $purchaseDate);
+
+                // 購入詳細情報を挿入
                 foreach ($products as $product) {
                     insertPurchaseDetail($pdo, $purchase_id, $product['merchandise_id'], $product['quantity']);
                 }
 
+                // ポイント情報を挿入
+                $point = $_SESSION['points'];
+                insertPoint($pdo, $user_id, $point);
+
                 // カートから商品を購入済み
                 CartAsPurchased($pdo, $cart_id);
             }
-
-            // ポイント情報を挿入
-            $point = $_SESSION['points'];
-            insertPoint($pdo, $user_id, $point);
         }
     }
 
