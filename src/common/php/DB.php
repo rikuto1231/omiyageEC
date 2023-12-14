@@ -49,11 +49,12 @@ function getDatabaseConnection() {
 }
 
 
+//検索用API
 function sql_search($pdo, $search, $category, $priceRange, $prefecture) {
     try {
         $searchPattern = "%" . $search . "%";
 
-        // デフォルトのSQL文
+        // デフォルトSQL
         $sql = 'SELECT * FROM Merchandise WHERE merchandise_name LIKE :search';
 
         // カテゴリが選択
@@ -61,7 +62,7 @@ function sql_search($pdo, $search, $category, $priceRange, $prefecture) {
             $sql .= ' AND category = :category';
         }
 
-        // 価格帯が選択
+        // 価格帯
         if (!empty($priceRange)) {
             switch ($priceRange) {
                 case 1:
@@ -85,7 +86,7 @@ function sql_search($pdo, $search, $category, $priceRange, $prefecture) {
             }
         }
 
-        // 都道府県が選択
+        // 都道府県
         if (!empty($prefecture)) {
             $sql .= ' AND prefecture = :prefecture';
         }
@@ -97,7 +98,6 @@ function sql_search($pdo, $search, $category, $priceRange, $prefecture) {
             $stmt->bindParam(':category', $category, PDO::PARAM_STR); // カテゴリが文字列の場合はPDO::PARAM_STR
         }
 
-        // 価格帯のバインドは不要
 
         if (!empty($prefecture)) {
             $stmt->bindParam(':prefecture', $prefecture, PDO::PARAM_STR); // 都道府県が文字列の場合はPDO::PARAM_STR
