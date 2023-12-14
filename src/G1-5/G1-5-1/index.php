@@ -74,7 +74,7 @@
                     <select id="prefecture" name="prefecture">
                         <option value="0">選択してください</option>
                         <option value="北海道">北海道</option>
-                        <option value="東京都">東京都</option>
+                        <option value="東京">東京都</option>
                         <option value="京都">京都</option>
                         <option value="大阪">大阪</option>
                         <option value="福岡">福岡</option>
