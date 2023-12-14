@@ -49,8 +49,6 @@ function getDatabaseConnection() {
 }
 
 
-
-// 商品検索用API（引数複数対応にしたい）
 function sql_search($pdo, $search, $category, $priceRange, $prefecture) {
     try {
         $searchPattern = "%" . $search . "%";
@@ -96,26 +94,26 @@ function sql_search($pdo, $search, $category, $priceRange, $prefecture) {
         $stmt->bindParam(':search', $searchPattern, PDO::PARAM_STR);
 
         if (!empty($category)) {
-            $stmt->bindParam(':category', $category, PDO::PARAM_INT);
+            $stmt->bindParam(':category', $category, PDO::PARAM_STR); // カテゴリが文字列の場合はPDO::PARAM_STR
         }
 
         // 価格帯のバインドは不要
 
         if (!empty($prefecture)) {
-            $stmt->bindParam(':prefecture', $prefecture, PDO::PARAM_INT);
+            $stmt->bindParam(':prefecture', $prefecture, PDO::PARAM_STR); // 都道府県が文字列の場合はPDO::PARAM_STR
         }
 
         $stmt->execute();
 
         $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
         return $result;
-
     } catch (PDOException $e) {
         // エラーハンドリング
         echo "エラー: " . $e->getMessage();
         return false;
     }
 }
+
 
 // 商品検索用API（ID指定）
 function sql_search_id($pdo, $id) {
