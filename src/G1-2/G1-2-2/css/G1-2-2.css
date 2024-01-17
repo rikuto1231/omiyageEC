@@ -1,0 +1,45 @@
+@charset "utf-8";
+
+h1{
+    text-align: center; 
+}
+.box1{
+    text-align: center;
+}
+.box2{
+    text-align: center;
+}
+input.m{
+    width:250px;
+}
+input.p{
+    width:250px;
+}
+
+.btn{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    height: 30px;
+    border: 2px solid #0890F2;
+    background: #f25a08;
+	color: #fff;
+    transition: 0.5s;
+    border-radius:30px;
+    top: 40vh;
+}
+
+.btn2{
+    position: absolute;
+    left: 50%;
+    top:70vh;
+    transform: translateX(-50%);
+    width: 60%;
+    height: 30px;
+    border: 2px solid #0890F2;
+    background: #0890F2;
+	color: #fff;
+    transition: 0.5s;
+    border-radius:30px;
+}
