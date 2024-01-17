@@ -49,13 +49,12 @@ function getDatabaseConnection() {
 }
 
 
-
-// 商品検索用API（引数複数対応にしたい）
+//検索用API
 function sql_search($pdo, $search, $category, $priceRange, $prefecture) {
     try {
         $searchPattern = "%" . $search . "%";
 
-        // デフォルトのSQL文
+        // デフォルトSQL
         $sql = 'SELECT * FROM Merchandise WHERE merchandise_name LIKE :search';
 
         // カテゴリが選択
@@ -63,12 +62,31 @@ function sql_search($pdo, $search, $category, $priceRange, $prefecture) {
             $sql .= ' AND category = :category';
         }
 
-        // 価格帯が選択
+        // 価格帯
         if (!empty($priceRange)) {
-            $sql .= ' AND price = :priceRange';
+            switch ($priceRange) {
+                case 1:
+                    $sql .= ' AND price BETWEEN 0 AND 1000';
+                    break;
+                case 2:
+                    $sql .= ' AND price BETWEEN 1001 AND 2000';
+                    break;
+                case 3:
+                    $sql .= ' AND price BETWEEN 2001 AND 3000';
+                    break;
+                case 4:
+                    $sql .= ' AND price BETWEEN 3001 AND 4000';
+                    break;
+                case 5:
+                    $sql .= ' AND price BETWEEN 4001 AND 5000';
+                    break;
+                case 6:
+                    $sql .= ' AND price >= 5001';
+                    break;
+            }
         }
 
-        // 都道府県が選択
+        // 都道府県
         if (!empty($prefecture)) {
             $sql .= ' AND prefecture = :prefecture';
         }
@@ -77,22 +95,18 @@ function sql_search($pdo, $search, $category, $priceRange, $prefecture) {
         $stmt->bindParam(':search', $searchPattern, PDO::PARAM_STR);
 
         if (!empty($category)) {
-            $stmt->bindParam(':category', $category, PDO::PARAM_INT);
+            $stmt->bindParam(':category', $category, PDO::PARAM_STR); // カテゴリが文字列の場合はPDO::PARAM_STR
         }
 
-        if (!empty($priceRange)) {
-            $stmt->bindParam(':priceRange', $priceRange, PDO::PARAM_INT);
-        }
 
         if (!empty($prefecture)) {
-            $stmt->bindParam(':prefecture', $prefecture, PDO::PARAM_INT);
+            $stmt->bindParam(':prefecture', $prefecture, PDO::PARAM_STR); // 都道府県が文字列の場合はPDO::PARAM_STR
         }
 
         $stmt->execute();
 
         $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
         return $result;
-
     } catch (PDOException $e) {
         // エラーハンドリング
         echo "エラー: " . $e->getMessage();

@@ -13,9 +13,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     $prefecture = isset($_GET['prefecture']) ? $_GET['prefecture'] : false;
     
     // 詳細未選択の場合はfalseに変更
-    $category = ($category === '0') ? false : $category;
-    $priceRange = ($priceRange === '0') ? false : $priceRange;
-    $prefecture = ($prefecture === '0') ? false : $prefecture;
+    $category = ($category == '0') ? false : $category;
+    $priceRange = ($priceRange == '0') ? false : $priceRange;
+    $prefecture = ($prefecture == '0') ? false : $prefecture;
     
 
     $result = sql_search($pdo, $search, $category, $priceRange, $prefecture);
